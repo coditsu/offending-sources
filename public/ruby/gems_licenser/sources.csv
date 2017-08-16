@@ -496,7 +496,7 @@ mongrel_cluster,
 rails-app-installer,
 ruby-debug,--- []|||
 rspec-rails,---|||- MIT|||
-mysql,--- []|||
+mysql,
 sqlite3-ruby,
 typed_accessors,
 twtr,
@@ -4382,7 +4382,7 @@ allinoneruby,
 allegro4r,
 alice_invoice,
 alib,
-algorithms,---|||- MIT|||
+algorithms,
 alertpay,
 aka_time,
 aka_angka,
@@ -5772,7 +5772,7 @@ xss_shield,
 nullify,
 simsim,
 simple_enum,---|||- MIT|||
-ragweed,--- |||...|||
+ragweed,
 search_party,
 exposure,
 videoclip,
@@ -9397,7 +9397,7 @@ plurk,
 pgericson-handsoap,
 nirvdrum-jekyll,
 HasRemote,
-breakout_parser,
+breakout_parser,--- []|||
 alc,
 hubbard,
 sdbtools,
@@ -16660,7 +16660,7 @@ miyucy-annotate,
 rails_zombie,
 turkee,--- []|||
 ytools,
-inetmgr,--- []|||
+inetmgr,
 name-generator,---|||- MIT|||
 socketlabs,
 fakeweb_curb-fu,
@@ -18859,7 +18859,7 @@ cwiid,--- []|||
 isolate-lockdown,
 refinerycms-menus,---|||- MIT|||
 safe_attributes,---|||- MIT|||
-rbx-trepanning,---|||- MIT|||
+rbx-trepanning,
 rbx-tracer,--- |||...|||
 drapes,---|||- MIT|||
 tenacity,---|||- MIT|||
@@ -20524,7 +20524,7 @@ soulmate,---|||- MIT|||
 mini_logger,
 tarantula-rails3,--- |||...|||
 xpain,--- |||...|||
-slyphon-zookeeper,--- |||...|||
+slyphon-zookeeper,
 boursorama,--- |||...|||
 servo,--- []|||
 validation-scopes,
@@ -22826,7 +22826,7 @@ drone_json,--- |||...|||
 vpd,
 ssh-allow,
 ran_a_lytics,--- |||...|||
-rubydoop,
+rubydoop,--- []|||
 ffi-efl,--- []|||
 blackwinter-pru,
 chimpactions,--- |||...|||
@@ -41532,7 +41532,7 @@ puppetdashboardmonitor,
 rpg,--- |||...|||
 storenvy,
 post2irc,--- |||...|||
-sumbur,--- |||...|||
+sumbur,---|||- MIT|||
 jgrouper,---|||- MIT|||
 weather_jp,--- []|||
 sentiment,
@@ -44820,7 +44820,7 @@ captivus-auth_hmac,--- |||...|||
 active_admin_acts_as_list_integration,--- |||...|||
 active-profiling,---|||- MIT|||
 has_heartbeat,---|||- MIT|||
-pdf_ravager,--- |||...|||
+pdf_ravager,---|||- MIT|||
 unihawk,--- |||...|||
 capistrano-jukebox,--- |||...|||
 cloudsheet,--- |||...|||
@@ -58800,7 +58800,7 @@ error_prone,---|||- MIT|||
 lwac,---|||- CC-BY-NC-SA 3.0|||
 wordpress-client,---|||- MIT|||
 maul,--- []|||
-swftly,---|||- MIT|||
+swftly,--- []|||
 fuci,---|||- MIT|||
 vkpd,---|||- MIT|||
 easy_dice,---|||- GPL-3|||
