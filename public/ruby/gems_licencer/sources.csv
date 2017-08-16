@@ -743,7 +743,6 @@ action_smser,---|||- MIT|||
 action_sms_gateways,
 action-store,---|||- MIT|||
 action_subscriber,---|||- MIT|||
-action_subscriber,---|||- MIT|||
 action_tabler,--- []|||
 ActionText,---|||- MIT|||
 actiontexter,--- []|||
@@ -985,7 +984,6 @@ active_directory_login,---|||- MIT|||
 active_doc,
 activedocument,--- |||...|||
 active_document,
-active_documentum,
 active_documentum,
 active_domain,---|||- MIT|||
 active-domain,---|||- MIT|||
@@ -1300,7 +1298,6 @@ active_propagation,--- []|||
 active_pstore,---|||- MIT|||
 active_public_resources,---|||- MIT|||
 active_publisher,---|||- MIT|||
-active_publisher,---|||- MIT|||
 active_pubsub,---|||- MIT|||
 active_query,---|||- MIT|||
 activequeue,
@@ -1512,35 +1509,27 @@ activerecord-instant,--- []|||
 activerecord-interbase-adapter,
 active_recordish,---|||- MIT|||
 ActiveRecord-JDBC,
-activerecord-jdbc-adapter,
 activerecord-jdbc-adapter,---|||- BSD|||
 activerecord-jdbc-adapter-ficoh,---|||- BSD|||
 activerecord-jdbc-adapter-onsite,--- |||...|||
 activerecord-jdbcas400-adapter,---|||- ''|||
 activerecord-jdbccassandra-adapter,--- []|||
 activerecord-jdbcdbf-adapter,
-activerecord-jdbcderby-adapter,
 activerecord-jdbcderby-adapter,---|||- BSD|||
 activerecord-jdbch2-adapter,---|||- BSD|||
-activerecord-jdbch2-adapter,
-activerecord-jdbchsqldb-adapter,
 activerecord-jdbchsqldb-adapter,---|||- BSD|||
 activerecord-jdbc-import,---|||- MIT|||
-activerecord-jdbcmssql-adapter,
 activerecord-jdbcmssql-adapter,---|||- BSD|||
 activerecord-jdbcmssql-adapter-ficoh,---|||- BSD|||
 activerecord-jdbcmysql-adapter,---|||- BSD|||
-activerecord-jdbcmysql-adapter,
 activerecord-jdbcmysql-adapter-ficoh,---|||- BSD|||
 activerecord-jdbcnuodb-adapter,---|||- BSD|||
 activerecord-jdbcphoenix-adapter,---|||- BSD|||
 activerecord-jdbc-plsql,---|||- MIT|||
 activerecord-jdbcpostgresql-adapter,---|||- BSD|||
-activerecord-jdbcpostgresql-adapter,
 activerecord-jdbcsplice-adapter,---|||- MIT|||
 activerecord-jdbcsqlanywhere-adapter,--- []|||
 activerecord-jdbcsqlite3-adapter,---|||- BSD|||
-activerecord-jdbcsqlite3-adapter,
 activerecord-jdbcteradata-adapter,--- []|||
 activerecord-jdbcvertica-adapter,---|||- MIT|||
 active_record-json_associations,---|||- MIT|||
@@ -1779,7 +1768,6 @@ activerecord_unitwise,---|||- MIT|||
 activerecord_unload_all_fixtures,
 activerecord-update,--- []|||
 active_record-updated_at,---|||- MIT|||
-active_record_upsert,--- []|||
 active_record_upsert,--- []|||
 activerecord_url_connections,
 activerecord-userstamp,---|||- MIT|||
@@ -2924,7 +2912,6 @@ advanced_math,
 advanced_scaffold,
 advancement,--- |||...|||
 advantage,--- []|||
-advantage,--- []|||
 advantage_quickbase,---|||- MIT|||
 advantest-tr4131,---|||- MIT|||
 advany-starling,--- []|||
@@ -3512,12 +3499,9 @@ akdubya-rack-thumb,--- []|||
 Akeel,--- |||...|||
 akeel_sir,
 akephalos,--- |||...|||
-akephalos,
-akephalos2,
 akephalos2,
 akephalos-2s,
 akephalos2-stable,
-akephalos-nerian,
 akephalos-nerian,
 aker,--- |||...|||
 aker-cas_cli,--- |||...|||
@@ -3664,7 +3648,6 @@ alembic-jekyll-theme,---|||- MIT|||
 aleph,
 aleph_analytics,---|||- MIT|||
 alephant,---|||- MIT|||
-alephant,---|||- GPLv3|||
 alephant-broker,---|||- MIT|||
 alephant-cache,---|||- MIT|||
 alephant-harness,---|||- MIT|||
@@ -3816,8 +3799,6 @@ Algorithmically,---|||- MIT|||
 algorithmix,---|||- MIT|||
 algorithm-night,---|||- MIT|||
 algorithms,---|||- MIT|||
-algorithms,
-algorithms,---|||- MIT|||
 algorithms-aunderwo,
 algorithm_selector,---|||- MIT|||
 algos,---|||- MIT|||
@@ -3918,7 +3899,6 @@ all_access,---|||- MIT|||
 all_countries,--- []|||
 all_crypt,--- []|||
 allegro4r,
-allegro4r,
 allegro_api_client,---|||- MIT|||
 allegrojm-string_extend,--- []|||
 allegro_release,--- []|||
@@ -4004,7 +3984,6 @@ almanack,---|||- MIT|||
 almaz,
 almaz-revelation,
 almicube,---|||- MIT|||
-almodovar,---|||- MIT|||
 almodovar,---|||- MIT|||
 almodovar-server,--- []|||
 almond-rails,---|||- APACHE2|||
@@ -4146,9 +4125,6 @@ ama-entity-mapper,---|||- MIT|||
 ama_foundation_css,---|||- MIT|||
 amakanize,---|||- MIT|||
 ama_layout,---|||- MIT|||
-amalgalite,
-amalgalite,---|||- BSD|||
-amalgalite,---|||- BSD|||
 amalgalite,---|||- BSD|||
 amalgam,--- []|||
 amanda,---|||- MIT|||
@@ -4164,7 +4140,6 @@ amardaxini-ruby-gd,
 a_marmita,---|||- MIT|||
 amarok-data-collector,---|||- MIT|||
 amatch,---|||- Apache-2.0|||
-amatch,
 amatch-rbx,--- []|||
 a_matrix,--- []|||
 amatsuda-atode_yomu,--- []|||
@@ -4956,7 +4931,6 @@ antw-dyno,--- []|||
 antw-kin,--- []|||
 antwort,---|||- MIT|||
 Antwrap,
-Antwrap,
 antw-simple_state,--- []|||
 anubis,--- []|||
 anuhea_view_tool,---|||- MIT|||
@@ -5103,7 +5077,6 @@ api_ai_wrapper,---|||- MIT|||
 apiarist,---|||- MIT|||
 apiary,
 apiary_blueprint_convertor,---|||- MIT|||
-apiaryio,---|||- MIT|||
 apiaryio,---|||- MIT|||
 api_auth,
 api-auth,--- []|||
@@ -6556,7 +6529,6 @@ asciidoctor,---|||- MIT|||
 asciidoctor-bibtex,---|||- OWL|||
 asciidoctor-confluence,---|||- MIT|||
 asciidoctor-diagram,---|||- MIT|||
-asciidoctor-diagram,---|||- MIT|||
 asciidoctor-diagram-cacoo,---|||- MIT|||
 asciidoctor-diagram-stupid,---|||- MIT|||
 asciidoctor-doctest,---|||- MIT|||
@@ -7106,8 +7078,6 @@ athlite-actionwebservice,
 athlite_open-uri,
 atig,--- []|||
 atk,---|||- LGPL-2.1+|||
-atk,---|||- LGPL-2.1+|||
-atk,---|||- LGPL-2.1+|||
 atk-ducksboard,--- |||...|||
 atk_icons,
 atlantic,---|||- MIT|||
@@ -7155,7 +7125,6 @@ atom_attr_accessor,---|||- EPL-1.0|||
 atom-doc,---|||- MIT|||
 atome,--- []|||
 atomic,---|||- Apache-2.0|||
-atomic,---|||- Apache-2.0|||
 atomic_arrays,---|||- MIT|||
 atomic_assets,--- []|||
 atomic_cms,---|||- MIT|||
@@ -7183,7 +7152,6 @@ atomy,---|||- Apache-2.0|||
 atos,---|||- MIT|||
 atosl,---|||- MIT|||
 atotk,---|||- MIT|||
-atoulme-Antwrap,---|||- MIT|||
 atoulme-Antwrap,---|||- MIT|||
 atoulme-Saikuro,
 atp,--- []|||
@@ -7400,8 +7368,6 @@ atx_live_music,---|||- MIT|||
 at_your_service,---|||- MIT|||
 a_types,---|||- MIT|||
 atypical-sass,---|||- MIT|||
-au3,
-au3,
 au3,
 aua,---|||- MIT|||
 aua-mite,---|||- MIT|||
@@ -8206,7 +8172,6 @@ awestruct,---|||- MIT|||
 awestruct-ibeams,--- []|||
 awestructx,
 awetestlib,--- []|||
-awetestlib,--- []|||
 awful,---|||- MIT|||
 awhyte-rtex,--- []|||
 awis4ruby,
@@ -8922,7 +8887,6 @@ bad_word_detector,--- []|||
 badwords,--- []|||
 bad_words,
 bae,"---|||- GPL version 3, or LGPL version 3 (Dual License)|||"
-bae,"---|||- GPL version 3, or LGPL version 3 (Dual License)|||"
 baf,---|||- BSD-3-Clause|||
 baffle,
 baf-testing,---|||- BSD-3-Clause|||
@@ -8931,8 +8895,6 @@ bag42_geocoder,--- |||...|||
 bagatelle,---|||- MIT|||
 bagboy,---|||- MIT|||
 bagger,--- []|||
-bagibagshay,--- []|||
-bagibagshay,--- []|||
 bagibagshay,--- []|||
 bagira,---|||- MIT|||
 bagit,---|||- MIT|||
@@ -9248,7 +9210,6 @@ barber,--- []|||
 barber-emblem,--- []|||
 barby,--- []|||
 barby-chunky_png,
-barby-pdf417,---|||- MIT|||
 barby-pdf417,---|||- MIT|||
 barcade,---|||- MIT|||
 barchart,--- []|||
@@ -9652,7 +9613,6 @@ bayes_on_redis_internal,--- |||...|||
 Bayeux,
 bayeux-rack,
 bayon,
-bayon,
 bayonet,---|||- MIT|||
 bayonet_client,---|||- MIT|||
 bayuploader,
@@ -9734,8 +9694,6 @@ bbr,---|||- MIT|||
 BBRedCloth,--- []|||
 bbrowning-bossman,--- []|||
 bbrowning-deltacloud-client,
-bbrowning-deltacloud-client,
-bbrowning-deltacloud-core,
 bbrowning-deltacloud-core,
 bbrowning-ponder,--- |||...|||
 bbrowning-twitter-search,--- []|||
@@ -9835,18 +9793,9 @@ bcpm,
 bc-require-google-auth,---|||- MIT|||
 bc-rspec-matchers,
 bcrypt,---|||- MIT|||
-bcrypt,---|||- MIT|||
-bcrypt,---|||- MIT|||
-bcrypt,---|||- MIT|||
 bcrypt4,---|||- MIT|||
 bcrypt_hmac,---|||- MIT|||
 bcrypt_pbkdf,---|||- MIT|||
-bcrypt_pbkdf,---|||- MIT|||
-bcrypt_pbkdf,---|||- MIT|||
-bcrypt-ruby,---|||- MIT|||
-bcrypt-ruby,---|||- MIT|||
-bcrypt-ruby,---|||- MIT|||
-bcrypt-ruby,---|||- MIT|||
 bcrypt-ruby,---|||- MIT|||
 bcrypt-ruby-maglev-,--- |||...|||
 bcs-interrogator,---|||- GPL-3|||
@@ -10147,11 +10096,7 @@ bejar,---|||- MIT|||
 bekkopen-jansicolor,--- []|||
 bekkopen-warbler,--- []|||
 bel,---|||- Apache-2.0|||
-bel,---|||- Apache-2.0|||
-bel,---|||- Apache-2.0|||
 belafonte,---|||- MIT|||
-belgium_2050_model,---|||- MIT|||
-belgium_2050_model,---|||- MIT|||
 belgium_2050_model,---|||- MIT|||
 believer,---|||- Apache License 2.0|||
 belka,---|||- MIT|||
@@ -10176,14 +10121,12 @@ belongs_to_remote,---|||- MIT|||
 belongs_to_versioned,
 belorussian,
 bel_parser,---|||- Apache-2.0|||
-bel_parser,---|||- Apache-2.0|||
 belphanior-2412n-servant,--- |||...|||
 belphanior-calendar-watcher-servant,--- |||...|||
 belphanior-servant,--- |||...|||
 belphanior-speech-servant,
 belphanior-time-servant,--- |||...|||
 bel-rdf-jena,---|||- Apache-2.0|||
-bel-search-sqlite,---|||- Apache-2.0|||
 bel-search-sqlite,---|||- Apache-2.0|||
 beluga,
 belzebuth,---|||- apache-2.0|||
@@ -10374,7 +10317,6 @@ berry,
 Berserker,---|||- MIT|||
 berserker_knuckleheads_game,---|||- MIT|||
 bert,
-bert,
 berta,"---|||- Apache License, Version 2.0|||"
 bertclient,
 bertclient_new,
@@ -10469,7 +10411,6 @@ better_counters,--- |||...|||
 better_csv,---|||- MIT|||
 better_date_picker,---|||- MIT|||
 better_date_to_s,--- |||...|||
-better_date_to_s,
 better_delayed_job_web,---|||- MIT|||
 better_delegation,
 betterdocs,--- []|||
@@ -10892,12 +10833,10 @@ bindi,---|||- MIT|||
 bin_diesel,---|||- New BSD License|||
 binding_dumper,---|||- MIT|||
 binding_ninja,--- []|||
-binding_of_caller,--- []|||
 binding_of_caller,--- |||...|||
 binding_of_callers,---|||- MIT|||
 binding.repl,---|||- MIT|||
 bindings,---|||- MIT|||
-bind-it,--- []|||
 bind-it,--- []|||
 bindle,---|||- MIT|||
 bindler,---|||- MIT|||
@@ -10960,7 +10899,6 @@ binToDec,---|||- MIT|||
 bintray,---|||- MIT|||
 bintray-client-ruby,---|||- MIT|||
 bintray_deploy,--- []|||
-bin_utils,--- []|||
 bin_utils,--- []|||
 binya,---|||- Apache|||
 binyo,---|||- MIT|||
@@ -11044,7 +10982,6 @@ bio-location-rdfize,---|||- MIT|||
 bio-locus,---|||- MIT|||
 bio-logger,--- |||...|||
 bio-maf,--- |||...|||
-bio-maf,
 biomart,
 biome,---|||- MIT|||
 biomodel_client,
@@ -11113,7 +11050,6 @@ bip_mnemonic,--- []|||
 bipolar,
 Bira-sweat_shop,--- []|||
 birb,
-birch,--- []|||
 birch,--- []|||
 bird,---|||- MIT|||
 birdbath,
@@ -11232,7 +11168,6 @@ bitcoin_ticker,---|||- MIT|||
 bitcointoyou,---|||- MIT|||
 bitcoin_value,---|||- MIT|||
 bit_core,---|||- MIT|||
-bit_counter,---|||- MIT|||
 bit_counter,---|||- MIT|||
 bitcourier,---|||- MIT|||
 bitcurex,--- []|||
@@ -11366,7 +11301,6 @@ bittrex_api,---|||- MIT|||
 bit-twiddle,---|||- None (Public Domain)|||
 bitty,
 bit_utils,---|||- MIT|||
-bit_utils,---|||- MIT|||
 bitvector,---|||- MIT|||
 bit_vector,---|||- MIT|||
 bit_wallet,--- []|||
@@ -11411,7 +11345,6 @@ bjam_it,---|||- MIT|||
 BJClark-sinatra-content-for,--- []|||
 bjeanes-capybara,
 bjeanes-geokit,
-bjeanes-ghost,--- []|||
 bjeanes-ghost,--- []|||
 bjeanes-harsh,--- []|||
 bjeanes-holidays,
@@ -11796,7 +11729,6 @@ block_configurable,---|||- MIT|||
 blockcypher-client,---|||- MIT|||
 blockcypher-ruby,---|||- Apache 2.0|||
 blockenspiel,---|||- BSD-3-Clause|||
-blockenspiel,
 blockers-cli-app,---|||- MIT|||
 block_explorer,
 blockfolio,---|||- MIT|||
@@ -11951,8 +11883,6 @@ bluecap,--- |||...|||
 bluecat,---|||- MIT|||
 bluecherries,---|||- WTFPL|||
 bluecloth,
-bluecloth,
-bluecloth,
 BlueCloth,
 bluecoat,--- []|||
 bluecollar-client,---|||- EPL-V10|||
@@ -12016,7 +11946,6 @@ blue_shell,--- []|||
 blue-shell,---|||- MIT|||
 blueshift,---|||- MIT|||
 blue-shift,--- []|||
-blue_shoes,
 blue_shoes,
 bluesky,---|||- MIT|||
 blue_sparks,
@@ -12176,8 +12105,6 @@ bobthebot,
 bob_the_builder,--- |||...|||
 bob-the-builder,
 boc,
-boc,
-boc,
 bocadillo,---|||- MIT|||
 boca-golf,--- |||...|||
 boconnect_theme,
@@ -12275,7 +12202,6 @@ bona_fide,---|||- MIT|||
 bonanza-ruby-opencv,---|||- The BSD License|||
 bon_chance,---|||- MIT|||
 bond,---|||- MIT|||
-bond,---|||- MIT|||
 bondage,
 bondie,---|||- MIT|||
 bondo,---|||- MIT|||
@@ -12300,7 +12226,6 @@ bones-rails,---|||- MIT|||
 bones-rcov,
 bones-rpc,---|||- MIT|||
 bones-rpc-adapter-erlang,---|||- MIT|||
-bones-rpc-adapter-msgpack,---|||- MIT|||
 bones-rpc-adapter-msgpack,---|||- MIT|||
 bones-rpc-celluloid,---|||- MIT|||
 bones-rspec,
@@ -12421,8 +12346,6 @@ bookyt_projects,---|||- MIT|||
 bookyt_salary,---|||- MIT|||
 bookyt_stock,--- |||...|||
 bool,--- []|||
-bool,--- []|||
-bool,--- []|||
 boolean,
 boolean2,---|||- MIT|||
 boolean_accessor,---|||- MIT|||
@@ -12487,7 +12410,6 @@ bootsaas,---|||- MIT|||
 bootscaf,---|||- MIT|||
 bootscale,--- []|||
 bootscript,---|||- MIT|||
-bootsnap,---|||- MIT|||
 bootsnap,---|||- MIT|||
 bootspec,---|||- MIT|||
 bootstra386-rails,---|||- MIT|||
@@ -12731,7 +12653,6 @@ bort,
 bos,---|||- MIT|||
 bos_client,---|||- MIT|||
 bosdk,
-bosdk,
 bosdk_designer,
 bosh4r,
 bosh_agent,---|||- Apache 2.0|||
@@ -12944,7 +12865,6 @@ bowties,---|||- MIT|||
 bowtie-start,---|||- MIT|||
 box,--- []|||
 box2d,
-box2d,
 Box2d,
 box2d-rails,--- []|||
 boxafe,---|||- MIT|||
@@ -13110,7 +13030,6 @@ braintree_lyre,--- []|||
 braintree_query,
 braintree-rails,---|||- MIT|||
 brainy,---|||- MIT|||
-brainy,---|||- MIT|||
 brainyquote,---|||- MIT|||
 brainy_zip_scraper,---|||- MIT|||
 brainz,--- |||...|||
@@ -13257,9 +13176,7 @@ break_gem_install,---|||- MIT|||
 breaking-news,---|||- MIT|||
 breakneck,
 breakout,--- |||...|||
-breakout_parser,
 breakout_parser,--- []|||
-breakout_parser,
 breakpoint,---|||- MIT|||- GPL-2.0|||
 breakpoint_calculator,---|||- MIT|||
 breakpointer-surveyor,--- []|||
@@ -13614,7 +13531,6 @@ brunossilveira-profiler,---|||- MIT|||
 brush,
 brute_force,---|||- MIT|||
 brute-fuzzy,
-brute-fuzzy,
 bruter,
 brute_squad,
 brutetools,
@@ -13630,7 +13546,6 @@ bryan-ash-wx-nobbie,--- []|||
 bryanlarsen-railroad,--- []|||
 bryanlarsen-rubydoctest,--- []|||
 bryanl-gherkin,--- |||...|||
-bryanl-gherkin,
 bryanl-skype,
 bryanl-xmpp4r,--- []|||
 bryanp-adviser,--- []|||
@@ -13672,8 +13587,6 @@ bsm-sso-client,--- []|||
 bsn,--- []|||
 bsns,---|||- MIT|||
 bsod,---|||- GPL-3.0|||
-bson,
-bson,---|||- Apache License Version 2.0|||
 bson,---|||- Apache License Version 2.0|||
 bson_ext,---|||- Apache License Version 2.0|||
 bson_ext_ns,--- |||...|||
@@ -13912,8 +13825,6 @@ buildpack-support,"---|||- Apache License, Version 2.0|||"
 buildpack-utils,---|||- Apache-2.0|||
 build_promotion_tool,---|||- MIT|||
 buildr,---|||- Apache-2.0|||
-buildr,---|||- Apache-2.0|||
-buildr,---|||- Apache-2.0|||
 Buildr,
 buildr4osgi,
 buildr-ajc,
@@ -13928,13 +13839,11 @@ buildr-findBugs,
 buildr-gemjar,
 buildr-iidea,
 buildr-ipojo,
-buildrizpack,
 buildrizpack,--- |||...|||
 buildr-jaxb-xjc,
 buildr-mirah,
 buildr-package-as-exe,
 buildr-resolver,--- |||...|||
-buildr-resolver,
 buildr-tomcat,
 buildserver,---|||- MIT|||
 build_status_server,--- |||...|||
@@ -14042,7 +13951,6 @@ bunch_api,---|||- MIT|||
 buncher,---|||- MIT|||
 bunchr,--- []|||
 buncker,---|||- BSD-3-CLAUSE|||
-bundesstrasse,--- []|||
 bundesstrasse,--- []|||
 bundix,---|||- MIT|||
 bundle,
@@ -14315,7 +14223,6 @@ butterfli-rails,---|||- MIT|||
 butterfly,
 butterfly_net,
 butternut,
-butternut,
 butternut_squash,---|||- MIT|||
 butter_sand,---|||- MIT|||
 butterware-kashflow,---|||- MIT|||
@@ -14399,7 +14306,6 @@ byte_array,---|||- MIT|||
 byteboozer2,---|||- MIT|||
 byte_buffer,---|||- MIT|||
 byte_helper,---|||- MIT|||
-bytepump,---|||- MIT|||
 bytepump,---|||- MIT|||
 bytes_converter,--- []|||
 bytetool,--- |||...|||
@@ -14622,7 +14528,6 @@ cache_stats,---|||- MIT|||
 cache_store,---|||- MIT|||
 cache-store-api,--- |||...|||
 cache_store_redis,---|||- MIT|||
-cache_store_redis,---|||- MIT|||
 cachet,
 cachet_api,---|||- MIT|||
 cachetastic,---|||- MIT|||
@@ -14720,12 +14625,7 @@ caifara-lighthouse-api,--- []|||
 caifara-rSquery,--- []|||
 cail_3of9,--- []|||
 cain,--- |||...|||
-cairo,
 cairo,---|||- Ruby's|||
-cairo,---|||- Ruby's|||
-cairo,---|||- Ruby's|||
-cairo-gobject,---|||- LGPL-2.1+|||
-cairo-gobject,---|||- LGPL-2.1+|||
 cairo-gobject,---|||- LGPL-2.1+|||
 cairo-graph,---|||- MIT|||
 caironoleto-feedtools,--- []|||
@@ -14964,7 +14864,6 @@ callsite,
 call_sp,---|||- MIT|||
 callstack,
 call_stack,
-call_stack,
 call_super,--- []|||
 calltouch_client,---|||- MIT|||
 callwith,
@@ -15018,8 +14917,6 @@ camden_boyd_view_tool,--- []|||
 camdict,---|||- MIT|||
 cameleon,---|||- MIT|||
 camelizable,---|||- MIT|||
-camellia,
-camellia,
 camellia,
 camellia-rb,
 camelot,---|||- MIT|||
@@ -16518,10 +16415,8 @@ carnival_devise_views,---|||- MIT|||
 carnivore,---|||- Apache 2.0|||
 carnivore-actor,---|||- Apache 2.0|||
 carnivore-files,---|||- Apache 2.0|||
-carnivore-files,---|||- Apache 2.0|||
 carnivore-http,---|||- Apache 2.0|||
 carnivore-nsq,---|||- Apache 2.0|||
-carnivore-rabbitmq,---|||- Apache 2.0|||
 carnivore-rabbitmq,---|||- Apache 2.0|||
 carnivore-sqs,---|||- Apache 2.0|||
 carnivore-unixsocket,---|||- Apache 2.0|||
@@ -16643,7 +16538,6 @@ carrierwave-mimetype-magic,---|||- MIT|||
 carrierwave-mongoid,---|||- MIT|||
 carrierwave-mongoid-file-seek,---|||- MIT|||
 carrierwave-ms-azure,---|||- MIT|||
-carrierwave-neo4j,
 carrierwave-neo4j,--- []|||
 carrierwave-neo4j-data-uri,---|||- MIT|||
 carrierwave-nightcrawler-swift,--- []|||
@@ -16873,7 +16767,6 @@ cassandra_complex,---|||- Apache License 2|||
 cassandra-cql,--- []|||
 cassandra_datum,---|||- MIT|||
 cassandra-driver,---|||- Apache License 2.0|||
-cassandra-driver,---|||- Apache License 2.0|||
 cassandra_integration,
 cassandra-jars,
 cassandra_lock,---|||- MIT|||
@@ -16885,7 +16778,6 @@ cassandra_migrations,---|||- MIT|||
 cassandra_mocks,---|||- Apache License 2.0|||
 cassandra_model,---|||- Apache License 2.0|||
 cassandra-model,
-cassandra_model_spark,---|||- Apache License 2.0|||
 cassandra_model_spark,---|||- Apache License 2.0|||
 cassandra_object_rails,--- []|||
 cassandra-orm,--- []|||
@@ -18044,8 +17936,6 @@ cheetah-trousers,--- []|||
 cheezburger,
 cheezmiz,
 chef,---|||- Apache-2.0|||
-chef,---|||- Apache-2.0|||
-chef,---|||- Apache-2.0|||
 chef11-key-dump,---|||- MIT|||
 chef2wiki,---|||- MIT|||
 chef-ab,---|||- Apache License v2|||
@@ -18375,11 +18265,6 @@ chiliproject_invoice,
 chiliproject_side_by_side_wiki_edit,--- []|||
 chili_videos,
 chilkat,---|||- Nonstandard|||
-chilkat,---|||- Nonstandard|||
-chilkat,---|||- Nonstandard|||
-chilkat,---|||- Nonstandard|||
-chilkat,---|||- Nonstandard|||
-chilkat,---|||- CHILKAT|||
 chill,
 chillax,---|||- MIT|||
 chillfile,
@@ -18466,10 +18351,6 @@ chip-gpio,---|||- MIT|||
 chipgps,
 chiplotle-cli-wrapper,---|||- MIT|||
 chipmunk,---|||- MIT|||
-chipmunk,
-chipmunk,--- |||...|||
-chipmunk,
-chipmunk,
 chipmunk_android,---|||- MIT|||
 chipmunk-ffi,
 chipmunk_treasure_island,--- []|||
@@ -19083,7 +18964,6 @@ citrus-compiler,
 citrus-core,--- []|||
 citrus-event-bus,---|||- MIT|||
 citrus-mail,---|||- MIT|||
-citrus_test,
 citrus_test,
 citus-rails,---|||- MIT|||
 citus-rails-4.2,---|||- MIT|||
@@ -19974,21 +19854,13 @@ clustr,---|||- MIT|||
 clutch,
 clutil,---|||- MIT|||
 clutter,---|||- LGPL-2.1+|||
-clutter,---|||- LGPL-2.1+|||
-clutter,---|||- LGPL-2.1+|||
 clutterbuck-core,--- []|||
 clutterbuck-erb,--- []|||
 clutterbuck-request,--- []|||
 clutterbuck-response,--- []|||
 clutterbuck-router,--- []|||
 clutter-gdk,---|||- LGPL-2.1+|||
-clutter-gdk,---|||- LGPL-2.1+|||
-clutter-gdk,---|||- LGPL-2.1+|||
 clutter-gstreamer,---|||- LGPL-2.1+|||
-clutter-gstreamer,---|||- LGPL-2.1+|||
-clutter-gstreamer,---|||- LGPL-2.1+|||
-clutter-gtk,---|||- LGPL-2.1+|||
-clutter-gtk,---|||- LGPL-2.1+|||
 clutter-gtk,---|||- LGPL-2.1+|||
 clwiki,--- []|||
 clx_api,---|||- MIT|||
@@ -20431,7 +20303,6 @@ codemodels-html,---|||- Apache License 2|||
 codemodels-java,---|||- APACHE2|||
 codemodels-javaparserwrapper,---|||- Apache v2|||
 codemodels-js,---|||- APACHE2|||
-codemodels-js,---|||- APACHE2|||
 codemodels-properties,---|||- APACHE 2|||
 codemodels-ruby,---|||- APACHE 2|||
 codemodels-xml,---|||- APACHE 2|||
@@ -20745,7 +20616,6 @@ collapse,--- []|||
 collapsed_routes,
 collapsium,---|||- MITNFA|||
 collapsium-config,---|||- MITNFA|||
-collapstring,---|||- MIT|||
 collapstring,---|||- MIT|||
 collate,---|||- MIT|||
 collavoce,
@@ -21650,15 +21520,7 @@ concurrent-enumerable,---|||- MIT|||
 concurrently,---|||- Apache-2.0|||
 concurrent-polling,---|||- MIT|||
 concurrent-ruby,---|||- MIT|||
-concurrent-ruby,---|||- MIT|||
-concurrent-ruby,---|||- MIT|||
-concurrent-ruby,---|||- MIT|||
-concurrent-ruby,---|||- MIT|||
-concurrent-ruby,---|||- MIT|||
-concurrent-ruby,---|||- MIT|||
 concurrent-ruby-edge,---|||- MIT|||
-concurrent-ruby-ext,---|||- MIT|||
-concurrent-ruby-ext,---|||- MIT|||
 concurrent-ruby-ext,---|||- MIT|||
 concurrent-selectable,
 concurrent-sequential,
@@ -22510,9 +22372,6 @@ coolify,---|||- MIT|||
 coolify_gem,---|||- MIT|||
 coolifyk,---|||- MIT|||
 cool.io,--- []|||
-cool.io,--- []|||
-cool.io,--- []|||
-cool.io,--- []|||
 cool.io-http,
 cool.io-websocket,
 coolline,--- []|||
@@ -22788,7 +22647,6 @@ cosmicrawler,---|||- Ruby|||
 cosmit-suspenders,---|||- MIT|||
 cosmo,
 cosmos,---|||- GPL-3.0|||
-cosmos,---|||- GPL-3.0|||
 cosmos_authentication,
 cosmos-example,---|||- GPL-3.0|||
 cosm-rb,--- []|||
@@ -22824,8 +22682,6 @@ coub_api,---|||- MIT|||
 couch,
 couchapp,
 couchbase,---|||- Apache-2.0|||
-couchbase,---|||- Apache-2.0|||
-couchbase,---|||- Apache-2.0|||
 couchbase-docstore,--- []|||
 couchbase-documentstore,--- |||...|||
 couchbase-eraser,---|||- MIT|||
@@ -22833,10 +22689,7 @@ couchbase-git-scribe,--- []|||
 couchbase-id,---|||- MIT|||
 couchbase-jruby,--- |||...|||
 couchbase-jruby-client,---|||- Apache|||
-couchbase-jruby-client,---|||- Apache|||
 couchbase-jruby-model,---|||- Apache|||
-couchbase_lite_local,---|||- APACHE|||
-couchbase_lite_local,---|||- APACHE|||
 couchbase_lite_local,---|||- APACHE|||
 couchbase-memcached,
 couchbase-model,--- []|||
@@ -22847,7 +22700,6 @@ couchbase-orm,---|||- MIT|||
 couchbase-patterns,--- |||...|||
 couchbase-settings,--- []|||
 couchbase-structures,--- |||...|||
-couchbase-view-helpers,---|||- MIT|||
 couchbase-view-helpers,---|||- MIT|||
 couch_blog,--- []|||
 couchc,
@@ -23099,7 +22951,6 @@ cpp_engine,
 cppjieba_rb,---|||- MIT|||
 cppthor,--- |||...|||
 cpr,
-cpr,
 cpr_adressematch,--- []|||
 cpr-client,---|||- MIT|||
 cprobert-s3sync,--- []|||
@@ -23255,7 +23106,6 @@ crc,---|||- BSD-2-Clause|||- Zlib|||- CC0-1.0|||
 crc32,---|||- GPLv2|||
 crc32_cracker,---|||- MIT|||
 crcs,---|||- MIT|||
-crc-turbo,---|||- BSD-2-Clause|||- CC0-1.0|||
 crc-turbo,---|||- BSD-2-Clause|||- CC0-1.0|||
 crdt,---|||- MIT|||
 creact,---|||- MIT|||
@@ -23728,7 +23578,6 @@ cses,
 csexton-captured,--- []|||
 csexton-ssh-keyput,--- []|||
 csexton-twitter_archive,--- []|||
-cs_fix,
 cs_fix,--- |||...|||
 csg,---|||- MIT|||
 cs-german_l10n,--- []|||
@@ -24095,8 +23944,6 @@ cubie_pin,---|||- MIT|||
 cubism-rails,--- []|||
 cubits,---|||- MIT|||
 cubrid,--- []|||
-cubrid,
-cubrid,
 cubus-settingslogic,
 cuby,
 cuca,---|||- MIT|||
@@ -24180,7 +24027,6 @@ cucumber-salad,---|||- MIT|||
 cucumber_scaffold,
 cucumber-scout,
 cucumber-screenshot,
-cucumber-screenshot,
 cucumber-selenium-standalone,--- |||...|||
 cucumber-sentences,---|||- MIT|||
 cucumber-sinatra,
@@ -24235,7 +24081,6 @@ cuid,--- []|||
 cuit,
 cuit_validator,---|||- MIT|||
 cukable,
-cuke4duke,
 cuke4duke,--- |||...|||
 cuke4nuke,
 cuke4nuke-aslakjo,
@@ -24348,8 +24193,6 @@ curationexperts-mailboxer,--- []|||
 curator,---|||- MIT|||
 curator-jars,--- []|||
 curb,---|||- MIT|||
-curb,
-curb,
 curbala,
 curb-fu,--- |||...|||
 curbit,
@@ -24463,8 +24306,6 @@ curse_client,---|||- MIT|||
 cursed,---|||- MIT|||
 curse-frontend,--- []|||
 curses,---|||- Ruby|||- BSD-2-Clause|||
-curses,---|||- Ruby|||- BSD-2-Clause|||
-curses,---|||- Ruby|||- BSD-2-Clause|||
 curses-pad,--- |||...|||
 cursesx,
 cursetank,--- |||...|||
@@ -24576,7 +24417,6 @@ cuttlebone,
 cuttlefish,--- []|||
 cut_to_files,---|||- MIT|||
 cuuid,
-cuuid,
 cuukie,--- |||...|||
 cuvva_log,---|||- MIT|||
 cuvva_log_sentry,---|||- MIT|||
@@ -24624,7 +24464,6 @@ cwninja-make-gem-now,--- []|||
 cwninja-media_controller,--- []|||
 cwninja-popthis,--- []|||
 cwninja-whenever,--- []|||
-cwords,
 cwords,
 cwp,---|||- MIT|||
 cw_parser,---|||- MIT|||
@@ -24747,8 +24586,6 @@ cziko-sys-mem,--- []|||
 czj-paperclipftp,
 czmq,---|||- MIT|||
 czmq-ffi,---|||- MIT|||
-czmq-ffi-gen,---|||- ISC|||
-czmq-ffi-gen,---|||- ISC|||
 czmq-ffi-gen,---|||- ISC|||
 cztop,---|||- ISC|||
 cztop-reactor,---|||- ISC|||
@@ -25938,7 +25775,6 @@ dbd_data_engine,---|||- MIT|||
 db_debug,--- |||...|||
 dbdiff,
 db_discovery_generator,
-dbd-jdbc,
 dbd-jdbc,--- []|||
 dbd-mysql,
 dbd-odbc,
@@ -25977,8 +25813,6 @@ db-hijacker,--- |||...|||
 dbi,
 dbi18,---|||- MIT|||
 dbi-dbrc,---|||- Apache 2.0|||
-dbi-dbrc,---|||- Apache 2.0|||
-dbi-dbrc,
 dbinbox,---|||- MIT|||
 dbla,---|||- MIT|||
 dbldots_oedipus,--- []|||
@@ -26362,7 +26196,6 @@ decaptcher-recaptcha,--- []|||
 decay,---|||- MIT|||
 decay_heat_with_nuclear,---|||- GPL3.0|||
 decaying_bloomfilter,
-decc_2050_model,---|||- MIT|||
 decc_2050_model,---|||- MIT|||
 decco,---|||- MIT|||
 december,--- []|||
@@ -27059,8 +26892,6 @@ deps,
 depscale,---|||- MIT|||
 dep_selector,---|||- Apache v2|||
 dep-selector-libgecode,---|||- MIT|||- Apache 2.0|||
-dep-selector-libgecode,---|||- MIT|||- Apache 2.0|||
-dep-selector-libgecode,---|||- MIT|||- Apache 2.0|||
 dep_selector_over_http,
 depsio,--- []|||
 depth,---|||- MIT|||
@@ -27319,9 +27150,6 @@ device_tracker,--- []|||
 device-tracker,--- []|||
 device_wizard,---|||- MIT|||
 devicon-rails,---|||- MIT|||
-devil,
-devil,
-devil,
 devil,
 devilicious,---|||- AGPLv3|||
 devinci,--- |||...|||
@@ -27729,7 +27557,6 @@ dialogue,---|||- MIT|||
 dialy,--- |||...|||
 diameter,---|||- MIT|||
 diametric,---|||- MIT|||
-diametric,---|||- MIT|||
 diamond,---|||- Apache-2.0|||
 diamond_invoice,
 diamond-lang,---|||- MIT|||
@@ -27829,7 +27656,6 @@ did_will_sign,--- |||...|||
 did_workling,--- |||...|||
 didww_ups,---|||- MIT|||
 did_you_mean,---|||- MIT|||
-did_you_mean,---|||- MIT|||
 did-you-mean,
 did_you_mean_this_other_thing,---|||- MIT|||
 die,--- |||...|||
@@ -27914,7 +27740,6 @@ diffrenderer,
 diffrent,
 diff_resource,---|||- MIT|||
 diff-runner,---|||- MIT|||
-diff_set,---|||- MIT|||
 diff_set,---|||- MIT|||
 diffshot,---|||- MIT|||
 diff_to_html,---|||- MIT|||
@@ -28260,7 +28085,6 @@ discuss,--- []|||
 discussion,--- []|||
 discuz_robot,
 disel_router,---|||- MIT|||
-disel_router,---|||- MIT|||
 disguise,
 dish,---|||- MIT|||
 disiid_user,---|||- MIT|||
@@ -28372,7 +28196,6 @@ ditch,---|||- MIT|||
 ditchdaddy,
 diter,---|||- MIT|||
 dither,---|||- MIT|||
-dither,---|||- MIT|||
 dito,---|||- MIT|||
 ditto,--- []|||
 ditto_api,---|||- MIT|||
@@ -28404,7 +28227,6 @@ divoxx-patronage,--- []|||
 divoxx-ruby_php_serialization,--- []|||
 divoxx-ruby-php-serialization,--- []|||
 divshare,
-divsufsort,
 divsufsort,
 divvy,--- []|||
 divvy_bike,---|||- MIT|||
@@ -28675,7 +28497,6 @@ dm-json-search,
 dm-keeper-adapter,
 dm-last,
 dm-ldap-adapter,--- []|||
-dm-ldap-adapter,--- []|||
 dm_linters,---|||- MIT|||
 dm_live_resources,---|||- MIT|||
 dm-lock,
@@ -28801,7 +28622,6 @@ dnote,
 dnotify,
 dnp,---|||- MIT|||
 dnrml,
-dns,---|||- MIT|||
 dns,---|||- MIT|||
 dns_adapter,---|||- MIT|||
 dnsapp,
@@ -29287,7 +29107,6 @@ dolores-ruby-crowdflower,--- []|||
 dolores-shacontest,--- []|||
 dolphin,---|||- MIT|||
 dolphindeploy,
-dolphindeploy,
 dolphy,---|||- MIT|||
 dolt,--- []|||
 dolzenko,
@@ -29370,9 +29189,6 @@ domrobot,--- []|||
 dom_routes,---|||- MIT|||
 domtempl,---|||- BSD|||
 do_mysql,--- []|||
-do_mysql,--- []|||
-do_mysql,--- []|||
-do_mysql,--- []|||
 do-my-timecard,---|||- MIT|||
 don,
 donald,
@@ -29430,9 +29246,6 @@ doomy_client,---|||- Apache|||
 doop,---|||- MIT|||
 do_openedge,--- []|||
 do_oracle,--- []|||
-do_oracle,--- []|||
-do_oracle,--- []|||
-do_oracle,--- []|||
 door_code,--- |||...|||
 doorkeeper,---|||- MIT|||
 doorkeeper_assertion_flow,---|||- MIT|||
@@ -29464,9 +29277,6 @@ dopefish,---|||- MIT|||
 dopi,---|||- Apache-2.0|||
 dopis_online_client,--- []|||
 do_postgres,--- []|||
-do_postgres,--- []|||
-do_postgres,--- []|||
-do_postgres,--- []|||
 doppel,---|||- MIT|||
 doppelganger,
 dopplr,
@@ -29492,9 +29302,6 @@ dosire-god,--- []|||
 dosivoxcrmod,---|||- MIT|||
 do_snapshot,---|||- MIT|||
 do_sqlite3,--- []|||
-do_sqlite3,--- []|||
-do_sqlite3,--- []|||
-do_sqlite3,--- []|||
 do_sqlserver,--- []|||
 dossier,---|||- MIT|||
 dossier-segmenter,---|||- MIT|||
@@ -29516,7 +29323,6 @@ dotconfig,---|||- MIT|||
 dot_configure,---|||- MIT|||
 DotCoverRakeTask,---|||- MIT|||
 dotdex,---|||- MIT|||
-dotdiff,---|||- MIT|||
 dotdiff,---|||- MIT|||
 dotdot,--- []|||
 dotenv,---|||- MIT|||
@@ -29983,7 +29789,6 @@ drink-socially,--- []|||
 drink_up_doctor,---|||- MIT|||
 drip,--- []|||
 dripdrop,
-dripdrop,
 dripl,---|||- MIT|||
 dripper,
 dripper_mail,---|||- MIT|||
@@ -30268,7 +30073,6 @@ dsctest,--- []|||
 ds_doc_wrapper,---|||- MIT|||
 dse,---|||- GPL|||
 dse-driver,--- []|||
-dse-driver,--- []|||
 dsf,---|||- MIT|||
 dsf_checker,--- []|||
 dsf-ruby,
@@ -30366,7 +30170,6 @@ dtracer,---|||- MIT|||
 dt-rake,---|||- MIT|||
 dtripper,---|||- MIT|||
 dtsato-callstack,--- []|||
-dtsato-callstack,--- []|||
 dtsato-pipeline,--- []|||
 dtvcontroller,---|||- MIT|||
 dtvEsc,---|||- MIT|||
@@ -30382,7 +30185,6 @@ dubious,
 dublin_bikes,---|||- MIT|||
 duboff-primer,---|||- MIT|||
 dubo-string_extend,--- []|||
-duby,
 duby,
 duck,
 duck_chain,--- []|||
@@ -30448,7 +30250,6 @@ duit,
 duke,
 duke-moip,--- []|||
 dukpt,--- []|||
-duktape,---|||- MIT|||
 duktape,---|||- MIT|||
 dullahan,---|||- MIT|||
 dullard,---|||- MIT|||
@@ -30698,7 +30499,6 @@ dxf_io,---|||- MIT|||
 dx-grid,---|||- MIT|||
 dx-lookup,---|||- MIT|||
 dxmms2,---|||- MPL-2.0|||
-dxruby,---|||- zlib/libpng|||
 dxruby,---|||- zlib/libpng|||
 dxruby_rp5,---|||- MIT|||
 dxruby_sdl,---|||- MIT|||
@@ -32530,7 +32330,6 @@ em-breakout,--- |||...|||
 embroil,---|||- MIT|||
 em-bucketer,---|||- GPL|||
 embulk,---|||- Apache 2.0|||
-embulk,---|||- Apache 2.0|||
 embulk-decoder-commons-compress,---|||- MIT|||
 embulk-decoder-lz4,---|||- MIT|||
 embulk-decoder-remove_nonstandard_utf8_bytes,---|||- MIT|||
@@ -32751,7 +32550,6 @@ embulk-parser-xpath,---|||- MIT|||
 embulk-plugin-filter-convert,---|||- MIT|||
 embulk-plugin-filter-grep,---|||- MIT|||
 embulk-plugin-input-hbase,---|||- Apache 2.0|||
-embulk-plugin-input-hbase,---|||- Apache 2.0|||
 embulk-plugin-input-jstat,---|||- MIT|||
 embulk-plugin-input-pcapng-files,---|||- Apache 2.0|||
 embulk-plugin-input-random,---|||- MIT|||
@@ -32808,7 +32606,6 @@ em-fastimage,---|||- MIT|||
 em-files,---|||- MIT|||
 em-file-utils,---|||- MIT|||
 em-filewatcher,--- []|||
-emf_jruby,--- []|||
 emf_jruby,--- []|||
 em-flickraw,
 emfrp,---|||- The BSD 3-Clause License|||
@@ -33306,7 +33103,6 @@ engineyard-serverside,---|||- MIT|||
 engineyard-serverside-adapter,---|||- MIT|||
 engineyard-theme,
 engineyard-visualvm,--- |||...|||
-engineyard-visualvm,
 enginizer,--- []|||
 englify,
 english,
@@ -34010,7 +33806,6 @@ errbit_redmine_plugin,---|||- MIT|||
 errbit_trac_plugin,---|||- MIT|||
 errbit_unfuddle_plugin,---|||- MIT|||
 errbit_zmq_handler,
-errbit_zmq_handler,
 errdb,
 errdo,---|||- MIT|||
 errgent,---|||- MIT|||
@@ -34074,7 +33869,6 @@ erubis-cached-text,--- []|||
 erubis_for_rails23,---|||- GPLv3|||
 erubis_rails_helper,
 erudite,---|||- MIT|||
-erv,---|||- MIT|||
 erv,---|||- MIT|||
 erwaller-twitter,--- []|||
 es,--- []|||
@@ -34192,7 +33986,6 @@ esplanade,---|||- MIT|||
 espn,---|||- MIT|||
 espn-fantasy-news,
 espn_rb,--- |||...|||
-espnscrape,---|||- ''|||
 espnscrape,---|||- Apache-2.0|||
 espn_scraper,--- []|||
 espn-tennis-cli-app,---|||- MIT|||
@@ -34289,8 +34082,6 @@ etcenv,---|||- MIT|||
 etch,--- []|||
 Etch,
 et_cms,--- []|||
-etcutils,---|||- MIT|||
-etcutils,---|||- MIT|||
 etcutils,---|||- MIT|||
 etcweb,---|||- MIT|||
 etd_model,--- []|||
@@ -34393,16 +34184,10 @@ eurus-weibo-commercial,---|||- MIT|||
 eurydice,--- []|||
 eusplazio,
 euston,
-euston,
 euston-daemons,--- |||...|||
-euston-daemons,
 euston-eventstore,--- |||...|||
-euston-eventstore,
-euston-projections,
 euston-projections,
 euston-rabbitmq,
-euston-rabbitmq,
-euston-websites,
 euston-websites,
 eutils,--- []|||
 ev,---|||- MIT|||
@@ -34521,11 +34306,6 @@ event_logger,---|||- MIT|||
 event-logger,---|||- BSD-2-Clause|||
 evently,--- []|||
 evently-omniauth-eventbrite,--- []|||
-eventmachine,
-eventmachine,--- []|||
-eventmachine,---|||- Ruby|||- GPL-2.0|||
-eventmachine,---|||- Ruby|||- GPL-2.0|||
-eventmachine,---|||- Ruby|||- GPL-2.0|||
 eventmachine,---|||- Ruby|||- GPL-2.0|||
 event_machine,--- []|||
 eventmachinealignedperiodic,---|||- MIT|||
@@ -34537,7 +34317,6 @@ eventmachine-email_server-sqlite3,---|||- MIT|||
 eventmachine-eventmachine,--- []|||
 eventmachine-eventmachine_httpserver,--- []|||
 event_machine_flush,
-eventmachine_httpserver,
 eventmachine_httpserver,
 eventmachine_httpserver_update,--- []|||
 eventmachine-irc-server,---|||- MIT|||
@@ -34563,11 +34342,8 @@ eventpublisher,
 event_publisher,--- []|||
 event-pub-sub,--- []|||
 eventq_aws,---|||- MIT|||
-eventq_aws,---|||- MIT|||
-eventq_base,---|||- MIT|||
 eventq_base,---|||- MIT|||
 eventql,---|||- MIT|||
-eventq_rabbitmq,---|||- MIT|||
 eventq_rabbitmq,---|||- MIT|||
 eventr,---|||- GPLv2|||
 event_registry_api,---|||- MIT|||
@@ -34689,8 +34465,6 @@ evil_icons,---|||- MIT|||
 evilmarty_activity_stream,--- []|||
 evil_pdf,--- []|||
 evil-proxy,---|||- MIT|||
-evilr,
-evilr,
 evilr,
 evil-ruby,
 evil-seed,---|||- MIT|||
@@ -35208,7 +34982,6 @@ ex_struct,
 ext,--- []|||
 extant,---|||- MIT|||
 extattr,---|||- 2-clause BSD License|||
-extattr,---|||- 2-clause BSD License|||
 ext_bundler,---|||- MIT|||
 ext_capistrano,---|||- MIT|||
 ext_check,---|||- MIT|||
@@ -35287,9 +35060,7 @@ extjs-xtheme,
 extlib,--- []|||
 extlib_lite,
 extlib-present,
-extlz4,---|||- 2-clause BSD License|||
 extlz4,---|||- BSD-2-Clause|||
-extlzma,---|||- BSD-2-Clause|||
 extlzma,---|||- BSD-2-Clause|||
 extmath,
 extoptparse,---|||- AGPL-3.0|||
@@ -35306,10 +35077,6 @@ extract_artist_track,--- []|||
 extract_book_struct,--- []|||
 extractcontent,
 extract_curves,
-extract_curves,
-extract_curves,
-extract-curves,
-extract-curves,
 extract-curves,
 extracted_validator,---|||- MIT|||
 extracter,---|||- GPL-2.0|||
@@ -35350,7 +35117,6 @@ extruding-hash,--- |||...|||
 ext_shell,---|||- MIT|||
 ex_twitter,---|||- MIT|||
 extzstd,---|||- BSD-2-Clause|||
-extzstd,---|||- 2-clause BSD License|||
 ex_ua,---|||- MIT|||
 exvo_auth,---|||- MIT|||
 exvo-auth,
@@ -35683,9 +35449,6 @@ facon,
 fact,
 factbook,---|||- Public Domain|||
 fact_checker,---|||- MIT|||
-facter,--- []|||
-facter,--- []|||
-facter,--- []|||
 facter,--- []|||
 facterdb,---|||- Apache-2.0|||
 facteur,--- |||...|||
@@ -36308,7 +36071,6 @@ faster_xml_simple_reader,--- |||...|||
 fastest,--- |||...|||
 fas_test,
 fastest-csv,--- []|||
-fastest-csv,--- []|||
 fast_excel,---|||- MIT|||
 fast_ext,--- []|||
 fast_filter,---|||- MIT|||
@@ -36538,7 +36300,6 @@ fastly_fluent,---|||- MIT|||
 fastly_nsq,---|||- MIT|||
 fastly-rails,--- []|||
 fastlz,
-fastlz,
 fast-mailer,
 fast_method_source,---|||- Zlib|||
 fast_nearest_latlng,
@@ -36562,9 +36323,7 @@ fastreader,
 fast_require,
 fastri,
 fast-rsa-engine,---|||- MIT|||
-fast-rsa-engine,---|||- MIT|||
 fastruby,--- |||...|||
-fast_secure_compare,---|||- MIT|||
 fast_secure_compare,---|||- MIT|||
 fast_seeder,--- []|||
 fast_send,---|||- MIT|||
@@ -36582,7 +36341,6 @@ faststrap,---|||- MIT|||
 fast_struct,--- []|||
 fast_submission_protection,
 fasttest,--- []|||
-fastthread,
 fastthread,
 fast_timestamp,
 fasttrack,--- []|||
@@ -36692,7 +36450,6 @@ faye_shards,
 faye-tls1-websocket,---|||- MIT|||
 faye_tracking,---|||- MIT|||
 faye-websocket,---|||- MIT|||
-faye-websocket,--- []|||
 fay-rails,---|||- MIT|||
 fazscore,
 fb,---|||- MIT|||
@@ -37148,10 +36905,6 @@ ffffound_parser,---|||- MIT|||
 fffs,--- []|||
 fff-theme,---|||- MIT|||
 ffi,---|||- BSD-3-Clause|||
-ffi,---|||- BSD-3-Clause|||
-ffi,---|||- BSD-3-Clause|||
-ffi,---|||- BSD-3-Clause|||
-ffi,
 ffi2,--- []|||
 ffi2-generators,---|||- BSD|||
 ffi-additions,---|||- MIT|||
@@ -37237,7 +36990,6 @@ ffi-vix_disk_lib,---|||- APL 2.0|||
 ffi-win32-extensions,---|||- Apache 2.0|||
 ffi-wingui-core,---|||- MIT|||
 ffi-xattr,--- []|||
-ffi-yajl,---|||- MIT|||
 ffi-yajl,---|||- MIT|||
 ffi-zlib,
 fflux,---|||- MIT|||
@@ -37396,15 +37148,8 @@ fifthed_sim,---|||- MIT|||
 fifthgear,---|||- MIT|||
 fifty,--- []|||
 fiftyfifty,
-fig,
 fig,---|||- BSD|||
-fig,--- |||...|||
-fig18,
 fig18,--- |||...|||
-fig18,--- |||...|||
-fig18,--- |||...|||
-fig18,
-fig18,
 fig2coreos,---|||- MIT|||
 figaro,---|||- MIT|||
 figaro2eb,---|||- MIT|||
@@ -37480,7 +37225,6 @@ filedots,
 file_duration,---|||- GPL-2.0|||
 file_editor,--- []|||
 file_editor_cli,--- []|||
-file-find,
 file-find,---|||- Artistic 2.0|||
 file_finder,---|||- MIT|||
 filefm,--- |||...|||
@@ -37946,8 +37690,6 @@ firephruby,
 fire_poll,
 firering,--- []|||
 fireruby,
-fireruby,
-fireruby,
 firescan,--- []|||
 fireside-finder,---|||- Apache-2.0|||
 firestarter,
@@ -38108,7 +37850,6 @@ fivemat,--- []|||
 fiveminutes,---|||- MIT|||
 five_minutes,---|||- MIT|||
 five-minutes,---|||- MIT|||
-five_mobile_push,
 five_mobile_push,--- |||...|||
 fivepointssolutions-fivepointssolutions-serve,--- []|||
 fivepointssolutions-serve,--- []|||
@@ -38676,8 +38417,6 @@ flirt_checker,---|||- MIT|||
 flisol_sort,---|||- MIT|||
 flist,--- []|||
 flite,---|||- 2-clause BSD-style license|||
-flite,---|||- 2-clause BSD-style license|||
-flite,---|||- 2-clause BSD-style license|||
 flite4r,
 flix,
 flix4r,
@@ -38737,7 +38476,6 @@ floripa-public-transit,---|||- MIT|||
 florrick,---|||- MIT|||
 floss,--- []|||
 flote,
-flot-graph-rails,--- []|||
 flot-graph-rails,--- []|||
 flotilla_js_rails,---|||- MIT|||
 flotilla-js-rails,---|||- MIT|||
@@ -38814,8 +38552,6 @@ fluent_builder,
 fluent-client,---|||- MIT|||
 fluent_command_builder,--- []|||
 fluent_conditions,--- |||...|||
-fluentd,---|||- Apache-2.0|||
-fluentd,---|||- Apache-2.0|||
 fluentd,---|||- Apache-2.0|||
 fluentd-plugin-aliyun-odps,---|||- Apache-2.0|||
 fluentd-server,---|||- MIT|||
@@ -40112,10 +39848,6 @@ foreign_model,
 foreign_office,---|||- MIT|||
 forem,--- |||...|||
 foreman,---|||- MIT|||
-foreman,---|||- MIT|||
-foreman,
-foreman,
-foreman,---|||- MIT|||
 foreman_abrt,---|||- GPL-3.0|||
 foreman_admin,---|||- GPL-3|||
 foreman_ansible,---|||- GPL-3.0|||
@@ -40493,7 +40225,6 @@ forte_ruby,---|||- MIT|||
 fortifier,--- []|||
 fortify,
 fortitude,---|||- MIT|||
-fortitude,---|||- MIT|||
 fortitude-caching,---|||- MIT|||
 fortitude-sass,---|||- MIT|||
 fortmux,
@@ -40822,8 +40553,6 @@ fredo,
 fredric,---|||- MIT|||
 fredwu-sequel-rails,
 free,--- |||...|||
-free,
-free,
 freeagent,
 free_agent,
 freeagent_api,
@@ -41167,7 +40896,6 @@ fsl-ruby,--- []|||
 fsm,
 fson,---|||- MIT|||
 fspath,---|||- MIT|||
-fspath,--- |||...|||
 fspath-mac,---|||- MIT|||
 fspath-xattr,---|||- MIT|||
 fspsocket,
@@ -41591,13 +41319,6 @@ fxos_rails,--- []|||
 fxpotato,---|||- MIT|||
 fxri,
 fxruby,---|||- LGPL-2.1|||
-fxruby,---|||- LGPL-2.1|||
-fxruby,
-fxruby,
-fxruby,---|||- LGPL-2.1|||
-fxruby,
-fxruby,
-fxruby,
 fxruby-enhancement,---|||- MIT|||
 fx_street,---|||- MIT|||
 fx-tftp,---|||- BSD-2-Clause|||
@@ -41785,7 +41506,6 @@ GameGrid,---|||- MIT|||
 game_icons,---|||- MIT|||
 gameidea,--- []|||
 gamekey,---|||- MIT|||
-gamelan,
 gamelan,
 game_life,---|||- MIT|||
 gamelocker_api,---|||- MIT|||
@@ -42084,15 +41804,7 @@ gcal-ruby,
 gcal-unit,--- |||...|||
 gcb,---|||- MIT|||
 gcc-to-clang-analyzer,---|||- MIT|||
-gccxml_gem,
 gccxml_gem,--- |||...|||
-gccxml_gem,
-gccxml_gem,
-gccxml_gem,
-gccxml_gem,
-gccxml_gem,
-gccxml_gem,
-gccxml_gem,
 gcd,---|||- MIT|||
 gc-datastore,---|||- MIT|||
 gcdfinder,---|||- MIT|||
@@ -42151,8 +41863,6 @@ gctools,---|||- MIT|||
 gctools-rails,---|||- MIT|||
 gc_tracer,---|||- MIT|||
 gc-trigger,---|||- LGPL-3.0+|||
-gc-trigger,---|||- LGPL-3.0+|||
-gc-trigger,---|||- LGPL-3.0+|||
 gcx_api,--- []|||
 gd,---|||- MIT|||
 gd2,
@@ -42201,11 +41911,7 @@ gdi-curb-fu,--- []|||
 gdiff,
 gdirections,
 gdk3,---|||- LGPL-2.1+|||
-gdk3,---|||- LGPL-2.1+|||
-gdk3,---|||- LGPL-2.1+|||
 gdkpixbuf,
-gdk_pixbuf2,---|||- LGPL-2.1+|||
-gdk_pixbuf2,---|||- LGPL-2.1+|||
 gdk_pixbuf2,---|||- LGPL-2.1+|||
 gdlc,---|||- GPL-3.0|||
 GDNewsScraper,---|||- MIT|||
@@ -42246,8 +41952,6 @@ gecko-pusher,
 gecko-ruby,---|||- MIT|||
 gecoder,--- []|||
 gecoder-with-gecode,--- []|||
-gecoder-with-gecode,
-gecoder-with-gecode,
 GECS,---|||- Unlicense|||
 gedcom,--- []|||
 gedcom_ruby,---|||- GNU LESSER GENERAL PUBLIC LICENSE|||
@@ -42402,7 +42106,6 @@ gemetics,---|||- MIT|||
 gemexample,---|||- MIT|||
 gem_example,---|||- MIT|||
 gem-example,---|||- Apache 2.0|||
-gem-exefy,
 gem-exefy,
 Gemf,---|||- BHASKAR|||
 gem-fast,
@@ -42808,8 +42511,6 @@ genetic_algorithm,--- |||...|||
 genetic_algorithms,--- []|||
 genetic_framework,
 gen_eval,
-gen_eval,
-gen_eval,
 genevalidator,---|||- AGPL|||
 genevalidatorapp,---|||- AGPL|||
 genfrag,
@@ -43029,7 +42730,6 @@ geoip_city19,--- []|||
 geo_ip_client,--- []|||
 geoip_client,
 geo_ip_curb,
-geoipdb,---|||- MIT|||
 geoipdb,---|||- MIT|||
 geoip-db,---|||- MIT|||
 geoip-extensions,---|||- MIT|||
@@ -43316,7 +43016,6 @@ GetTaoBaoProduct,---|||- MIT|||
 get_tapas,---|||- MIT|||
 gettc,--- []|||
 getter_for,
-gettext,
 gettext,---|||- Ruby or LGPLv3+|||
 gettext_activerecord,
 gettext_column_mapping,
@@ -43462,14 +43161,11 @@ ghazel-newrelic_rpm,--- []|||
 ghazel-pacecar,--- |||...|||
 ghazel-parslet,
 ghazel-POpen4,
-ghazel-POpen4,
 ghazel-purple_ruby,--- []|||
 ghazel-rack-bug,--- |||...|||
 ghazel-rpm_contrib,
 ghazel-slim-attributes,
 ghazel-subdomain_routes,--- |||...|||
-ghazel-SystemTimer,
-ghazel-SystemTimer,
 ghazel-SystemTimer,
 ghazel-truncate_html,
 ghazel-validates_email_format_of,
@@ -43484,13 +43180,6 @@ ghedsh,---|||- MIT|||
 ghee,--- []|||
 gherk,---|||- MIT|||
 gherkin,---|||- MIT|||
-gherkin,
-gherkin,---|||- MIT|||
-gherkin,
-gherkin,---|||- MIT|||
-gherkin,---|||- MIT|||
-gherkin,
-gherkin,
 gherkin3,---|||- MIT|||
 gherkin3_reformat,---|||- MIT|||
 gherkin_format,--- []|||
@@ -43513,7 +43202,6 @@ ghkv,--- []|||
 ghlabel,---|||- WTFPL|||
 ghn,---|||- MIT|||
 ghoa,---|||- MIT|||
-ghost,
 ghost,---|||- MIT|||
 ghost-admin,
 ghost_attributes,
@@ -43696,8 +43384,6 @@ ginspider,---|||- MIT|||
 ginst,
 ginsu,
 gintonic-rails,--- []|||
-gio2,---|||- LGPL-2.1+|||
-gio2,---|||- LGPL-2.1+|||
 gio2,---|||- LGPL-2.1+|||
 gioco,--- []|||
 giocopro,--- []|||
@@ -43999,7 +43685,6 @@ git-gsub-files,---|||- MIT|||
 gitguard,---|||- MIT|||
 gitgut,---|||- MIT|||
 git_guts,--- []|||
-gith,---|||- MIT|||
 gith,---|||- MIT|||
 githabit,---|||- MIT|||
 git-hack,
@@ -44620,7 +44305,6 @@ glassdoor-api,---|||- MIT|||
 glassdoor_scraper,---|||- MIT|||
 glasses,---|||- MIT|||
 glassfish,
-glassfish,
 glassfrog,---|||- MIT|||
 glass_jsc,--- []|||
 glassmirror,---|||- MIT|||
@@ -44687,8 +44371,6 @@ gli,---|||- Apache-2.0|||
 glia,---|||- MIT|||
 gli_aziz_light,--- []|||
 glib2,---|||- LGPL-2.1+|||
-glib2,---|||- LGPL-2.1+|||
-glib2,---|||- LGPL-2.1+|||
 glib-eventable,--- []|||
 glicko2,--- []|||
 glide,--- |||...|||
@@ -44737,8 +44419,6 @@ gl-matrix-rails,--- []|||
 gloater,---|||- MIT|||
 global,---|||- MIT|||
 global_2050_model,--- |||...|||
-global_2050_model,
-global_2050_model,
 global_assets,---|||- MIT|||
 global_boolean,
 globalchat,--- []|||
@@ -44831,8 +44511,6 @@ glrg100,---|||- MIT|||
 gls_agent,---|||- MIT|||
 gltail,
 glu,---|||- MIT|||
-glu,---|||- MIT|||
-glu,---|||- MIT|||
 glub,---|||- Apache 2.0|||
 gluby-tk,---|||- MIT|||
 glue,
@@ -44848,8 +44526,6 @@ gluey,---|||- MIT|||
 gluez,
 glug,---|||- FTWPL|||
 gluhu,--- []|||
-glut,---|||- MIT|||
-glut,---|||- MIT|||
 glut,---|||- MIT|||
 gluttonberg_acts_as_versioned,--- []|||
 gluttonberg-blog,--- []|||
@@ -44951,8 +44627,6 @@ gmo_payment,---|||- MIT|||
 gmo_payment_gem,---|||- MIT|||
 gmo-pg,---|||- MIT|||
 gmp,---|||- Apache-2.0|||
-gmp,
-gmp,
 gmp_ecm,--- |||...|||
 gmpoint,---|||- MIT|||
 gmsec,---|||- MIT|||
@@ -45050,8 +44724,6 @@ gobart,---|||- MIT|||
 gobble,---|||- MIT|||
 gobbler,---|||- MIT|||
 gobgems,---|||- MIT|||
-gobject-introspection,---|||- LGPL-2.1+|||
-gobject-introspection,---|||- LGPL-2.1+|||
 gobject-introspection,---|||- LGPL-2.1+|||
 goblin,--- []|||
 goblin_lackey,---|||- The Unlicense|||
@@ -45217,7 +44889,6 @@ gollum_editor,--- []|||
 gollum-export,--- []|||
 gollum-grit_adapter,---|||- MIT|||
 gollum-lib,---|||- MIT|||
-gollum-lib,---|||- MIT|||
 gollum_rails,---|||- AGPL|||
 gollum-rjgit_adapter,--- []|||
 gollum-rugged_adapter,---|||- MIT|||
@@ -45265,14 +44936,12 @@ gonzalez,---|||- GPL-3.0|||
 gonzo,---|||- Apache-2.0|||
 gonzo_array_extensions,
 gonzui,
-gonzui,
 gonzui-emacs,
 goo,--- []|||
 gooa,---|||- MIT|||
 goobalize3,
 gooby,
 Gooby,
-goocanvas,
 goocanvas,---|||- LGPLv2.1 or later|||
 gooch_view_tool,---|||- MIT|||
 good,---|||- MIT|||
@@ -45284,10 +44953,8 @@ gooddata-bricks,---|||- BSD|||
 gooddata-bricks-poc,---|||- MIT|||
 gooddata_datawarehouse,---|||- MIT|||
 gooddata-dss-jdbc,---|||- BSD|||
-gooddata-dss-jdbc,--- []|||
 gooddata-dss-sequel,--- []|||
 gooddata_eloqua,---|||- MIT|||
-gooddata_marketo,---|||- MIT|||
 gooddata_marketo,---|||- MIT|||
 gooddata_s3,---|||- MIT|||
 goodercode-zune,
@@ -45553,12 +45220,6 @@ google-prediction,
 google_prettify_rails,---|||- MIT|||
 google_product_type_taxonomy,---|||- MIT|||
 google-protobuf,---|||- BSD-3-Clause|||
-google-protobuf,---|||- BSD-3-Clause|||
-google-protobuf,---|||- BSD-3-Clause|||
-google-protobuf,---|||- BSD-3-Clause|||
-google-protobuf,---|||- BSD-3-Clause|||
-google-protobuf,---|||- BSD-3-Clause|||
-google-protobuf,---|||- BSD-3-Clause|||
 googlepub,---|||- MIT|||
 google-pubsub-enhancer,---|||- MIT|||
 google-qr,
@@ -45739,16 +45400,6 @@ gossiper,---|||- MIT|||
 gossiperl_client,---|||- MIT|||
 go_static,
 gost_frames,
-gosu,
-gosu,
-gosu,
-gosu,---|||- MIT|||
-gosu,
-gosu,---|||- MIT|||
-gosu,--- |||...|||
-gosu,
-gosu,
-gosu,
 gosu,---|||- MIT|||
 gosu_android,---|||- MIT|||
 gosu_api,---|||- MIT|||
@@ -46219,7 +45870,6 @@ graph-rails,--- |||...|||
 graph-rank,--- []|||
 graph-reader,---|||- MIT|||
 graph-ruby,---|||- MIT|||
-graphs,---|||- MIT|||
 graphs,---|||- MIT|||
 graphshaper,--- []|||
 graph_starter,---|||- MIT|||
@@ -46709,7 +46359,6 @@ growl,
 growl-ampelmaennchen,
 growl-amqp,
 growl-atom,
-growl-atom,
 growl_car,---|||- MIT|||
 growl-down,
 growlfire,
@@ -46737,11 +46386,6 @@ growth_republic_chat_client,---|||- MIT|||
 growviral-keystore,---|||- MIT|||
 growviral-warehouse,---|||- MIT|||
 grpc,---|||- BSD-3-Clause|||
-grpc,---|||- BSD-3-Clause|||
-grpc,---|||- BSD-3-Clause|||
-grpc,---|||- BSD-3-Clause|||
-grpc,---|||- BSD-3-Clause|||
-grpc,---|||- BSD-3-Clause|||
 grpc-google-iam-v1,---|||- Apache-2.0|||
 grpcgreeter,---|||- MIT|||
 grpc-kit,---|||- MIT|||
@@ -46765,7 +46409,6 @@ grueserve,
 gruesome,
 gruf,--- []|||
 gruf-circuit-breaker,---|||- MIT|||
-gruff,---|||- MIT|||
 gruff,---|||- MIT|||
 gruffy,---|||- MIT|||
 gruf-profiler,---|||- MIT|||
@@ -46825,8 +46468,6 @@ g_sectioned_shower,
 gserver,---|||- Ruby|||
 gset,---|||- MIT|||
 gsf,---|||- LGPL-2.1+|||
-gsf,---|||- LGPL-2.1+|||
-gsf,---|||- LGPL-2.1+|||
 gs_graph,--- []|||
 g_sheets,--- []|||
 gsiener-analytical,--- |||...|||
@@ -46866,8 +46507,6 @@ gst-kitchen,---|||- MIT|||
 gstock,
 gstore,
 gstreamer,---|||- LGPL-2.1+|||
-gstreamer,---|||- LGPL-2.1+|||
-gstreamer,---|||- LGPL-2.1+|||
 gstring,---|||- MIT|||
 gsub_filter,
 gsuper,---|||- GPL-2|||
@@ -46905,8 +46544,6 @@ gtin2atc,---|||- GPL-v2|||
 gtin.rb,---|||- Apache-2.0|||
 gtk,---|||- MIT|||
 gtk2,---|||- LGPL-2.1+|||
-gtk2,---|||- LGPL-2.1+|||
-gtk2,---|||- LGPL-2.1+|||
 gtk2alertapp,
 gtk2applib,--- |||...|||
 gtk2bitcoin,--- []|||
@@ -46931,8 +46568,6 @@ gtk2twitter,
 gtk2_window_settings,---|||- MIT|||
 gtk2youtubeapp,---|||- MIT|||
 gtk3,---|||- LGPL-2.1+|||
-gtk3,---|||- LGPL-2.1+|||
-gtk3,---|||- LGPL-2.1+|||
 gtk3app,---|||- MIT|||
 gtk3assist,---|||- MIT|||
 gtk3webtable,
@@ -46943,10 +46578,7 @@ gtk_minesweeper,---|||- GPL 2|||
 gtk_module,---|||- GPL-2.0|||
 gtkmozembed,
 GtkSimpleLayout,
-gtksourceview2,---|||- LGPL-2.1+|||
 gtksourceview2,---|||- LGPLv2.1 or later|||
-gtksourceview3,---|||- LGPL-2.1+|||
-gtksourceview3,---|||- LGPL-2.1+|||
 gtksourceview3,---|||- LGPL-2.1+|||
 gtk_webkit_pdf,--- []|||
 gtk-webkit-ruby,--- []|||
@@ -47028,7 +46660,6 @@ guard-ctags-composer,--- []|||
 guard-cucumber,---|||- MIT|||
 guard-cucumber-js,
 guard-cunit,--- |||...|||
-guard-cunit,--- []|||
 guard-db,--- |||...|||
 guard-delayed,---|||- MIT|||
 guard-delayed_jobs,---|||- MIT|||
@@ -48882,7 +48513,6 @@ hdfs-viking,---|||- MIT|||
 hdkey,---|||- MIT|||
 hdl,--- []|||
 hdmake,
-hdmake,
 hdo-storting-importer,--- []|||
 HDRHistogram,---|||- MIT|||
 hdsl,---|||- GPL-3.0|||
@@ -49357,11 +48987,6 @@ hermaeus,---|||- MIT|||
 herman-haml-sprockets,
 herman_li,--- []|||
 hermann,---|||- MIT|||
-hermann,---|||- MIT|||
-hermann,---|||- MIT|||
-hermann,---|||- MIT|||
-hermann,---|||- MIT|||
-hermann,---|||- MIT|||
 hermes,--- []|||
 hermes_beacon,---|||- MIT|||
 hermes-bot,---|||- MIT|||
@@ -49588,7 +49213,6 @@ hexx-services,---|||- MIT|||
 hexx-settings,---|||- MIT|||
 hexx-storage,---|||- MIT|||
 hexx-suit,---|||- MIT|||
-hexx-suit,---|||- MIT|||
 hexx-validators,---|||- MIT|||
 hexy,--- []|||
 hey,---|||- MIT|||
@@ -49675,8 +49299,6 @@ hidlib,
 hidr,---|||- MIT|||
 hieb,---|||- MIT|||
 hiera,--- []|||
-hiera,--- []|||
-hiera,--- []|||
 hiera-aws,---|||- Apache 2.0|||
 hiera-backend-consul_backend,---|||- Apache 2.0|||
 hiera-backend-rspec,---|||- Apache 2.0|||
@@ -49716,7 +49338,6 @@ hiera_loader,---|||- Apache-2.0|||
 hiera-mock,---|||- Apache-2.0|||
 hiera-multiyaml,---|||- Apache 2.0|||
 hiera-mysql,--- []|||
-hiera-mysql-backend,---|||- MIT|||
 hiera-mysql-backend,---|||- MIT|||
 hiera-mysql-backend-jruby,---|||- MIT|||
 hiera-mysql-json-backend,---|||- MIT|||
@@ -49917,7 +49538,6 @@ hirb-colors,--- []|||
 hirb-unicode,
 hirb-unicode-steakknife,--- []|||
 hiredis,---|||- BSD-3-Clause|||
-hiredis,---|||- BSD-3-Clause|||
 hirefire,
 hirefireapp,--- []|||
 hirefire-resource,---|||- Apache License|||
@@ -49976,10 +49596,6 @@ hit_counter,--- []|||
 hitdea_reporter,---|||- MIT|||
 hitfox_coupon_api,--- |||...|||
 hitfox-suspenders,---|||- MIT|||
-hitimes,---|||- ISC|||
-hitimes,---|||- ISC|||
-hitimes,---|||- ISC|||
-hitimes,--- []|||
 hitimes,---|||- ISC|||
 hit_list,---|||- MIT|||
 hitman,---|||- GPLv3|||
@@ -50054,7 +49670,6 @@ hmote,---|||- MIT|||
 hmote-render,---|||- MIT|||
 hmrc-moss-return,---|||- MIT|||
 hms,
-hmsearch-postgres,---|||- MIT|||
 hmsearch-postgres,---|||- MIT|||
 hmstools,
 hmtime,
@@ -50651,7 +50266,6 @@ hola_van,
 hola_vanidax,---|||- MIT|||
 hola_van_winkle,--- []|||
 hola_vernistage,---|||- MIT|||
-hola_vernistage,---|||- MIT|||
 hola_vib,---|||- none|||
 holavictor,---|||- MIT|||
 hola-vietnam,---|||- MIT|||
@@ -50808,9 +50422,6 @@ home_page_music,---|||- MIT|||
 homeq,
 homer,
 home_run,--- []|||
-home_run,--- []|||
-home_run,--- []|||
-home_run,
 homeschool,
 homeseed,---|||- MIT|||
 homesick,---|||- MIT|||
@@ -50943,7 +50554,6 @@ hookworm-base,---|||- MIT|||
 hookworm-handlers,---|||- MIT|||
 hooky,
 hooligan495-rcov,--- []|||
-hooligan495-rcov,--- []|||
 hooloo,---|||- MIT|||
 hoolp,---|||- MIT|||
 hoopdydoopdydo,---|||- MIT|||
@@ -50951,7 +50561,6 @@ hoopla_salesforce,
 hoopla-savon,
 hoops,---|||- MIT|||
 hoopscrape,---|||- GPL-3.0|||
-hoopscrape,---|||- GNU GPLv3|||
 hooray,---|||- MIT|||
 hooray_overlay,--- []|||
 Hoornet_string_extend,
@@ -51069,9 +50678,6 @@ hostmanager,--- |||...|||
 hostmon,
 hostnamer,---|||- MIT|||
 hostnet,
-hostor,
-hostor,
-hostor,
 hostor,
 host_range,--- |||...|||
 host-redirector,
@@ -51218,7 +50824,6 @@ hpath,---|||- MIT|||
 hpcloud,--- []|||
 hpcloudmangler,---|||- MIT|||
 hpdf,
-hpdf,
 hpeikemo-flexfarm,--- []|||
 hpess-logstash-codec-cef,---|||- Apache License (2.0)|||
 hpfeeds,---|||- MIT|||
@@ -51229,11 +50834,6 @@ hpoydar-chronic_duration,--- []|||
 hpoydar-compass-aristo-plugin,--- []|||
 hpp,
 hprevalence,
-hpricot,
-hpricot,
-hpricot,
-hpricot,
-hpricot,
 hpricot,--- |||...|||
 hpricot-hpricot,--- []|||
 hpricot_scrub,
@@ -51579,7 +51179,6 @@ httpcap,---|||- MIT|||
 http_capture,---|||- MIT|||
 httpclient,---|||- ruby|||
 http_client,---|||- MIT|||
-http_client,---|||- MIT|||
 http-client,---|||- MIT|||
 httpclient-jgraichen,---|||- ruby|||
 httpclient_link_header,--- []|||
@@ -51653,10 +51252,7 @@ httpotemkin,---|||- MIT|||
 http_parser,
 http-parser,---|||- MIT|||
 http-parser-lite,--- []|||
-http_parser.rb,
 http_parser.rb,---|||- MIT|||
-http_parser.rb,---|||- MIT|||
-http_parser.rb,--- |||...|||
 httpProfiler,---|||- MIT|||
 http_proxy_from_env,---|||- MIT|||
 http_proxy_pool,---|||- MIT|||
@@ -51783,7 +51379,6 @@ hubstep,---|||- MIT|||
 hubtime,--- []|||
 huck,---|||- MIT|||
 huckleberry,---|||- MIT|||
-hucpa,---|||- MIT|||
 hucpa,---|||- MIT|||
 huddle,---|||- MIT|||
 hudkins,
@@ -51985,7 +51580,6 @@ hustle,---|||- MIT|||
 hustle_and_flow,---|||- MIT|||
 hut,---|||- MIT|||
 hutch,---|||- MIT|||
-hutch,---|||- MIT|||
 hutch-rollbar,---|||- MIT|||
 hutch-schedule,---|||- MIT|||
 hutch-xamplr,--- []|||
@@ -51997,8 +51591,6 @@ huxley,---|||- MIT|||
 huyegger,---|||- MIT|||
 huyettings,--- []|||
 hval,---|||- MIT|||
-hvutils,---|||- MIT|||
-hvutils,---|||- MIT|||
 hvutils,---|||- MIT|||
 hw,---|||- MIT|||
 hwacha,---|||- MIT|||
@@ -52432,14 +52024,6 @@ ibge,---|||- MIT|||
 ibham,--- []|||
 iblox,---|||- GPL|||
 ibm-bluemix-service_discovery,---|||- MIT|||
-ibm_db,
-ibm_db,--- []|||
-ibm_db,--- []|||
-ibm_db,--- []|||
-ibm_db,--- []|||
-ibm_db,--- []|||
-ibm_db,--- []|||
-ibm_db,--- []|||
 ibm_db,--- []|||
 IBMhifive,---|||- MIT|||
 ibmi_db,--- []|||
@@ -52450,8 +52034,6 @@ ibo_ipsum,---|||- MIT|||
 iboleto,---|||- MIT|||
 ibot,---|||- MIT|||
 ibotta_geohash,---|||- MIT|||
-ibruby,
-ibruby,
 ibruby,
 ib-ruby,--- []|||
 ibsciss-middleware,---|||- MIT|||
@@ -52618,8 +52200,6 @@ id,---|||- MIT|||
 id2path,
 id3,
 id3dit,---|||- GPL-3.0|||
-id3lib-ruby,
-id3lib-ruby,
 id3lib-ruby,
 id3rename,
 id3tag,---|||- MIT|||
@@ -52978,15 +52558,6 @@ imagecollage,---|||- MIT|||
 image_comparator,---|||- GPL-3.0|||
 image_compressor_for_carrierwave,--- []|||
 image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
-image_compressor_pack,---|||- MIT|||
 imagecore,
 image_corrupter,---|||- MIT|||
 image-crop,---|||- MIT|||
@@ -53018,14 +52589,6 @@ image_optimize,--- []|||
 image_optimizer,---|||- MIT|||
 image-optimizer,---|||- MIT|||
 image_optimizer_holder,---|||- MIT|||
-image_optim_pack,---|||- MIT|||
-image_optim_pack,---|||- MIT|||
-image_optim_pack,---|||- MIT|||
-image_optim_pack,---|||- MIT|||
-image_optim_pack,---|||- MIT|||
-image_optim_pack,---|||- MIT|||
-image_optim_pack,---|||- MIT|||
-image_optim_pack,---|||- MIT|||
 image_optim_pack,---|||- MIT|||
 image_optim_rails,---|||- MIT|||
 image_optim_rake,--- []|||
@@ -53370,8 +52933,6 @@ include,--- |||...|||
 include_any,--- |||...|||
 include_behaviors,
 include_complete,
-include_complete,
-include_complete,
 include_constants,--- []|||
 include_date_scopes,--- []|||
 included-in,
@@ -53495,7 +53056,6 @@ inesita,---|||- MIT|||
 inesita-livereload,---|||- MIT|||
 inesita-router,---|||- MIT|||
 inetmgr,--- []|||
-inetmgr,
 in_every,
 inews_client,--- []|||
 inexact_equality_warning,---|||- MIT|||
@@ -53611,8 +53171,6 @@ infraruby,--- []|||
 infraruby-android,--- []|||
 infraruby-base,---|||- MIT|||
 infraruby-core,---|||- MIT|||
-infraruby-core-compiler,--- []|||
-infraruby-core-compiler,--- []|||
 infraruby-core-compiler,--- []|||
 infraruby-core-runtime,--- []|||
 infraruby-dev,---|||- MIT|||
@@ -54384,7 +53942,6 @@ ion_orders_engine_mockingjay,--- []|||
 io-nosey,---|||- MIT|||
 io-poll,--- []|||
 ioposrw,---|||- 2-clause BSD License|||
-ioposrw,---|||- 2-clause BSD License|||
 ioptimi,---|||- MIT|||
 iopts,
 ioquatix-account_engine,--- []|||
@@ -54671,7 +54228,6 @@ irden,---|||- MIT|||
 i_reach,---|||- MIT|||
 irealb_parser,--- []|||
 irecorder,
-irecorder,
 iremix-ruby,
 iremocon,--- []|||
 iremocon_control,---|||- MIT|||
@@ -54695,7 +54251,6 @@ irobotcreate,
 iroki,---|||- 'GPLv3: http://www.gnu.org/licenses/gpl.txt'|||
 iroki_lib,---|||- 'GPLv3: http://www.gnu.org/licenses/gpl.txt'|||
 iron,--- |||...|||
-ironbuildrake,
 ironbuildrake,
 iron_cache,--- []|||
 iron_cache_rails,--- []|||
@@ -54734,9 +54289,6 @@ iron-settings,---|||- MIT|||
 iron_source_atom,---|||- MIT|||
 iron-spect,---|||- Apache2|||
 irontask,---|||- MIT|||
-iron-term-ansicolor,
-iron-term-ansicolor,
-iron-term-ansicolor,
 iron-term-ansicolor,
 iron_titan,---|||- Apache 2.0|||
 iron-web,---|||- MIT|||
@@ -54823,12 +54375,6 @@ is_crawler,--- []|||
 iscroll-rails,---|||- MIT|||
 isd-color-palette,---|||- MIT|||
 isdoc,---|||- MIT|||
-iseq,
-iseq,
-iseq,
-iseq,
-iseq,
-iseq,
 iseq,
 iseq_collector,---|||- MIT|||
 iseq_rails_tools,---|||- MIT|||
@@ -55245,7 +54791,6 @@ itunes-search-rb,--- |||...|||
 itunes_store_bot,---|||- MIT|||
 itunes_store_transporter,---|||- MIT|||
 itunes_track,---|||- MIT|||
-itunes_transporter_generator,--- []|||
 itunes_transporter_generator,---|||- MIT|||
 itunestweet,---|||- MIT|||
 itunes_validator,---|||- MPL-2.0|||
@@ -55475,7 +55020,6 @@ jacque,--- []|||
 jacques,---|||- MIT|||
 jacqui-versioned,
 jacs,
-jactive_support,
 jactive_support,--- []|||
 jacuzzi,--- |||...|||
 jadala_gem,---|||- MIT|||
@@ -55487,7 +55031,6 @@ jade-rails,---|||- MIT|||
 jade-rails-adapter,---|||- MIT|||
 jade_tools,--- []|||
 jadof,
-jadtfmt,
 jadtfmt,
 jae-client,---|||- MIT|||
 jaeger-client,---|||- MIT|||
@@ -55567,7 +55110,6 @@ jambase,---|||- MIT|||
 jambase_search,---|||- MIT|||
 jambi,---|||- MIT|||
 jamef,---|||- MIT|||
-james,
 james,
 james2m-acts_as_fu,--- []|||
 james_bond,---|||- MIT|||
@@ -55696,7 +55238,6 @@ japr,---|||- MIT|||
 jaql,---|||- MIT|||
 jar,
 jara,---|||- BSD-3-Clause|||
-jara,---|||- BSD-3-Clause|||
 jarbs,--- []|||
 jar-dependencies,---|||- MIT|||
 jar_download,---|||- mit|||
@@ -55715,7 +55256,6 @@ jarib-win32console,--- []|||
 jarl,---|||- MIT|||
 jaro,
 jarodluebbert-twitter_oauth,
-jaro_winkler,---|||- MIT|||
 jaro_winkler,---|||- MIT|||
 jarrett-quarto,--- []|||
 jarrett-rbbcode,--- []|||
@@ -56045,11 +55585,9 @@ jcukeforker,--- []|||
 jc-validates_timeliness,--- []|||
 JD,---|||- MIT|||
 jdbc,---|||- MIT|||
-jdbc,---|||- MIT|||
 jdbc-as400,---|||- IPL-1.0|||
 jdbc-cassandra,--- []|||
 jdbc-crate,---|||- Apache-2|||
-jdbc-derby,
 jdbc-derby,---|||- Apache-2.0|||
 jdbc-filemaker,--- []|||
 jdbc-firebird,---|||- LGPL|||
@@ -56057,11 +55595,9 @@ jdbc-h2,---|||- H2|||
 jdbc-helper,--- []|||
 jdbc_helpers,---|||- MIT|||
 jdbc-hive2,--- []|||
-jdbc-hsqldb,
 jdbc-hsqldb,---|||- BSD|||
 jdbc-jt400,---|||- IPL-1.0|||
 jdbc-jtds,--- []|||
-jdbc-jtds,
 jdbc-luciddb,
 jdbc-mariadb,---|||- LGPL|||
 jdbc-mssql-azure,--- []|||
@@ -56072,13 +55608,11 @@ jdbc-openedge,
 jdbc-openedge-internal,
 jdbc-orientdb,
 jdbc-phoenix,---|||- GPL-2|||
-jdbc-postgres,
 jdbc-postgres,---|||- BSD|||
 jdbc-postgresql,--- |||...|||
 jdbc-redshift,---|||- MIT|||
 jdbc-splice,---|||- MIT|||
 jdbc-sqlite3,---|||- Apache-2|||
-jdbc-sqlite3,
 jdbc-sqlserver,--- []|||
 jdbc-url,---|||- MIT|||
 jdbc-vertica,---|||- MIT|||
@@ -56853,7 +56387,6 @@ jerry-captain_oveur,--- []|||
 jerrygem,--- []|||
 jerryluk-jruby-rfc2445,--- []|||
 jerryluk-rabbitmq-jruby-client,--- []|||
-jerryluk-rabbitmq-jruby-client,--- []|||
 jerryvos-acts-as-taggable-on,
 jerryvos-authlogic_facebook_connect,
 jerryvos-hpricot,--- []|||
@@ -56894,8 +56427,6 @@ jetson,---|||- MIT|||
 jettison,---|||- MIT|||
 jettr,
 jetty,
-jetty,
-jetty-jsp,
 jetty-jsp,
 jetty-rackup,--- []|||
 jetty-rails,
@@ -57601,7 +57132,6 @@ jp_address,---|||- MIT|||
 j_pagination,---|||- MIT|||
 jpalardy-forgetful,--- []|||
 jparallel,---|||- LGPL-3.0|||
-jparallel,---|||- LGPL-3.0|||
 jpark,---|||- MIT|||
 jparker-ruby-googlechart,--- []|||
 jpartial-renderer,---|||- MIT|||
@@ -57614,7 +57144,6 @@ jpc,---|||- MIT|||
 jpcalendar,--- []|||
 jp_city_code,---|||- MIT|||
 jpdate,---|||- MIT|||
-jpdfer,
 jpdfer,--- []|||
 jpdfunite,---|||- MIT|||
 jpeg,---|||- MIT|||
@@ -58030,7 +57559,6 @@ jrhicks-static-scaffolds,--- []|||
 jrhicks-ubuntu-machine,--- []|||
 jriasco2-rubycalc,---|||- ARTISTIC|||
 jrjackson,---|||- Apache License 2.0|||
-jrjackson,---|||- Apache License 2.0|||
 jrk,---|||- MIT|||
 jrmey-eventmachine,
 jrmey-mysqlplus,
@@ -58042,10 +57570,8 @@ jrq,---|||- MIT|||
 jrsplenda,
 jrtika,
 jrtm,
-jrtm,
 jruby-abridged,
 jruby-activemq,
-jruby_activiti,---|||- MIT|||
 jruby_activiti,---|||- MIT|||
 jruby-akka_jars,--- |||...|||
 jruby-am-api,
@@ -58064,7 +57590,6 @@ jruby-ehcache-rails2,
 jruby-ehcache-rails3,
 jruby-elasticsearch,---|||- Apache License (2.0)|||
 jruby-elasticsearch_jars,
-jruby-elasticsearch_jars,
 jruby-enginize,
 jruby_excelcom,---|||- Apache-2.0|||
 jruby-executors,---|||- MIT|||
@@ -58082,11 +57607,9 @@ jruby-httpclient,---|||- Apache 2.0|||
 jruby-http-kit,---|||- ''|||
 jruby-http-reactor,
 jruby-jars,---|||- EPL-1.0|||- GPL-2.0|||- LGPL-2.1|||
-jruby-jms,--- |||...|||
 jruby-jms,---|||- Apache License V2.0|||
 jruby-jruby-openssl,--- []|||
 jruby-jython,---|||- Apache-2.0|||
-jruby-kafka,---|||- Apache 2.0|||
 jruby-kafka,---|||- Apache 2.0|||
 jruby-kafka-api,---|||- MIT|||
 jruby-launcher,--- []|||
@@ -58109,10 +57632,8 @@ jruby-msgpack,
 jruby-notify,--- []|||
 jruby-on-hadoop,
 jruby-openssl,---|||- EPL-1.0|||- GPL-2.0|||- LGPL-2.1|||
-jruby-openssl,--- []|||
 JRuby-OpenSSL,
 jruby-openssl-maven,
-jruby-pageant,
 jruby-pageant,
 jruby-parser,--- []|||
 jruby-pcap,---|||- MIT|||
@@ -58128,7 +57649,6 @@ jruby-rack-jetty,
 jruby-rack-metrics,
 jruby-rack-standalone-jetty,--- |||...|||
 jruby-rack-worker,---|||- Apache-2.0|||
-jruby-rack-worker,
 jruby-rcov,--- []|||
 jruby-readability,--- []|||
 jruby-readline,---|||- EPL-1.0|||- GPL-2.0|||- LGPL-2.1|||
@@ -58136,7 +57656,6 @@ jruby-rfc2445,
 jruby-safe,--- []|||
 jruby_sandbox,--- []|||
 jruby-scala,
-jruby-scala-collections,--- []|||
 jruby-scala-collections,--- []|||
 jruby-scala-collections-scala2.11,---|||- Apache 2.0|||
 jruby-serviceproxy,
@@ -58323,9 +57842,6 @@ jsobfu,---|||- BSD-3-Clause|||
 js_obj,---|||- MIT|||
 js_objects,---|||- MIT|||
 jsog,---|||- MIT|||
-json,
-json,---|||- Ruby|||
-json,
 json,---|||- Ruby|||
 json2,---|||- MIT|||
 json2csv,---|||- MIT|||
@@ -58486,9 +58002,7 @@ jsonite,---|||- MIT|||
 jsonity,---|||- MIT|||
 jsonizer,---|||- MIT|||
 jsonj-integration,---|||- Expat|||
-json-jruby,
 json-jruby,--- |||...|||
-json-jruby,
 json-jwt,---|||- MIT|||
 json_key_transformer_middleware,---|||- Apache-2.0|||
 json_kit,---|||- MIT|||
@@ -58781,7 +58295,6 @@ jtzemp-tourbus,--- []|||
 juan_pelota,---|||- MIT|||
 jubako,---|||- MIT|||
 jubatus,---|||- MIT|||
-jubilee,---|||- MIT|||
 jubilee,---|||- MIT|||
 jubjub,
 judge,---|||- MIT|||
@@ -59201,7 +58714,6 @@ kakao-rest-api,---|||- MIT|||
 kakapo,
 kakapo-notifier,
 kaka-rails-settings,
-kakasi,---|||- BSD|||
 kakasi,---|||- BSD|||
 kakasi_parser,---|||- MIT|||
 kakeibo,---|||- MIT|||
@@ -59855,7 +59367,6 @@ keyhole,
 KeyholeIO,
 key-installer,
 keylime,---|||- MIT|||
-keylime,---|||- MIT|||
 keymail,--- []|||
 keymaker,
 keyman,--- []|||
@@ -60144,7 +59655,6 @@ kineticac-amazon-ecs,--- []|||
 kinetic_cafe_error,---|||- MIT|||
 kinetic_energy,---|||- MIT|||
 kinetic-ruby,---|||- LGPL-2.1|||
-kinetosis,
 kinetosis,
 king,---|||- MIT|||
 king_dtaus,--- []|||
@@ -61176,7 +60686,6 @@ kruskal,---|||- MIT|||
 kryo,--- []|||
 krypt,---|||- MIT|||
 krypt-core,---|||- MIT|||
-krypt-core,---|||- MIT|||
 krypter,---|||- MIT|||
 krypton,---|||- MIT|||
 kryptonita,---|||- MIT|||
@@ -61526,7 +61035,6 @@ ladda-sprockets,---|||- MIT|||
 ladder,---|||- APACHE2|||
 ladder_drive,---|||- MIT|||
 ladle,--- []|||
-ladle,--- []|||
 ladon,---|||- MIT|||
 ladyboy,---|||- Floctory|||
 lady_gaga,
@@ -61570,7 +61078,6 @@ lambda_validators,---|||- MIT|||
 lambda_wrap,---|||- Apache-2.0|||
 lambder-rexchange,--- []|||
 lambert93_ruby,--- []|||
-lambert_ruby,--- []|||
 lambert_ruby,--- []|||
 lambit,--- []|||
 lambom,---|||- Apache-2.0|||
@@ -61633,7 +61140,6 @@ langrove-plugin-google,--- |||...|||
 langrove-plugin-mongodb,
 langrove-plugin-resque,
 langrove-resque-plugin,
-langscan,
 langscan,
 lang-script,---|||- MIT|||
 langtag,
@@ -61816,7 +61322,6 @@ latex2hiki,---|||- MIT|||
 latex2image,---|||- MIT|||
 latex_curriculum_vitae,---|||- MIT|||
 latex-decode,---|||- GPL-3|||
-latex-decode,---|||- GPL-3|||
 latex_document,---|||- MIT|||
 latex-flow,---|||- MIT|||
 latex_formula_converter,--- []|||
@@ -61882,7 +61387,6 @@ launchrock,---|||- Yoloswag|||
 launchrock-sync,---|||- Yoloswag|||
 launchsupport,---|||- MIT|||
 launch_tracks,
-launchy,---|||- ISC|||
 launchy,---|||- ISC|||
 launchy_opensearch,
 launchy-opensearch,
@@ -62166,14 +61670,9 @@ leaflyapi,---|||- MIT|||
 leafly_api_wrapper,---|||- MIT|||
 leafy,---|||- MIT|||
 leafy-complete,---|||- MIT|||
-leafy-complete,---|||- MIT|||
-leafy-health,---|||- MIT|||
 leafy-health,---|||- MIT|||
 leafy-logger,---|||- MIT|||
-leafy-logger,---|||- MIT|||
 leafy-metrics,---|||- MIT|||
-leafy-metrics,---|||- MIT|||
-leafy-rack,---|||- MIT|||
 leafy-rack,---|||- MIT|||
 league_api,---|||- MIT|||
 LeagueHelper,---|||- MIT|||
@@ -62216,7 +61715,6 @@ leapfrog_consumer_score,---|||- MIT|||
 leapfrog-customer_scoring,---|||- MIT|||
 leapmotion,---|||- MIT|||
 leap_motion,---|||- MIT|||
-leap_motion,--- []|||
 leap-motion,---|||- MIT|||
 leap-motion-ws,---|||- MIT|||
 leap_sample_gem,---|||- MIT|||
@@ -62649,23 +62147,17 @@ lib,---|||- MIT|||
 libaaron,--- |||...|||
 libacl,
 libarchive,
-libarchive,
 libarchive-ruby,
 libarchive-ruby-fs,---|||- MIT|||
 libarchive-ruby-gvalmon,--- []|||
 libarchive-ruby-swig,--- []|||
 libarchive-static,--- []|||
-libarchive-static,--- []|||
-libarchive-static,--- []|||
-libarchive-static-ruby186,
 libarchive-static-ruby186,
 libastag,
 libatem,---|||- MIT|||
 libcache,---|||- MIT|||
 libcanvas-rails,--- []|||
 libcbor,--- []|||
-libcdb-ruby,---|||- AGPL-3.0|||
-libcdb-ruby,---|||- AGPL-3.0|||
 libcdb-ruby,---|||- AGPL-3.0|||
 libc-eventmachine,--- []|||
 libcgroup,---|||- MIT|||
@@ -62712,10 +62204,8 @@ libhxl-ruby,---|||- MIT|||
 libil,---|||- MIT|||
 libinject,
 libis-format,---|||- MIT|||
-libis-format,---|||- MIT|||
 libisi,
 libis-ingester,---|||- MIT|||
-libis-services,---|||- MIT|||
 libis-services,---|||- MIT|||
 libis-tools,---|||- MIT|||
 libis-workflow,---|||- MIT|||
@@ -62725,8 +62215,6 @@ libledger,---|||- MIT|||
 liblinear-ruby,---|||- MIT|||
 liblinear-ruby-swig,
 liblvm,
-liblzma,
-liblzma,---|||- 2-clause BSD License|||
 liblzma,---|||- 2-clause BSD License|||
 libmagellan,---|||- MIT|||
 libmarkov,--- []|||
@@ -62739,10 +62227,6 @@ libmpq-ruby,
 libmspack,---|||- UNLICENSE|||- LGPL-2|||
 libnet4r,
 libnotify,---|||- MIT|||
-libnotify,
-libnotify,
-libnotify,
-libnotify,
 libofx-ffi,--- []|||
 libowl,---|||- LGPL-2.1|||
 libphonenumber-execjs,
@@ -62819,13 +62303,6 @@ libsmatrix,---|||- MIT|||
 libsnappy,
 libspecinfra,--- []|||
 libspotify,---|||- MIT|||
-libspotify,---|||- MIT|||
-libspotify,---|||- MIT|||
-libspotify,---|||- MIT|||
-libspotify,---|||- MIT|||
-libspotify,---|||- MIT|||
-libspotify,---|||- MIT|||
-libspotify,---|||- MIT|||
 libssh,---|||- MIT|||
 lib_stats,--- []|||
 lib_string_encryption,
@@ -62838,42 +62315,8 @@ libtest10,--- []|||
 libtls,---|||- ISC|||
 libtool,---|||- GPL-2.0|||
 libusb,---|||- LGPL-3.0|||
-libusb,---|||- LGPL-3.0|||
-libusb,---|||- LGPL-3.0|||
-libusb,---|||- LGPL-3.0|||
-libusb,---|||- LGPL-3.0|||
 libuuidrb,
 libuv,---|||- MIT|||
-libv8,
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,--- []|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,
-libv8,--- |||...|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,---|||- MIT|||
-libv8,
-libv8,---|||- MIT|||
 libv8,---|||- MIT|||
 libv8-freebsd,
 libv8-sgonyea,
@@ -62895,18 +62338,12 @@ libxml-jruby,
 libxml-jruby-fixed,
 libxml-jruby-modified,--- []|||
 libxml-ruby,---|||- MIT|||
-libxml-ruby,--- []|||
-libxml-ruby,
-libxml-ruby,---|||- MIT|||
 libxml-ruby-r19mingw,
 libxml-to-hash,
 libxml-xmlrpc,
 libxosd2-ruby,
 libxosd-ruby,
 libxsl-ruby,
-libxslt-ruby,--- []|||
-libxslt-ruby,--- []|||
-libxslt-ruby,
 libxslt-ruby,--- []|||
 libxslt-ruby19,
 libxslt-ruby-r19mingw1,
@@ -62924,8 +62361,6 @@ license-compatibility,---|||- MIT|||
 licensed,---|||- MIT|||
 licensee,---|||- MIT|||
 license_finder,---|||- MIT|||
-license_finder,---|||- MIT|||
-license_finder_upgrade,---|||- MIT|||
 license_finder_upgrade,---|||- MIT|||
 license_generator,
 license-generator,--- []|||
@@ -63166,8 +62601,6 @@ linebreak-cli,
 linebyline,---|||- MIT|||
 line_by_line,---|||- GPL-3.0|||
 linecache,---|||- GPL2|||
-linecache,---|||- GPL2|||
-linecache,
 linecache19,
 linecache193,
 linecache19-patched,--- []|||
@@ -63375,7 +62808,6 @@ linux_input,---|||- MIT|||
 linux-ip,---|||- MIT|||
 linux-ip-addr,---|||- MIT|||
 linux-kstat,---|||- Artistic 2.0|||
-linux-kstat,
 linux-lxc,---|||- MIT|||
 linux_proc_mem,---|||- MIT|||
 linux_provision,---|||- MIT|||
@@ -63441,7 +62873,6 @@ liquidize,---|||- MIT|||
 liquidizer,
 liquid-jetpack,---|||- MIT|||
 liquid_loader,--- |||...|||
-liquid-logging,---|||- MIT|||
 liquid-logging,---|||- MIT|||
 liquid_markdown,---|||- MIT|||
 liquid-md5,---|||- MIT|||
@@ -64351,7 +63782,6 @@ LocalFileCache,---|||- MIT|||
 local_gateway,--- |||...|||
 local_gem,
 local-geocoder,--- []|||
-local-geocoder,--- []|||
 local_gov_code,---|||- MIT|||
 local-here,---|||- MIT|||
 localhook,---|||- MIT|||
@@ -64559,7 +63989,6 @@ log4ever,---|||- MIT|||
 log4j2log4r,
 log4javascript-rails,--- []|||
 log4j-jars,--- []|||
-log4jruby,--- |||...|||
 log4jruby,---|||- MIT|||
 log4net,
 log4r,
@@ -64599,7 +64028,6 @@ logasm,---|||- MIT|||
 logasm-tracer,---|||- MIT|||
 logatron,--- []|||
 logback,--- |||...|||
-logback,
 logback-jars,
 logbackup,
 logbang,
@@ -64833,11 +64261,9 @@ logstash-2-output-rollbar,---|||- Apache License (2.0)|||
 logstash5-input-mqtt,---|||- Apache License (2.0)|||
 logstash_auditor,---|||- MIT|||
 logstash-cli,--- []|||
-logstash-codec-avro,---|||- Apache-2.0|||
 logstash-codec-avro,---|||- Apache License (2.0)|||
 logstash-codec-avro_schema_registry,---|||- Apache License (2.0)|||
 logstash-codec-bytes,---|||- MIT|||
-logstash-codec-cef,---|||- Apache License (2.0)|||
 logstash-codec-cef,---|||- Apache License (2.0)|||
 logstash-codec-cloudfront,---|||- Apache License (2.0)|||
 logstash-codec-cloudtrail,---|||- Apache License (2.0)|||
@@ -64856,7 +64282,6 @@ logstash-codec-es_bulk,---|||- Apache License (2.0)|||
 logstash-codec-excel,---|||- Apache License (2.0)|||
 logstash-codec-fieldselect,---|||- Apache License (2.0)|||
 logstash-codec-fluent,---|||- Apache License (2.0)|||
-logstash-codec-fluent,---|||- Apache License (2.0)|||
 logstash-codec-form,---|||- Apache License (2.0)|||
 logstash-codec-frame,---|||- Apache License (2.0)|||
 logstash-codec-google_appengine,---|||- Apache License (2.0)|||
@@ -64870,7 +64295,6 @@ logstash-codec-line,---|||- Apache License (2.0)|||
 logstash-codec-lineeof,---|||- Apache License (2.0)|||
 logstash-codec-logfmt,---|||- Apache License (2.0)|||
 logstash-codec-loginsight,---|||- Apache-2.0|||
-logstash-codec-msgpack,---|||- Apache License (2.0)|||
 logstash-codec-msgpack,---|||- Apache License (2.0)|||
 logstash-codec-multiline,---|||- Apache License (2.0)|||
 logstash-codec-netflow,---|||- Apache License (2.0)|||
@@ -64916,7 +64340,6 @@ logstash-filter-cache-redis,---|||- MIT|||
 logstash-filter-cef,---|||- Apache License (2.0)|||
 logstash-filter-checksum,---|||- Apache License (2.0)|||
 logstash-filter-cidr,---|||- Apache License (2.0)|||
-logstash-filter-cidr,---|||- Apache License (2.0)|||
 logstash-filter-cidrtagmap,---|||- Apache License (2.0)|||
 logstash-filter-cipher,---|||- Apache License (2.0)|||
 logstash-filter-ciseipdb,---|||- Apache-2.0|||
@@ -64930,8 +64353,6 @@ logstash-filter-csharp,---|||- Apache-2.0|||
 logstash-filter-csv,---|||- Apache License (2.0)|||
 logstash-filter-date,---|||- Apache License (2.0)|||
 logstash-filter-date_formatter,---|||- Apache License (2.0)|||
-logstash-filter-date_formatter,---|||- Apache License (2.0)|||
-logstash-filter-dateparts,---|||- Apache License (2.0)|||
 logstash-filter-dateparts,---|||- Apache License (2.0)|||
 logstash-filter-decrypt,---|||- Apache License (2.0)|||
 logstash-filter-de_dot,---|||- Apache License (2.0)|||
@@ -64956,13 +64377,11 @@ logstash-filter-example,---|||- Apache License (2.0)|||
 logstash-filter-exceptioncategory,---|||- Apache-2.0|||
 logstash-filter-exec,---|||- Apache License (2.0)|||
 logstash-filter-extractnumbers,---|||- Apache License (2.0)|||
-logstash-filter-extractnumbers,---|||- Apache-2.0|||
 logstash-filter-fieldmap,---|||- Apache License (2.0)|||
 logstash-filter-fingerprint,---|||- Apache License (2.0)|||
 logstash-filter-fix_protocol,---|||- Apache License (2.0)|||
 logstash-filter-foreach,---|||- Apache-2.0|||
 logstash-filter-geo,---|||- Apache License (2.0)|||
-logstash-filter-geoip,---|||- Apache License (2.0)|||
 logstash-filter-geoip,---|||- Apache License (2.0)|||
 logstash-filter-geoip2,---|||- Apache License (2.0)|||
 logstash-filter-google_appengine,---|||- Apache License (2.0)|||
@@ -64973,7 +64392,6 @@ logstash-filter-hex,---|||- Apache-2.0|||
 logstash-filter-hex_to_ascii,---|||- Apache-2.0|||
 logstash-filter-htmlentities,---|||- MIT|||
 logstash-filter-i18n,---|||- Apache License (2.0)|||
-logstash-filter-i18n,---|||- Apache-2.0|||
 logstash-filter-imgsize,---|||- Apache License (2.0)|||
 logstash-filter-inspection,---|||- Apache License (2.0)|||
 logstash-filter-ipcat,---|||- Apache License (2.0)|||
@@ -64982,7 +64400,6 @@ logstash-filter-jdbc,---|||- Apache License (2.0)|||
 logstash-filter-jdbc_mysql,---|||- Apache License (2.0)|||
 logstash-filter-jdbc_streaming,---|||- Apache License (2.0)|||
 logstash-filter-json,---|||- Apache License (2.0)|||
-logstash-filter-json_encode,---|||- Apache-2.0|||
 logstash-filter-json_encode,---|||- Apache License (2.0)|||
 logstash-filter-jsonvalidate,---|||- Apache License (2.0)|||
 logstash-filter-jwt,---|||- Apache License (2.0)|||
@@ -65002,7 +64419,6 @@ logstash-filter-mautic,---|||- Apache License (2.0)|||
 logstash-filter-memorize,---|||- Apache License (2.0)|||
 logstash-filter-merge,---|||- Apache License (2.0)|||
 logstash-filter-metaevent,---|||- Apache License (2.0)|||
-logstash-filter-metricize,---|||- Apache-2.0|||
 logstash-filter-metricize,---|||- Apache License (2.0)|||
 logstash-filter-metrics,---|||- Apache License (2.0)|||
 logstash-filter-mixpanel,---|||- Apache License (2.0)|||
@@ -65012,7 +64428,6 @@ logstash-filter-naxsi,---|||- Apache License (2.0)|||
 logstash-filter-nested_json_split,---|||- Apache License (2.0)|||
 logstash-filter-opnsensefilter,---|||- BSD 2 Clause|||
 logstash-filter-oui,---|||- Apache License (2.0)|||
-logstash-filter-oui,---|||- Apache-2.0|||
 logstash-filter-phpserialize,---|||- BSD-3-Clause|||
 logstash-filter-phpserialized,---|||- Apache License (2.0)|||
 logstash-filter-phpunserialize,---|||- Apache License (2.0)|||
@@ -65024,7 +64439,6 @@ logstash-filter-qatest,---|||- Apache License (2.0)|||
 logstash-filter-qs,---|||- MIT|||
 logstash-filter-railsroutes,---|||- Apache License (2.0)|||
 logstash-filter-rancher_metadata,---|||- Apache License (2.0)|||
-logstash-filter-range,---|||- Apache License (2.0)|||
 logstash-filter-range,---|||- Apache License (2.0)|||
 logstash-filter-redis,---|||- Apache License (2.0)|||
 logstash-filter-referer,---|||- Apache License (2.0)|||
@@ -65057,7 +64471,6 @@ logstash-filter-unique2,---|||- Apache License (2.0)|||
 logstash-filter-units,---|||- Apache License (2.0)|||
 logstash-filter-urldecode,---|||- Apache License (2.0)|||
 logstash-filter-useragent,---|||- Apache License (2.0)|||
-logstash-filter-useragent,---|||- Apache License (2.0)|||
 logstash-filter-useragent2,---|||- Apache-2.0|||
 logstash-filter-uuid,---|||- Apache License (2.0)|||
 logstash-filter-virustotal,---|||- Apache License (2.0)|||
@@ -65074,17 +64487,14 @@ logstash-input-acquia,---|||- MIT|||
 logstash-input-algolialogs,---|||- Apache License (2.0)|||
 logstash-input-azureblob,---|||- Apache License (2.0)|||
 logstash-input-azureeventhub,---|||- Apache License (2.0)|||
-logstash-input-azureeventhub,---|||- Apache License (2.0)|||
 logstash-input-azuretable,---|||- Apache License (2.0)|||
 logstash-input-azuretopic,---|||- Apache License (2.0)|||
 logstash-input-azuretopicthreadable,---|||- Apache License (2.0)|||
-logstash-input-azurewadeventhub,---|||- Apache License (2.0)|||
 logstash-input-azurewadeventhub,---|||- Apache License (2.0)|||
 logstash-input-azurewadtable,---|||- Apache License (2.0)|||
 logstash-input-bbcidynamodb,---|||- Apache License (2.0)|||
 logstash-input-bbn_f5networks,---|||- Apache License (2.0)|||
 logstash-input-beanstalkd,---|||- Apache License (2.0)|||
-logstash-input-beats,---|||- Apache License (2.0)|||
 logstash-input-beats,---|||- Apache License (2.0)|||
 logstash-input-blueliv,---|||- Apache License (2.0)|||
 logstash-input-bro,---|||- Apache License (2.0)|||
@@ -65104,7 +64514,6 @@ logstash-input-drupal_dblog,---|||- Apache License (2.0)|||
 logstash-input-dstat,---|||- Apache License (2.0)|||
 logstash-input-dynamodb,---|||- Apache License (2.0)|||
 logstash-input-elasticsearch,---|||- Apache License (2.0)|||
-logstash-input-eventlog,---|||- Apache License (2.0)|||
 logstash-input-eventlog,---|||- Apache License (2.0)|||
 logstash-input-evvnt,---|||- Apache License (2.0)|||
 logstash-input-evvnt-challenge,---|||- Apache License (2.0)|||
@@ -65148,8 +64557,6 @@ logstash-input-kinesis-cloudwatch-log-subscription,---|||- Apache License (2.0)|
 logstash-input-ldap,---|||- Apache License (2.0)|||
 logstash-input-LDAPSearch,---|||- Apache License (2.0)|||
 logstash-input-log4j,---|||- Apache License (2.0)|||
-logstash-input-log4j,---|||- Apache License (2.0)|||
-logstash-input-log4j2,---|||- Apache License (2.0)|||
 logstash-input-log4j2,---|||- Apache License (2.0)|||
 logstash-input-log4j2-2.6.2,---|||- Apache License (2.0)|||
 logstash-input-log4j2-logstash2,---|||- Apache License (2.0)|||
@@ -65175,7 +64582,6 @@ logstash-input-pipe,---|||- Apache License (2.0)|||
 logstash-input-proc,---|||- Apache License (2.0)|||
 logstash-input-puppet_facter,---|||- Apache License (2.0)|||
 logstash-input-qingstor,---|||- Apache License (2.0)|||
-logstash-input-rabbitmq,---|||- Apache License (2.0)|||
 logstash-input-rabbitmq,---|||- Apache License (2.0)|||
 logstash-input-rackspace,---|||- Apache License (2.0)|||
 logstash-input-recurly,---|||- Apache License (2.0)|||
@@ -65203,7 +64609,6 @@ logstash-input-stomp,---|||- Apache License (2.0)|||
 logstash-input-sttxml1,---|||- Apache License (2.0)|||
 logstash-input-syslog,---|||- Apache License (2.0)|||
 logstash-input-tcp,---|||- Apache License (2.0)|||
-logstash-input-tcp,---|||- Apache License (2.0)|||
 logstash-input-thisisonlyatest,---|||- Apache License (2.0)|||
 logstash-input-toggl,---|||- Apache License (2.0)|||
 logstash-input-trello,---|||- Apache License (2.0)|||
@@ -65213,7 +64618,6 @@ logstash-input-unix,---|||- Apache License (2.0)|||
 logstash-input-varnishlog,---|||- Apache License (2.0)|||
 logstash-input-varnishncsa,---|||- Apache License (2.0)|||
 logstash-input-websocket,---|||- Apache License (2.0)|||
-logstash-input-wmi,---|||- Apache License (2.0)|||
 logstash-input-wmi,---|||- Apache License (2.0)|||
 logstash-input-xls,---|||- Apache License (2.0)|||
 logstash-input-xlsx,---|||- Apache License (2.0)|||
@@ -65232,7 +64636,6 @@ logstash-mixin-rabbitmq_connection,---|||- Apache License (2.0)|||
 logstash-mixin-zeromq,---|||- Apache License (2.0)|||
 logstash-output-adls,---|||- Apache-2.0|||
 logstash-output-airbrake,---|||- Apache License (2.0)|||
-logstash-output-amazon_es,---|||- apache-2.0|||
 logstash-output-amazon_es,---|||- apache-2.0|||
 logstash-output-applicationinsights,---|||- Apache License (2.0)|||
 logstash-output-application_insights,---|||- Apache License (2.0)|||
@@ -65258,7 +64661,6 @@ logstash-output-datadog_metrics,---|||- Apache License (2.0)|||
 logstash-output-datahub,---|||- Apache License (2.0)|||
 logstash-output-documentdb,---|||- Apache License (2.0)|||
 logstash-output-dogstatsd,---|||- Apache License (2.0)|||
-logstash-output-elasticsearch,---|||- apache-2.0|||
 logstash-output-elasticsearch,---|||- apache-2.0|||
 logstash-output-elasticsearch-ec2,---|||- Apache License (2.0)|||
 logstash-output-elasticsearch_groom,---|||- Apache License (2.0)|||
@@ -65296,7 +64698,6 @@ logstash-output-influxdb,---|||- Apache License (2.0)|||
 logstash-output-iothub,---|||- Apache-2.0|||
 logstash-output-irc,---|||- Apache License (2.0)|||
 logstash-output-itda,---|||- Apache License (2.0)|||
-logstash-output-jdbc,---|||- Apache License (2.0)|||
 logstash-output-jdbc,---|||- Apache License (2.0)|||
 logstash-output-jira,---|||- Apache License (2.0)|||
 logstash-output-jms,---|||- Apache License (2.0)|||
@@ -65341,8 +64742,6 @@ logstash-output-pushover,---|||- ISC|||
 logstash-output-qingstor,---|||- Apache License (2.0)|||
 logstash-output-rabbit-gelf,---|||- Apache License (2.0)|||
 logstash-output-rabbitmq,---|||- Apache License (2.0)|||
-logstash-output-rabbitmq,---|||- Apache License (2.0)|||
-logstash-output-rabbitmq,---|||- Apache License (2.0)|||
 logstash-output-rackspace,---|||- Apache License (2.0)|||
 logstash-output-rados,---|||- Apache License (2.0)|||
 logstash-output-redis,---|||- Apache License (2.0)|||
@@ -65358,7 +64757,6 @@ logstash-output-scacsv,---|||- Apache License (2.0)|||
 logstash-output-sentry,---|||- Apache-2.0|||
 logstash-output-seq,---|||- MIT|||
 logstash-output-ses,---|||- Apache License (2.0)|||
-logstash-output-slack,---|||- MIT|||- Apache License (2.0)|||
 logstash-output-slack,---|||- MIT|||- Apache License (2.0)|||
 logstash-output-snmptrap,---|||- Apache-2.0|||
 logstash-output-snowplow,---|||- Apache License (2.0)|||
@@ -65554,7 +64952,6 @@ look_of_disapproval,---|||- MIT|||
 look_of_performance,---|||- MIT|||
 lookout,---|||- LGPLv3+|||
 lookout-bcrypt,---|||- MIT|||
-lookout-bcrypt,---|||- MIT|||
 lookout-clickatell,
 lookout-data_fabric,--- []|||
 lookout-i18n-js,
@@ -65568,10 +64965,7 @@ lookout-rake,---|||- LGPLv3+|||
 lookout-statsd,--- []|||
 lookout-vanity,
 lookout-zipkin-tracer,--- []|||
-lookout-zipkin-tracer,--- []|||
 looks,---|||- MIT|||
-looksee,---|||- MIT|||
-looksee,---|||- MIT|||
 looksee,---|||- MIT|||
 looksist,---|||- MIT|||
 looksy,--- []|||
@@ -65837,7 +65231,6 @@ lsegal-tadpole,--- []|||
 lsegal-yard,--- []|||
 lsgh,---|||- MIT|||
 lsh,--- []|||
-lsh,--- []|||
 lshw,---|||- MIT|||
 lsi,---|||- ''|||
 lsi4r,---|||- AGPL-3.0|||
@@ -66013,7 +65406,6 @@ luminate,---|||- MIT|||
 luminati,--- []|||
 luminosity_contrast,---|||- MIT|||
 lumix,
-lumix,
 lumos,---|||- MIT|||
 lump,---|||- MIT|||
 lumpy_space_princess,---|||- MIT|||
@@ -66148,18 +65540,14 @@ lytix,
 ly-zizhuyou,---|||- MIT|||
 lz4-jars,---|||- Apache-2.0|||
 lz4-ruby,---|||- MIT|||
-lz4-ruby,---|||- MIT|||
-lz4-ruby,---|||- MIT|||
 lz77,--- |||...|||
 lzell-mapricot,--- []|||
 lzf,---|||- MIT|||
-lzfruby,
 lzfruby,
 lzfx,
 lzma-ffi,
 lzmat,
 lzo,--- []|||
-lzoruby,
 lzoruby,
 lzss,
 m,--- []|||
@@ -66335,7 +65723,6 @@ mac-say,---|||- MIT|||
 mac_setup,---|||- MIT|||
 mac_shortcuts,---|||- MIT|||
 mac-skype,--- []|||
-mac-skype,--- []|||
 MacSpec,
 mac-spotlight,--- []|||
 mactag,
@@ -66396,7 +65783,6 @@ madscience,---|||- MIT|||
 mad-skillz,
 madvertise,
 madvertise-ext,--- []|||
-madvertise-logging,--- []|||
 madvertise-logging,--- []|||
 madweblibs,--- |||...|||
 madx-metash,--- []|||
@@ -66961,8 +66347,6 @@ mallet,--- []|||
 malline,
 mallinna,--- []|||
 malloc,---|||- GPL-3+|||
-malloc,
-malloc,
 mallory,---|||- MIT|||
 mallow,--- []|||
 mallowlabs-tobirex,--- []|||
@@ -67250,13 +66634,11 @@ marc,---|||- MIT|||
 marc2linkeddata,---|||- Apache-2.0|||
 marc2solr,
 marc4j4r,---|||- MIT|||
-marc4j4r,--- []|||
 marc4r,---|||- MIT|||
 marc_alephsequential,---|||- MIT|||
 marcandre-backports,--- []|||
 marcandre-flvedit,--- []|||
 marcandre-packable,--- []|||
-marcato,
 marcato,
 marc-fastxmlwriter,---|||- MIT|||
 marcguyer-cheddargetter-client,--- []|||
@@ -67859,7 +67241,6 @@ match_regex,---|||- MIT|||
 matchscore,---|||- MIT|||
 match_skeleton,---|||- MIT|||
 matchstick,
-mate,
 mate,---|||- MIT|||
 matebundle,---|||- MIT|||
 matenia-tumblr-api,
@@ -68279,8 +67660,6 @@ mbbx6spp-plurk4r,--- []|||
 mbbx6spp-twitter4r,--- []|||
 mbbx6spp-twurl,
 mbdb,---|||- GPL-3.0|||
-mb-discid,
-mb-discid,
 mb-discid,--- []|||
 mbdump_downloader,---|||- MIT|||
 mbed-autowriter,---|||- MIT|||
@@ -68809,7 +68188,6 @@ melonic-geoip-database,---|||- MIT|||
 melonjs-generator,--- []|||
 melon-music,---|||- WTFPL|||
 melt,---|||- MIT|||
-melt,---|||- MIT|||
 meltdown,--- []|||
 meltwater-capistrano-strategies,--- []|||
 mem,---|||- MIT|||
@@ -69330,7 +68708,6 @@ metacritic_games,---|||- MIT|||
 metacrunch,---|||- MIT|||
 metacrunch-elasticsearch,---|||- MIT|||
 metacrunch-mab2,---|||- MIT|||
-metacrunch-mab2,---|||- MIT|||
 metacrunch-ubpb,---|||- MIT|||
 metadata,
 metadata_cleaner,
@@ -69442,18 +68819,13 @@ metasm,---|||- LGPL|||
 metasploit-aggregator,---|||- BSD-3-Clause|||
 metasploit-concern,---|||- BSD-3-clause|||
 metasploit-credential,---|||- BSD-3-clause|||
-metasploit-credential,---|||- BSD-3-clause|||
-metasploit_data_models,--- []|||
 metasploit_data_models,--- []|||
 metasploit-erd,---|||- BSD-3-clause|||
-metasploit-model,--- []|||
 metasploit-model,--- []|||
 metasploit-payloads,"---|||- 3-clause (or ""modified"") BSD|||"
 metasploit_payloads-mettle,"---|||- 3-clause (or ""modified"") BSD|||"
 metasploit-runner,---|||- MIT|||
 metasploit-version,---|||- MIT|||
-metasploit-version,---|||- MIT|||
-metasploit-yard,---|||- BSD-3-Clause|||
 metasploit-yard,---|||- BSD-3-Clause|||
 meta-spotify,--- []|||
 metastore,---|||- MIT|||
@@ -69744,7 +69116,6 @@ mgt,---|||- MIT|||
 mg_tracker,---|||- MIT|||
 mguterl-utility_belt,--- []|||
 mguymon-buildr,--- |||...|||
-mguymon-buildr,
 mguymon-cache-money,
 mguymon-figaro,---|||- MIT|||
 mguymon_settingslogic,--- []|||
@@ -69964,7 +69335,6 @@ middle_drive,---|||- MIT|||
 middlemac,---|||- MIT|||
 middlemac-extras,---|||- MIT|||
 middleman,---|||- MIT|||
-middleman,
 middleman3-sassc,---|||- MIT|||
 middleman4-sprockets3-sassc,---|||- MIT|||
 middle_management,
@@ -70220,7 +69590,6 @@ midi-jruby,---|||- Apache-2.0|||
 midilib,---|||- Ruby|||
 midi_lyrics,---|||- MIT|||
 midi-message,---|||- Apache 2.0|||
-midi-message,
 midi-nibbler,---|||- Apache-2.0|||
 midiops,---|||- MIT|||
 midiosx,--- []|||
@@ -70233,7 +69602,6 @@ midna,
 Midna,
 midori,--- []|||
 midori-contrib,---|||- MIT|||
-midori_http_parser,---|||- MIT|||
 midori_http_parser,---|||- MIT|||
 midos,---|||- AGPL-3.0|||
 midpay,---|||- MIT|||
@@ -70348,7 +69716,6 @@ mikewadhera-jetty-rails,--- []|||
 mikeycgto-sinatra-rest,--- |||...|||
 mikezter-workling,
 mikisvaz-simplews,--- []|||
-mikka,
 mikka,
 mikker-bundle_update,--- []|||
 mikker-webby,--- []|||
@@ -70696,8 +70063,6 @@ minigl,---|||- MIT|||
 mini_graphite,---|||- MIT|||
 miniharvest,---|||- MIT|||
 mini-i18n,---|||- MIT|||
-minilab,
-minilab,
 minilab,
 minilang_refi,
 minilex,
@@ -71240,8 +70605,6 @@ mixers,
 mixes,---|||- MIT|||
 mixi,
 mixico,
-mixico,
-mixico,
 mixi-community,--- []|||
 mixin,
 mixin-enum,---|||- MIT|||
@@ -71261,15 +70624,9 @@ mixlib-json,
 mixlib-log,---|||- Apache-2.0|||
 mixlib-log-json,---|||- MIT|||
 mixlibrary-core,---|||- Apache2|||
-mixlibrary-core,---|||- Apache2|||
-mixlib-shellout,--- []|||
-mixlib-shellout,--- []|||
 mixlib-shellout,--- []|||
 mixlib-versioning,---|||- Apache 2.0|||
 mixml,---|||- AGPL-3.0|||
-mixology,
-mixology,
-mixology,
 mixology,
 mixonic-libixm,--- []|||
 mixonic-seed-fu,--- []|||
@@ -71515,7 +70872,6 @@ mmmail,
 mmmenu,---|||- MIT|||
 mmmm,---|||- MIT|||
 mm-money,
-mm_mq,
 mm_mq,
 mm-multi-parameter-attributes,
 mmmultiworks,
@@ -71909,7 +71265,6 @@ modifiers,---|||- MIT|||
 modifiles,--- []|||
 modify,
 modify_resource,--- []|||
-modis,--- []|||
 modis,---|||- MIT|||
 modjs-architecture,--- |||...|||
 modle_to_excel,--- []|||
@@ -71926,7 +71281,6 @@ mods,--- []|||
 mods_display,--- []|||
 modsecurity_audit_log_parser,--- []|||
 mod_spox,
-modsulator,---|||- Apache-2.0|||
 modsulator,---|||- Apache-2.0|||
 modui-rails,--- []|||
 modular,
@@ -72040,7 +71394,6 @@ mojodna-switchboard,--- []|||
 mojodna-xmpp4r,--- []|||
 mojolingo-vagrant-librarian-puppet,---|||- MIT|||
 mojo_logger,---|||- MIT|||
-mojo_logger,---|||- MIT|||
 mojo_magick,---|||- MIT|||
 mojombo-bertrpc,--- []|||
 mojombo-chronic,--- []|||
@@ -72139,7 +71492,6 @@ mondo-alfred,---|||- MIT|||
 mondo-generators,
 mondrian,--- |||...|||
 mondrian-olap,---|||- MIT|||
-mondrian-olap,--- []|||
 mondrian_redis_segment_cache,--- []|||
 mondrian-rest,---|||- MIT|||
 mondupe,---|||- MIT|||
@@ -72227,7 +71579,6 @@ mongify,--- []|||
 mongify-mongoid,---|||- MIT|||
 monglobal,--- []|||
 mongo,---|||- Apache License Version 2.0|||
-mongo,---|||- Apache License Version 2.0|||
 mongo3,
 mongoa,
 mongo_active_instrumentation,---|||- MIT|||
@@ -72257,7 +71608,6 @@ mongo_db_gen,
 mongodb-graphite,--- []|||
 mongodb-graphite-agent,---|||- MIT|||
 mongodb_logger,---|||- MIT|||
-mongodb_logger,
 mongodbmodel,
 mongo_db_model,
 mongodb_model,
@@ -72678,7 +72028,6 @@ mongo-import,--- []|||
 mongo-jira,--- []|||
 mongojob,
 mongo_kerberos,---|||- Apache License Version 2.0|||
-mongo_kerberos,---|||- Apache License Version 2.0|||
 mongokit,---|||- MIT|||
 mongolicious,
 mongo_light,
@@ -72801,9 +72150,6 @@ mongo_web,
 mongration,---|||- MIT|||
 mongrations,
 mongrel,
-mongrel,
-mongrel,
-mongrel,
 mongrel2,---|||- BSD-3-Clause|||
 mongrel_cluster,
 mongrel_cluster_recovery,
@@ -72828,8 +72174,6 @@ mongrel_raw_output,
 mongrel_secure_download,
 mongrel_secure_download-redux,
 mongrel_send_file,
-mongrel_service,
-mongrel_service,
 mongrel_service,
 mongrel-soap4r,
 mongrel_status,
@@ -73065,7 +72409,6 @@ mopidy,---|||- MIT|||
 mopper,---|||- MIT|||
 mopup,
 moq,
-moq,
 moqueue,
 mor,---|||- MIT|||
 morale,
@@ -73075,7 +72418,6 @@ morandi,---|||- MIT|||
 moranis,--- |||...|||
 morbo,--- |||...|||
 morchi,---|||- MIT|||
-mordor,--- []|||
 mordor,--- []|||
 mordor-auditing,--- []|||
 more,
@@ -73557,8 +72899,6 @@ mountebank,---|||- MIT|||
 mountpoints,---|||- GPL-2.0|||
 mournful_settings,---|||- MIT-LICENSE|||
 mouse,---|||- BSD 3-clause|||
-mouse,---|||- BSD 3-clause|||
-mouse,---|||- BSD 3-clause|||
 mousecop,---|||- MIT|||
 mouse_melon,---|||- MIT|||
 mousereco,--- []|||
@@ -73725,10 +73065,6 @@ mq,
 mqbe,---|||- MIT|||
 mqbench,---|||- MIT|||
 mqlight,---|||- Proprietary|||- Apache-2.0|||
-mqlight,---|||- Proprietary|||- Apache-2.0|||
-mqlight,---|||- Proprietary|||- Apache-2.0|||
-mqlight,---|||- Proprietary|||- Apache-2.0|||
-mqlight,---|||- Proprietary|||- Apache-2.0|||
 mq_logger,--- []|||
 mqproxy,
 mq_publisher,---|||- MIT|||
@@ -73875,11 +73211,6 @@ msg91sms,---|||- MIT|||
 msg-chumby-display,
 msg-flukso-localinterface,
 msgknife,---|||- MIT|||
-msgpack,--- |||...|||
-msgpack,---|||- Apache 2.0|||
-msgpack,---|||- Apache 2.0|||
-msgpack,---|||- Apache 2.0|||
-msgpack,---|||- Apache 2.0|||
 msgpack,---|||- Apache 2.0|||
 msgpack-ably,---|||- Apache 2.0|||
 msgpack-coder,--- |||...|||
@@ -73894,7 +73225,6 @@ msgpack-rails,--- |||...|||
 msgpack-rpc,---|||- Apache 2.0|||
 msgpack_rpc_client,---|||- MIT|||
 msgpack-rpc-over-http,--- []|||
-msgpack-rpc-over-http,--- []|||
 msgpack-rpc-over-http-jruby,--- []|||
 msgpack_rpc_server,---|||- LGPLv3|||
 msg-qworker,
@@ -73906,7 +73236,6 @@ MShealth,---|||- MIT|||
 mshiltonj-dummy,--- []|||
 ms-ident,
 msieve,
-msieve,
 msimkins-haml_scaffold,
 ms-in_silico,--- |||...|||
 msisdn,
@@ -73914,7 +73243,6 @@ msisdn-ph,---|||- MIT|||
 msisdn-za,
 msk,---|||- MIT|||
 mskeyblob,---|||- MIT|||
-msleep,
 msleep,
 ms-lipidomics,
 ms_lorem,
@@ -74109,8 +73437,6 @@ mullen-wee,
 mullet,
 mulligan,---|||- MIT|||
 mully-mongo_tree,--- []|||
-mult,
-mult,
 mult,
 multa_arcana,--- []|||
 multext,---|||- MIT|||
@@ -74432,7 +73758,6 @@ murk,---|||- MIT|||
 murlsh,
 murmur,---|||- MIT|||
 murmurhash,---|||- MIT|||
-murmurhash3,---|||- MIT|||
 murmurhash3,---|||- MIT|||
 murmurhash_jruby,---|||- MIT|||
 murmur-ice,
@@ -75004,13 +74329,6 @@ myspace-ruby,
 mysportsfeeds,---|||- MIT|||
 mysportsfeeds-ruby,---|||- MIT|||
 mysql,--- []|||
-mysql,--- []|||
-mysql,
-mysql,
-mysql,--- []|||
-mysql2,---|||- MIT|||
-mysql2,---|||- MIT|||
-mysql2,---|||- MIT|||
 mysql2,---|||- MIT|||
 mysql2_bigint,
 mysql2-client-general_log,---|||- MIT|||
@@ -75359,7 +74677,6 @@ n_adic_number,---|||- MIT|||
 nadoka,--- []|||
 naehrstoff-ruby-processing,--- []|||
 naether,---|||- Apache|||
-naether,---|||- Apache|||
 naeu-jekyll,
 naf,---|||- New BSD License|||
 naftwik,--- []|||
@@ -75651,8 +74968,6 @@ nant,
 nanumfont-rails,---|||- MIT|||
 nao,---|||- MIT|||
 naoki,--- |||...|||
-naoki,
-naoki,--- |||...|||
 naoticon,---|||- MIT|||
 nap,---|||- MIT|||
 napa,---|||- MIT|||
@@ -75691,7 +75006,6 @@ narou,---|||- MIT|||
 narrable,---|||- MIT|||
 narrative,---|||- MIT|||
 narrator,--- []|||
-narray,
 narray,---|||- Ruby|||
 n-array,---|||- MIT|||
 narray-bigmem,---|||- Ruby|||
@@ -75756,7 +75070,6 @@ nation_builder,---|||- MIT|||
 nationbuilder-rb,---|||- MIT|||
 nationsync,---|||- MIT|||
 native,---|||- MIT|||
-native_bsearch,---|||- MIT|||
 native_bsearch,---|||- MIT|||
 nativedriver,
 native_enum,--- []|||
@@ -76102,15 +75415,12 @@ neo4apis,---|||- MIT|||
 neo4apis-activerecord,---|||- MIT|||
 neo4apis-github,---|||- MIT|||
 neo4apis-twitter,---|||- MIT|||
-neo4j,--- []|||
 neo4j,---|||- MIT|||
 neo4j-admin,--- |||...|||
 neo4j-advanced,--- []|||
 neo4j_ancestry,---|||- MIT|||
 neo4j_client,--- []|||
 neo4j-community,--- []|||
-neo4j-community,--- []|||
-neo4j-core,--- []|||
 neo4j-core,---|||- MIT|||
 neo4j-cypher,---|||- MIT|||
 neo4j-enterprise,--- []|||
@@ -76121,7 +75431,6 @@ neo4j_legacy,---|||- MIT|||
 neo4j-meta_model,---|||- MIT|||
 neo4j-rails,
 neo4j-rake_tasks,---|||- MIT|||
-neo4jrb-paperclip,--- |||...|||
 neo4jrb-paperclip,---|||- MIT|||
 neo4jrb_spatial,--- []|||
 neo4jr-simple,
@@ -76134,7 +75443,6 @@ neo4j-spatial,
 neo4j-test,---|||- MIT|||- GPL-2|||
 neo4j_test_server,---|||- MIT|||
 neo4j-will_paginate,--- []|||
-neo4j-will_paginate,
 neo4j-will_paginate_redux,--- []|||
 neo4j-wrapper,--- []|||
 neo4r,---|||- MIT|||
@@ -76215,7 +75523,6 @@ nervion,
 nervous_screwdriver,--- []|||
 nesemul,---|||- MIT|||
 nesquena-cap-recipes,--- []|||
-nesquikcsv,---|||- MIT|||
 nesquikcsv,---|||- MIT|||
 nesser,--- []|||
 nesstar-api,--- |||...|||
@@ -76458,16 +75765,12 @@ netpgp,---|||- MIT|||
 netphase-acts_as_amazon_product,--- []|||
 netphase-acts_as_eventable,--- []|||
 net-ping,---|||- Artistic 2.0|||
-net-ping,---|||- Artistic 2.0|||
-net-ping,
-net-ping,---|||- Artistic 2.0|||
 net-pns,---|||- GPL|||
 netposti,---|||- MIT|||
 netprint,--- []|||
 netprospex,---|||- MIT|||
 netprospex-ruby,---|||- MIT|||
 net-proto,---|||- Artistic 2.0|||
-net-proto,
 net-ptth,---|||- MIT|||- HUGWARE|||
 net-purge,
 net-purgedomain,---|||- MIT|||
@@ -77281,7 +76584,6 @@ ninoxe,--- []|||
 ninsho,--- []|||
 nio,
 nio4r,---|||- MIT|||
-nio4r,---|||- MIT|||
 nio-percent_fmt,
 niouz,
 nip,
@@ -77371,13 +76673,10 @@ nlhue,--- []|||
 nlife,---|||- LGPL-3.0|||
 nl-independentreserve,---|||- MIT|||
 nlog,
-nlog,
 nlp,
 nlp_arabic,--- []|||
 nlp_backpack,
 nlpcaptcha,--- []|||
-nlpir,---|||- MIT|||
-nlpir,---|||- MIT|||
 nlpir,---|||- MIT|||
 nlp-pure,---|||- MIT|||
 nlp_toolz,---|||- MIT|||
@@ -77437,7 +76736,6 @@ noaa-weather,
 noaa_weather_client,---|||- MIT|||
 noa-core,---|||- MIT|||
 noa-developer,---|||- MIT|||
-noah,
 noah,--- |||...|||
 noah-agents-dummy2,
 noahru,--- []|||
@@ -77576,15 +76874,9 @@ noko_builder,--- |||...|||
 nokofuzzi,---|||- MIT|||
 nokogireader,---|||- MIT|||
 nokogiri,---|||- MIT|||
-nokogiri,
-nokogiri,---|||- MIT|||
-nokogiri,---|||- MIT|||
-nokogiri,---|||- MIT|||
-nokogiri,---|||- MIT|||
 nokogiri_bang_finders,---|||- MIT|||
 nokogiri-cache,---|||- MIT|||
 nokogiri-diff,---|||- MIT|||
-nokogiri-fitzsimmons,
 nokogiri-fitzsimmons,
 nokogiri-happymapper,---|||- MIT|||
 nokogiri-happymapper-deiga,---|||- MIT|||
@@ -77711,7 +77003,6 @@ noreferrer,--- []|||
 no_require,
 nori,---|||- MIT|||
 norikra,---|||- GPLv2|||
-norikra-client,---|||- APLv2|||
 norikra-client,---|||- APLv2|||
 norikra-client-jruby,---|||- APLv2|||
 norikra-listener-fluentd,---|||- GPLv2|||
@@ -78309,8 +77600,6 @@ nummerplade-ruby,---|||- MIT|||
 numo-gnuplot,---|||- BSD-3-Clause|||
 numo-linalg,---|||- BSD-3-Clause|||
 numon,
-numo-narray,---|||- BSD-3-Clause|||
-numo-narray,---|||- MIT|||
 numo-narray,---|||- MIT|||
 numonic,---|||- bsd|||
 numplot,---|||- 2-clause BSDL|||
@@ -78449,16 +77738,11 @@ nypl-collections,---|||- MIT|||
 nypl_repo,---|||- MIT|||
 nyros,--- |||...|||
 nysol,--- []|||
-nysol,--- []|||
-nysol,--- []|||
 nysol-fumi,--- []|||
-nysol-meachi,--- []|||
 nysol-meachi,--- []|||
 nysol-mining,--- []|||
 nysol-take,--- []|||
 nysol-view,--- []|||
-nysol-zdd,--- []|||
-nysol-zdd,--- []|||
 nysol-zdd,--- []|||
 nyt-bestsellers,---|||- MIT|||
 nyt_fiction,---|||- MIT|||
@@ -78664,8 +77948,6 @@ objc-obfuscator,---|||- BSD|||
 objc-referee,---|||- MIT|||
 objds,--- |||...|||
 object2module,
-object2module,
-object2module,
 objectable_json,---|||- MIT|||
 object_as,---|||- MIT|||
 object_attorney,---|||- MIT|||
@@ -78785,7 +78067,6 @@ obligation,---|||- LGPLv3|||
 oblique_notify,--- |||...|||
 oblivious,---|||- MIT|||
 obo,---|||- MIT|||
-oboe,"---|||- AppNeta Open License, Version 1.0|||"
 oboe,"---|||- AppNeta Open License, Version 1.0|||"
 oboe_fu,--- []|||
 oboe-heroku,"---|||- AppNeta Open License, Version 1.0|||"
@@ -79164,7 +78445,6 @@ ofxrb,
 ofx_ruby,---|||- MIT|||
 og,
 oga,---|||- MPL-2.0|||
-oga,---|||- MPL-2.0|||
 ogatstyle,---|||- MIT|||
 ogc,---|||- MIT|||
 ogem,---|||- GNU/GPLv3|||
@@ -79184,8 +78464,6 @@ ogone-rails,---|||- MIT|||
 ogr,---|||- MIT|||
 ograph,
 ogre,---|||- Apache 2.0|||
-ogre.rb,
-ogre.rb,
 ogre.rb,
 ogrinfo2migration,---|||- MIT|||
 oh,
@@ -80571,7 +79849,6 @@ oni,---|||- MIT|||
 onify,---|||- MIT|||
 onigiri,
 oniguruma,
-oniguruma,
 onion,
 Onion,
 on_irc,
@@ -80904,7 +80181,6 @@ opener-core,---|||- Apache 2.0|||
 opener-coreference,---|||- Apache 2.0|||
 opener-coreference-base,---|||- Apache 2.0|||
 opener-daemons,---|||- Apache 2.0|||
-opener-kaf2json,--- []|||
 opener-kaf2json,---|||- Apache 2.0|||
 opener-kaf-naf-parser,---|||- Apache 2.0|||
 opener-kaf-parser,--- []|||
@@ -80955,8 +80231,6 @@ openfooty,
 opengdsn,
 open_gem,--- []|||
 open_geo_db,
-opengl,---|||- MIT|||
-opengl,---|||- MIT|||
 opengl,---|||- MIT|||
 opengl-bindings,---|||- Zlib|||
 opengl-core,---|||- Simplified BSD|||
@@ -81086,7 +80360,6 @@ openrain-migration_model,--- []|||
 openrain-scenarios,--- []|||
 open-remote,---|||- MIT|||
 openresponsive,---|||- MIT|||
-openrgss,
 openrgss,--- |||...|||
 openrtb,---|||- MIT|||
 openrtb-client,---|||- MIT|||
@@ -81622,8 +80895,6 @@ oria,
 orichalcum,
 oridomi-rails,--- []|||
 orientdb,--- |||...|||
-orientdb,
-orientdb,--- []|||
 orientdb4r,"---|||- Apache License, v2.0|||"
 orientdb-ar,--- |||...|||
 orientdb-binary,---|||- MIT|||
@@ -81894,7 +81165,6 @@ ouidb,---|||- MIT|||
 ouija,
 oui_lookup,
 oui-offline,---|||- MIT|||
-oui-offline,---|||- MIT|||
 ouisearch,---|||- MIT|||
 oujoke,
 oulipo,
@@ -82149,8 +81419,6 @@ p3-transmission,---|||- MIT|||
 p3-tv,---|||- MIT|||
 p3-tvdb,---|||- MIT|||
 p4,---|||- MIT|||
-p4ruby,---|||- MIT|||
-p4ruby,---|||- MIT|||
 p4ruby,---|||- MIT|||
 P4Ruby-mingwx86,--- []|||
 p4tools,---|||- GPL-2|||
@@ -82695,8 +81963,6 @@ pangel-sg-ruby,
 pangel-testy,
 pangloss,--- []|||
 pango,---|||- LGPL-2.1+|||
-pango,---|||- LGPL-2.1+|||
-pango,---|||- LGPL-2.1+|||
 pangolin,
 pangrammic_surplus,--- []|||
 pangrid,---|||- MIT|||
@@ -83182,8 +82448,6 @@ parse-stack,---|||- MIT|||
 parse-stack-async,---|||- MIT|||
 parse_to_hash,---|||- MIT|||
 ParseTree,
-ParseTree,
-ParseTree,
 parsetree19,--- |||...|||
 ParseTreeReloaded,
 ParseUserAgent,
@@ -83442,7 +82706,6 @@ pathby,
 path-dependencies,---|||- MIT|||
 pathdude,---|||- BSD|||
 patheditor,
-patheditor,
 path-email_spec,
 path_expander,---|||- MIT|||
 path_finder,
@@ -83461,9 +82724,6 @@ path_maker,---|||- MIT|||
 path_manager,---|||- MIT|||
 path_mapper,---|||- MIT|||
 pathname2,---|||- Apache 2.0|||
-pathname2,
-pathname2,---|||- Apache 2.0|||
-pathname2,
 pathname3,--- |||...|||
 pathname-common_prefix,
 pathname-glob,---|||- MIT|||
@@ -83899,7 +83159,6 @@ pdf-my-url,
 pdf-page-count,---|||- BSD-3-Clause|||
 pdf_paradise,---|||- GPL-2.0|||
 pdfpl,---|||- MIT|||
-pdf_ravager,--- |||...|||
 pdf_ravager,---|||- MIT|||
 pdf_reader,
 pdf-reader,---|||- MIT|||
@@ -83945,7 +83204,6 @@ pdf-writer,
 pdg,--- []|||
 pdist,---|||- MIT|||
 pdk,--- []|||
-pdkim,---|||- MIT|||
 pdkim,---|||- MIT|||
 pdm,
 pd_metrics,--- []|||
@@ -84369,7 +83627,6 @@ perkins-rails,---|||- MIT|||
 perl,---|||- Apache 2.0|||
 perlbox,---|||- bsd|||
 perlin,---|||- MIT|||
-perlin,---|||- MIT|||
 perlin_noise,
 perm,---|||- MIT|||
 perma_cache,---|||- MIT|||
@@ -84609,17 +83866,12 @@ pftg-jruby-openssl,
 pfttest,---|||- BSD|||
 pfuse,
 pg,---|||- BSD-3-Clause|||
-pg,---|||- BSD-3-Clause|||
-pg,
-pg,---|||- BSD-3-Clause|||
-pg,
 pg_adaptor,--- []|||
 pg_advisory_locker,---|||- New BSD License|||
 pga_leaderboard,---|||- MIT|||
 pg_application_name,---|||- New BSD License|||
 pg-app-name,
 pg_array,
-pg_array_parser,--- []|||
 pg_array_parser,--- []|||
 pg_assets,--- []|||
 pg_audit_log,---|||- MIT|||
@@ -85178,8 +84430,6 @@ piculet,---|||- MIT|||
 pid,--- []|||
 pidfile,
 pidgin2adium,
-pidgin2adium,
-pidify,
 pidify,
 pidlock,--- []|||
 pid_lock,---|||- MIT|||
@@ -85264,7 +84514,6 @@ pika_q,---|||- MIT|||
 pike,---|||- MIT|||
 pikelet,---|||- MIT|||
 piki_doc,
-pikl,
 pikl,
 piko_model,---|||- GPL-3.0|||
 piko_mongo_store,---|||- GPL-3.0|||
@@ -85690,11 +84939,7 @@ pjstadig-rena,--- []|||
 pjstadig-rubyrdf,--- []|||
 pk,--- []|||
 pkcs11,---|||- MIT|||
-pkcs11,
-pkcs11,---|||- MIT|||
-pkcs11,---|||- MIT|||
 pkcs11_protect_server,---|||- MIT|||
-pkcs11_protect_server,
 pkg,
 pkg-config,---|||- LGPLv2+|||
 pkgforge,---|||- MIT|||
@@ -85834,9 +85079,6 @@ platform_lib,---|||- MIT|||
 platform_sh,---|||- MIT|||
 platform_sh_rails,---|||- MIT|||
 platform-skvs,---|||- Apache|||
-platform-tests,---|||- MIT|||
-platform-tests,---|||- MIT|||
-platform-tests,---|||- MIT|||
 platform-tests,---|||- MIT|||
 platformx,---|||- Use by permission only.|||
 platidoma,--- []|||
@@ -86588,7 +85830,6 @@ popel-attachment_fu,--- []|||
 popel-exception_notification,--- []|||
 popen4,
 POpen4,
-POpen4,
 POpen4-mingw,
 poper,---|||- MIT|||
 popflash_match_downloader,---|||- MIT|||
@@ -86602,8 +85843,6 @@ popolo,---|||- MIT|||
 popper,---|||- MIT|||
 popper_js,---|||- MIT|||
 poppins,
-poppler,---|||- LGPL-2.1+|||
-poppler,---|||- LGPL-2.1+|||
 poppler,---|||- LGPL-2.1+|||
 poppy,---|||- MIT|||
 poppycock,
@@ -86831,7 +86070,6 @@ postgrestats,---|||- MIT|||
 postgres_to_redshift,---|||- MIT|||
 postgres_tree,---|||- MIT|||
 postgres_upsert,---|||- MIT|||
-postgres_upsert,--- []|||
 post_haste,--- []|||
 posthaven_theme,---|||- MIT|||
 posthorn,---|||- MIT|||
@@ -87115,7 +86353,6 @@ prathe_devise_ldap_authenticatable,
 prathe_net-ldap,
 prathe-net-ldap,--- |||...|||
 Pratt,
-Pratt,
 pratt_parser,---|||- MIT|||
 pravangi,---|||- MIT|||
 pravigo-duration,---|||- MIT|||
@@ -87290,8 +86527,6 @@ prenus,---|||- MIT|||
 prep,
 pre-packager,---|||- MIT|||
 prepcook,--- []|||
-prepend,
-prepend,
 prepend,
 prepend_and_append,---|||- MIT|||
 prepend_code,--- []|||
@@ -87871,11 +87106,7 @@ progstr-filer,
 progstr-ruby,
 proiel,---|||- MIT|||
 proiel-cli,---|||- MIT|||
-proj4rb,
-proj4rb,
-proj4rb,
 proj4rb,---|||- MIT|||
-proj4rb,--- |||...|||
 project,
 project_106,---|||- MIT|||
 project3v3,--- []|||
@@ -88112,7 +87343,6 @@ protip,---|||- MIT|||
 protk,---|||- LGPL-2.1|||
 proto,--- []|||
 protobox,---|||- MIT|||
-protobuf,--- []|||
 protobuf,---|||- MIT|||
 protobuf-activerecord,---|||- MIT|||
 protobuf-closure-library,--- |||...|||
@@ -88128,8 +87358,6 @@ protobuf-rpc-register,---|||- MIT|||
 protobuf-rpc-socket,---|||- MIT|||
 protobuf-rspec,--- []|||
 protobuf_spec,---|||- GPL|||
-protoc,---|||- BSD|||
-protoc,---|||- BSD|||
 protoc,---|||- BSD|||
 proto_cat,---|||- MIT|||
 protocol,---|||- GPL-2|||
@@ -88304,10 +87532,6 @@ pruview,---|||- MIT|||
 prvel,---|||- MIT|||
 prx_auth-rails,---|||- MIT|||
 prx_client,--- []|||
-pry,---|||- MIT|||
-pry,---|||- MIT|||
-pry,---|||- MIT|||
-pry,---|||- MIT|||
 pry,---|||- MIT|||
 pry-aa_ancestors,---|||- MIT|||
 pryable,--- |||...|||
@@ -88488,7 +87712,6 @@ pswincom,
 pswp-rails,---|||- MIT|||
 ps_yandex_translator,---|||- MIT|||
 psych,---|||- MIT|||
-psych,---|||- MIT|||
 psych_analyzer,--- []|||
 psychedelic,
 psychic,
@@ -88524,8 +87747,6 @@ ptolemy,--- []|||
 ptomato-ramaze,--- []|||
 pt-online-migration,---|||- MIT|||
 ptools,---|||- Artistic 2.0|||
-ptools,---|||- Artistic-2.0|||
-ptools,
 pt-osc,---|||- MIT|||
 pt_papersize,---|||- MIT|||
 Ptrace,---|||- GPLv3|||
@@ -88672,7 +87893,6 @@ pulse_meter-dygraphs_visualizer,--- []|||
 pulse-meter-rails,
 pulse_meter_visualizer,--- []|||
 puma,---|||- BSD-3-Clause|||
-puma,---|||- BSD-3-Clause|||
 puma_auto_tune,---|||- MIT|||
 puma_backlog_detector,---|||- MIT|||
 puma-clocker,---|||- MIT|||
@@ -88738,9 +87958,6 @@ pupcap,--- []|||
 pupil,--- []|||
 pupistry,---|||- Apache|||
 pupper,---|||- MIT|||
-puppet,--- []|||
-puppet,--- []|||
-puppet,--- []|||
 puppet,--- []|||
 puppet_agent_mgr,--- |||...|||
 puppet-armature,---|||- BSD-2-Clause|||
@@ -89189,7 +88406,6 @@ pxgraphviz,---|||- MIT|||
 pxindex,---|||- MIT|||
 pxlite,---|||- MIT|||
 pxlsrt,---|||- MIT|||
-pxlsrt,---|||- MIT|||
 pxpay,
 pxrowx,---|||- MIT|||
 px-service-client,---|||- MIT|||
@@ -89264,13 +88480,11 @@ qa_release_tasks,
 qarioz-confluencer,--- []|||
 qa_robusta,
 qa-tool,---|||- MIT|||
-qa-tool,---|||- MIT|||
 q_auth_ruby_client,---|||- MIT|||
 qaxqa,---|||- MIT|||
 qb,---|||- MIT|||
 qbert,---|||- MIT|||
 qbert_bot,---|||- MIT|||
-qbfc,
 qbfc,
 qb_iif,--- []|||
 qbo_api,---|||- MIT|||
@@ -89380,7 +88594,6 @@ qlgit,--- []|||
 qlive,--- []|||
 qlive-rails,--- []|||
 qlive-rspec,--- []|||
-qlzruby,
 qlzruby,
 qm,---|||- Apache-2.0|||
 qm-acts-as-generic-controller,--- |||...|||
@@ -89496,9 +88709,6 @@ qswarm,--- []|||
 qt1070,---|||- MIT|||
 qtapp,--- []|||
 qtbindings,---|||- LGPL-2.1|||
-qtbindings,---|||- LGPL-2.1|||
-qtbindings,---|||- LGPL-2.1|||
-qtbindings-qt,---|||- LGPL-2.1|||
 qtbindings-qt,---|||- LGPL-2.1|||
 qt-commander,---|||- MIT|||
 qt_connect,
@@ -89898,7 +89108,6 @@ quintly,---|||- MIT|||
 quintocumber,---|||- MIT|||
 quintus-example-gem,
 quintype,---|||- MIT|||
-quintype,---|||- MIT|||
 quintype-api,--- []|||
 quintype-liquid,--- []|||
 quintype-routes,--- []|||
@@ -90037,16 +89246,10 @@ r19cov,
 r1_hiya_hmk,--- []|||
 r2,--- []|||
 r2corba,---|||- R2CORBA|||- JacORB|||
-r2corba,---|||- R2CORBA|||- ACE|||- GPL|||
-r2corba,---|||- R2CORBA|||- ACE|||- GPL|||
-r2corba,---|||- R2CORBA|||- ACE|||- GPL|||
-r2corba,---|||- R2CORBA|||- JacORB|||
 r2corba_devkit,---|||- R2CORBA|||
 r2corba_ext18,---|||- R2CORBA|||- ACE|||
 r2corba_ext19,---|||- R2CORBA|||- ACE|||
 r2corba_ext20,---|||- R2CORBA|||- ACE|||
-r2corba_ext20,---|||- R2CORBA|||- ACE|||
-r2corba_ext21,---|||- R2CORBA|||- ACE|||
 r2corba_ext21,---|||- R2CORBA|||- ACE|||
 r2d3,---|||- MIT|||
 r2do,
@@ -90119,7 +89322,6 @@ rabbitmon,---|||- MIT|||
 rabbitmq,---|||- MIT|||
 rabbitmq-actors,--- []|||
 rabbitmqadmin-cli,--- |||...|||
-rabbitmqadmin-cli,
 rabbitmq-cluster,---|||- MIT|||
 rabbitmq-definition,---|||- MIT|||
 rabbitmq_http_api_client,---|||- MIT|||- Mozilla Public License|||
@@ -90397,7 +89599,6 @@ rac1-endirecte,--- []|||
 raca,---|||- MIT|||
 ra-capistrano-recipes,
 racatt,---|||- MIT|||
-racc,---|||- MIT|||
 racc,---|||- MIT|||
 raccdoc,
 raccept,
@@ -91682,7 +90883,6 @@ ragoon,---|||- MIT|||
 ragot,--- []|||
 ragtag,---|||- BSD-2-Clause|||
 ragweed,--- |||...|||
-ragweed,
 raheui,---|||- MIT|||
 rahoulb-object-factory,--- []|||
 rahoulb-rujitsu,--- []|||
@@ -93473,8 +92673,6 @@ rapleaf_api,
 rapnd,
 rapnd-mikec54088,---|||- MIT|||
 rapngasm,---|||- libpng/zlib|||
-rapngasm,---|||- libpng/zlib|||
-rapns,--- []|||
 rapns,--- []|||
 rapns_rails_2,--- []|||
 raport,---|||- MIT|||
@@ -93540,7 +92738,6 @@ rasn1,--- []|||
 raspar,--- []|||
 raspberrio,--- []|||
 raspell,--- |||...|||
-rasper,---|||- MIT|||
 rasper,---|||- MIT|||
 rasper_client,---|||- MIT|||
 raspi_lcd,--- []|||
@@ -93636,7 +92833,6 @@ rautomation,---|||- MIT|||
 raval,--- []|||
 rav_codebreaker,--- []|||
 rave,
-rave,
 ravelin,---|||- MIT|||
 ravello-sdk,---|||- Apache-2.0|||
 ravelry,---|||- MIT|||
@@ -93727,9 +92923,7 @@ rb232,
 rb2db,--- []|||
 rb2exe,---|||- CC0-1.0|||
 rb2so,
-rb8-trepanning,--- |||...|||
 rb8-trepanning,---|||- MIT|||
-rb8-trepanning,
 rbabel,
 rbac,---|||- MIT|||
 rbacanable,
@@ -93792,9 +92986,6 @@ rbcurse-extras,
 rbczmq,---|||- MIT|||
 rbdaemon,---|||- MIT|||
 rbdash,--- []|||
-rb-daspk,
-rb-daspk,
-rb-daspk,
 rb-daspk,
 rb-dayone,--- []|||
 rbdb,--- []|||
@@ -93872,7 +93063,6 @@ rbinvoice,---|||- MIT|||
 rbiphonetest,
 rbIRC,---|||- MIT|||
 rbish,---|||- MIT|||
-rbitter,---|||- MIT|||
 rbitter,---|||- MIT|||
 rbjs,--- []|||
 rb_jstat2gf,---|||- MIT|||
@@ -94056,22 +93246,10 @@ rb_webcam,
 rbwowhead,
 rb_wunderground,--- []|||
 RBX,---|||- MIT|||
-rbx-linecache,
 rbx-linecache,---|||- MIT|||
-rbx-linecache,
-rbx-linecache,---|||- MIT|||
-rbx-require-relative,
 rbx-require-relative,--- |||...|||
-rbx-require-relative,
-rbx-require-relative,
-rbx-require-relative,--- |||...|||
-rbx-require-relative,
 rbx-tracer,--- |||...|||
-rbx-tracer,
 rbx-trepanning,---|||- MIT|||
-rbx-trepanning,
-rbx-trepanning,---|||- MIT|||
-rbx-trepanning,
 RbYAML,
 rbygem,--- []|||
 rbyt,---|||- MIT|||
@@ -94164,8 +93342,6 @@ rconomic,---|||- MIT|||
 rconsole,---|||- MIT|||
 rcor,
 rcore-ext,---|||- MIT|||
-rcov,
-rcov,
 rcov,
 rcov_notifier,
 rcov_plugin,
@@ -94603,8 +93779,6 @@ realhq,---|||- MIT|||
 realiaser,--- []|||
 Realiaser,--- []|||
 real_include,
-real_include,
-real_include,
 reality,---|||- MIT|||
 reality-belt,---|||- Apache-2.0|||
 reality-core,--- []|||
@@ -94744,7 +93918,6 @@ reco4life,---|||- MIT|||
 recochoku-chart,---|||- MIT|||
 recog,--- []|||
 recognition,--- []|||
-recognizer,
 recognizer,--- []|||
 recoil,---|||- MIT|||
 recollect,--- []|||
@@ -94849,7 +94022,6 @@ recursive-struct,---|||- MIT|||
 recycle,---|||- MIT|||
 red,
 red25519,
-red25519,
 red5,---|||- MIT|||
 redact,---|||- COPYING|||
 redacted,---|||- MIT|||
@@ -94892,23 +94064,16 @@ redcap,--- []|||
 RedcapAPI,---|||- MIT|||
 redcap-survey-api,---|||- MIT|||
 redcar,
-redcar-bundles,
 redcar-bundles,--- |||...|||
 redcar-clojure,--- |||...|||
-redcar-clojure,
 redcard,--- []|||
 redcar-filter-through-command,--- |||...|||
 redcar-groovy,--- |||...|||
-redcar-groovy,
 redcar-html,--- |||...|||
 redcar-icons,
-redcar-icons,
 redcar-javamateview,--- |||...|||
-redcar-javamateview,
-redcar-javascript,
 redcar-javascript,
 redcar-jruby,--- |||...|||
-redcar-mirah,
 redcar-mirah,
 redcarpet,---|||- MIT|||
 redcarpet-abbreviations,---|||- MIT|||
@@ -94921,17 +94086,11 @@ redcarpet_yt,---|||- MIT|||
 redcar_plugin,
 redcar-sparkup,
 redcar-svnkit,
-redcar-svnkit,
-redcar-xulrunner-win,
 redcar-xulrunner-win,
 redcat,
 redchick,---|||- MIT|||
 redcli,---|||- MIT|||
-RedCloth,
-RedCloth,
-RedCloth,--- |||...|||
 RedCloth,---|||- MIT|||
-RedCloth,
 redclothcoderay,
 redcloth-formatters-ast,
 redcloth-formatters-docbook,
@@ -95273,7 +94432,6 @@ redis_snippets,---|||- MIT|||
 redis-spawn,--- []|||
 redis-ssdb-proxy,---|||- MIT|||
 redis-stat,---|||- MIT|||
-redis-stat,---|||- MIT|||
 redis_status,
 redis_storage,--- |||...|||
 redis_storage_methods,--- []|||
@@ -95383,7 +94541,6 @@ redmine_wiki_exporter,
 redmine_wiki_issue_details,
 redmint_composer,---|||- MIT|||
 redmiso,
-redmocha,---|||- MIT|||
 redmocha,---|||- MIT|||
 redmon,--- []|||
 RedNails,
@@ -95916,7 +95073,6 @@ relativity,
 relativize,---|||- MIT|||
 relax,
 relax4,--- []|||
-relax4,
 relaxation,---|||- MIT|||
 relaxdb,
 relaxed-job,
@@ -95969,7 +95125,6 @@ relevance-log_buddy,--- []|||
 relevance-multi_rails,--- []|||
 relevance-obsidian,--- []|||
 relevance_rails,
-relevance-rcov,--- []|||
 relevance-rcov,--- []|||
 relevance-rubycas-server,--- []|||
 relevance-sinatra,--- []|||
@@ -96086,8 +95241,6 @@ remit2,
 remi-tweet-tweet,--- []|||
 remi-vimilicious,--- []|||
 remi-vim-twitter,--- []|||
-remix,
-remix,
 remix,
 remixir,---|||- MIT|||
 remixr,
@@ -96265,9 +95418,7 @@ reneedv_hello_gem,--- |||...|||
 reneedv_test_gem,
 renee-render,--- |||...|||
 renegade,---|||- Apache 2.0|||
-renet,
 renet,---|||- MIT|||
-renet,
 renewable,---|||- MIT|||
 renfield,
 renke_view_tool,---|||- MIT|||
@@ -96998,9 +96149,6 @@ rest_chain,---|||- MIT|||
 restclient,---|||- MIT|||
 rest_client,---|||- MIT|||
 rest-client,---|||- MIT|||
-rest-client,---|||- MIT|||
-rest-client,---|||- MIT|||
-rest-client,---|||- MIT|||
 restclient_api_base,---|||- MIT|||
 rest-client-components,--- []|||
 rest_client_hasher,---|||- MIT|||
@@ -97245,7 +96393,6 @@ retroactive_module_inclusion,--- |||...|||
 retrobot,--- []|||
 retro_casts,---|||- MIT|||
 retroflix,---|||- MIT|||
-retrograph,
 retrograph,
 retrograph_easy,
 retro_idl,---|||- MIT|||
@@ -97556,8 +96703,6 @@ rforcedotcom,
 rforce-raygao,
 rformat,---|||- MIT|||
 rformspec,--- []|||
-rformspec,
-rformunit,
 rformunit,
 rfortune,
 rfpdf,---|||- LGPL 2.1 or later|||
@@ -97596,7 +96741,6 @@ rgb_to_hex_color,---|||- MIT|||
 rgb_utils,---|||- MIT|||
 rgc,---|||- MIT|||
 rgcm,---|||- MIT|||
-rgd,
 rgd,
 rgd2-ffij,
 rgdaddy,---|||- MIT|||
@@ -97791,7 +96935,6 @@ ribbonit,--- []|||
 ribbon-plugins,---|||- BSD|||
 ribeye,---|||- MIT|||
 rib_fix,
-rib_fix,
 rib-heroku,
 ribhu,---|||- MIT|||
 ribimaybe,---|||- MIT|||
@@ -97909,7 +97052,6 @@ riemann-aws-dynamodb,---|||- MIT|||
 riemann-aws-rds,---|||- MIT|||
 riemann-babbler,---|||- MIT|||
 riemann-cassandra,---|||- MIT|||
-riemann-cassandra,---|||- MIT|||
 riemann_check_http,---|||- MIT|||
 riemann-chronos,---|||- MIT|||
 riemann-cli,---|||- MIT|||
@@ -97972,7 +97114,6 @@ rigeon,---|||- MIT|||
 rigger,
 rigging,--- []|||
 right_agent,--- []|||
-right_agent,--- []|||
 right_amqp,--- []|||
 right_api,
 right_api_client,---|||- MIT|||
@@ -98005,8 +97146,6 @@ rightnow-client,--- []|||
 rightnow_oms,
 right_on,---|||- MIT|||
 right_popen,--- []|||
-right_popen,--- []|||
-right-popen,
 right-popen,
 right_publish,---|||- Proprietary|||
 right_rackspace,
@@ -98303,7 +97442,6 @@ rjack-rome,
 rjack-slf4j,--- []|||
 rjack-solr,--- []|||
 rjack-tarpit,--- []|||
-rjack-tarpit,--- []|||
 rjack-xerces,--- []|||
 rjack-zookeeper,--- []|||
 rj_api,--- []|||
@@ -98311,12 +97449,7 @@ rjaram20-rubycalc,---|||- ARTISTIC|||
 rjaswal-geokit,
 rjawbone,---|||- MIT|||
 rjax,---|||- MIT|||
-rjb,
 rjb,---|||- LGPL-2.1|||
-rjb,
-rjb,
-rjb,---|||- LGPL|||
-rjb,
 rjb-loader,--- []|||
 rjb-require,
 rjgit,---|||- Modified BSD|||- EPL|||
@@ -98593,7 +97726,6 @@ rmacaddr,---|||- MIT|||
 r_machine,---|||- MIT|||
 rmagick,---|||- MIT|||
 rmagick4j,---|||- MIT|||
-rmagick4j,---|||- MIT|||
 rmagick_captcha,--- []|||
 rmagick-image_colors,--- []|||
 rmagick-metadata,
@@ -98672,7 +97804,6 @@ rmmseg_seoaqua,---|||- MIT|||
 rmmtest1,---|||- MIT|||
 rmobio,
 rmodbus,---|||- BSD-3-Clause|||
-rmodbus,
 rmodel,---|||- MIT|||
 rmoip,
 rm_old,---|||- MIT|||
@@ -99039,7 +98170,6 @@ roda-symbolized_params,---|||- MIT|||
 roda-tags,---|||- MIT|||
 roda-unpoly,---|||- MIT|||
 rodauth,---|||- MIT|||
-rodauth-become_account,---|||- MIT|||
 rodauth-become_account,---|||- MIT|||
 roda-will_paginate,---|||- MIT|||
 rodders,---|||- MIT|||
@@ -99518,9 +98648,7 @@ rounders-gdata-ruby,
 rounders-rails,---|||- MIT|||
 rounders-yaml,---|||- MIT|||
 roundest,---|||- GPL-3.0|||
-roundhouse,
 roundhouse,--- []|||
-roundhouse,
 roundhousekiq,---|||- MIT|||
 roundhouse-x,---|||- LGPL-3.0|||
 rounding,---|||- Public Domain|||
@@ -99767,7 +98895,6 @@ rps_ysc,---|||- MIT|||
 rptman,
 rpub,--- []|||
 rpush,---|||- MIT|||
-rpush,---|||- MIT|||
 rpush-mongoid,---|||- MIT|||
 rpush-plugin-bugsnag,---|||- MIT|||
 rpush-plugin-sentry,---|||- MIT|||
@@ -99785,7 +98912,6 @@ rpx_regexp,
 rpy,
 rq,--- []|||
 rqoot,---|||- MIT|||
-rqr,
 rqr,
 rqr19,
 rqrcode,--- []|||
@@ -99848,10 +98974,6 @@ rrobots,--- |||...|||
 rroc,
 rrod,---|||- MIT|||
 rrod-rails,---|||- MIT|||
-rroonga,---|||- LGPL-2.1|||
-rroonga,
-rroonga,
-rroonga,---|||- LGPL-2.1|||
 rroonga,---|||- LGPL-2.1|||
 rrope,---|||- MIT|||
 rrpn,---|||- MIT|||
@@ -100562,8 +99684,6 @@ rsutphin-shenandoah,--- []|||
 rs_vagrant_shim,---|||- MIT|||
 rsvejo,
 rsvg2,---|||- LGPL-2.1+|||
-rsvg2,---|||- LGPL-2.1+|||
-rsvg2,---|||- LGPL-2.1+|||
 rsvgr,---|||- MIT|||
 rsvm,--- []|||
 rsvn,--- []|||
@@ -100666,19 +99786,15 @@ rtmfr,---|||- MIT|||
 rtmidi,---|||- BSD|||
 rtmilk,---|||- MIT|||
 rtm-javatmapi,
-rtm-javatmapi,
 rtml,
 rtm-majortom,
-rtm-ontopia,
 rtm-ontopia,
 rtm-rails,
 rtm-sesametm,
 rtm-shell,
 rtm-time,--- []|||
 rtm-tinytim,
-rtm-tinytim,
 rtm-tmcl,
-rtm-tmql,
 rtm-tmql,
 rt-multilogger,---|||- GPL|||
 rtmux,---|||- MIT|||
@@ -100718,7 +99834,6 @@ rtsd,---|||- MIT|||
 rtsp,---|||- MIT|||
 rt_sphinx,---|||- MIT|||
 rtsp_server,---|||- MIT|||
-rtsp_server,---|||- MIT|||
 rtsptools,---|||- GPL-2.0|||
 rtsung,---|||- MIT|||
 rtt,
@@ -100737,13 +99852,9 @@ rt-watchman,---|||- MIT|||
 RTwitter,---|||- MIT|||
 rtx-api,---|||- MIT|||
 rtype,---|||- MIT|||
-rtype,---|||- MIT|||
 r_type,---|||- MIT|||
 rtype-java,---|||- MIT|||
-rtype-java,---|||- MIT|||
 rtype-legacy,---|||- MIT|||
-rtype-legacy,---|||- MIT|||
-rtype-legacy-java,---|||- MIT|||
 rtype-legacy-java,---|||- MIT|||
 rtype-legacy-native,---|||- MIT|||
 rtype-native,---|||- MIT|||
@@ -100751,7 +99862,6 @@ rtypeset,---|||- MIT|||
 rtypist,
 ru,---|||- MIT|||
 ru2,---|||- MIT|||
-rua,
 rua,
 ruactor,---|||- MIT|||
 ruam,--- []|||
@@ -100870,7 +99980,6 @@ rubinius-build_tools,---|||- BSD|||
 rubinius-bundler-canary,---|||- BSD|||
 rubinius-code,---|||- MPL-2.0|||
 rubinius-compiler,---|||- MPL-2.0|||
-rubinius-core-api,
 rubinius-core-api,--- |||...|||
 rubinius-coverage,---|||- BSD|||
 rubinius-debugger,---|||- BSD|||
@@ -101267,8 +100376,6 @@ rubx,---|||- MIT|||
 ruby,
 ruby1024,--- []|||
 ruby18_source_location,
-ruby18_source_location,
-ruby18_source_location,
 ruby19_stable_sort,
 ruby2c,--- |||...|||
 ruby2cext,
@@ -101298,8 +100405,6 @@ ruby-adsb,---|||- MIT|||
 ruby-adt,
 ruby-advisory-db-check,---|||- MIT|||
 ruby_aem,---|||- Apache 2.0|||
-ruby-aes-cext,
-ruby-aes-cext,
 ruby-aes-cext,
 ruby-aes-normal,
 ruby-aes-optimized,
@@ -101351,7 +100456,6 @@ ruby_ast_visualizer,---|||- GPLv2|||
 ruby-atmos,
 ruby-atmos-pure,
 ruby-audio,--- |||...|||
-ruby-audio,
 ruby-audio-heroku,--- |||...|||
 ruby-audioinfo,---|||- GPL-3.0|||
 ruby_audit,---|||- GPLv3|||
@@ -101389,7 +100493,6 @@ rubybits,---|||- MIT|||
 ruby_bittorrent,---|||- MIT|||
 ruby-blackjack,---|||- GPL-3.0|||
 ruby-blockcache,
-ruby-blockcache,
 ruby-blocky-image-viewer,---|||- MIT|||
 rubybody,---|||- MIT|||
 ruby-booker,---|||- MIT|||
@@ -101417,8 +100520,6 @@ ruby_build_info,---|||- MIT|||
 rubybukkit,---|||- MIT|||
 ruby-bulksms,--- []|||
 ruby-bullet,--- |||...|||
-ruby-bullet,--- []|||
-ruby-bullet,--- []|||
 rubybuntu-gedit,
 ruby_buzz,---|||- MIT|||
 rubybvc,---|||- BSD|||
@@ -101541,7 +100642,6 @@ ruby-cyrus-sasl,
 ruby-czmq-ffi,---|||- MIT|||
 ruby-d2l,
 ruby_da,---|||- MIT|||
-ruby_da,---|||- MIT|||
 ruby-daj,---|||- MIT|||
 ruby_danfe,---|||- MIT|||
 ruby-dart2js,--- []|||
@@ -101557,11 +100657,8 @@ ruby-ddp-client,
 ruby-deb,--- []|||
 ruby-debian,
 ruby-debug,--- []|||
-ruby-debug,
 ruby-debug19,
 ruby-debug193,
-ruby-debug-base,
-ruby-debug-base,
 ruby-debug-base,--- []|||
 ruby-debug-base19,
 ruby-debug-base193,--- |||...|||
@@ -101609,7 +100706,6 @@ ruby_docx,--- []|||
 ruby_docx_beta,---|||- MIT|||
 ruby-doom,
 rubydoop,--- []|||
-rubydoop,
 ruby_doozer,---|||- Apache License V2.0|||
 ruby_do_plugin_execute_application,
 ruby_do_plugin_filesearch,
@@ -101680,8 +100776,6 @@ ruby_fall_gem_test,---|||- MIT|||
 ruby_fall_gem_test2,---|||- MIT|||
 ruby-fann,--- []|||
 rubyfb,
-rubyfb,
-rubyfb,
 rubyfca,--- |||...|||
 ruby-fcgi,
 ruby-fcp,---|||- Unlicense|||
@@ -101696,8 +100790,6 @@ ruby_fgraph,
 ruby-fifo,--- []|||
 ruby-fighter,---|||- MIT|||
 ruby_figlet,---|||- GPL-3.0|||
-ruby-filemagic,---|||- Ruby|||
-ruby-filemagic,---|||- Ruby|||
 ruby-filemagic,---|||- Ruby|||
 ruby-fillform,--- []|||
 ruby_firebase_verify,---|||- MIT|||
@@ -101722,7 +100814,6 @@ ruby-formatting,--- []|||
 ruby-for-xinge,---|||- MIT|||
 rubyfox-client,--- []|||
 rubyfox-server,---|||- MIT|||
-rubyfox-sfsobject,
 rubyfox-sfsobject,--- []|||
 ruby-framenet,---|||- BSD-3-Clause|||
 ruby-freedb,---|||- Artistic|||- GPL-2|||
@@ -101744,10 +100835,6 @@ rubyfuu,---|||- MIT|||
 rubyfw,
 ruby_gallery,---|||- MIT|||
 ruby-gallery3,---|||- MIT|||
-rubygame,
-rubygame,
-rubygame,
-rubygame,
 rubygame,
 ruby_game,--- []|||
 ruby_game_of_life,---|||- MIT|||
@@ -101774,7 +100861,6 @@ rubygems-checkcert,---|||- MIT|||
 rubygems_check_replacement_vulnerability,---|||- MIT|||
 rubygems-cleanroom,---|||- MIT|||
 rubygems-code_finder,---|||- MIT|||
-rubygems-compile,
 rubygems-compile,
 rubygems-crawler,--- []|||
 rubygems-deep_fetch,--- []|||
@@ -101924,7 +101010,6 @@ ruby-immutable-struct,---|||- MIT|||
 ruby_indentation,
 ruby_info,---|||- MIT|||
 ruby-informix,---|||- BSD-3-Clause|||
-ruby-informix,
 RubyInline,---|||- MIT|||
 RubyInlineAcceleration,
 RubyInlineWithoutZenTest,---|||- MIT|||
@@ -101957,8 +101042,6 @@ rubyist-fakeweb,--- []|||
 rubyist-github,--- []|||
 rubyist-jacker,--- []|||
 ruby_it,--- []|||
-ruby-iup,
-ruby-iup,
 ruby-iup,
 ruby-ivy,
 ruby-iwlist,
@@ -102011,7 +101094,6 @@ rubyks,---|||- MIT|||
 ruby-kubernetes,--- []|||
 ruby_l10n,---|||- MIT|||
 rubylabs,--- []|||
-ruby-lapack,
 ruby-lapack,--- []|||
 ruby-last.fm-wrapper,
 ruby-ldap,--- []|||
@@ -102046,7 +101128,6 @@ ruby_linear_regression,---|||- MIT|||
 ruby-linkedin,
 ruby-lint,---|||- MPL-2.0|||
 rubylisp,---|||- MIT|||
-ruby-ll,---|||- MPL-2.0|||
 ruby-ll,---|||- MPL-2.0|||
 ruby-llenv,--- []|||
 ruby-llvm,--- []|||
@@ -102091,7 +101172,6 @@ ruby-mass,--- []|||
 ruby_math,---|||- MIT|||
 ruby_matrix_to_svg,---|||- MIT|||
 ruby-maven,---|||- EPL|||
-ruby-maven,
 ruby-maven-libs,---|||- APL|||
 ruby_maxima,--- []|||
 ruby-maybe,---|||- MIT|||
@@ -102202,16 +101282,10 @@ ruby-ntlm,---|||- MIT|||
 ruby-ntlm-namespace,--- []|||
 ruby-nuggets,---|||- AGPL-3.0|||
 ruby-numtheory,---|||- MIT|||
-ruby-numtheory,
-ruby-numtheory,
 ruby-nxt,
 RubyObjC,
 ruby-objc-nil,
-ruby-oci8,
 ruby-oci8,---|||- BSD-2-Clause|||
-ruby-oci8,---|||- BSD-2-Clause|||
-ruby-oci8,---|||- BSD-2-Clause|||
-ruby-oci8,
 ruby-oci8-master,
 ruby_odata,---|||- MIT|||
 ruby-odbc,--- []|||
@@ -102221,7 +101295,6 @@ ruby-oembed,---|||- MIT|||
 ruby-ogc,--- []|||
 ruby-ogg,--- []|||
 ruby-ogginfo,--- []|||
-ruby-ogre,
 ruby-ogre,--- []|||
 ruby-ois,--- []|||
 ruby-ole,---|||- MIT|||
@@ -102233,15 +101306,10 @@ ruby_on_ruby,--- []|||
 ruby_on_skis,
 ruby_onvif_client,--- []|||
 ruby-openal,
-ruby-opencv,---|||- BSD-3-Clause|||
-ruby-opencv,---|||- The BSD License|||
-ruby-opencv,---|||- The BSD License|||
-ruby-opencv,--- []|||
 ruby-opencv,---|||- The BSD License|||
 ruby-openfec,---|||- MIT|||
 ruby-opengeodb,
 ruby-opengl,--- []|||
-ruby-opengl,
 ruby-opengl2,--- []|||
 ruby-openid,---|||- Ruby|||- Apache Software License 2.0|||
 ruby-openid-apps-discovery,
@@ -102321,7 +101389,6 @@ ruby_postal,---|||- MIT|||
 ruby_postcode_anywhere,--- []|||
 ruby-postcodeanywhere,---|||- MIT|||
 ruby-postgres,
-ruby-postgres,
 ruby_powerpoint,---|||- MIT|||
 rubypp,
 rubypress,---|||- GPLv2|||
@@ -102331,12 +101398,7 @@ ruby_process,---|||- MIT|||
 RubyProcess,---|||- MIT|||
 ruby-processing,---|||- MIT|||
 ruby-procinfo,---|||- BSD-3-Clause|||
-ruby-procinfo,--- []|||
-ruby-prof,
-ruby-prof,--- []|||
-ruby-prof,
 ruby-prof,---|||- BSD-2-Clause|||
-ruby-prof,
 ruby-prof-danielhoey,
 ruby-prof-flamegraph,---|||- MIT|||
 ruby_prof_helper,---|||- MIT|||
@@ -102448,14 +101510,6 @@ ruby-rtf,--- []|||
 rubyrubi,---|||- MIT|||
 ruby_rules,---|||- MIT|||
 rubyrun,
-rubyrun,
-rubyrun,
-rubyrun,
-rubyrun,
-rubyrun,
-rubyrun,
-rubyrun,
-RubyRun_CE,
 RubyRun_CE,
 ruby-s3cmd,
 ruby-s3cmd-anfleene,--- |||...|||
@@ -102679,8 +101733,6 @@ RubySpamAssassin,---|||- MIT|||
 rubyspark,---|||- MIT|||
 ruby_spark,---|||- MIT|||
 ruby-spark,---|||- MIT|||
-ruby-spark,---|||- MIT|||
-ruby_speech,---|||- MIT|||
 ruby_speech,---|||- MIT|||
 ruby-spfquery,--- []|||
 rubysphero,---|||- MIT|||
@@ -102693,7 +101745,6 @@ ruby_sscanf,---|||- MIT|||
 ruby-ssh,--- []|||
 ruby-sslyze,---|||- MIT|||
 rubysspi,
-rubysspi,
 rubysspi-server,
 ruby-stackoverflow,---|||- MIT|||
 ruby-stardate,---|||- MIT|||
@@ -102703,9 +101754,6 @@ ruby-station,
 ruby-station-runtime,
 rubystats,---|||- MIT|||
 ruby_stats,---|||- MIT|||
-ruby-stemmer,---|||- MIT|||
-ruby-stemmer,---|||- MIT|||
-ruby-stemmer,
 ruby-stemmer,---|||- MIT|||
 ruby-stemp,
 rubysteps,---|||- https://github.com/RubySteps/rubysteps/blob/free/LICENSE.md|||
@@ -102832,7 +101880,6 @@ ruby-uriparser,---|||- MIT|||
 ruby_uri_template,
 ruby_us,---|||- MIT|||
 ruby-usb,
-ruby-usb,
 ruby-usdt,--- []|||
 rubyutility,---|||- MIT|||
 ruby_utils,--- []|||
@@ -102895,9 +101942,6 @@ ruby_wmata,---|||- MIT|||
 ruby-wmctrl,---|||- GPLv2|||
 ruby-wmi,--- |||...|||
 rubywmq,---|||- Apache-2.0|||
-rubywmq,
-rubywmq,
-rubywmq,
 ruby_wolf,---|||- MIT|||
 ruby_wordcram,---|||- Apache-2.0|||
 ruby-wordpress,---|||- MIT|||
@@ -102918,7 +101962,6 @@ rubyXL-addressing,---|||- MIT|||
 rubyXL-git-ref-6002046,---|||- MIT|||
 rubyxls,---|||- MIT|||
 rubyxmacro,
-ruby-xml-smart,
 ruby-xml-smart,--- []|||
 ruby-xpath,
 ruby-xquery,
@@ -103091,8 +102134,6 @@ rulp,--- []|||
 rultor,---|||- BSD|||
 rulz,---|||- MIT|||
 rum,---|||- MIT|||
-rum,---|||- MIT|||
-rum,---|||- MIT|||
 rumacs,
 rumai,
 rumake,
@@ -103103,12 +102144,6 @@ rumbda,---|||- MIT|||
 rumble_bundle,--- []|||
 rumblelog,---|||- Apache 2.0|||
 rumblinthebronx-sys-proctable,---|||- Artistic 2.0|||
-rumblinthebronx-sys-proctable,---|||- Artistic 2.0|||
-rumblinthebronx-system-getifaddrs,--- []|||
-rumblinthebronx-system-getifaddrs,--- []|||
-rumblinthebronx-system-getifaddrs,--- []|||
-rumblinthebronx-system-getifaddrs,--- []|||
-rumblinthebronx-system-getifaddrs,--- []|||
 rumblinthebronx-system-getifaddrs,--- []|||
 rumbly,
 rumbrl,---|||- MIT|||
@@ -103356,8 +102391,6 @@ russ_inject,---|||- MIT|||
 russland_sms,---|||- MIT|||
 russpeeddev,---|||- MIT|||
 ruster,---|||- MIT|||
-rust_example,---|||- MIT|||
-rust_example,---|||- MIT|||
 rust_example,---|||- MIT|||
 rustle,---|||- MIT|||
 rust_playground_highlight,---|||- MIT|||
@@ -104373,7 +103406,6 @@ sapna_gale_test_auth_devise,---|||- BSD-3|||
 sapna_gale_test_backend,--- []|||
 sapna_gale_test_core,---|||- BSD-3|||
 sapna_gale_test_frontend,--- []|||
-sapnwrfc,
 sapnwrfc,--- |||...|||
 sapoci,---|||- MIT|||
 sapoci-connect,---|||- MIT|||
@@ -104663,8 +103695,6 @@ sax-machine-nokogiri-1.4.4-safe,
 saxomattic,--- []|||
 saxondale,--- []|||
 saxon-xslt,---|||- MIT|||- MPL-1.0|||
-saxon-xslt,---|||- MIT|||- MPL-1.0|||
-saxon-xslt,---|||- MIT|||- MPL-1.0|||
 saxony,
 sax_stream,--- []|||
 saxxy,--- []|||
@@ -104835,7 +103865,6 @@ scaleway-api,---|||- MIT|||
 scale_workers,---|||- MIT|||
 scalingo_databases_rake_tasks,--- []|||
 scalingo-ruby-api,---|||- MIT|||
-scalm-RocketAMF,--- []|||
 scalm-RocketAMF,--- []|||
 scalpel,--- []|||
 scalr,
@@ -105570,7 +104599,6 @@ scry,---|||- MIT|||
 scrym,
 scrypt,---|||- MIT|||
 scrypt-ruby,---|||- MIT|||
-scrypt-ruby,---|||- MIT|||
 scrypt-util,---|||- MIT|||
 scrypty,--- []|||
 scsi,---|||- MIT|||
@@ -106213,7 +105241,6 @@ sellect,
 selleo-annotate,
 selleo-controller_tests,--- []|||
 seller_dashboard_message_publisher,--- []|||
-seller_dashboard_message_publisher,--- []|||
 selling,---|||- MIT|||
 sell_object,---|||- MIT|||
 selloby,--- []|||
@@ -106444,10 +105471,6 @@ sensors_analytics_sdk,--- []|||
 SensorStream,---|||- MIT|||
 sensr,--- []|||
 sensu,---|||- MIT|||
-sensu,---|||- MIT|||
-sensu,
-sensu,
-sensu,
 sensu-check-eec-status,---|||- NONSTANDARD|||
 sensu-check-esc,---|||- NONSTANDARD|||
 sensu-check-helpers,---|||- MIT|||
@@ -106459,8 +105482,6 @@ sensu-cli-compat,---|||- MIT|||- APACHE|||
 sensucronic,---|||- MIT|||
 sensu-dashboard,---|||- MIT|||
 sensu-dashboard-sonian,
-sensu-em,---|||- Ruby|||- GPL|||
-sensu-em,---|||- Ruby|||- GPL|||
 sensu-em,---|||- Ruby|||- GPL|||
 sensu-extension,---|||- MIT|||
 sensu-extensions,---|||- MIT|||
@@ -106482,7 +105503,6 @@ sensu_generator,--- []|||
 sensu-handler-prowl,---|||- MIT|||
 sensu-handlers-elasticsearch,---|||- MIT|||
 sensu-handlers-purge-stale-results,---|||- MIT|||
-sensu-json,---|||- MIT|||
 sensu-json,---|||- MIT|||
 sensu-logger,---|||- MIT|||
 sensu-output-monkeypatch,---|||- MIT|||
@@ -106925,8 +105945,6 @@ sequel_paranoia,---|||- MIT|||
 sequel-paranoid,---|||- MIT|||
 sequel_password,---|||- MIT|||
 sequel_pg,---|||- MIT|||
-sequel_pg,---|||- MIT|||
-sequel_pg,---|||- MIT|||
 sequel-pg_advisory_locking,---|||- MIT|||
 sequel-pg_array,--- []|||
 sequel-pg_bulk_upsert,--- []|||
@@ -107138,8 +106156,6 @@ server-blender-core,
 server-blender-manifest,
 server-density,
 serverdensity-heroku,--- |||...|||
-serverengine,---|||- Apache 2.0|||
-serverengine,---|||- Apache 2.0|||
 serverengine,---|||- Apache 2.0|||
 server-generated-popups,--- []|||
 server_health_check,--- []|||
@@ -107398,9 +106414,6 @@ sevenwire-http_client,
 sevenwire-money,--- []|||
 sevenwire-rest-client,--- []|||
 sevenwire-simple-daemon,--- []|||
-seven_zip_ruby,---|||- LGPL + unRAR|||
-seven_zip_ruby,---|||- LGPL + unRAR|||
-seven_zip_ruby,---|||- LGPL + unRAR|||
 seven_zip_ruby,---|||- LGPL + unRAR|||
 sevn,---|||- MIT|||
 sew,---|||- MIT|||
@@ -107729,7 +106742,6 @@ shatter,---|||- MIT|||
 shattered,
 shattered_controller,
 shattered_model,
-shattered_ogre,
 shattered_ogre,
 shattered_ogrerb,
 shattered_pack,
@@ -108589,7 +107601,6 @@ sidekiq-worker-stats,--- []|||
 sidekiq-workflow,---|||- MIT|||
 Sidenav,---|||- MIT|||
 sidenote,---|||- MIT|||
-sidepop,
 sidepop,
 sideq,---|||- GPL-2.0|||
 sideshow,---|||- Apache 2.0|||
@@ -110280,7 +109291,6 @@ sishen-hbase-ruby,
 sishen-language_detector,
 sishen-rtranslate,
 sisimai,---|||- BSD-2-Clause|||
-sisimai,---|||- BSD-2-Clause|||
 siskel,
 sisow,--- []|||
 sisow_ideal,--- []|||
@@ -110462,9 +109472,6 @@ sixpounder,---|||- MIT|||
 six-rsync,
 six-uac,
 six-updater,
-six-updater,
-six-updater,
-six-updater,
 six-updater-web,
 sixword,---|||- GPL-3|||
 siyelo-blogify,
@@ -110568,7 +109575,6 @@ skimlinks,---|||- MIT|||
 skinandbones-rack-gridfs,--- []|||
 skink,--- []|||
 skinny,---|||- MIT|||
-skinny_admin,---|||- MIT|||
 skinny_admin,---|||- MIT|||
 skinnycms_tumblr,
 skinny_controllers,---|||- MIT|||
@@ -110864,7 +109870,6 @@ slenderresumetheme,---|||- MIT|||
 slender_t,
 sletat,---|||- MIT|||
 sleuth,
-slf4j,
 slf4j,
 slf4j-jars,--- []|||
 slf4r,
@@ -111219,9 +110224,7 @@ slydell,
 slyphon-git-utils,
 slyphon-log4j,--- |||...|||
 slyphon-transocks_em,--- |||...|||
-slyphon-zookeeper,
 slyphon-zookeeper,--- |||...|||
-slyphon-zookeeper_jar,
 slyphon-zookeeper_jar,--- |||...|||
 smaak,---|||- MIT|||
 smack,
@@ -111251,8 +110254,6 @@ smalot-bootstrap-datetimepicker-rails,--- []|||
 smalot-datetimepicker-rails,---|||- MIT|||
 smalrubot,---|||- MIT|||
 smalruby,---|||- MIT|||
-smalruby,---|||- MIT|||
-smalruby-editor,---|||- MIT|||
 smalruby-editor,---|||- MIT|||
 smapisatqacloud,--- []|||
 sm_app_config,---|||- MIT|||
@@ -111280,9 +110281,7 @@ smartcall,
 smart_campus,--- []|||
 smart_capcha,
 smartcar,---|||- MIT|||
-smartcard,
 smartcard,--- []|||
-smartcard,
 smart_case,---|||- MIT|||
 smart_chart,
 smartclient,--- []|||
@@ -111324,7 +110323,6 @@ smartfm,
 smartfocus,---|||- MIT|||
 smartfocus4rails,---|||- MIT|||
 smartfox,--- |||...|||
-smartfox_jruby,--- []|||
 smartfox_jruby,---|||- Apache 2.0|||
 smartgen,--- []|||
 smartgen_action_view,
@@ -111333,7 +110331,6 @@ smartgen_syntaxhighlighter,
 smartgeoip,---|||- MIT|||
 smartguard,--- []|||
 smart_hash,
-smartimage,
 smartimage,
 smart_importer,---|||- MIT|||
 smart_init,---|||- MIT|||
@@ -111465,7 +110462,6 @@ smile,
 smile_me_please,--- |||...|||
 smiler,---|||- MIT|||
 smile-xml,--- []|||
-smile-xml,--- []|||
 smiley,--- []|||
 smiling,--- []|||
 smilodon,--- []|||
@@ -111529,7 +110525,6 @@ smparkes-eventmachine,
 smparkes-jazrb,
 smparkes-johnson,
 smparkes-watchr,
-smpdtfmt,
 smpdtfmt,
 smpp_encoding,--- []|||
 smpte,---|||- MIT|||- GPL-2|||
@@ -111699,7 +110694,6 @@ snail-map-reduce,
 snail_parser,---|||- MIT|||
 snailtracker-rails,---|||- AGPL|||
 snaka-favoraretter,--- []|||
-snaka-favoraretter,--- []|||
 snaka-ruby_gntp,--- []|||
 snake,---|||- MIT|||
 snake_camel,---|||- MIT|||
@@ -111743,7 +110737,6 @@ snappconfig,---|||- MIT|||
 snapper,--- |||...|||
 snapple,---|||- MIT|||
 snappler_contable,--- []|||
-snappy,---|||- MIT|||
 snappy,---|||- MIT|||
 snappy_analytics,---|||- MIT|||
 snappycode-shadow_puppet,
@@ -111843,7 +110836,6 @@ snl-peddler,--- []|||
 snmp,--- []|||
 snmp2mkr,---|||- MIT|||
 snmp4em,---|||- MIT|||
-SNMP4JR,
 SNMP4JR,
 SNMPDevice,---|||- MIT|||
 snmpdumper,
@@ -112460,7 +111452,6 @@ sonicwave,---|||- MIT|||
 soniji,---|||- MIT|||
 sonixlabs-em-websocket,--- []|||
 sonixlabs-eventmachine-java,---|||- Ruby|||- GPL|||
-sonixlabs-eventmachine-java,---|||- Ruby|||- GPL|||
 sonixlabs-net-ssh,
 son_jay,---|||- MIT|||
 son_of_a_batch,
@@ -112492,7 +111483,6 @@ sorcerer,--- []|||
 sorceror_jruby-kafka,---|||- Apache 2.0|||
 sorceror_poseidon_cluster,--- []|||
 sorcery,---|||- MIT|||
-sorcery-couchbase,---|||- MIT|||
 sorcery-couchbase,---|||- MIT|||
 sorcery-encryptor,---|||- MIT|||
 sorcery_wechat_provider,---|||- MIT|||
@@ -112838,7 +111828,6 @@ sparse,
 sparse_array,---|||- MIT|||
 sparse-gen,---|||- Apache-2.0|||
 sparsehash,
-sparsehash,
 sparsematrix,---|||- MIT|||
 sparse_matrix,---|||- MIT|||
 SparseMatrixProject,---|||- ''|||
@@ -112983,7 +111972,6 @@ specs_watcher,---|||- MIT|||
 spectabular,
 spectacle,---|||- MIT|||
 spectacles,---|||- MIT|||
-spectacles,--- []|||
 spectacular,
 spectacular_rails,--- []|||
 spec-talks,
@@ -113265,7 +112253,6 @@ spire_io,
 spirit,---|||- MIT|||
 spirit_fingers,---|||- MIT|||
 spirit_hands,---|||- MIT|||
-spirit_hands,---|||- MIT|||
 SpiritSC-case_collection_observer,--- []|||
 spiro,---|||- GNU GPL 3+|||
 spit,
@@ -113283,7 +112270,6 @@ spk-html5,
 splam,---|||- MIT|||
 splapi,---|||- MIT|||
 splash_payments,---|||- MIT|||
-splashrc,--- []|||
 splashrc,--- []|||
 splashy,
 splat,--- []|||
@@ -113394,8 +112380,6 @@ spore,
 spore-api,---|||- MIT|||
 spore-rails,---|||- MIT|||
 sporf,---|||- MIT|||
-spork,
-spork,
 spork,
 spork-assert,
 sporkd-couchrest,--- []|||
@@ -114072,11 +113056,6 @@ sprockets-webp,---|||- MIT|||
 sprockets-webpack,---|||- MIT|||
 sprockets_zeptojs,--- []|||
 sprout,
-sprout,
-sprout,
-sprout,
-sprout,
-sprout,
 sprout-air-bundle,
 sprout-alivepdf-library,
 sprout-as2-bundle,
@@ -114099,9 +113078,7 @@ sproutbox-mousetrap,
 sprout-bulkloader-library,
 sprout-cairngorm-library,
 sprout-cairngorm-src-library,
-sproutcore,
 sproutcore,---|||- MIT|||
-sproutcore,
 sproutcore-coffeescript,--- |||...|||
 sprout-corelib-library,
 sprout-corelib-src-library,
@@ -114153,7 +113130,6 @@ sproutr,
 sprout-robotlegs-library,
 sprout-ruby-aws,
 sprout-swfmill,
-sprout-swfmill-tool,
 sprout-swfmill-tool,
 sprout-swiftsuspenders-library,
 sprout-swx-library,
@@ -114227,8 +113203,6 @@ spymaster,---|||- MIT|||
 spyme,---|||- MIT|||
 spymemcached,
 spymemcached.jruby,---|||- MIT|||
-spymemcached.jruby,---|||- MIT|||
-spymemcached_store,---|||- MIT|||
 spymemcached_store,---|||- MIT|||
 spyonweb,---|||- MIT|||
 spyou_rpx_now,
@@ -114251,9 +113225,6 @@ sqewer,--- []|||
 sql,--- []|||
 sql2avro,---|||- Apache 2.0|||
 sqlanywhere,
-sqlanywhere,
-sqlanywhere,
-sqlanywhere,
 sqlanywhere-ffi,--- []|||
 sqlar,---|||- MIT|||
 sqlcached_client,---|||- MIT|||
@@ -114264,8 +113235,6 @@ sqld4r,
 SQLDependencyGrapher,
 sql_dep_graph,
 sqldroid,---|||- MIT|||- EPL-1.0|||
-sqldroid,
-sqldroid,
 sqldsl,
 sqldump,
 SQL_Dump,---|||- MIT|||
@@ -114283,9 +113252,6 @@ sqlint,---|||- MIT|||
 sqlite2dbf,---|||- GPL-3.0|||
 sqlite2mysql,---|||- MIT|||
 sqlite3,---|||- BSD-3|||
-sqlite3,---|||- BSD-3|||
-sqlite3,---|||- BSD-3|||
-sqlite3,---|||- BSD-3|||
 sqlite3_ar_regexp,---|||- MIT|||
 sqlite3_cache,--- []|||
 sqlite3-dotnet,
@@ -114294,10 +113260,6 @@ sqlite3-foreigner,---|||- MIT|||
 sqlite3-full,---|||- BSD-3|||
 sqlite3_hash,---|||- MIT|||
 sqlite3-ironruby,
-sqlite3-ruby,
-sqlite3-ruby,
-sqlite3-ruby,
-sqlite3-ruby,
 sqlite3-ruby,
 sqlite3-static,---|||- BSD-3-Clause|||
 sqlitecache,
@@ -114308,7 +113270,6 @@ sqlite_log_filter,
 sqlite_magic,---|||- MIT|||
 sqlite_object_store,--- []|||
 sqliterate,---|||- MIT|||
-sqlite-ruby,
 sqlite-ruby,
 sqlize,---|||- IDC|||
 sqlknit,---|||- MIT|||
@@ -114368,7 +113329,6 @@ sqm2json,---|||- WTFPL v2|||
 sqoop-ruby,
 sqoot,--- |||...|||
 sqrbl,
-sqreen,--- []|||
 sqreen,--- []|||
 sqrl,---|||- MIT|||
 sq_ruby_grep,---|||- MIT|||
@@ -114933,7 +113893,6 @@ Stanza,---|||- Apache-2.0|||
 stapel,---|||- MIT|||
 stapeluberlauf,--- []|||
 stapfen,--- []|||
-stapfen,--- []|||
 stapi,---|||- MIT|||
 staple,---|||- MIT|||
 staplegun,---|||- MIT|||
@@ -115243,9 +114202,6 @@ statsample,--- []|||
 statsample-bivariate-extension,---|||- BSD-2|||
 statsample-glm,---|||- BSD-2|||
 statsample-optimization,
-statsample-optimization,
-statsample-optimization,
-statsample-optimization,
 statsample-sem,
 statsample-timeseries,---|||- BSD-2|||
 StatsCollect,
@@ -115357,8 +114313,6 @@ steam_api,---|||- MIT|||
 steam-api,---|||- MIT|||
 steamcannon-aws,
 steamcannon-deltacloud-client,
-steamcannon-deltacloud-client,
-steamcannon-deltacloud-core,
 steamcannon-deltacloud-core,
 steamcannon-s3,
 steamcannon-thin,
@@ -115460,7 +114414,6 @@ stencil-ruby,---|||- MIT|||
 stencils,
 stendhal,--- |||...|||
 stengine,---|||- MIT|||
-steno,--- []|||
 steno,--- []|||
 steno-capi,--- []|||
 stenographer,---|||- MIT|||
@@ -115648,7 +114601,6 @@ stompmq,
 StompMq,
 stomp_out,---|||- MIT|||
 stomp_parser,---|||- MIT|||
-stomp_parser,---|||- MIT|||
 stomp_publisher,---|||- MIT|||
 stompserver,
 stompserver_ng,--- []|||
@@ -115674,7 +114626,6 @@ stoplight,---|||- MIT|||
 stoplight-admin,---|||- MIT|||
 stopover,---|||- MIT|||
 stoppie,---|||- N/A|||
-stoppur,---|||- Apache License 2.0|||
 stoppur,---|||- Apache License 2.0|||
 stopwatch,--- []|||
 stop_watch,---|||- MIT|||
@@ -116195,15 +115146,11 @@ strong_ruby,---|||- MIT|||
 strongspace,--- []|||
 strong_struct,---|||- LGPL-3.0|||
 strongtyping,--- |||...|||
-strongtyping,
 stroop,---|||- MIT|||
 strophejs-rails,---|||- MIT|||
 stropheruby,
 strophe_ruby,
-strophe_ruby,
 stroud_view_tool,---|||- MIT|||
-strptime,---|||- BSD-2-Clause|||
-strptime,---|||- BSD-2-Clause|||
 strptime,---|||- BSD-2-Clause|||
 str_quote,---|||- MIT|||
 strrand_regex,---|||- MIT|||
@@ -116245,7 +115192,6 @@ structuredtext,
 structured_warnings,---|||- MIT|||
 structure_flatter,---|||- MIT|||
 structuremap,
-structuremap.automocking,
 structuremap.automocking,
 structuremap.autonotify,
 structure_mapper,---|||- MIT|||
@@ -116658,7 +115604,6 @@ sucreries,--- |||...|||
 sudden_death,--- |||...|||
 sudden-death,---|||- MIT|||
 sudden_motion_sensor,
-sudden_motion_sensor,
 sudhir,
 sudo,--- []|||
 sudo_attr_accessibility,
@@ -116752,7 +115697,6 @@ sul_styles,--- []|||
 sum,
 sum_all_number_combinations,---|||- MIT|||
 sumatra-rails,--- []|||
-sumbur,--- |||...|||
 sumbur,---|||- MIT|||
 sumdog-geoip,
 sumhash,--- []|||
@@ -116982,7 +115926,6 @@ super_lorem,--- []|||
 superluminal,---|||- MIT|||
 superman,---|||- MIT|||
 super_map,--- []|||
-supermarket,
 supermarket,
 super_mean,---|||- MIT|||
 super-mega-slideshare,
@@ -117253,7 +116196,6 @@ svmlab,
 svmlightcli,---|||- MIT|||
 svmredlight,
 svm_toolkit,---|||- Open Works License|||
-svm_toolkit,
 svn,--- |||...|||
 svn2git,---|||- MIT|||
 svn2rss,
@@ -117421,7 +116363,6 @@ swf-pipes,--- []|||
 swf_recompress,
 swf_ruby,--- |||...|||
 swftly,---|||- MIT|||
-swftly,--- []|||
 swf_train,
 SwfUtil,
 swgem,---|||- MIT|||
@@ -117545,7 +116486,6 @@ sw_ruby_tika_app,--- []|||
 swrve,--- []|||
 sws,
 swt,---|||- See https://github.com/danlucraft/swt/blob/master/LICENSE|||
-swt,
 swt_federation,
 swttt-gem,
 swung-weave-buildr,---|||- Apache-2.0|||
@@ -117714,7 +116654,6 @@ syncwatch,--- []|||
 syncwise_api,---|||- MIT|||
 syncwrap,--- []|||
 syndi,---|||- FreeBSD|||
-syndi,---|||- FreeBSD|||
 syndicate,
 syndication,
 synecdoche,
@@ -117777,10 +116716,7 @@ syrup_form_object,---|||- MIT|||
 syruppay_jose,---|||- MIT|||
 sys,--- []|||
 sysadmin,---|||- GPL|||
-sys-admin,
-sys-admin,
 sys-admin,---|||- Artistic 2.0|||
-sys-admin,
 sys_admin_toolbox,---|||- MIT|||
 sysaid,---|||- MIT|||
 sysarcana-data,
@@ -117791,25 +116727,12 @@ syscalls-map,
 syscmd,
 sys_cmd,---|||- MIT|||
 sys-cpu,---|||- Artistic 2.0|||
-sys-cpu,--- |||...|||
-sys-cpu,
-sys-cpu,
-sys-cpu,
-sys-cpu,
-sys-cpu,
-sys-cpu,
 sysdig,---|||- MIT|||
 sysdog,
 sysenv,---|||- MIT|||
 sysexits,---|||- BSD|||
-sys-filesystem,
-sys-filesystem,
-sys-filesystem,
 sys-filesystem,---|||- Artistic 2.0|||
 sysfs_one_wire,---|||- MIT|||
-sys-host,
-sys-host,
-sys-host,
 sys-host,
 sysinfo,--- []|||
 syslog2logan,
@@ -117838,28 +116761,9 @@ syslog-shipper,--- |||...|||
 syslogstash,--- []|||
 syslog-stream,---|||- MIT|||
 sys-proc,---|||- GPL-3.0|||
-sys-proctable,
-sys-proctable,
-sys-proctable,
-sys-proctable,
-sys-proctable,
-sys-proctable,
-sys-proctable,---|||- Apache 2.0|||
-sys-proctable,---|||- Apache 2.0|||
-sys-proctable,
-sys-proctable,
-sys-proctable,
-sys-proctable,---|||- Apache 2.0|||
-sys-proctable,
-sys-proctable,
-sys-proctable,
-sys-proctable,---|||- Apache 2.0|||
-sys-proctable,---|||- Apache 2.0|||
-sys-proctable,---|||- Apache 2.0|||
 sys-proctable,---|||- Apache 2.0|||
 sys-proctree,---|||- MIT|||
 syspy,--- []|||
-sysrandom,---|||- ISC|||
 sysrandom,---|||- ISC|||
 sysresources,---|||- MIT|||
 system,--- []|||
@@ -117896,17 +116800,7 @@ SystemTimer,
 system-timer19,
 systemu,---|||- Ruby|||
 systemu_j,
-sys-uname,---|||- Artistic-2.0|||
-sys-uname,
 sys-uname,---|||- Artistic 2.0|||
-sys-uname,
-sys-uname,---|||- Artistic 2.0|||
-sys-uptime,
-sys-uptime,
-sys-uptime,---|||- Apache 2.0|||
-sys-uptime,
-sys-uptime,
-sys-uptime,
 sys-uptime,---|||- Apache 2.0|||
 sysutil,---|||- MIT|||
 sysuuid,--- []|||
@@ -118205,7 +117099,6 @@ tag_keeshond,--- []|||
 tagliatelle,---|||- MIT|||
 taglib2,
 taglib-heroku,
-taglib-ruby,---|||- MIT|||
 taglib-ruby,---|||- MIT|||
 tagline,---|||- MIT|||
 taglish,
@@ -118553,7 +117446,6 @@ tarpaulin,
 tarpipe,
 tarquinn,--- []|||
 tarruby,
-tarruby,
 tars,--- []|||
 tarsius-cheat,--- []|||
 tarsnap_pruner,---|||- MIT|||
@@ -118848,7 +117740,6 @@ tdberlintest,---|||- MIT|||
 tdcli,---|||- MIT|||
 td_cli,---|||- MIT|||
 td-client,--- []|||
-td-client,--- []|||
 td_critic,---|||- MIT|||
 td-cucumber-steps,---|||- MIT|||
 tdd,--- []|||
@@ -118866,9 +117757,6 @@ tddium-ruby-debug-base19,
 tddium_status,
 tddium_status_github,---|||- Apache License Version 2.0|||
 tddium-status-github,---|||- Apache License Version 2.0|||
-tddium-sys-proctable,
-tddium-sys-proctable,
-tddium-sys-proctable,
 tddium-sys-proctable,
 tdd_scaffold,---|||- MIT|||
 tdev_kiwi,
@@ -118891,7 +117779,6 @@ tdiary-style-markdown,---|||- MIT|||
 tdiary-style-org,---|||- MIT|||
 tdiary-style-rd,---|||- MIT|||
 tdiff,
-tdigest,---|||- MIT|||
 tdigest,---|||- MIT|||
 tdl,--- []|||
 tdl-client-ruby,---|||- GPL-3.0|||
@@ -118918,10 +117805,6 @@ tdx,---|||- MIT|||
 te,---|||- MIT|||
 te2ak,
 te3270,---|||- MIT|||
-te3270,---|||- MIT|||
-te3270,---|||- MIT|||
-te3270,---|||- MIT|||
-te3270-jruby,---|||- MIT|||
 te3270-jruby,---|||- MIT|||
 tea,
 teaas,---|||- MIT|||
@@ -119089,7 +117972,6 @@ tehranjs,---|||- MIT|||
 teich-hrmparser,--- []|||
 teien,--- []|||
 teienlib,--- []|||
-teius,
 teius,
 tekeya,--- []|||
 tekido,---|||- MIT|||
@@ -119319,7 +118201,6 @@ tenderlove-facebooker,--- []|||
 tenderlove-frex,--- []|||
 tenderlove-mechanize,--- []|||
 tenderlove-meow,--- []|||
-tenderlove-nokogiri,--- []|||
 tenderlove-nokogiri,--- []|||
 tenderlove-rkelly,--- []|||
 tenderlove-tree_diff,--- []|||
@@ -119738,7 +118619,6 @@ testofclap,---|||- MIT|||
 test_officer,---|||- MIT|||
 testopia,
 test-opsbots,---|||- MIT|||
-test-opsbots,---|||- MIT|||
 testosterone,
 testotron,--- []|||
 test-output-parser,---|||- MIT|||
@@ -119902,11 +118782,6 @@ texmailer,
 texmath-ruby,---|||- MIT|||
 texml,
 texp,--- []|||
-texplay,
-texplay,
-texplay,
-texplay,
-texplay,
 texplay,
 texrack,---|||- MIT|||
 texstyles,---|||- MIT|||
@@ -120348,15 +119223,10 @@ the_role_bootstrap3_ui,---|||- MIT|||
 the_role_management_panel,---|||- MIT|||
 therubymug-hitch,--- []|||
 therubyracer,---|||- MIT|||
-therubyracer,
-therubyracer,
-therubyracer,
-therubyracer,
 therubyracer-discourse,--- []|||
 therubyracer-freebsd,
 therubyracer-tmpfork,---|||- MIT|||
 therubyracer-xcode,---|||- MIT|||
-therubyrhino,
 therubyrhino,---|||- MIT|||
 therubyrhino_jar,---|||- MPL-2.0|||
 the_ruby_searcher,---|||- MIT|||
@@ -120429,10 +119299,7 @@ thillerson-plist,--- []|||
 thimbl,
 thimble,---|||- MIT|||
 Thimblr,
-thin,
-thin,
 thin,---|||- GPLv2+|||- Ruby 1.8|||
-thin,
 thinappserver,--- []|||
 thin_async,--- []|||
 thin-async-test,
@@ -120670,10 +119537,8 @@ thread_puddle,--- []|||
 thread_queues,---|||- MIT|||
 thread_root_fiber,---|||- MIT|||
 thread_safe,---|||- Apache-2.0|||
-thread_safe,---|||- Apache-2.0|||
 threadsafe_benchmark,
 threadsafe-hiredis,---|||- BSD-3-Clause|||
-thread_safe-ianunruh,---|||- Apache-2.0|||
 thread_safe-ianunruh,---|||- Apache-2.0|||
 threadsafe-lru,--- []|||
 threadsafety,---|||- MIT|||
@@ -120985,7 +119850,6 @@ tierion,---|||- MIT|||
 ties,
 tiff,
 tifffile,---|||- MIT|||
-tifffile,---|||- MIT|||
 tigaribuLabs_view_tool,---|||- MIT|||
 tigefa,---|||- MIT|||
 tiger,---|||- MIT|||
@@ -121155,7 +120019,6 @@ time_humanizer,---|||- MIT|||
 time_inputs,---|||- MIT|||
 time_interval,
 time-interval,---|||- MIT|||
-timeit,---|||- MIT|||
 timeit,---|||- MIT|||
 time_it,--- []|||
 time-iterator,---|||- MIT|||
@@ -121522,8 +120385,6 @@ tiny_support,--- []|||
 tiny_sweeper,---|||- Apache-2.0|||
 tinytable,--- |||...|||
 tiny_tds,---|||- MIT|||
-tiny_tds,---|||- MIT|||
-tiny_tds,---|||- MIT|||
 tiny_tds_vagas,---|||- MIT|||
 tiny_template,---|||- MIT|||
 tiny-template,
@@ -121778,7 +120639,6 @@ tmptation,
 tmptest,---|||- MIT|||
 tmrb,
 tms,---|||- MIT|||
-tms,
 tmsapi,---|||- MIT|||
 tms_bridge,---|||- MIT|||
 tms_client,--- []|||
@@ -122566,7 +121426,6 @@ to_worksheet,
 towsta,--- []|||
 tox,---|||- GPL-3.0|||
 toxiclibs,---|||- MIT|||- LGPL-3.0|||
-toxiclibs,---|||- MIT|||- LGPL-3.0|||
 toxiproxy,---|||- MIT|||
 to_xl,---|||- MIT|||
 to_xls,--- []|||
@@ -122680,7 +121539,6 @@ traceur-compiler-source,--- []|||
 traceur-rails,---|||- MIT|||
 traceur-rb,---|||- MIT|||
 trace-util-adv,
-traceview,"---|||- Librato Open License, Version 1.0|||"
 traceview,"---|||- Librato Open License, Version 1.0|||"
 trace_viewer,
 trace_visualization,---|||- MIT|||
@@ -122854,7 +121712,6 @@ traitorous,---|||- MIT|||
 traitr,---|||- MIT|||
 traits,
 traject,---|||- MIT|||
-traject,---|||- MIT|||
 traject_alephsequential_reader,---|||- MIT|||
 traject_horizon,---|||- MIT|||
 traject-marc4j_reader,---|||- MIT|||
@@ -122895,8 +121752,6 @@ tranexp,
 trange_frange,---|||- MIT|||
 trann,---|||- MIT|||
 trans,--- []|||
-transactd,---|||- GPL-2.0|||
-transactd,---|||- GPL-2.0|||
 transactd,---|||- GPL-2.0|||
 transacted,--- []|||
 transactify,---|||- MIT|||
@@ -122986,7 +121841,6 @@ transition_validator,--- |||...|||
 transitland_client,---|||- MIT|||
 transit_rails,---|||- MIT|||
 transit-rails,---|||- MIT|||
-transit-ruby,---|||- Apache-2.0|||
 transit-ruby,---|||- Apache License 2.0|||
 translatable,---|||- MIT|||
 translatable_ar,--- []|||
@@ -123881,7 +122735,6 @@ tumblr_client_faraday_0_8,--- []|||
 tumblr_client_wrapper,---|||- MIT|||
 tumblr-dl,---|||- MIT|||
 tumblr_draftking,---|||- Apache-2.0|||
-tumblr_draftking,---|||- Apache|||
 tumblrer,---|||- MIT|||
 tumblr-follow,
 tumblr-fu,--- []|||
@@ -124762,7 +123615,6 @@ u10d,---|||- MIT|||
 u110chang,---|||- MIT|||
 u2f,---|||- MIT|||
 u2i-ci_utils,---|||- MIT|||
-u2i-ci_utils,---|||- MIT|||
 u3d,---|||- MIT|||
 u8,--- []|||
 ua,---|||- MIT|||
@@ -124895,7 +123747,6 @@ udemy,---|||- MIT|||
 udgenerator,---|||- MIT|||
 udger,---|||- MIT|||
 udjrb,
-UDJrb,
 UDJrb,
 udn,--- []|||
 udon,
@@ -125214,10 +124065,6 @@ UNESCO_World_Heritage_Sites,---|||- MIT|||
 unexceptional,---|||- MIT|||
 unextendable,--- |||...|||
 unf,---|||- 2-clause BSDL|||
-unf,---|||- 2-clause BSDL|||
-unf,---|||- 2-clause BSDL|||
-unf_ext,---|||- MIT|||
-unf_ext,---|||- MIT|||
 unf_ext,---|||- MIT|||
 unfickle,
 unf-ir,---|||- MIT|||
@@ -125240,9 +124087,6 @@ unicache,---|||- Ruby|||
 unicafe,---|||- MIT|||
 unicap,---|||- MIT|||
 unichars,
-unicode,---|||- Ruby|||
-unicode,---|||- Ruby|||
-unicode,---|||- Ruby|||
 unicode,---|||- Ruby|||
 unicode-age,---|||- MIT|||
 unicode_alphanumeric,--- []|||
@@ -125379,11 +124223,7 @@ unihawk,--- |||...|||
 unilogger,
 unimatrix-activist,---|||- MIT|||
 unimatrixZxero-flickr,--- []|||
-unimidi,
-unimidi,
-unimidi,--- |||...|||
 unimidi,---|||- Apache-2.0|||
-unimidi,
 uninclude,---|||- MIT|||
 unindent,
 unindentable,
@@ -125952,7 +124792,6 @@ urlcrypt,--- []|||
 urldiff,---|||- GPLv2|||
 url_encrypt,
 url_escape,
-url_escape,
 url_expander,
 url_extractor,--- []|||
 url_fetcher,---|||- MIT|||
@@ -126220,7 +125059,6 @@ using,
 using_yaml,
 us-mail-client,--- []|||
 usman,---|||- MIT|||
-usmu,---|||- MIT|||
 usmu,---|||- MIT|||
 usmu-github-pages,---|||- MIT|||
 usmu-s3,---|||- MIT|||
@@ -128040,7 +126878,6 @@ vinay,
 vin_bank,---|||- MIT|||
 vinber,---|||- MIT|||
 vinbot,---|||- MIT|||
-vinbot,---|||- MIT|||
 vincecima-acts-as-taggable-on,
 vincentchu-gdata,--- []|||
 vincentchu-handlersocket,
@@ -128323,7 +127160,6 @@ vivid_seats,
 vivisector,---|||- Apache 2.0|||
 vivus,--- []|||
 vixen,---|||- Apache-2|||- MIT|||
-vixen,---|||- Apache-2|||- MIT|||
 viximo-cache-money,--- |||...|||
 viximo-rack-throttle,--- |||...|||
 viz,---|||- MIT|||
@@ -128379,7 +127215,6 @@ vlad-git,
 vlad-helpers,
 vlad-hg,
 vladimerb,
-vladlev,--- []|||
 vladlev,--- []|||
 vlad-merb,
 vlad-nginx,
@@ -128534,7 +127369,6 @@ volt-chosen,---|||- MIT|||
 volt-code_highlight,---|||- MIT|||
 volt-datepicker,---|||- MIT|||
 volt-daterange,---|||- MIT|||
-voltdbjruby,---|||- MIT|||
 voltdbjruby,---|||- MIT|||
 volt-easypiechart,---|||- MIT|||
 volt-editable-text,---|||- MIT|||
@@ -129282,7 +128116,6 @@ walter,
 walterdavis-eeepub,
 walterkasten,--- []|||
 walters,---|||- Apache 2.0|||
-walters,---|||- Apache 2.0|||
 waltz,
 waltz_rb,---|||- Eclipse Public License|||
 wamp,---|||- MIT|||
@@ -129326,7 +128159,6 @@ warbler-ruby,---|||- MIT|||
 warc,---|||- MIT|||
 warcards,
 warchat,
-warchiver,---|||- MIT|||
 warchiver,---|||- MIT|||
 warcorrespondent,
 warcraft-armory,
@@ -129500,7 +128332,6 @@ watertower,
 wateruby,---|||- MIT|||
 waterworks,---|||- Apache 2.0|||
 watir,---|||- MIT|||
-watir,--- []|||
 watir-browser-factory,---|||- MIT|||
 watir-capybara-helpers,---|||- MIT|||
 watircats,---|||- MIT|||
@@ -129603,7 +128434,6 @@ waves-stable,--- []|||
 wavesurfer,---|||- MIT|||
 wavesurfer-rails,---|||- MIT|||
 WaveSwissKnife,--- []|||
-WaveSwissKnife,
 wave_to_json,---|||- MIT|||
 wav-file,
 wav-mp3,--- |||...|||
@@ -129697,9 +128527,7 @@ wdim,---|||- MIT|||
 wdi-submit,---|||- MIT|||
 wdk,---|||- MIT|||
 wdk-view-toolkit,---|||- MIT|||
-wdm,--- []|||
 wdm,--- |||...|||
-wdm,
 wd_newrelic_rpm,--- []|||
 wd_sinatra,---|||- MIT|||
 wd_sinatra_active_record,--- |||...|||
@@ -129714,7 +128542,6 @@ wead,---|||- MIT|||
 weak_attr_accessor,---|||- BSD|||
 weak_hash,
 weak_headers,---|||- MIT|||
-weakling,
 weakling,
 weakly,---|||- MIT|||
 weak_observable,
@@ -129811,7 +128638,6 @@ webber,---|||- MIT|||
 webbit-jars,--- []|||
 web_bouncer,---|||- MIT|||
 webbus,--- |||...|||
-webby,
 webby,
 webbynode,--- []|||
 webbynode-blueprint,--- []|||
@@ -130168,7 +128994,6 @@ websocket-client-simple,---|||- MIT|||
 websocket-connection,---|||- MIT|||
 websocket-controller,---|||- MIT|||
 websocket-driver,---|||- MIT|||
-websocket-driver,---|||- MIT|||
 websocket-driver-kontena,---|||- MIT|||
 websocket-eventmachine-base,--- []|||
 websocket-eventmachine-client,--- []|||
@@ -130179,10 +129004,8 @@ websockethook,---|||- MIT|||
 websocketio,---|||- MIT|||
 websocket_messaging,---|||- MIT|||
 websocket-native,--- []|||
-websocket-native,--- []|||
 websocket_parser,--- []|||
 websocket-pipe,"---|||- Apache License, Version 2.0|||"
-websocket-protocol,--- []|||
 websocket-protocol,--- []|||
 websocket-rack,
 websocket-rack-noodles,--- []|||
@@ -130956,20 +129779,12 @@ wimp,---|||- MIT|||
 win,
 win2unix,--- []|||
 win32-activate,---|||- MIT|||
-win32-api,
-win32-api,
-win32-api,
 win32-api,---|||- Artistic 2.0|||
-win32-api,---|||- Artistic-2.0|||
-win32-api,
 win32-autogui,--- |||...|||
 win32-captureie,
 win32-changejournal,
 win32-changenotify,---|||- Artistic 2.0|||
 win32-clipboard,---|||- Artistic 2.0|||
-win32console,
-win32console,
-win32console,
 win32console,
 win32-dir,---|||- Artistic 2.0|||
 win32-dirmonitor,---|||- Artistic 2.0|||
@@ -130989,30 +129804,20 @@ win32-mutex,---|||- Artistic 2.0|||
 win32-nio,---|||- Artistic 2.0|||
 win32ole-pp,
 win32olerot,
-win32olerot,
-win32-open3,
-win32-open3,
-win32-open3,
 win32-open3,
 win32-open3-19,
 win32-pipe,---|||- Apache 2.0|||
 win32-process,---|||- Artistic 2.0|||
 win32rc,
-win32-sapi,
 win32-sapi,---|||- Artistic 2.0|||
 win32screenshot,---|||- MIT|||
 win32-security,---|||- Apache 2.0|||
 win32-semaphore,---|||- Artistic 2.0|||
 win32-service,---|||- Artistic 2.0|||
-win32-service,
-win32-service,
-win32-service,
 win32_service_manager,
 win32-shortcut,---|||- Apache 2.0|||
 win32-sound,---|||- Artistic 2.0|||
-win32-sound,
 win32-symlink,---|||- MIT|||
-win32-taskscheduler,
 win32-taskscheduler,---|||- Artistic 2.0|||
 win32-xpath,---|||- Apache 2.0|||
 winch,
@@ -131040,7 +129845,6 @@ WindowsInstaller,---|||- Apache 2.0|||
 windows_ionice,
 windows_live_admin,---|||- MIT|||
 windowslivelogin,--- []|||
-windows-pr,
 windows-pr,---|||- Artistic 2.0|||
 windows-shutdown-timer,---|||- MIT|||
 windowstate,
@@ -131174,7 +129978,6 @@ wiretap,
 wire_tap,
 wire_transfer,---|||- MIT|||
 wiring_lmk,---|||- GNU Lesser General Public License v3|||
-wiringpi,--- |||...|||
 wiringpi,---|||- GNU Lesser General Public License v3|||
 wiringpi2,---|||- GNU Lesser General Public License v3|||
 wirispluginengine,---|||- MIT|||
@@ -131286,7 +130089,6 @@ wix,--- []|||
 wix-apps,---|||- MIT|||
 wixgem,---|||- Apache 2.0|||
 wix-hive-ruby,---|||- MIT|||
-wixy,---|||- MIT|||
 wixy,---|||- MIT|||
 wizard,
 wizard2007_gem,---|||- MIT|||
@@ -131864,7 +130666,6 @@ wrap_it,---|||- MIT|||
 wrap_method,
 wrapomatic,---|||- MIT|||
 wrapp,---|||- MIT|||
-wrapp,---|||- MIT|||
 wrappable,
 wrappage,---|||- MIT|||
 wrapped,---|||- BSD|||
@@ -131887,9 +130688,7 @@ wren,---|||- MIT|||
 wrench,---|||- MIT|||
 wrenchmode-rack,---|||- MIT|||
 wresque_wrapper,
-wrest,
 wrest,--- []|||
-wrest,
 wrgem,--- []|||
 wri,
 wrichman,---|||- MIT|||
@@ -131921,7 +130720,6 @@ written,---|||- MIT|||
 wrkflo,---|||- MIT|||
 wrnap,---|||- MIT|||
 wroc_love,
-wrong,--- []|||
 wrong,--- []|||
 wrong_answer,
 wrongdoc,---|||- GPLv3+|||
@@ -132091,21 +130889,7 @@ wx_pay,---|||- MIT|||
 wx_pay_api,---|||- MIT|||
 wxrcg,
 wxruby,
-wxruby,
-wxruby,
-wxruby,
-wxruby,
-wxruby,
-wxruby,
-wxruby,
-wxruby,
-wxruby,
-wxruby,
-wxruby,
 wxruby64,--- []|||
-wxruby-ruby19,
-wxruby-ruby19,
-wxruby-ruby19,
 wxruby-ruby19,
 wx_runner,
 wx_sugar,
@@ -132142,7 +130926,6 @@ wysiwyg-rails-qiniu,---|||- MIT|||
 wysiwyg_rails_simple_form,---|||- MIT|||
 wz2008,---|||- MIT|||
 x,
-x10-cm17a,
 x10-cm17a,
 x11_client,
 x11_recorder,--- []|||
@@ -132340,8 +131123,6 @@ XDDCrawler,---|||- MIT|||
 xdg,---|||- BSD-2-Clause|||
 xdissent-less,--- []|||
 xdite,---|||- MIT|||
-xdo,
-xdo,
 xdo,
 x_do,
 x_do_bindings,---|||- MIT|||
@@ -132698,7 +131479,6 @@ xoopit-cloudquery,--- []|||
 xoopit-cloud_query,--- []|||
 xopen,---|||- MIT|||
 xorcist,---|||- MIT|||
-xorcist,---|||- MIT|||
 xorg_buffer,---|||- GPL-2.0|||
 xot,--- []|||
 xotelia-ruby,---|||- MIT|||
@@ -132734,7 +131514,6 @@ xpub,---|||- MIT|||
 xqcoretools,--- []|||
 xqruby,--- |||...|||
 xqsr3,---|||- 3-clause BSD|||
-xquery,---|||- WTFPL|||
 xquery,---|||- WTFPL|||
 xqueue_ruby,---|||- BSD|||
 xrails,
@@ -132945,13 +131724,9 @@ yahw,
 yaib,--- |||...|||
 yaih,
 yaji,---|||- ASL-2|||
-yaji,---|||- ASL-2|||
-yaji,---|||- ASL-2|||
 yajl,---|||- MIT|||
 yajl-ffi,---|||- MIT|||
 yajl-ruby,---|||- MIT|||
-yajl-ruby,
-yajl-ruby,--- |||...|||
 yajl-ruby-maglev-,--- |||...|||
 yajl-ruby-zenjoy,--- []|||
 yajm,---|||- MIT|||
@@ -134423,7 +133198,6 @@ zippy,---|||- MIT|||
 zippy_static_cache,---|||- MIT|||
 zip_recruiter,--- []|||
 zipruby,
-zipruby,
 zipruby1.8,
 zipruby1.9,
 zip_search,---|||- MIT|||
@@ -134542,7 +133316,6 @@ zonify,---|||- BSD|||
 zonomi,
 zoo-generators,
 zookal_magento_rest_api,---|||- MIT|||
-zookeeper,--- []|||
 zookeeper,--- []|||
 zookeeper-jars,--- []|||
 zool,
