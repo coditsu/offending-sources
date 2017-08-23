@@ -496,7 +496,7 @@ mongrel_cluster,
 rails-app-installer,
 ruby-debug,--- []|||
 rspec-rails,---|||- MIT|||
-mysql,
+mysql,--- []|||
 sqlite3-ruby,
 typed_accessors,
 twtr,
@@ -925,7 +925,7 @@ sqldsl,
 sqld4r,
 sqlanywhere,
 sql_dep_graph,
-sproutcore,
+sproutcore,---|||- MIT|||
 sprout-yahoomapsas3-library,
 sprout-tweeneras2-library,
 sprout-tweener-library,
@@ -4180,7 +4180,7 @@ blackbook,
 bj,
 bizhours,
 bivouac,
-bitpack,
+bitpack,---|||- MIT|||
 bitly4r,
 bishop,
 bisac,
@@ -4382,7 +4382,7 @@ allinoneruby,
 allegro4r,
 alice_invoice,
 alib,
-algorithms,
+algorithms,---|||- MIT|||
 alertpay,
 aka_time,
 aka_angka,
@@ -5490,7 +5490,7 @@ dnet-ffi,
 csv_pirate,---|||- MIT|||
 bteitelb-paperclip,
 dsturnbull-database_cleaner,
-chipmunk,
+chipmunk,---|||- MIT|||
 html-template-pro,
 scribe,
 sprout-flexdatavis-library,
@@ -5643,7 +5643,7 @@ parallel,---|||- MIT|||
 thread_tools,
 thinking-sphinx-099,
 garlic,
-bolt,
+bolt,---|||- Apache-2.0|||
 url_field,
 prowler,
 deployment_notifier,
@@ -10109,7 +10109,7 @@ koujou,
 pathfinderdev-mortgage_calc,
 bc-to_xls,
 ceilingfish-toto,
-marc4j4r,--- []|||
+marc4j4r,---|||- MIT|||
 six-arma-builder,
 dna_sequence_aligner,
 sexp_path,---|||- MIT|||
@@ -12344,7 +12344,7 @@ VelocityWalkToCSV,
 facebooker2,
 sinatra-helpers,
 peachy,
-akephalos,
+akephalos,--- |||...|||
 rdropbox,
 acts_as_nested_by,--- |||...|||
 icon_links,
@@ -16660,7 +16660,7 @@ miyucy-annotate,
 rails_zombie,
 turkee,--- []|||
 ytools,
-inetmgr,
+inetmgr,--- []|||
 name-generator,---|||- MIT|||
 socketlabs,
 fakeweb_curb-fu,
@@ -17449,7 +17449,7 @@ file-birthtime,
 ruby-dbus,---|||- LGPL v2.1|||
 awesome_conf,
 tfl_journey_planner,
-mate,
+mate,---|||- MIT|||
 gsolr,
 rack-search_terms,
 arsettings,
@@ -18859,7 +18859,7 @@ cwiid,--- []|||
 isolate-lockdown,
 refinerycms-menus,---|||- MIT|||
 safe_attributes,---|||- MIT|||
-rbx-trepanning,
+rbx-trepanning,---|||- MIT|||
 rbx-tracer,--- |||...|||
 drapes,---|||- MIT|||
 tenacity,---|||- MIT|||
@@ -28742,7 +28742,7 @@ pukka,
 guard-bacon,--- []|||
 pretty_test,---|||- MIT|||
 bach,
-dead_simple_conf,
+dead_simple_conf,--- []|||
 taco,
 tweety,
 icinga-rest,
@@ -31787,7 +31787,7 @@ picotest,
 mix-language,--- |||...|||
 validates_phone_number,--- |||...|||
 jawbone,---|||- MIT|||
-horcrux,
+horcrux,--- []|||
 archive-tar2,
 backboner,
 frontend_notifier,---|||- MIT|||
@@ -41532,7 +41532,7 @@ puppetdashboardmonitor,
 rpg,--- |||...|||
 storenvy,
 post2irc,--- |||...|||
-sumbur,---|||- MIT|||
+sumbur,--- |||...|||
 jgrouper,---|||- MIT|||
 weather_jp,--- []|||
 sentiment,
@@ -42717,7 +42717,7 @@ persis,
 gcal-unit,--- |||...|||
 ruby-pomegranate,
 cloudalign-cli,
-rouge,"---|||- MIT, 2-clause BSD|||"
+rouge,---|||- MIT|||- BSD-2-Clause|||
 password_resetter,--- []|||
 metadata,
 wigle_api,--- |||...|||
@@ -47519,7 +47519,7 @@ gaptool-client,---|||- MIT|||
 altpass,---|||- MIT|||
 apexgen,---|||- MIT|||
 fixed_length_encoder,---|||- MIT|||
-fluent-plugin-delay-inspector,---|||- APLv2|||
+fluent-plugin-delay-inspector,---|||- Apache-2.0|||
 groonga-query-log,---|||- LGPLv2.1+|||
 jruby-readability,--- []|||
 rubyjs-rails,---|||- MIT|||
@@ -58800,7 +58800,7 @@ error_prone,---|||- MIT|||
 lwac,---|||- CC-BY-NC-SA 3.0|||
 wordpress-client,---|||- MIT|||
 maul,--- []|||
-swftly,--- []|||
+swftly,---|||- MIT|||
 fuci,---|||- MIT|||
 vkpd,---|||- MIT|||
 easy_dice,---|||- GPL-3|||
@@ -71734,7 +71734,6 @@ sell_object,---|||- MIT|||
 bio-velvet_underground,---|||- GPL|||
 gotasku,---|||- MIT|||
 laddajs_rails,---|||- MIT|||
-remove_comments,---|||- GPL 2|||
 activerecord-coders,---|||- MIT|||
 owasp_zap,---|||- MIT|||
 serf-client,---|||- MIT|||
@@ -91127,6 +91126,7 @@ daiku,---|||- MIT|||
 filetree_xml,---|||- MIT|||
 binlog-server,---|||- MIT|||
 attendease,---|||- MIT|||
+planter,---|||- MIT|||
 rubype,---|||- MIT|||
 catfish,---|||- Apache 2|||
 scrutinize,--- []|||
@@ -101721,7 +101721,7 @@ biased,---|||- MIT|||
 operations,--- []|||
 ride_the_chill_wave,---|||- Launch|||
 payu_za,---|||- MIT|||
-origen_app_generators,---|||- LGPL-3|||
+origen_app_generators,---|||- MIT|||
 gv,---|||- MIT|||
 value_object-ruby,---|||- MIT|||
 release_tagger,---|||- MIT|||
@@ -118099,7 +118099,7 @@ dropbox-sdk-v2,---|||- MIT|||
 wikk_aes_256,---|||- MIT|||
 quintype-seo,--- []|||
 pro1-tester,---|||- MIT|||
-server-generated-popups,--- []|||
+server-generated-popups,---|||- MIT|||
 dkdeploy-test_environment,---|||- MIT|||
 dkdeploy-core,---|||- MIT|||
 ruby-racer,---|||- MIT|||
@@ -119261,7 +119261,7 @@ gyft,---|||- MIT|||
 sensu-plugins-mailhandler,---|||- MIT|||
 solidus_image_multi_upload,---|||- MIT|||
 prolog_minitest_matchers,---|||- MIT|||
-rex-arch,--- []|||
+rex-arch,---|||- BSD-3-Clause|||
 rabbit-slide-kou-mariadb-community-event-2016-07-21,---|||- CC BY-SA 4.0|||- CC BY 3.0|||
 apod-cli,---|||- MIT|||
 PORTL,---|||- MIT|||
@@ -130288,6 +130288,7 @@ rspectre,---|||- MIT|||
 rubypack,---|||- MIT|||
 PrimeTimePhim,---|||- MIT|||
 angular_config,--- []|||
+test-prof,---|||- MIT|||
 ndd-rspec-rails,---|||- MIT|||
 service_pattern,---|||- MIT|||
 air-condition-api,---|||- hwj4477|||
@@ -131949,7 +131950,7 @@ new_relic-rest_api,---|||- MIT|||
 vis-gem,--- []|||
 xyeger,---|||- MIT|||
 fb-auth,---|||- MIT|||
-logstash-filter-cidrtagmap,---|||- Apache License (2.0)|||
+logstash-filter-cidrtagmap,---|||- Apache-2.0|||
 rumble_bundle,--- []|||
 squint,---|||- MIT|||
 housley_veiw_tool,--- []|||
@@ -133143,7 +133144,7 @@ markets,---|||- MIT|||
 ruby-constants,---|||- MIT|||
 owen_view_tool,---|||- MIT|||
 dummy_variables,---|||- MIT|||
-chef-provisioning-vbox,---|||- Apache 2.0|||
+chef-provisioning-vbox,---|||- MIT|||
 adaptable,--- []|||
 muncher,---|||- MIT|||
 prometheus-api-client,---|||- Apache-2.0|||
@@ -133251,6 +133252,7 @@ reinteractive-style,---|||- MIT|||
 suning_pay,---|||- MIT|||
 natthakit_view_helper_tool,---|||- MIT|||
 active_record_multiple_query_cache,---|||- MIT|||
+fyt,---|||- BSD-2-Clause|||
 logstash-output-daq,---|||- Apache License (2.0)|||
 cconfig,---|||- LGPL-3.0|||
 file_scanner,---|||- MIT|||
@@ -133416,6 +133418,7 @@ simplicity,---|||- MIT|||
 rasl,--- []|||
 mojix,---|||- MIT|||
 connoisseur,---|||- MIT|||
+tweet_sanitizer,---|||- MIT|||
 primus_lapus,---|||- MIT|||
 pushradar,---|||- MIT|||
 rails_vue_melt,---|||- MIT|||
@@ -133433,10 +133436,10 @@ fluent-plugin-rds-mysql-slow-log,---|||- MIT|||
 jisho_helper,---|||- MIT|||
 liquid-hash-or-array-drop,---|||- MIT|||
 tormanager,---|||- MIT|||
+kontena-plugin-app-command,---|||- Apache-2.0|||
 foodpusher,---|||- Apache-2.0|||
 embulk-filter-key_in_redis,---|||- MIT|||
 embulk-output-key_to_redis,---|||- MIT|||
-somleng-twilio_http_client,---|||- MIT|||
 tia-crawler,---|||- MIT|||
 logstash-output-azure,---|||- Apache-2.0|||
 kudu_adapter,---|||- MIT|||
@@ -133480,3 +133483,210 @@ appsignal_report,---|||- MIT|||
 signed,---|||- MIT|||
 activeadmin_medium_editor,---|||- MIT|||
 saharspec,---|||- MIT|||
+tubedl,---|||- MIT|||
+method-tracer,---|||- Apache-2.0|||
+fluent-plugin-switch,---|||- MIT|||
+nested_string_parser,---|||- MIT|||
+cap-gce,---|||- MIT|||
+algolia_places,---|||- MIT|||
+soil_sample_orm,---|||- MIT|||
+codespicuous,---|||- MIT|||
+reading_kanji_in_kana,---|||- MIT|||
+degica,---|||- MIT|||
+holistics-cli,---|||- MIT|||
+gem217,--- []|||
+huginn_github_notifications_agent,---|||- MIT|||
+fastlane-plugin-update_android_strings,---|||- MIT|||
+match_at,---|||- MIT|||
+falcon-capybara,--- []|||
+telegram_web_proxy,---|||- MIT|||
+col_resizable-rails,---|||- MIT|||
+lunar_blessing,---|||- MIT|||
+artsy-rack-auth-admin-only,--- []|||
+rotoscope,---|||- MIT|||
+muppet,---|||- MIT|||
+logstash-codec-pretty,---|||- Apache License (2.0)|||
+git_sme,---|||- MIT|||
+better_resources,---|||- MIT|||
+smartnotify,--- []|||
+fluent-plugin-https-client,---|||- MIT|||
+MagicViper,---|||- MIT|||
+passenger_api,---|||- MIT|||
+launchpad_mk2,---|||- MIT|||
+namesake,---|||- MIT|||
+ark-ruby,---|||- MIT|||
+svg_template_to_pdf,---|||- MIT|||
+qricker,---|||- MIT|||
+mastercard_p2m,---|||- BSD-2-Clause|||
+chatbase,---|||- MIT|||
+kindly-rb,---|||- ISC|||
+cocoapods-packager-qcloud,---|||- MIT|||
+embulk-input-aster,---|||- MIT|||
+auth_provider,---|||- MIT|||
+mpesa_connect,---|||- MIT|||
+big_query_adapter,---|||- MIT|||
+pque,---|||- MIT|||
+yandex-translator-api,---|||- MIT|||
+chordproko,---|||- MIT|||
+endicia_label_server-ruby,---|||- AGPL-3.0|||
+gizwits_sac,--- []|||
+photo-helper,---|||- MIT|||
+geohash_int,---|||- MIT|||
+wreddit,---|||- MIT|||
+daredevil,---|||- MIT|||
+gorge,---|||- MIT|||
+prom_multi_proc_rb,---|||- MIT|||
+fusion-client,---|||- MIT|||
+inspirecode,---|||- MIT|||
+brain_c,---|||- MIT|||
+async-await,--- []|||
+citasks,---|||- MIT|||
+validates_iban_format_of,---|||- MIT|||
+slack-rtm-bot-helper,---|||- MIT|||
+muru_test_gem,--- []|||
+fastlane-plugin-svn_commit,---|||- MIT|||
+fluent-plugin-redis-store-hao,---|||- Apache License Version 2.0|||
+green-dragon-plugins,--- []|||
+sensu-plugins-green-dragon,--- []|||
+fluent-plugin-redis-store-liu,---|||- Apache License Version 2.0|||
+tiqets,---|||- MIT|||
+goalseek,---|||- MIT|||
+originator,---|||- MIT|||
+yl_alipay,---|||- MIT|||
+default_attributes,---|||- MIT|||
+qscaffold,--- []|||
+ups-ruby,---|||- AGPL-3.0|||
+jekyll-test,---|||- MIT|||
+everypolitician-daff,---|||- MIT|||
+tedlinks,---|||- MIT|||
+op5util,---|||- MIT|||
+fixer-rb,---|||- MIT|||
+vindetta,---|||- MIT|||
+bodyguards,---|||- MIT|||
+cuprum,---|||- MIT|||
+hello_kalil,---|||- MIT|||
+lazy_lazer,---|||- MIT|||
+galadriel,---|||- MIT|||
+dallas_mars_rover,---|||- MIT|||
+warclight,---|||- Apache-2.0|||
+typesystem,---|||- MIT|||
+rubocop-schema,---|||- MIT|||
+ohayo,---|||- MIT|||
+myclear,---|||- MIT|||
+operation_currency,---|||- MIT|||
+eno_string_extend,--- []|||
+mylookup,---|||- MIT|||
+kth-sms,---|||- MIT|||
+brace_comb,---|||- MIT|||
+jp_strings_finder,---|||- MIT|||
+archangel,---|||- MIT|||
+opsgenie-heartbeat,---|||- MIT|||
+flg,--- []|||
+github-css,---|||- MIT|||
+redis_token,---|||- MIT|||
+frameworker,---|||- MIT|||
+moiristo-tileup,---|||- MIT|||
+prawn-styled-text,---|||- MIT|||
+lita-alexa-news-publisher,---|||- MIT|||
+sem,---|||- MIT|||
+dracula,---|||- MIT|||
+except_nested,---|||- MIT|||
+libdoi,---|||- ISC|||
+csv_fast_importer,---|||- MIT|||
+xport,--- []|||
+lemmibot,---|||- MIT|||
+matching_exceptions,---|||- MIT|||
+doctordata,---|||- MIT|||
+redis-cluster-activesupport,---|||- MIT|||
+draught,---|||- MIT|||
+capistrano-scm-localgitcopy,---|||- MIT|||
+capistrano-deploy-relative,---|||- MIT|||
+ifsc,---|||- MIT|||
+slds_on_rails,---|||- MIT|||
+class_ancestry_sort,---|||- MIT|||
+vagrant-aws-iam-decoder,---|||- MIT|||
+hi_max,--- []|||
+capybara-rumpelstiltskin,--- []|||
+activeetl,--- []|||
+tlsh,---|||- MIT|||
+hof_stats,---|||- MIT|||
+rest-service-client,---|||- MIT|||
+zmldifexport,---|||- MIT|||
+adafruit_charlcd,---|||- MIT|||
+presbeus,---|||- MIT|||
+vlad-systemd,---|||- MIT|||
+lonelywriter,---|||- MIT|||
+string_enums,---|||- BSD 3-clause|||
+vlad-unity,---|||- MIT|||
+chef-provisioning-virtualbox,---|||- MIT|||
+schema_parser,---|||- MIT|||
+act_as_permission_controllable,---|||- MIT|||
+pretty_search,---|||- MIT|||
+pattana,---|||- MIT|||
+rack-cleanser,---|||- MIT|||
+kanji_chinese_converter,---|||- MIT|||
+roentgen,--- []|||
+fastlane-plugin-telegram,---|||- MIT|||
+capistrano-syncfiles,---|||- MIT|||
+codeclimate-api-ruby-client,---|||- MIT|||
+gis-protobuf,---|||- MIT|||
+auth0_rs256_jwt_verifier,---|||- MIT|||
+redemet,--- []|||
+delayed-plugins-tracer,---|||- Apache-2.0|||
+translookout,---|||- MIT|||
+candland_view_tool,--- []|||
+activerecord-chemistry,---|||- MIT|||
+occams-record,---|||- MIT|||
+photozou,---|||- MIT|||
+mazel_view_tool,---|||- MIT|||
+moneygm,---|||- MIT|||
+now-ui-kit-rails,---|||- MIT|||
+pdtable,---|||- MIT|||
+awesome_print_json,---|||- MIT|||
+minio-ruby,---|||- Apache-2.0|||
+coney,---|||- MIT|||
+fog-ovirt,---|||- MIT|||
+mobilepay,---|||- MIT|||
+ccbill_ruby,---|||- MIT|||
+hello_world_ramziddin,---|||- MIT|||
+dates_resolver,---|||- MIT|||
+optio,---|||- MIT|||
+capistrano-webhooks,---|||- MIT|||
+rncher,---|||- MIT|||
+omniauth-yahoo_auth,---|||- MIT|||
+lita-alexa-news-recorder,---|||- MIT|||
+digest-xxhash,---|||- MIT|||
+watigiri,---|||- MIT|||
+logstash-input-azureblob-saars,---|||- Apache License (2.0)|||
+radiant-trailing_slash_seo-extension,---|||- MIT|||
+jbuilder-except,---|||- MIT|||
+kubernetes_health_checker,---|||- MIT|||
+md2conf,---|||- MIT|||
+rabbit-slide-kou-redmine-osaka-17,---|||- CC-BY-SA-4.0|||- CC-BY-3.0|||
+croner,---|||- MIT|||
+trailblazer-activity,---|||- MIT|||
+casica,---|||- MIT|||
+barite,---|||- MIT|||
+jwtauth,---|||- MIT|||
+funbox_nmax,---|||- MIT|||
+elonkit,---|||- MIT|||
+dragonpay_payment,---|||- MIT|||
+groupdocs_platform_cloud,---|||- MIT|||
+nummer,---|||- MIT|||
+strings2conf,---|||- MIT|||
+conf-api-client,---|||- MIT|||
+puppet2conf,---|||- MIT|||
+Otohatiyau,---|||- MIT|||
+anyfetch,---|||- MIT|||
+rft,---|||- MIT|||
+capistrano3-casica,---|||- MIT|||
+navtastic,---|||- MIT|||
+hint-rubocop_style,---|||- MIT|||
+govuk_config,---|||- MIT|||
+embulk-output-orc,---|||- MIT|||
+top-travel-destinations,---|||- MIT|||
+capybara-maleficent,--- []|||
+jekyll-swiss-ter0,---|||- MIT|||
+jekyll-liquify,---|||- MIT|||
+keepthechange,---|||- MIT|||
+omniauth-eve_online-sso,---|||- MIT|||
