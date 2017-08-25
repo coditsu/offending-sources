@@ -925,7 +925,7 @@ sqldsl,
 sqld4r,
 sqlanywhere,
 sql_dep_graph,
-sproutcore,---|||- MIT|||
+sproutcore,
 sprout-yahoomapsas3-library,
 sprout-tweeneras2-library,
 sprout-tweener-library,
@@ -1243,7 +1243,7 @@ scout,--- []|||
 scoped_struct,
 sconv,
 schematron,
-libxslt-ruby,--- []|||
+libxslt-ruby,
 schema_generator,
 scheduler,
 scgi,
@@ -9397,7 +9397,7 @@ plurk,
 pgericson-handsoap,
 nirvdrum-jekyll,
 HasRemote,
-breakout_parser,--- []|||
+breakout_parser,
 alc,
 hubbard,
 sdbtools,
@@ -10109,7 +10109,7 @@ koujou,
 pathfinderdev-mortgage_calc,
 bc-to_xls,
 ceilingfish-toto,
-marc4j4r,---|||- MIT|||
+marc4j4r,--- []|||
 six-arma-builder,
 dna_sequence_aligner,
 sexp_path,---|||- MIT|||
@@ -12344,7 +12344,7 @@ VelocityWalkToCSV,
 facebooker2,
 sinatra-helpers,
 peachy,
-akephalos,--- |||...|||
+akephalos,
 rdropbox,
 acts_as_nested_by,--- |||...|||
 icon_links,
@@ -17449,7 +17449,7 @@ file-birthtime,
 ruby-dbus,---|||- LGPL v2.1|||
 awesome_conf,
 tfl_journey_planner,
-mate,---|||- MIT|||
+mate,
 gsolr,
 rack-search_terms,
 arsettings,
@@ -18859,7 +18859,7 @@ cwiid,--- []|||
 isolate-lockdown,
 refinerycms-menus,---|||- MIT|||
 safe_attributes,---|||- MIT|||
-rbx-trepanning,---|||- MIT|||
+rbx-trepanning,
 rbx-tracer,--- |||...|||
 drapes,---|||- MIT|||
 tenacity,---|||- MIT|||
@@ -22826,7 +22826,7 @@ drone_json,--- |||...|||
 vpd,
 ssh-allow,
 ran_a_lytics,--- |||...|||
-rubydoop,--- []|||
+rubydoop,
 ffi-efl,--- []|||
 blackwinter-pru,
 chimpactions,--- |||...|||
@@ -31712,7 +31712,7 @@ rtp-connect,---|||- GPL-3.0|||
 xmlrpc-rack_server,---|||- MIT|||
 meta_grabber,
 routespec,
-recognizer,
+recognizer,--- []|||
 acts_as_configuration,
 lastfm-tail,--- []|||
 markup_for,
@@ -41532,7 +41532,7 @@ puppetdashboardmonitor,
 rpg,--- |||...|||
 storenvy,
 post2irc,--- |||...|||
-sumbur,--- |||...|||
+sumbur,---|||- MIT|||
 jgrouper,---|||- MIT|||
 weather_jp,--- []|||
 sentiment,
@@ -46762,7 +46762,7 @@ basecampnext,---|||- MIT|||
 yuris-timer,--- []|||
 multi_js,---|||- MIT|||
 groupme,---|||- MIT|||
-itunes_transporter_generator,---|||- MIT|||
+itunes_transporter_generator,--- []|||
 ifuture,---|||- MIT|||
 yoga_pants,--- []|||
 rails-observers,---|||- MIT|||
