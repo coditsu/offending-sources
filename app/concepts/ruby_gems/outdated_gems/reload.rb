@@ -17,7 +17,7 @@ module RubyGems
       private
 
       def fetch_snapshotted_at(options, params:, **)
-        options['snapshotted_at'] = params[:snapshotted_at]
+        options['snapshotted_at'] = params[:snapshotted_at] || Date.today
       end
 
       def prepare_paths(options, snapshotted_at:, **)

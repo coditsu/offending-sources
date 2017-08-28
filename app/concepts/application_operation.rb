@@ -21,6 +21,6 @@ class ApplicationOperation < Trailblazer::Operation
   # @example For RubyGems::OutdatedGems::Reload
   #   sources_path #=> 'rails_root/public/outdated_gems/'
   def sources_path
-    Rails.root.join *(['public'] + self.class.to_s.underscore.split('/')[0...-1])
+    Rails.root.join(*(['public'] + self.class.to_s.underscore.split('/')[0...-1]))
   end
 end
