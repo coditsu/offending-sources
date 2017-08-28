@@ -1,0 +1,23 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: utf8
+  template: template0
+  reconnect: true
+  pool: 100
+  username: postgres
+  password: ''
+  host: localhost
+  port: 5433
+  timeout: 1
+
+development:
+  <<: *defaults
+  database: rubygems
+
+test:
+  <<: *defaults
+  database: rubygems_development
+
+production:
+  <<: *defaults
+  database: rubygems_production

@@ -1,0 +1,28 @@
+defaults: &defaults
+  client_id: webhooks_manager
+
+  errbit:
+    project_id: <%= 1 %>
+    project_key: 'project_key'
+    host: 'https://host'
+
+  kafka:
+    hosts: <%= %w( 172.17.0.2:9092 ) %>
+    offset_commit_threshold: 1
+
+  redis:
+    url: 'redis://localhost:6379/3'
+
+  sidekiq:
+    username: 'sidekiq'
+    password: 'sidekiq'
+    mount: '/sidekiq'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

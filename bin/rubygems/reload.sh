@@ -19,10 +19,11 @@
 
 # variables
 public_tar=
-pg_database=rubygems
-pg_user=postgres
+pg_database=$DB_NAME
+pg_user=$DB_USERNAME
 download=false
 
+PGPASSWORD=$DB_PASSWORD
 
 ## For downloading
 base_url="https://s3-us-west-2.amazonaws.com/rubygems-dumps/"
@@ -79,13 +80,13 @@ fi
 printf 'Loading "%s" into database "%s" as user "%s"\n', "$public_tar", "$pg_database", "$pg_user"
 
 echo "Droppping database $pg_database"
-dropdb -U $pg_user -p5433 $pg_database
+dropdb -h $DB_HOST -U $pg_user -p$DB_PORT $pg_database
 
 echo "Creating database $pg_database"
-createdb -U $pg_user -p5433 $pg_database
+createdb -h $DB_HOST -U $pg_user -p$DB_PORT $pg_database
 
 echo "Adding hstore extension"
-psql -q -U $pg_user -p5433 -d $pg_database -c "CREATE EXTENSION IF NOT EXISTS hstore;"
+psql -q -h $DB_HOST -U $pg_user -p$DB_PORT -d $pg_database -c "CREATE EXTENSION IF NOT EXISTS hstore;"
 
 echo "Running migrations"
 rake db:migrate
@@ -95,6 +96,6 @@ rake db:migrate
 echo "Loading the data from $public_tar"
 tar xOf $public_tar public_postgresql/databases/PostgreSQL.sql.gz | \
   gunzip -c | \
-  psql --username $pg_user -p5433 --dbname $pg_database
+  psql -h $DB_HOST --username $pg_user -p$DB_PORT --dbname $pg_database
 
 echo "Done."
