@@ -12,7 +12,10 @@ require_relative 'boot'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-require 'fileutils'
+%w[
+  fileutils
+  csv
+].each(&method(:require))
 
 # OffendingSources module
 module OffendingSources

@@ -39,6 +39,9 @@ module RubyGems
         ORDER by count desc
       "
 
+      # Name of the file in which we will store gems details
+      FILENAME = 'current.csv'
+
       step :prepare_paths
       step :create_location
       step :cleanup
@@ -64,23 +67,22 @@ module RubyGems
       # Removes a tmp file in case there were some leftovers from previous reload
       # @param _options [Trailblazer::Operation::Option]
       # @param tmp [Pathname] path to a tmp file we want to remove
-      def cleanup(options, tmp:, **)
+      def cleanup(_options, tmp:, **)
         FileUtils.rm_f(tmp)
       end
 
       # Executes our query and stores results in a tmp csv file
       # @param _options [Trailblazer::Operation::Option]
       # @param tmp [Pathname] path to a tmp where we will store our generated csv data
-      def fetch_and_store(options, tmp:, **)
+      def fetch_and_store(_options, tmp:, **)
         RubyGemsDb.export_to_csv(tmp, QUERY)
-        true
       end
 
       # Renames and replaces our current sources file with data from tmp file
       # @param _options [Trailblazer::Operation::Option]
       # @param tmp [Pathname] tmp file that we will renamed
       # @param location [Pathname] target file location of the result csv data
-      def rename(options, tmp:, location:, **)
+      def rename(_options, tmp:, location:, **)
         FileUtils.rm_f(location)
         FileUtils.mv(tmp, location)
       end

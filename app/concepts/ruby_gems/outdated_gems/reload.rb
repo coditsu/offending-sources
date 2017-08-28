@@ -1,8 +1,13 @@
 # frozen_string_literal: true
-require 'csv'
 
 module RubyGems
+  # Namespace for all the operations related to outdated gems validator sources
   module OutdatedGems
+    # Reloads sources file for outdated gems validator engine
+    # @note This command regenerates a different snapshot for each day, so date needs
+    # to be previded
+    # @example
+    #  RubyGems::OutdatedGems::Reload.call(snapshotted_at: Date.today)
     class Reload < ApplicationOperation
       step :fetch_snapshotted_at
       step :prepare_paths
@@ -16,32 +21,59 @@ module RubyGems
 
       private
 
+      # Prepares snapshotted_at date
+      # @param options [Trailblazer::Operation::Option]
+      # @param params [Hash] request hash with snapshotted at date
       def fetch_snapshotted_at(options, params:, **)
         options['snapshotted_at'] = params[:snapshotted_at] || Date.today
       end
 
+      # Prepares all the paths to files that we will work on
+      # @param options [Trailblazer::Operation::Option]
+      # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
       def prepare_paths(options, snapshotted_at:, **)
         base = "#{snapshotted_at}.csv"
-        options['count_path'] = sources_path.join("count-#{base}")
-        options['non_pre_path'] = sources_path.join("non_pre-#{base}")
-        options['pre_path'] = sources_path.join("pre_-#{base}")
-        options['location'] = sources_path.join("#{base}")
+        options['count_path'] = sources_path.join("count_#{base}")
+        options['pre_path'] = sources_path.join("pre_#{base}")
+        options['non_pre_path'] = sources_path.join("non_pre_#{base}")
+        options['location'] = sources_path.join(base.to_s)
         options['tmp'] = sources_path.join("#{base}.tmp")
       end
 
-      def cleanup(options, count_path:, pre_path:, non_pre_path:, **)
-        FileUtils.rm_f count_path
-        FileUtils.rm_f pre_path
-        FileUtils.rm_f non_pre_path
+      # Removes all the leftover tempfiles that could exist after failed previous run
+      # @param _options [Trailblazer::Operation::Option]
+      # @param count_path [Pathname] gems downloads count tmp file path
+      # @param pre_path [Pathname] prereleases tmp file path
+      # @param non_pre_path [Pathname] non prereleases tmp file path
+      # @param tmp [Pathname] path to a tmp file where we will store generated results
+      def cleanup(_options, count_path:, pre_path:, non_pre_path:, tmp:, **)
+        [
+          count_path,
+          pre_path,
+          non_pre_path,
+          tmp
+        ].each { |path| FileUtils.rm_f path }
       end
 
-      def fetch_data(options, snapshotted_at:, count_path:, pre_path:, non_pre_path:, **)
+      # Generates all the tmp csv files with partial data that we will merge in Ruby into one
+      #   CSV file
+      # @param _options [Trailblazer::Operation::Option]
+      # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
+      # @param count_path [Pathname] gems downloads count tmp file path
+      # @param pre_path [Pathname] prereleases tmp file path
+      # @param non_pre_path [Pathname] non prereleases tmp file path
+      def fetch_data(_options, snapshotted_at:, count_path:, pre_path:, non_pre_path:, **)
         RubyGemsDb.export_to_csv(count_path, count_query(snapshotted_at))
         RubyGemsDb.export_to_csv(pre_path, pre_query(snapshotted_at))
         RubyGemsDb.export_to_csv(non_pre_path, non_pre_query(snapshotted_at))
-        true
       end
 
+      # Loads csv data into memory, so we can work with it
+      # @param options [Trailblazer::Operation::Option]
+      # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
+      # @param count_path [Pathname] gems downloads count tmp file path
+      # @param pre_path [Pathname] prereleases tmp file path
+      # @param non_pre_path [Pathname] non prereleases tmp file path
       def load_data(options, snapshotted_at:, count_path:, pre_path:, non_pre_path:, **)
         counts = {}
         pre = {}
@@ -56,6 +88,11 @@ module RubyGems
         options['non_pre'] = non_pre
       end
 
+      # Combines partial data into a single array with details that we need
+      # @param options [Trailblazer::Operation::Option]
+      # @param counts [Hash] gem download counts
+      # @param pre [Hash] most recent prerelease for a given day
+      # @param non_pre [Hash] most recent release for a given day
       def combine_data(options, counts:, pre:, non_pre:, **)
         results = counts.map do |gem, count|
           [gem, count, non_pre[gem], pre[gem]]
@@ -68,18 +105,25 @@ module RubyGems
         end
       end
 
-      def store(options, results:, tmp:, **)
+      # Persists all the details into tmp combined csv file
+      # @param _options [Trailblazer::Operation::Option]
+      # @param results [Array<Array>] array with combined details
+      # @param tmp [Pathname] path to a tmp file where we will store generated results
+      def store(_options, results:, tmp:, **)
         CSV.open(tmp, "w") do |csv|
           results.each { |row| csv << [row[0], row[2], row[3]] }
         end
       end
 
-      def rename(options, tmp:, location:, **)
+      # Removes the previous target file and replaces it with our newly generated tmp file
+      # @param _options [Trailblazer::Operation::Option]
+      # @param tmp [Pathname] path to a tmp file where we will store generated results
+      def rename(_options, tmp:, location:, **)
         FileUtils.rm_f(location)
         FileUtils.mv(tmp, location)
       end
 
-      def count_query(date = Date.today)
+      def count_query(snapshotted_at = Date.today)
         "
           SELECT
             rubygems.name,
@@ -91,13 +135,13 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{date}'
+                AND versions.built_at::date <= '#{snapshotted_at}'
           GROUP by rubygems.id
           ORDER by count DESC
         "
       end
 
-      def non_pre_query(date = Date.today)
+      def non_pre_query(snapshotted_at = Date.today)
         "
           SELECT
             rubygems.name,
@@ -109,7 +153,7 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{date}'
+                AND versions.built_at::date <= '#{snapshotted_at}'
           WHERE latest IS TRUE
             AND yanked_at IS NULL
             AND prerelease is FALSE
@@ -117,7 +161,7 @@ module RubyGems
         "
       end
 
-      def pre_query(date = Date.today)
+      def pre_query(snapshotted_at = Date.today)
         "
           SELECT
             DISTINCT ON (rubygems.id) rubygems.id,
@@ -130,7 +174,7 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{date}'
+                AND versions.built_at::date <= '#{snapshotted_at}'
           WHERE latest IS FALSE
             AND yanked_at IS NULL
             AND prerelease is TRUE

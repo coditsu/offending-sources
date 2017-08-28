@@ -26,7 +26,6 @@ module RubyGems
 
     def fetch_and_reload_rubygems_db(options, env_variables:, **)
       cmd = File.join(Rails.root, 'bin', 'rubygems', 'reload.sh download')
-
       system(env_variables.join(' ') + ' ' +cmd)
     end
 
