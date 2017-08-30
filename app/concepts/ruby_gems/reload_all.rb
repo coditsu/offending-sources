@@ -33,8 +33,8 @@ module RubyGems
     # @param _options [Trailblazer::Operation::Option]
     # @param env_variables [Hash] envs that we need to pass to reload script
     def fetch_and_reload_rubygems_db(_options, env_variables:, **)
-      cmd = File.join(Rails.root, 'bin', 'rubygems', 'reload.sh download')
-      system(env_variables.join(' ') + ' ' + cmd)
+      cmd = Rails.root.join('bin', 'rubygems', 'reload.sh download')
+      system(env_variables.join(' ') + ' ' + cmd.to_s)
     end
 
     # Regenerates all the sources

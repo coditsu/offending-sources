@@ -7,7 +7,7 @@ module RubyGems
     # @note This command regenerates a different snapshot for each day, so date needs
     # to be previded
     # @example
-    #  RubyGems::OutdatedGems::Reload.call(date_limit: Date.today)
+    #  RubyGems::OutdatedGems::Reload.call(date_limit: Time.zone.today)
     class Reload < ApplicationOperation
       step :fetch_date_limit
       step :prepare_paths
@@ -30,7 +30,7 @@ module RubyGems
       # @param options [Trailblazer::Operation::Option]
       # @param params [Hash] request hash with snapshotted at date
       def fetch_date_limit(options, params:, **)
-        options['date_limit'] = params[:date_limit] || Date.today
+        options['date_limit'] = params[:date_limit] || Time.zone.today
       end
 
       # Prepares all the paths to files that we will work on
@@ -131,13 +131,10 @@ module RubyGems
       # @param date_limit [Date] day up until we calculate
       # @return [String] query that will return us gem name and number of downloads till
       #   certain point it history
-      def count_query(date_limit = Date.today)
+      def count_query(date_limit = Time.zone.today)
         "
-          SELECT
-            rubygems.name,
-            SUM(gem_downloads.count) as count
-          FROM
-            rubygems
+          SELECT rubygems.name, SUM(gem_downloads.count) as count
+          FROM rubygems
           INNER JOIN versions
             ON rubygems.id = versions.rubygem_id
           INNER JOIN gem_downloads
@@ -152,13 +149,10 @@ module RubyGems
       # @param date_limit [Date] day up until we calculate
       # @return [String] query that returns most recent non pre release that has been
       #   available at a given time
-      def non_pre_query(date_limit = Date.today)
+      def non_pre_query(date_limit = Time.zone.today)
         "
-          SELECT
-            rubygems.name,
-            versions.number as number
-          FROM
-            rubygems
+          SELECT rubygems.name, versions.number as number
+          FROM rubygems
           INNER JOIN versions
             ON rubygems.id = versions.rubygem_id
           INNER JOIN gem_downloads
@@ -175,23 +169,20 @@ module RubyGems
       # @param date_limit [Date] day up until we calculate
       # @return [String] query that returns most recent pre release that has been
       #   available at a given time
-      def pre_query(date_limit = Date.today)
+      def pre_query(date_limit = Time.zone.today)
         "
           SELECT
             DISTINCT ON (rubygems.id) rubygems.id,
             rubygems.name,
             versions.number as number
-          FROM
-            rubygems
+          FROM rubygems
           INNER JOIN versions
             ON rubygems.id = versions.rubygem_id
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
                 AND versions.built_at::date <= '#{date_limit}'
-          WHERE latest IS FALSE
-            AND yanked_at IS NULL
-            AND prerelease is TRUE
+          WHERE latest IS FALSE AND yanked_at IS NULL AND prerelease is TRUE
           ORDER by rubygems.id ASC, versions.created_at DESC
         "
       end
