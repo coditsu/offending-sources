@@ -4,6 +4,9 @@
 class RubyGemsDb < ApplicationRecord
   establish_connection RUBY_GEMS_DB
 
+  # Exports a data returned by the query to a given file using postgres copy function
+  # @param target_file [String] path to a file to which we should save generated results
+  # @param query [String] query that will generate the data
   def self.export_to_csv(target_file, query)
     username = RUBY_GEMS_DB['username']
     password = RUBY_GEMS_DB['password']
@@ -12,7 +15,15 @@ class RubyGemsDb < ApplicationRecord
     port = RUBY_GEMS_DB['port']
 
     psql_cmd = "\\copy (#{query}) To '#{target_file}' With CSV"
-    psql_run = "PGPASSWORD='#{password}' psql -h #{host} -U #{username} -p #{port} -d #{database} -c \"#{psql_cmd}\""
-    system(psql_run)
+
+    system [
+      "PGPASSWORD='#{password}'",
+      'psql',
+      "-h #{host}",
+      "-U #{username}",
+      "-p #{port}",
+      "-d #{database}",
+      "-c \"#{psql_cmd}\""
+    ].join(' ')
   end
 end
