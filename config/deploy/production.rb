@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
 server 'coditsu-production-frontend',
-  roles: %w[web app db],
+  roles: %w[web],
+  user: 'deploy'
+
+server 'coditsu-production-main',
+  roles: %w[app db],
   user: 'deploy'
 
 set :ssh_options,

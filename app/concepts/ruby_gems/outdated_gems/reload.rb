@@ -19,6 +19,11 @@ module RubyGems
       step :rename
       step :cleanup
 
+      # Simple struct for storing aggregated paths to files on which we work
+      Paths = Struct.new(:count, :pre, :non_pre, :location, :tmp)
+
+      private_constant :Paths
+
       private
 
       # Prepares snapshotted_at date
@@ -33,25 +38,26 @@ module RubyGems
       # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
       def prepare_paths(options, snapshotted_at:, **)
         base = "#{snapshotted_at}.csv"
-        options['count_path'] = sources_path.join("count_#{base}")
-        options['pre_path'] = sources_path.join("pre_#{base}")
-        options['non_pre_path'] = sources_path.join("non_pre_#{base}")
-        options['location'] = sources_path.join(base.to_s)
-        options['tmp'] = sources_path.join("#{base}.tmp")
+        options['paths'] = Paths.new(
+          sources_path.join("count_#{base}"),
+          sources_path.join("pre_#{base}"),
+          sources_path.join("non_pre_#{base}"),
+          sources_path.join(base.to_s),
+          sources_path.join("#{base}.tmp")
+        )
+        true
       end
 
       # Removes all the leftover tempfiles that could exist after failed previous run
       # @param _options [Trailblazer::Operation::Option]
-      # @param count_path [Pathname] gems downloads count tmp file path
-      # @param pre_path [Pathname] prereleases tmp file path
-      # @param non_pre_path [Pathname] non prereleases tmp file path
-      # @param tmp [Pathname] path to a tmp file where we will store generated results
-      def cleanup(_options, count_path:, pre_path:, non_pre_path:, tmp:, **)
+      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
+      #   to files that we use in this operation
+      def cleanup(_options, paths:, **)
         [
-          count_path,
-          pre_path,
-          non_pre_path,
-          tmp
+          paths.count,
+          paths.pre,
+          paths.non_pre,
+          paths.tmp
         ].each { |path| FileUtils.rm_f path }
       end
 
@@ -59,29 +65,27 @@ module RubyGems
       #   CSV file
       # @param _options [Trailblazer::Operation::Option]
       # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
-      # @param count_path [Pathname] gems downloads count tmp file path
-      # @param pre_path [Pathname] prereleases tmp file path
-      # @param non_pre_path [Pathname] non prereleases tmp file path
-      def fetch_data(_options, snapshotted_at:, count_path:, pre_path:, non_pre_path:, **)
-        RubyGemsDb.export_to_csv(count_path, count_query(snapshotted_at))
-        RubyGemsDb.export_to_csv(pre_path, pre_query(snapshotted_at))
-        RubyGemsDb.export_to_csv(non_pre_path, non_pre_query(snapshotted_at))
+      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
+      #   to files that we use in this operation
+      def fetch_data(_options, snapshotted_at:, paths:, **)
+        RubyGemsDb.export_to_csv(paths.count, count_query(snapshotted_at))
+        RubyGemsDb.export_to_csv(paths.pre, pre_query(snapshotted_at))
+        RubyGemsDb.export_to_csv(paths.non_pre, non_pre_query(snapshotted_at))
       end
 
       # Loads csv data into memory, so we can work with it
       # @param options [Trailblazer::Operation::Option]
       # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
-      # @param count_path [Pathname] gems downloads count tmp file path
-      # @param pre_path [Pathname] prereleases tmp file path
-      # @param non_pre_path [Pathname] non prereleases tmp file path
-      def load_data(options, snapshotted_at:, count_path:, pre_path:, non_pre_path:, **)
+      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
+      #   to files that we use in this operation
+      def load_data(options, snapshotted_at:, paths:, **)
         counts = {}
         pre = {}
         non_pre = {}
 
-        CSV.foreach(count_path) { |row| counts[row[0]] = row[1].to_i }
-        CSV.foreach(pre_path) { |row| pre[row[1]] = row[2].to_i }
-        CSV.foreach(non_pre_path) { |row| pre[row[0]] = row[1].to_i }
+        CSV.foreach(paths.count) { |row| counts[row[0]] = row[1].to_i }
+        CSV.foreach(paths.pre) { |row| pre[row[1]] = row[2].to_i }
+        CSV.foreach(paths.non_pre) { |row| pre[row[0]] = row[1].to_i }
 
         options['counts'] = counts
         options['pre'] = pre
@@ -108,21 +112,24 @@ module RubyGems
       # Persists all the details into tmp combined csv file
       # @param _options [Trailblazer::Operation::Option]
       # @param results [Array<Array>] array with combined details
-      # @param tmp [Pathname] path to a tmp file where we will store generated results
-      def store(_options, results:, tmp:, **)
-        CSV.open(tmp, "w") do |csv|
+      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
+      #   to files that we use in this operation
+      def store(_options, results:, paths:, **)
+        CSV.open(paths.tmp, "w") do |csv|
           results.each { |row| csv << [row[0], row[2], row[3]] }
         end
       end
 
       # Removes the previous target file and replaces it with our newly generated tmp file
       # @param _options [Trailblazer::Operation::Option]
-      # @param tmp [Pathname] path to a tmp file where we will store generated results
-      def rename(_options, tmp:, location:, **)
-        FileUtils.rm_f(location)
-        FileUtils.mv(tmp, location)
+      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
+      #   to files that we use in this operation
+      def rename(_options, paths:, **)
+        FileUtils.rm_f(paths.location)
+        FileUtils.mv(paths.tmp, paths.location)
       end
 
+      # @param snapshotted_at [Date]
       def count_query(snapshotted_at = Date.today)
         "
           SELECT
@@ -141,6 +148,7 @@ module RubyGems
         "
       end
 
+      # @param snapshotted_at [Date]
       def non_pre_query(snapshotted_at = Date.today)
         "
           SELECT
@@ -161,6 +169,7 @@ module RubyGems
         "
       end
 
+      # @param snapshotted_at [Date]
       def pre_query(snapshotted_at = Date.today)
         "
           SELECT
