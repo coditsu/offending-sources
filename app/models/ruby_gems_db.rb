@@ -14,7 +14,7 @@ class RubyGemsDb < ApplicationRecord
     host = RUBY_GEMS_DB['host']
     port = RUBY_GEMS_DB['port']
 
-    psql_cmd = "\\copy (#{query}) To '#{target_file}' With CSV"
+    psql_function = "\\copy (#{query}) To '#{target_file}' With CSV"
 
     system [
       "PGPASSWORD='#{password}'",
@@ -23,7 +23,7 @@ class RubyGemsDb < ApplicationRecord
       "-U #{username}",
       "-p #{port}",
       "-d #{database}",
-      "-c \"#{psql_cmd}\""
+      "-c \"#{psql_function}\""
     ].join(' ')
   end
 end
