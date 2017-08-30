@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RubyGems
   class OutdatedGemsController < ApplicationController
     def show

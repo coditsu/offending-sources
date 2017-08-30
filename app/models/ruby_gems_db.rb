@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Model that acts as a binder for raw sql commands execution on a rubygems database
 class RubyGemsDb < ApplicationRecord
   establish_connection RUBY_GEMS_DB
 

@@ -7,9 +7,9 @@ module RubyGems
     # @note This command regenerates a different snapshot for each day, so date needs
     # to be previded
     # @example
-    #  RubyGems::OutdatedGems::Reload.call(snapshotted_at: Date.today)
+    #  RubyGems::OutdatedGems::Reload.call(date_limit: Date.today)
     class Reload < ApplicationOperation
-      step :fetch_snapshotted_at
+      step :fetch_date_limit
       step :prepare_paths
       step :cleanup
       step :fetch_data
@@ -26,18 +26,18 @@ module RubyGems
 
       private
 
-      # Prepares snapshotted_at date
+      # Prepares date_limit date
       # @param options [Trailblazer::Operation::Option]
       # @param params [Hash] request hash with snapshotted at date
-      def fetch_snapshotted_at(options, params:, **)
-        options['snapshotted_at'] = params[:snapshotted_at] || Date.today
+      def fetch_date_limit(options, params:, **)
+        options['date_limit'] = params[:date_limit] || Date.today
       end
 
       # Prepares all the paths to files that we will work on
       # @param options [Trailblazer::Operation::Option]
-      # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
-      def prepare_paths(options, snapshotted_at:, **)
-        base = "#{snapshotted_at}.csv"
+      # @param date_limit [Date] date for which we will build most recent gems snapshot
+      def prepare_paths(options, date_limit:, **)
+        base = "#{date_limit}.csv"
         options['paths'] = Paths.new(
           sources_path.join("count_#{base}"),
           sources_path.join("pre_#{base}"),
@@ -64,21 +64,20 @@ module RubyGems
       # Generates all the tmp csv files with partial data that we will merge in Ruby into one
       #   CSV file
       # @param _options [Trailblazer::Operation::Option]
-      # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
+      # @param date_limit [Date] date for which we will build most recent gems snapshot
       # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
       #   to files that we use in this operation
-      def fetch_data(_options, snapshotted_at:, paths:, **)
-        RubyGemsDb.export_to_csv(paths.count, count_query(snapshotted_at))
-        RubyGemsDb.export_to_csv(paths.pre, pre_query(snapshotted_at))
-        RubyGemsDb.export_to_csv(paths.non_pre, non_pre_query(snapshotted_at))
+      def fetch_data(_options, date_limit:, paths:, **)
+        RubyGemsDb.export_to_csv(paths.count, count_query(date_limit))
+        RubyGemsDb.export_to_csv(paths.pre, pre_query(date_limit))
+        RubyGemsDb.export_to_csv(paths.non_pre, non_pre_query(date_limit))
       end
 
       # Loads csv data into memory, so we can work with it
       # @param options [Trailblazer::Operation::Option]
-      # @param snapshotted_at [Date] date for which we will build most recent gems snapshot
       # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
       #   to files that we use in this operation
-      def load_data(options, snapshotted_at:, paths:, **)
+      def load_data(options, paths:, **)
         counts = {}
         pre = {}
         non_pre = {}
@@ -115,7 +114,7 @@ module RubyGems
       # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
       #   to files that we use in this operation
       def store(_options, results:, paths:, **)
-        CSV.open(paths.tmp, "w") do |csv|
+        CSV.open(paths.tmp, 'w') do |csv|
           results.each { |row| csv << [row[0], row[2], row[3]] }
         end
       end
@@ -129,8 +128,10 @@ module RubyGems
         FileUtils.mv(paths.tmp, paths.location)
       end
 
-      # @param snapshotted_at [Date]
-      def count_query(snapshotted_at = Date.today)
+      # @param date_limit [Date] day up until we calculate
+      # @return [String] query that will return us gem name and number of downloads till
+      #   certain point it history
+      def count_query(date_limit = Date.today)
         "
           SELECT
             rubygems.name,
@@ -142,14 +143,16 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{snapshotted_at}'
+                AND versions.built_at::date <= '#{date_limit}'
           GROUP by rubygems.id
           ORDER by count DESC
         "
       end
 
-      # @param snapshotted_at [Date]
-      def non_pre_query(snapshotted_at = Date.today)
+      # @param date_limit [Date] day up until we calculate
+      # @return [String] query that returns most recent non pre release that has been
+      #   available at a given time
+      def non_pre_query(date_limit = Date.today)
         "
           SELECT
             rubygems.name,
@@ -161,7 +164,7 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{snapshotted_at}'
+                AND versions.built_at::date <= '#{date_limit}'
           WHERE latest IS TRUE
             AND yanked_at IS NULL
             AND prerelease is FALSE
@@ -169,8 +172,10 @@ module RubyGems
         "
       end
 
-      # @param snapshotted_at [Date]
-      def pre_query(snapshotted_at = Date.today)
+      # @param date_limit [Date] day up until we calculate
+      # @return [String] query that returns most recent pre release that has been
+      #   available at a given time
+      def pre_query(date_limit = Date.today)
         "
           SELECT
             DISTINCT ON (rubygems.id) rubygems.id,
@@ -183,7 +188,7 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{snapshotted_at}'
+                AND versions.built_at::date <= '#{date_limit}'
           WHERE latest IS FALSE
             AND yanked_at IS NULL
             AND prerelease is TRUE
