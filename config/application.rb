@@ -28,6 +28,7 @@ end
 
 %w[
   lib/errors.rb
+  lib/karafka_monitor.rb
 ].each do |path|
   Dir[Rails.root.join(path)].each do |base|
     require base

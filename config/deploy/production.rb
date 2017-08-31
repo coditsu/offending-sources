@@ -30,4 +30,4 @@ set :rvm_custom_path, '/usr/local/rvm'
 set :rvm_ruby_version, "2.4.1@#{fetch(:application)}"
 
 set :branch, ENV['REVISION'] || ENV['BRANCH_NAME'] || 'master'
-set :domain, 'offending-sources.coditsu.it'
+set :domain, 'offending-sources.coditsu.io'

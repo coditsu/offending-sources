@@ -1,5 +1,5 @@
 defaults: &defaults
-  client_id: webhooks_manager
+  client_id: offending_sources
 
   errbit:
     project_id: <%= 1 %>
@@ -7,7 +7,7 @@ defaults: &defaults
     host: 'https://host'
 
   kafka:
-    hosts: <%= %w( 172.17.0.2:9092 ) %>
+    seed_brokers: <%= %w( 172.17.0.2:9092 ) %>
     offset_commit_threshold: 1
 
   redis:
