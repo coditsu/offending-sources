@@ -151,7 +151,7 @@ GEM
       dry-equalizer (~> 0.2)
       dry-logic (~> 0.4, >= 0.4.0)
       dry-types (~> 0.11.0)
-    envlogic (1.0.3)
+    envlogic (1.0.4)
       activesupport
     erubi (1.6.1)
     ffi (1.9.18)
