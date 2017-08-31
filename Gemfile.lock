@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/karafka
-  revision: 9a5220750120645dbb578f125c9828529f758fb3
+  revision: e72889e6ddbeeb01ab28c0ae621d6257a1f07a00
   specs:
     karafka (0.6.0.rc2)
       activesupport (>= 5.0)
