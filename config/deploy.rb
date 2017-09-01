@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-set :application,   'webhooks-manager'
+set :application,   'offending-sources'
 set :repo_url,      "git@bitbucket.org:coditsu/#{fetch(:application)}.git"
 set :keep_releases, 10
 set :log_level,     :debug
@@ -9,10 +9,9 @@ set :puma_role,     :web
 
 set :linked_files, %w[
   config/secrets.yml
-  config/database.yml
+  config/databases/rubygems.yml
   config/settings.yml
   config/puma.rb
-  config/sidekiq.yml
 ]
 
 set :linked_dirs, %w[
