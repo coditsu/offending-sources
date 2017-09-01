@@ -20,6 +20,7 @@ set :linked_dirs, %w[
   db/sources
   .bundle
   bundle
+  public
 ]
 
 after 'deploy:finished', 'puma:start'

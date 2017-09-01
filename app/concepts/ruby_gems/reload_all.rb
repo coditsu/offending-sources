@@ -6,7 +6,7 @@ module RubyGems
   # it's informations
   class ReloadAll < ApplicationOperation
     step :prepare_env_variables
-    #step :fetch_and_reload_rubygems_db
+    step :fetch_and_reload_rubygems_db
     step :reload_sources
 
     private
