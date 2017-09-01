@@ -23,7 +23,7 @@ pg_database=$DB_NAME
 pg_user=$DB_USERNAME
 download=false
 
-PGPASSWORD=$DB_PASSWORD
+export PGPASSWORD=$DB_PASSWORD
 
 ## For downloading
 base_url="https://s3-us-west-2.amazonaws.com/rubygems-dumps/"
@@ -85,9 +85,6 @@ psql -q -h $DB_HOST -U $pg_user -p$DB_PORT -d $pg_database -t -c "$DROP_SQL" | p
 
 echo "Adding hstore extension"
 psql -q -h $DB_HOST -U $pg_user -p$DB_PORT -d $pg_database -c "CREATE EXTENSION IF NOT EXISTS hstore;"
-
-echo "Running migrations"
-rake db:migrate
 
 # Extract the single PostgresSQL.sql.gz file from the tar file, pass it through gunzip
 # and load it as quietly as possible into the database
