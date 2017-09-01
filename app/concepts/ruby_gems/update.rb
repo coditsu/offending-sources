@@ -34,7 +34,7 @@ module RubyGems
       )
 
       options['version'].update(
-        licenses: ruby_gem[:licenses]
+        licenses: ruby_gem[:licenses] || []
       )
 
       options['gem_download'] = GemDownload.find_or_create_by(
