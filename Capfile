@@ -8,7 +8,7 @@
   rvm
   console
   puma
-  sidekiq
+  karafka
 ].each { |lib| require "capistrano/#{lib}" }
 
 install_plugin Capistrano::SCM::Git

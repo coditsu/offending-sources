@@ -18,6 +18,7 @@ end
 
 group :development do
   gem 'bcrypt_pbkdf'
+  gem 'capistrano-karafka', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-rvm', require: false
