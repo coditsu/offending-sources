@@ -79,11 +79,9 @@ fi
 
 printf 'Loading "%s" into database "%s" as user "%s"\n', "$public_tar", "$pg_database", "$pg_user"
 
-echo "Droppping database $pg_database"
-dropdb -h $DB_HOST -U $pg_user -p$DB_PORT $pg_database
+DROP_SQL="select 'drop table \"' || tablename || '\" cascade;' from pg_tables where schemaname = 'public';"
 
-echo "Creating database $pg_database"
-createdb -h $DB_HOST -U $pg_user -p$DB_PORT $pg_database
+psql -q -h $DB_HOST -U $pg_user -p$DB_PORT -d $pg_database -t -c "$DROP_SQL" | psql -h $DB_HOST -U $pg_user -p$DB_PORT -d $pg_database
 
 echo "Adding hstore extension"
 psql -q -h $DB_HOST -U $pg_user -p$DB_PORT -d $pg_database -c "CREATE EXTENSION IF NOT EXISTS hstore;"
