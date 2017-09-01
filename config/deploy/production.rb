@@ -5,7 +5,7 @@ server 'coditsu-production-frontend',
   user: 'deploy'
 
 server 'coditsu-production-main',
-  roles: %w[app db],
+  roles: %w[app db karafka],
   user: 'deploy'
 
 set :ssh_options,
