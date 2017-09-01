@@ -68,9 +68,9 @@ module RubyGems
       # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
       #   to files that we use in this operation
       def fetch_data(_options, date_limit:, paths:, **)
-        RubyGemsDb.export_to_csv(paths.count, count_query(date_limit))
-        RubyGemsDb.export_to_csv(paths.pre, pre_query(date_limit))
-        RubyGemsDb.export_to_csv(paths.non_pre, non_pre_query(date_limit))
+        Base.export_to_csv(paths.count, count_query(date_limit))
+        Base.export_to_csv(paths.pre, pre_query(date_limit))
+        Base.export_to_csv(paths.non_pre, non_pre_query(date_limit))
       end
 
       # Loads csv data into memory, so we can work with it

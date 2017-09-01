@@ -75,7 +75,7 @@ module RubyGems
       # @param _options [Trailblazer::Operation::Option]
       # @param tmp [Pathname] path to a tmp where we will store our generated csv data
       def fetch_and_store(_options, tmp:, **)
-        RubyGemsDb.export_to_csv(tmp, QUERY)
+        Base.export_to_csv(tmp, QUERY)
       end
 
       # Renames and replaces our current sources file with data from tmp file
