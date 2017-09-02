@@ -92,8 +92,8 @@ module Ruby
         non_pre = {}
 
         CSV.foreach(paths.count) { |row| counts[row[0]] = row[1].to_i }
-        CSV.foreach(paths.pre) { |row| pre[row[1]] = row[2].to_i }
-        CSV.foreach(paths.non_pre) { |row| pre[row[0]] = row[1].to_i }
+        CSV.foreach(paths.pre) { |row| pre[row[1]] = row[2] }
+        CSV.foreach(paths.non_pre) { |row| non_pre[row[0]] = row[1] }
 
         options['counts'] = counts
         options['pre'] = pre

@@ -26,7 +26,7 @@ db/*.sqlite3
 /doc/yard
 /doc/features.html
 /doc/specs.html
-/public/ruby_gems/*
+/public/ruby/*
 /public/cache
 /public/recent_dump.txt
 /public/assets
