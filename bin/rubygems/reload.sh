@@ -93,4 +93,6 @@ tar xOf $public_tar public_postgresql/databases/PostgreSQL.sql.gz | \
   gunzip -c | \
   psql -h $DB_HOST --username $pg_user -p$DB_PORT --dbname $pg_database
 
+rm $public_tar
+
 echo "Done."

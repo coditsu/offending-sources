@@ -12,6 +12,7 @@ module RubyGems
       step :fetch_date_limit
       step :prepare_paths
       step :cleanup
+      step :create_location
       step :fetch_data
       step :load_data
       step :combine_data
@@ -59,6 +60,14 @@ module RubyGems
           paths.non_pre,
           paths.tmp
         ].each { |path| FileUtils.rm_f path }
+      end
+
+      # Creates a location for files (if not existing)
+      # @param _options [Trailblazer::Operation::Option]
+      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
+      #   to files that we use in this operation
+      def create_location(_options, paths:, **)
+        FileUtils.mkdir_p File.dirname(paths.location)
       end
 
       # Generates all the tmp csv files with partial data that we will merge in Ruby into one

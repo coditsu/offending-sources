@@ -1,18 +1,15 @@
 # frozen_string_literal: true
 
 module RubyGems
+  # Updates given Ruby gem reference both in the DB and in the last generated file for a given day
   class Update < ApplicationOperation
-    step :extract_ruby_gem_details
+    step Macros::Params::Fetch(from: :ruby_gem)
     step :find_or_create_reference
     step :check_if_prerelease
     step :update_ruby_gems_database_reference
     step :update_current_day_file_reference
 
     private
-
-    def extract_ruby_gem_details(options, params:, **)
-      options[:ruby_gem] = params[:ruby_gem]
-    end
 
     def find_or_create_reference(options, ruby_gem, **)
       options['model'] = RubyGem.find_or_create_by(name: ruby_gem[:name])
