@@ -7,9 +7,9 @@ module RubyGems
     # @note This command regenerates a different snapshot for each day, so date needs
     # to be previded
     # @example
-    #  RubyGems::OutdatedGems::Reload.call(date_limit: Time.zone.today)
+    #  RubyGems::OutdatedGems::Reload.call(day: Time.zone.today)
     class Reload < ApplicationOperation
-      step :fetch_date_limit
+      step :fetch_day
       step :prepare_paths
       step :cleanup
       step :create_location
@@ -27,18 +27,18 @@ module RubyGems
 
       private
 
-      # Prepares date_limit date
+      # Prepares day date
       # @param options [Trailblazer::Operation::Option]
       # @param params [Hash] request hash with snapshotted at date
-      def fetch_date_limit(options, params:, **)
-        options['date_limit'] = params[:date_limit] || Time.zone.today
+      def fetch_day(options, params:, **)
+        options['day'] = params[:day] || Time.zone.today
       end
 
       # Prepares all the paths to files that we will work on
       # @param options [Trailblazer::Operation::Option]
-      # @param date_limit [Date] date for which we will build most recent gems snapshot
-      def prepare_paths(options, date_limit:, **)
-        base = "#{date_limit}.csv"
+      # @param day [Date] date for which we will build most recent gems snapshot
+      def prepare_paths(options, day:, **)
+        base = "#{day}.csv"
         options['paths'] = Paths.new(
           sources_path.join("count_#{base}"),
           sources_path.join("pre_#{base}"),
@@ -73,13 +73,13 @@ module RubyGems
       # Generates all the tmp csv files with partial data that we will merge in Ruby into one
       #   CSV file
       # @param _options [Trailblazer::Operation::Option]
-      # @param date_limit [Date] date for which we will build most recent gems snapshot
+      # @param day [Date] date for which we will build most recent gems snapshot
       # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
       #   to files that we use in this operation
-      def fetch_data(_options, date_limit:, paths:, **)
-        Base.export_to_csv(paths.count, count_query(date_limit))
-        Base.export_to_csv(paths.pre, pre_query(date_limit))
-        Base.export_to_csv(paths.non_pre, non_pre_query(date_limit))
+      def fetch_data(_options, day:, paths:, **)
+        Base.export_to_csv(paths.count, count_query(day))
+        Base.export_to_csv(paths.pre, pre_query(day))
+        Base.export_to_csv(paths.non_pre, non_pre_query(day))
       end
 
       # Loads csv data into memory, so we can work with it
@@ -137,10 +137,10 @@ module RubyGems
         FileUtils.mv(paths.tmp, paths.location)
       end
 
-      # @param date_limit [Date] day up until we calculate
+      # @param day [Date] day up until we calculate
       # @return [String] query that will return us gem name and number of downloads till
       #   certain point it history
-      def count_query(date_limit = Time.zone.today)
+      def count_query(day = Time.zone.today)
         "
           SELECT rubygems.name, SUM(gem_downloads.count) as count
           FROM rubygems
@@ -149,16 +149,16 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{date_limit}'
+                AND versions.built_at::date <= '#{day}'
           GROUP by rubygems.id
           ORDER by count DESC
         "
       end
 
-      # @param date_limit [Date] day up until we calculate
+      # @param day [Date] day up until we calculate
       # @return [String] query that returns most recent non pre release that has been
       #   available at a given time
-      def non_pre_query(date_limit = Time.zone.today)
+      def non_pre_query(day = Time.zone.today)
         "
           SELECT rubygems.name, versions.number as number
           FROM rubygems
@@ -167,7 +167,7 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{date_limit}'
+                AND versions.built_at::date <= '#{day}'
           WHERE latest IS TRUE
             AND yanked_at IS NULL
             AND prerelease is FALSE
@@ -175,10 +175,10 @@ module RubyGems
         "
       end
 
-      # @param date_limit [Date] day up until we calculate
+      # @param day [Date] day up until we calculate
       # @return [String] query that returns most recent pre release that has been
       #   available at a given time
-      def pre_query(date_limit = Time.zone.today)
+      def pre_query(day = Time.zone.today)
         "
           SELECT
             DISTINCT ON (rubygems.id) rubygems.id,
@@ -190,7 +190,7 @@ module RubyGems
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{date_limit}'
+                AND versions.built_at::date <= '#{day}'
           WHERE latest IS FALSE AND yanked_at IS NULL AND prerelease is TRUE
           ORDER by rubygems.id ASC, versions.created_at DESC
         "

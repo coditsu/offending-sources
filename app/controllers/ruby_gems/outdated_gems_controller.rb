@@ -6,9 +6,7 @@ module RubyGems
   class OutdatedGemsController < ApplicationController
     # Generates and returns a csv with data for outdated gems validator
     def show
-      send_file OutdatedGems::Reload.call(
-        snapshotted_at: Date.parse(params[:id])
-      )['location']
+      send_file OutdatedGems::Reload.call(day: Date.parse(params[:id]))['location']
     end
   end
 end
