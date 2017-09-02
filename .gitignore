@@ -28,6 +28,7 @@ db/*.sqlite3
 /doc/specs.html
 /public/ruby_gems/*
 /public/cache
+/public/recent_dump.txt
 /public/assets
 /public/sitemap
 /public/images

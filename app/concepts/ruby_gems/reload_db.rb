@@ -2,12 +2,10 @@
 
 # Namespace for all the things related to Ruby and Rubygems
 module RubyGems
-  # Downloads new Rubygems database and reloads all the csv files that use this db to generate
-  # it's informations
-  class ReloadAll < ApplicationOperation
+  # Downloads new Rubygems database
+  class ReloadDb < ApplicationOperation
     step :prepare_env_variables
     step :fetch_and_reload_rubygems_db
-    step :reload_sources
 
     private
 
@@ -25,7 +23,8 @@ module RubyGems
         "DB_PASSWORD='#{password}'",
         "DB_HOST=#{host}",
         "DB_PORT=#{port}",
-        "DB_NAME=#{database}"
+        "DB_NAME=#{database}",
+        "RAILS_ROOT=#{Rails.root}"
       ]
     end
 
@@ -35,14 +34,6 @@ module RubyGems
     def fetch_and_reload_rubygems_db(_options, env_variables:, **)
       cmd = Rails.root.join('bin', 'rubygems', 'reload.sh download')
       system(env_variables.join(' ') + ' ' + cmd.to_s)
-    end
-
-    # Regenerates all the sources
-    # @param _options [Trailblazer::Operation::Option]
-    def reload_sources(_options, **)
-      RubyGems::GemsLicenser::Reload.call({})
-      RubyGems::GemsTyposquattingDetector::Reload.call({})
-      RubyGems::OutdatedGems::Reload.call({})
     end
   end
 end
