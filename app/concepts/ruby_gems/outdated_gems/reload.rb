@@ -46,7 +46,7 @@ module RubyGems
           sources_path.join(base.to_s),
           sources_path.join("#{base}.tmp")
         )
-        true
+        options['model'] = options['paths'].location
       end
 
       # Removes all the leftover tempfiles that could exist after failed previous run
