@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Updates given Ruby gem reference both in the DB and in the last generated file for a given day
   class Update < ApplicationOperation
     step Macros::Params::Fetch(from: :ruby_gem)

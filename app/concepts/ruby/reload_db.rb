@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Namespace for all the things related to Ruby and Rubygems
-module RubyGems
+module Ruby
   # Downloads new Rubygems database
   class ReloadDb < ApplicationOperation
     step :prepare_env_variables

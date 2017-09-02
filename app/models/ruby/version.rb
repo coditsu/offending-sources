@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Ruby gem version representation
   class Version < Base
     self.table_name = :versions

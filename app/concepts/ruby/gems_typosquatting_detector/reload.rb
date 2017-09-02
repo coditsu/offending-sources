@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Namespace for all the operations related to gems typosquatting detector sources
   module GemsTyposquattingDetector
     # Reloads sources file for gems typosquatting offending engine

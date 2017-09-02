@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Ruby gem representation
   class RubyGem < Base
     self.table_name = :rubygems

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Base AR for all the models that interact with rubygems db
   class Base < ApplicationRecord
     establish_connection RUBY_GEMS_DB

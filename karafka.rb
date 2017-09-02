@@ -17,7 +17,7 @@ class App < Karafka::App
 
   consumer_groups.draw do
     topic :webhooks_ruby_gems_received do
-      controller RubyGems::WebhooksReceivedController
+      controller Ruby::WebhooksReceivedController
     end
   end
 end

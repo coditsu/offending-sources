@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Controller that reacts to new webhooks received from ruby gems
   class WebhooksReceivedController < KarafkaController
     def perform

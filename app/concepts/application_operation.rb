@@ -18,7 +18,7 @@ class ApplicationOperation < Trailblazer::Operation
   end
 
   # @return [Pathname] pathname to a location where our prepared data files should be stored
-  # @example For RubyGems::OutdatedGems::Reload
+  # @example For Ruby::OutdatedGems::Reload
   #   sources_path #=> 'rails_root/public/outdated_gems/'
   def sources_path
     Rails.root.join(*(['public'] + self.class.to_s.underscore.split('/')[0...-1]))

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Controller that gets hit, when we want to get data for a day, that is not yet snapshotted.
   # This should generate a daily snapshot file, cache it and return.
   class OutdatedGemsController < ApplicationController

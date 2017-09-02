@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Namespace for all the operations related to gems licenser sources
   module GemsLicenser
     # Reloads sources file for gems licenser offending engine

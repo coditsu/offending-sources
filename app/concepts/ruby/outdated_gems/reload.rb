@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-module RubyGems
+module Ruby
   # Namespace for all the operations related to outdated gems validator sources
   module OutdatedGems
     # Reloads sources file for outdated gems validator engine
     # @note This command regenerates a different snapshot for each day, so date needs
     # to be previded
     # @example
-    #  RubyGems::OutdatedGems::Reload.call(day: Time.zone.today)
+    #  Ruby::OutdatedGems::Reload.call(day: Time.zone.today)
     class Reload < ApplicationOperation
       step :fetch_day
       step :prepare_paths
