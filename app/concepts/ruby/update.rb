@@ -26,7 +26,7 @@ module Ruby
     # @param options [Trailblazer::Operation::Option]
     # @param ruby_gem [Hash] changed ruby gem details
     def find_or_create_reference(options, ruby_gem, **)
-      options['model'] = RubyGem.find_or_create_by(name: ruby_gem[:name])
+      options['model'] = RubyGem.find_or_create_by!(name: ruby_gem[:name])
     end
 
     # Updates db references of a given ruby gem version
@@ -37,7 +37,7 @@ module Ruby
     def update_version_reference(options, model:, ruby_gem:, prerelease:, **)
       Version.where(rubygem_id: model.id).update_all(latest: false) unless prerelease
 
-      options['version'] = Version.find_or_create_by(
+      options['version'] = Version.find_or_create_by!(
         number: ruby_gem[:version],
         rubygem_id: model.id,
         prerelease: prerelease,
@@ -46,6 +46,7 @@ module Ruby
         built_at = gem_version.built_at || Time.zone.now
         licenses = ruby_gem[:licenses] || []
         gem_version.update(licenses: licenses, built_at: built_at)
+        gem_version.save!
       end
     end
 
@@ -59,7 +60,7 @@ module Ruby
         version_id: version.id,
         rubygem_id: model.id
       ).tap do |gem_download|
-        gem_download.update(count: ruby_gem[:version_downloads])
+        gem_download.update!(count: ruby_gem[:version_downloads])
       end
     end
   end
