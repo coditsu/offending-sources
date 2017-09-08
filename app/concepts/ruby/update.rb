@@ -18,14 +18,14 @@ module Ruby
     def check_if_prerelease(options, ruby_gem:, **)
       # @param _options [Trailblazer::Operation::Option]
       # @param ruby_gem [Hash] changed ruby gem details
-      options['prerelease'] = (ruby_gem[:version] =~ PRERELEASE_REGEXP).nil?
+      options['prerelease'] = !(ruby_gem[:version] =~ PRERELEASE_REGEXP).nil?
       true
     end
 
     # Find or creates (if new gem added) a db reference of a given gem
     # @param options [Trailblazer::Operation::Option]
     # @param ruby_gem [Hash] changed ruby gem details
-    def find_or_create_reference(options, ruby_gem, **)
+    def find_or_create_reference(options, ruby_gem:, **)
       options['model'] = RubyGem.find_or_create_by!(name: ruby_gem[:name])
     end
 
@@ -45,8 +45,7 @@ module Ruby
       ).tap do |gem_version|
         built_at = gem_version.built_at || Time.zone.now
         licenses = ruby_gem[:licenses] || []
-        gem_version.update(licenses: licenses, built_at: built_at)
-        gem_version.save!
+        gem_version.update!(licenses: licenses, built_at: built_at)
       end
     end
 
@@ -56,7 +55,7 @@ module Ruby
     # @param version [Ruby::Version] db gem version info reference
     # @param ruby_gem [Hash] changed ruby gem details
     def update_downloads_reference(options, model:, version:, ruby_gem:, **)
-      options['gem_download'] = GemDownload.find_or_create_by(
+      options['gem_download'] = GemDownload.find_or_create_by!(
         version_id: version.id,
         rubygem_id: model.id
       ).tap do |gem_download|
