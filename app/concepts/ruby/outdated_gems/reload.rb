@@ -11,19 +11,18 @@ module Ruby
     class Reload < ApplicationOperation
       step :fetch_day
       step :prepare_paths
-      step :cleanup
       step :create_location
       step :fetch_data
       step :load_data
       step :combine_data
       step :store
-      step :rename
+      step :update
       step :cleanup
 
       # Simple struct for storing aggregated paths to files on which we work
-      Paths = Struct.new(:count, :pre, :non_pre, :location, :tmp)
+      TempFiles = Struct.new(:count, :pre, :non_pre, :tmp)
 
-      private_constant :Paths
+      private_constant :TempFiles
 
       private
 
@@ -39,61 +38,46 @@ module Ruby
       # @param day [Date] date for which we will build most recent gems snapshot
       def prepare_paths(options, day:, **)
         base = "#{day}.csv"
-        options['paths'] = Paths.new(
-          sources_path.join("count_#{base}"),
-          sources_path.join("pre_#{base}"),
-          sources_path.join("non_pre_#{base}"),
-          sources_path.join(base.to_s),
-          sources_path.join("#{base}.tmp")
+        options['temp_files'] = TempFiles.new(
+          Tempfile.new("count_#{base}"),
+          Tempfile.new("pre_#{base}"),
+          Tempfile.new("non_pre_#{base}"),
+          Tempfile.new("#{base}.tmp")
         )
-        options['model'] = options['paths'].location
-      end
-
-      # Removes all the leftover tempfiles that could exist after failed previous run
-      # @param _options [Trailblazer::Operation::Option]
-      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
-      #   to files that we use in this operation
-      def cleanup(_options, paths:, **)
-        [
-          paths.count,
-          paths.pre,
-          paths.non_pre,
-          paths.tmp
-        ].each { |path| FileUtils.rm_f path }
+        options['model'] = sources_path.join(base.to_s)
       end
 
       # Creates a location for files (if not existing)
       # @param _options [Trailblazer::Operation::Option]
-      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
-      #   to files that we use in this operation
-      def create_location(_options, paths:, **)
-        FileUtils.mkdir_p File.dirname(paths.location)
+      # @param model [String] path to a daily file
+      def create_location(_options, model:, **)
+        FileUtils.mkdir_p File.dirname(model)
       end
 
       # Generates all the tmp csv files with partial data that we will merge in Ruby into one
       #   CSV file
       # @param _options [Trailblazer::Operation::Option]
       # @param day [Date] date for which we will build most recent gems snapshot
-      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
-      #   to files that we use in this operation
-      def fetch_data(_options, day:, paths:, **)
-        Base.export_to_csv(paths.count, count_query(day))
-        Base.export_to_csv(paths.pre, pre_query(day))
-        Base.export_to_csv(paths.non_pre, non_pre_query(day))
+      # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
+      #   generate all the data
+      def fetch_data(_options, day:, temp_files:, **)
+        Base.export_to_csv(temp_files.count.path, count_query(day))
+        Base.export_to_csv(temp_files.pre.path, pre_query(day))
+        Base.export_to_csv(temp_files.non_pre.path, non_pre_query(day))
       end
 
       # Loads csv data into memory, so we can work with it
       # @param options [Trailblazer::Operation::Option]
-      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
-      #   to files that we use in this operation
-      def load_data(options, paths:, **)
+      # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
+      #   generate all the data
+      def load_data(options, temp_files:, **)
         counts = {}
         pre = {}
         non_pre = {}
 
-        CSV.foreach(paths.count) { |row| counts[row[0]] = row[1].to_i }
-        CSV.foreach(paths.pre) { |row| pre[row[1]] = row[2] }
-        CSV.foreach(paths.non_pre) { |row| non_pre[row[0]] = row[1] }
+        CSV.foreach(temp_files.count.path) { |row| counts[row[0]] = row[1].to_i }
+        CSV.foreach(temp_files.pre.path) { |row| pre[row[1]] = row[2] }
+        CSV.foreach(temp_files.non_pre.path) { |row| non_pre[row[0]] = row[1] }
 
         options['counts'] = counts
         options['pre'] = pre
@@ -120,21 +104,32 @@ module Ruby
       # Persists all the details into tmp combined csv file
       # @param _options [Trailblazer::Operation::Option]
       # @param results [Array<Array>] array with combined details
-      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
-      #   to files that we use in this operation
-      def store(_options, results:, paths:, **)
-        CSV.open(paths.tmp, 'w') do |csv|
+      # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
+      #   generate all the data
+      def store(_options, results:, temp_files:, **)
+        CSV.open(temp_files.tmp.path, 'w') do |csv|
           results.each { |row| csv << [row[0], row[2], row[3]] }
         end
       end
 
       # Removes the previous target file and replaces it with our newly generated tmp file
       # @param _options [Trailblazer::Operation::Option]
-      # @param paths [RubyGems::OutdatedGems::Reload::Paths] paths struct with all the paths
-      #   to files that we use in this operation
-      def rename(_options, paths:, **)
-        FileUtils.rm_f(paths.location)
-        FileUtils.mv(paths.tmp, paths.location)
+      # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
+      #   generate all the data
+      # @param model [String] path to a daily file
+      def update(_options, temp_files:, model:, **)
+        FileUtils.rm_f(model)
+        FileUtils.cp(temp_files.tmp.path, model)
+        true
+      end
+
+      # Removes all the leftover tempfiles that could exist after failed previous run
+      # @param _options [Trailblazer::Operation::Option]
+      # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
+      #   generate all the data
+      def cleanup(_options, temp_files:, **)
+        temp_files.each(&:close)
+        temp_files.each(&:unlink)
       end
 
       # @param day [Date] day up until we calculate

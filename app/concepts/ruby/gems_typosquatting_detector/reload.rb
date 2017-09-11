@@ -44,9 +44,9 @@ module Ruby
 
       step :prepare_paths
       step :create_location
-      step :cleanup
       step :fetch_and_store
-      step :rename
+      step :update
+      step :cleanup
 
       private
 
@@ -54,7 +54,7 @@ module Ruby
       # @param options [Trailblazer::Operation::Option]
       def prepare_paths(options, **)
         options['location'] = sources_path.join(FILENAME)
-        options['tmp'] = "#{options['location']}.tmp"
+        options['tmp'] = Tempfile.new
       end
 
       # Creates a location for files (if not existing)
@@ -64,27 +64,29 @@ module Ruby
         FileUtils.mkdir_p File.dirname(location)
       end
 
-      # Removes a tmp file in case there were some leftovers from previous reload
-      # @param _options [Trailblazer::Operation::Option]
-      # @param tmp [Pathname] path to a tmp file we want to remove
-      def cleanup(_options, tmp:, **)
-        FileUtils.rm_f(tmp)
-      end
-
       # Executes our query and stores results in a tmp csv file
       # @param _options [Trailblazer::Operation::Option]
-      # @param tmp [Pathname] path to a tmp where we will store our generated csv data
+      # @param tmp [Tempfile] tmp file where we store our generated csv data
       def fetch_and_store(_options, tmp:, **)
-        Base.export_to_csv(tmp, QUERY)
+        Base.export_to_csv(tmp.path, QUERY)
       end
 
       # Renames and replaces our current sources file with data from tmp file
       # @param _options [Trailblazer::Operation::Option]
-      # @param tmp [Pathname] tmp file that we will renamed
+      # @param tmp [Tempfile] tmp file where we store our generated csv data
       # @param location [Pathname] target file location of the result csv data
-      def rename(_options, tmp:, location:, **)
+      def update(_options, tmp:, location:, **)
         FileUtils.rm_f(location)
-        FileUtils.mv(tmp, location)
+        FileUtils.cp(tmp.path, location)
+        true
+      end
+
+      # Removes a tmp file in case there were some leftovers from previous reload
+      # @param _options [Trailblazer::Operation::Option]
+      # @param tmp [Tempfile] tmp file where we store our generated csv data
+      def cleanup(_options, tmp:, **)
+        tmp.close
+        tmp.unlink
       end
     end
   end

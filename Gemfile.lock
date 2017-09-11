@@ -113,6 +113,7 @@ GEM
       timers (>= 4.1.1)
     celluloid-supervision (0.20.6)
       timers (>= 4.1.1)
+    chronic (0.10.2)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
     declarative (0.0.9)
@@ -292,6 +293,8 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    whenever (0.9.7)
+      chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
@@ -319,6 +322,7 @@ DEPENDENCIES
   shoulda
   simplecov
   trailblazer
+  whenever
 
 BUNDLED WITH
    1.15.4

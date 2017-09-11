@@ -11,6 +11,7 @@ gem 'rails'
 gem 'reform-rails'
 gem 'settingslogic'
 gem 'trailblazer'
+gem 'whenever'
 
 group :development, :test do
   gem 'byebug', platform: :mri
