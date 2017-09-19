@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/karafka
-  revision: 87e6d982bd7cbc38722e9e9cf48e697d0d449e50
+  revision: 51d73f2066aa762bc40d66dac34602b6d803b891
   specs:
     karafka (1.0.0)
       activesupport (>= 5.0)
@@ -173,15 +173,15 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_portile2 (2.2.0)
+    mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.2.0)
     nio4r (2.1.0)
-    nokogiri (1.8.0)
-      mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     null-logger (0.1.4)
     pg (0.21.0)
     pipetree (0.1.1)
