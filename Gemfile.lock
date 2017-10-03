@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/karafka
-  revision: 51d73f2066aa762bc40d66dac34602b6d803b891
+  revision: 017b98ef28c2da5260ef96c2c815edfcbb326a12
   specs:
     karafka (1.0.0)
       activesupport (>= 5.0)
@@ -65,9 +65,9 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    airbrake (6.2.1)
-      airbrake-ruby (~> 2.3, >= 2.3.1)
-    airbrake-ruby (2.3.2)
+    airbrake (7.0.2)
+      airbrake-ruby (~> 2.4)
+    airbrake-ruby (2.4.0)
     airbrussh (1.3.0)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (8.0.0)
@@ -79,7 +79,7 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
-    capistrano-bundler (1.2.0)
+    capistrano-bundler (1.3.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
     capistrano-karafka (1.1.1)
@@ -116,6 +116,7 @@ GEM
     chronic (0.10.2)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
+    crass (1.0.2)
     declarative (0.0.10)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
@@ -133,7 +134,7 @@ GEM
     dry-container (0.6.0)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1, >= 0.1.3)
-    dry-core (0.3.3)
+    dry-core (0.3.4)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.2.0)
     dry-logic (0.4.2)
@@ -165,11 +166,12 @@ GEM
     i18n (0.8.6)
     inflecto (0.0.2)
     json (2.1.0)
-    loofah (2.0.3)
+    loofah (2.1.1)
+      crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.6)
       mime-types (>= 1.16, < 4)
-    method_source (0.8.2)
+    method_source (0.9.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
