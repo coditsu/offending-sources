@@ -1,4 +1,8 @@
+# frozen_string_literal: true
+
 module Ruby
+  # Class used to compare different ruby gem versions of the same gem in terms of
+  # which one is the more recent one
   class Comparator
     include Comparable
     attr_reader :version
