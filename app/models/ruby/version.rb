@@ -6,5 +6,10 @@ module Ruby
     self.table_name = :versions
 
     serialize :licenses
+
+    # @return [Ruby::Comparator] object used to compare this gem version with other
+    def comparator
+      Comparator.new(number)
+    end
   end
 end

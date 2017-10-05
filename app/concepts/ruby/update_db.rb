@@ -2,7 +2,7 @@
 
 module Ruby
   # Updates given Ruby gem reference both in the DB and in the last generated file for a given day
-  class Update < ApplicationOperation
+  class UpdateDb < ApplicationOperation
     # Regexp to decide whether a given gem release is a prerelease or a regular one
     PRERELEASE_REGEXP = /[[:alpha:]]/
 
@@ -11,6 +11,7 @@ module Ruby
     step :find_or_create_reference
     step :update_version_reference
     step :update_downloads_reference
+    step :resolve_latest
 
     private
 
@@ -35,13 +36,11 @@ module Ruby
     # @param ruby_gem [Hash] changed ruby gem details
     # @param prerelease [Boolean] true if a given rubygem version is a prerelease
     def update_version_reference(options, model:, ruby_gem:, prerelease:, **)
-      Version.where(rubygem_id: model.id).update_all(latest: false) unless prerelease
-
       options['version'] = Version.find_or_create_by!(
         number: ruby_gem[:version],
         rubygem_id: model.id,
         prerelease: prerelease,
-        latest: !prerelease
+        latest: false # We mark new not as a latest as we will resolve latest later
       ).tap do |gem_version|
         built_at = gem_version.built_at || Time.zone.now
         licenses = ruby_gem[:licenses] || []
@@ -61,6 +60,20 @@ module Ruby
       ).tap do |gem_download|
         gem_download.update!(count: ruby_gem[:version_downloads])
       end
+    end
+
+    # Figures out the most recent, top, non prerelease version of a given gem version and
+    # marks it as latest in the DB
+    # @param _options [Trailblazer::Operation::Option]
+    # @param model [Ruby::RubyGem] db gem reference
+    # @param version [Ruby::Version] db gem version info reference
+    def resolve_latest(_options, model:, version:, **)
+      # If it is a prerelease, we ignore as prereleases are never marked as latest
+      return true if version.prerelease
+      latest = Version.find_by(rubygem_id: model.id, latest: true)
+      return true if !latest.nil? && latest.comparator >= version.comparator
+      Version.where(rubygem_id: model.id).update_all(latest: false)
+      version.update!(latest: true)
     end
   end
 end

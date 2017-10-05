@@ -5,7 +5,7 @@ module Ruby
   class WebhooksReceivedController < KarafkaController
     # Updates gem DB details and current file reference
     def perform
-      Update.call(params)
+      UpdateDb.call(params)
     end
   end
 end
