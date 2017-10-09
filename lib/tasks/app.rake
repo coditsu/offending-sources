@@ -8,8 +8,6 @@ namespace :app do
 
   desc 'Reloads only the sources files, without reloading the whole database'
   task reload_sources: :environment do
-    Ruby::GemsLicenser::Reload.call({})
-    Ruby::GemsTyposquattingDetector::Reload.call({})
-    Ruby::OutdatedGems::Reload.call({})
+    Ruby::ReloadSources.call({})
   end
 end

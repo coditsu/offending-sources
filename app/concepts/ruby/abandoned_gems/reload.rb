@@ -9,7 +9,8 @@ module Ruby
     # @example
     #  Ruby::AbandonedGems::Reload.call(day: Time.zone.today)
     class Reload < ApplicationOperation
-      QUERY = ->(day) {
+      # Query used to extract the date of the last update of all the gems on a particular date
+      QUERY = lambda { |day|
         <<~QUERY
           SELECT
             name,
