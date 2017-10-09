@@ -7,6 +7,7 @@ module Ruby
       Ruby::GemsLicenser::Reload.call({})
       Ruby::GemsTyposquattingDetector::Reload.call({})
       Ruby::OutdatedGems::Reload.call({})
+      Ruby::AbandonedGems::Reload.call({})
     }
   end
 end

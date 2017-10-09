@@ -5,7 +5,7 @@ module Ruby
   module OutdatedGems
     # Reloads sources file for outdated gems validator engine
     # @note This command regenerates a different snapshot for each day, so date needs
-    # to be previded
+    # to be provided
     # @example
     #  Ruby::OutdatedGems::Reload.call(day: Time.zone.today)
     class Reload < ApplicationOperation
