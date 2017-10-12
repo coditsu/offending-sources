@@ -77,7 +77,10 @@ module Ruby
 
         CSV.foreach(temp_files.count.path) { |row| counts[row[0]] = row[1].to_i }
         CSV.foreach(temp_files.pre.path) { |row| pre[row[1]] = row[2] }
-        CSV.foreach(temp_files.non_pre.path) { |row| non_pre[row[0]] = row[1] }
+        # Due to some errors in the rubygems db, there are cases where there could be
+        # more than 1 latest version. They are ordered in proper order in the non pre
+        # query so here we just take the first value and ignore others
+        CSV.foreach(temp_files.non_pre.path) { |row| non_pre[row[0]] ||= row[1] }
 
         options['counts'] = counts
         options['pre'] = pre
