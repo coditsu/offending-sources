@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/karafka
-  revision: 017b98ef28c2da5260ef96c2c815edfcbb326a12
+  revision: 9e18c0bd4d980c433329ac0bdaef367baa64a7ab
   specs:
     karafka (1.0.0)
       activesupport (>= 5.0)
@@ -141,7 +141,7 @@ GEM
       dry-container (~> 0.2, >= 0.2.6)
       dry-core (~> 0.2)
       dry-equalizer (~> 0.2)
-    dry-types (0.12.0)
+    dry-types (0.12.1)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1)
       dry-container (~> 0.3)
@@ -158,7 +158,7 @@ GEM
       dry-types (~> 0.12.0)
     envlogic (1.0.4)
       activesupport
-    erubi (1.6.1)
+    erubi (1.7.0)
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
