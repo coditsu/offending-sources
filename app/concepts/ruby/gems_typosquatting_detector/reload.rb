@@ -12,7 +12,8 @@ module Ruby
         SELECT
           rubygems.name,
           rg2.name as dep_name,
-          MIN(popu.count) as count
+          MIN(popu.count) as count,
+          rubygems.created_at as created_at
         FROM
           rubygems
         INNER JOIN (
