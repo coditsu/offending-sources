@@ -1,4 +1,15 @@
 GIT
+  remote: git@bitbucket.org:coditsu/capistrano-coditsu.git
+  revision: 4fd6f2432d0eaf2192fbba32cdbef92b5061fce1
+  branch: master
+  specs:
+    capistrano-coditsu (0.1.0)
+      capistrano (>= 3.9)
+      capistrano-bundler
+      capistrano-rails
+      capistrano-rvm
+
+GIT
   remote: git@bitbucket.org:coditsu/macros.git
   revision: 5435017ab2abc50d4d43db5e988749711b8620e0
   branch: master
@@ -305,10 +316,8 @@ DEPENDENCIES
   airbrake
   bcrypt_pbkdf
   byebug
-  capistrano-bundler
+  capistrano-coditsu!
   capistrano-karafka
-  capistrano-rails
-  capistrano-rvm
   capistrano3-puma
   karafka!
   macros!
