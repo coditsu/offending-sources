@@ -1,17 +1,23 @@
 GIT
   remote: git@bitbucket.org:coditsu/capistrano-coditsu.git
-  revision: 4fd6f2432d0eaf2192fbba32cdbef92b5061fce1
+  revision: f898586628b03344bd5f437b47df6c7bad0e1b11
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
+      bcrypt_pbkdf
       capistrano (>= 3.9)
       capistrano-bundler
+      capistrano-karafka
       capistrano-rails
       capistrano-rvm
+      capistrano-sidekiq
+      capistrano3-puma
+      rbnacl (= 4.0.2)
+      rbnacl-libsodium
 
 GIT
   remote: git@bitbucket.org:coditsu/macros.git
-  revision: 5435017ab2abc50d4d43db5e988749711b8620e0
+  revision: eb14b04d84a2bf47051aead663f39132c8d3c68c
   branch: master
   specs:
     macros (0.15.0)
@@ -21,7 +27,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/karafka
-  revision: 9e18c0bd4d980c433329ac0bdaef367baa64a7ab
+  revision: 00052b65d85e7dbb6c91ae0f6ed0178c5fd26ce5
   specs:
     karafka (1.0.0)
       activesupport (>= 5.0)
@@ -103,6 +109,9 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano-sidekiq (0.20.0)
+      capistrano (>= 3.9.0)
+      sidekiq (>= 3.4)
     capistrano3-puma (3.1.1)
       capistrano (~> 3.7)
       capistrano-bundler
@@ -174,7 +183,8 @@ GEM
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     hitimes (1.2.6)
-    i18n (0.8.6)
+    i18n (0.9.0)
+      concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     json (2.1.0)
     loofah (2.1.1)
@@ -200,6 +210,8 @@ GEM
     pipetree (0.1.1)
     puma (3.10.0)
     rack (2.0.3)
+    rack-protection (2.0.0)
+      rack
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
     rails (5.1.4)
@@ -230,6 +242,7 @@ GEM
       ffi
     rbnacl-libsodium (1.0.13)
       rbnacl (>= 3.0.1)
+    redis (4.0.1)
     reform (2.2.4)
       disposable (>= 0.4.1)
       representable (>= 2.4.0, < 3.1.0)
@@ -241,23 +254,23 @@ GEM
       declarative-option (< 0.2.0)
       uber (< 0.2.0)
     require_all (1.4.0)
-    rspec-core (3.6.0)
-      rspec-support (~> 3.6.0)
-    rspec-expectations (3.6.0)
+    rspec-core (3.7.0)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.6.0)
-    rspec-mocks (3.6.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.6.0)
-    rspec-rails (3.6.1)
+      rspec-support (~> 3.7.0)
+    rspec-rails (3.7.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
-      rspec-core (~> 3.6.0)
-      rspec-expectations (~> 3.6.0)
-      rspec-mocks (~> 3.6.0)
-      rspec-support (~> 3.6.0)
-    rspec-support (3.6.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.0)
     ruby-kafka (0.4.2)
     settingslogic (2.0.9)
     shoulda (3.5.0)
@@ -266,6 +279,11 @@ GEM
     shoulda-context (1.2.2)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
+    sidekiq (5.0.5)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      rack-protection (>= 1.5.0)
+      redis (>= 3.3.4, < 5)
     simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -314,19 +332,13 @@ PLATFORMS
 
 DEPENDENCIES
   airbrake
-  bcrypt_pbkdf
   byebug
   capistrano-coditsu!
-  capistrano-karafka
-  capistrano3-puma
   karafka!
   macros!
-  net-ssh
   pg
   puma
   rails
-  rbnacl (< 5.0)
-  rbnacl-libsodium
   reform-rails
   rspec-rails
   settingslogic

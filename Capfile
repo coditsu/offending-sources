@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 %w[
-  coditsu
   scm/git
   setup
   deploy
   console
+  coditsu
   puma
   karafka
 ].each { |lib| require "capistrano/#{lib}" }
