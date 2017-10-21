@@ -18,15 +18,9 @@ group :development, :test do
 end
 
 group :development do
-  gem 'bcrypt_pbkdf'
-  gem 'capistrano-karafka', require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano-rails', require: false
-  gem 'capistrano-rvm', require: false
-  gem 'capistrano3-puma', require: false
-  gem 'net-ssh'
-  gem 'rbnacl', '< 5.0'
-  gem 'rbnacl-libsodium'
+  gem 'capistrano-coditsu', 
+    git: 'git@bitbucket.org:coditsu/capistrano-coditsu.git', 
+    branch: :master
 end
 
 group :test do

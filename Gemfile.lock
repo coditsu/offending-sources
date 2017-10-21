@@ -1,4 +1,21 @@
 GIT
+  remote: git@bitbucket.org:coditsu/capistrano-coditsu.git
+  revision: efd3d69edab83908540bd34f6fd2aab950468946
+  branch: master
+  specs:
+    capistrano-coditsu (0.1.0)
+      bcrypt_pbkdf
+      capistrano (>= 3.9)
+      capistrano-bundler
+      capistrano-karafka
+      capistrano-rails
+      capistrano-rvm
+      capistrano-sidekiq
+      capistrano3-puma
+      rbnacl (= 4.0.2)
+      rbnacl-libsodium
+
+GIT
   remote: git@bitbucket.org:coditsu/macros.git
   revision: eb14b04d84a2bf47051aead663f39132c8d3c68c
   branch: master
@@ -92,6 +109,9 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano-sidekiq (0.20.0)
+      capistrano (>= 3.9.0)
+      sidekiq (>= 3.4)
     capistrano3-puma (3.1.1)
       capistrano (~> 3.7)
       capistrano-bundler
@@ -190,6 +210,8 @@ GEM
     pipetree (0.1.1)
     puma (3.10.0)
     rack (2.0.3)
+    rack-protection (2.0.0)
+      rack
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
     rails (5.1.4)
@@ -220,6 +242,7 @@ GEM
       ffi
     rbnacl-libsodium (1.0.13)
       rbnacl (>= 3.0.1)
+    redis (4.0.1)
     reform (2.2.4)
       disposable (>= 0.4.1)
       representable (>= 2.4.0, < 3.1.0)
@@ -256,6 +279,11 @@ GEM
     shoulda-context (1.2.2)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
+    sidekiq (5.0.5)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      rack-protection (>= 1.5.0)
+      redis (>= 3.3.4, < 5)
     simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -304,21 +332,13 @@ PLATFORMS
 
 DEPENDENCIES
   airbrake
-  bcrypt_pbkdf
   byebug
-  capistrano-bundler
-  capistrano-karafka
-  capistrano-rails
-  capistrano-rvm
-  capistrano3-puma
+  capistrano-coditsu!
   karafka!
   macros!
-  net-ssh
   pg
   puma
   rails
-  rbnacl (< 5.0)
-  rbnacl-libsodium
   reform-rails
   rspec-rails
   settingslogic
