@@ -1,6 +1,6 @@
 GIT
   remote: git@bitbucket.org:coditsu/capistrano-coditsu.git
-  revision: f898586628b03344bd5f437b47df6c7bad0e1b11
+  revision: efd3d69edab83908540bd34f6fd2aab950468946
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: https://github.com/karafka/karafka
-  revision: 00052b65d85e7dbb6c91ae0f6ed0178c5fd26ce5
+  revision: 739155c7416794d6557cdcb756cf1584267edbc4
   specs:
     karafka (1.0.0)
       activesupport (>= 5.0)
@@ -82,9 +82,9 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    airbrake (7.0.3)
-      airbrake-ruby (~> 2.4)
-    airbrake-ruby (2.4.2)
+    airbrake (7.1.0)
+      airbrake-ruby (~> 2.5)
+    airbrake-ruby (2.5.0)
     airbrussh (1.3.0)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (8.0.0)
@@ -271,7 +271,7 @@ GEM
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
-    ruby-kafka (0.4.2)
+    ruby-kafka (0.4.3)
     settingslogic (2.0.9)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
