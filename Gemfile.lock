@@ -1,6 +1,6 @@
 GIT
   remote: git@bitbucket.org:coditsu/capistrano-coditsu.git
-  revision: efd3d69edab83908540bd34f6fd2aab950468946
+  revision: 4f38dd4385a561e71e820090524dbfd42c49583c
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@bitbucket.org:coditsu/macros.git
-  revision: eb14b04d84a2bf47051aead663f39132c8d3c68c
+  revision: 1251ced4cf85f3c75792404659cabdc799d8b292
   branch: master
   specs:
     macros (0.15.0)
@@ -91,7 +91,7 @@ GEM
     bcrypt_pbkdf (1.0.0)
     builder (3.2.3)
     byebug (9.1.0)
-    capistrano (3.9.1)
+    capistrano (3.10.0)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
