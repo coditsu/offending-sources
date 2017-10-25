@@ -7,7 +7,7 @@ defaults: &defaults
     host: 'https://host'
 
   kafka:
-    seed_brokers: <%= %w( 172.17.0.2:9092 ) %>
+    seed_brokers: <%= %w( kafka://172.17.0.2:9092 ) %>
     offset_commit_threshold: 1
 
 development:
