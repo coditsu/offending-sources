@@ -169,9 +169,7 @@ module Ruby
           WHERE latest IS TRUE
             AND yanked_at IS NULL
             AND prerelease is FALSE
-          ORDER BY
-            name ASC,
-            versions.built_at DESC
+          ORDER BY name ASC, versions.built_at DESC
         "
       end
 

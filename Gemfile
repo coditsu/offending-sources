@@ -18,8 +18,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano-coditsu', 
-    git: 'git@bitbucket.org:coditsu/capistrano-coditsu.git', 
+  gem 'capistrano-coditsu',
+    git: 'git@bitbucket.org:coditsu/capistrano-coditsu.git',
     branch: :master
 end
 
