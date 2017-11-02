@@ -4,7 +4,7 @@ module Ruby
   # Controller that reacts to new webhooks received from ruby gems
   class WebhooksReceivedController < KarafkaController
     # Updates gem DB details and current file reference
-    def perform
+    def consume
       UpdateDb.call(params)
     end
   end

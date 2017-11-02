@@ -12,7 +12,7 @@ class App < Karafka::App
     config.kafka.seed_brokers = Settings.kafka.seed_brokers
     config.kafka.offset_commit_threshold = Settings.kafka.offset_commit_threshold
     config.monitor = KarafkaMonitor.instance
-    config.batch_consuming = true
+    config.batch_fetching = true
   end
 
   consumer_groups.draw do

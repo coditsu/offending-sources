@@ -3,8 +3,11 @@
 source 'https://rubygems.org'
 
 gem 'airbrake'
-gem 'karafka', git: 'https://github.com/karafka/karafka'
-gem 'macros', git: 'git@bitbucket.org:coditsu/macros.git', require: true, branch: :master
+gem 'karafka', '1.1.0.alpha2'
+gem 'macros',
+  git: 'git@bitbucket.org:coditsu/macros.git',
+  require: true,
+  branch: :master
 gem 'pg'
 gem 'puma'
 gem 'rails'
