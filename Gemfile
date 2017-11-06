@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'airbrake'
+gem 'airbrake', '~> 5.0'
 gem 'karafka', '1.1.0.alpha2'
 gem 'macros',
   git: 'git@bitbucket.org:coditsu/macros.git',
