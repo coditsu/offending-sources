@@ -1,6 +1,6 @@
 GIT
   remote: git@bitbucket.org:coditsu/capistrano-coditsu.git
-  revision: caef81938dc64d7018d37ebff41e171e6b1cc223
+  revision: 1da5c75f1408c2337472504fa190dfffbce79965
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@bitbucket.org:coditsu/macros.git
-  revision: dd05aa51d09fd42c0e07670836558a81591d1b80
+  revision: bef24760f860a08182865b21c2d3e25194c3bb32
   branch: master
   specs:
     macros (0.15.0)
@@ -173,7 +173,7 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
-    mini_mime (0.1.4)
+    mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
@@ -218,7 +218,7 @@ GEM
     rake (12.2.1)
     rbnacl (4.0.2)
       ffi
-    rbnacl-libsodium (1.0.13)
+    rbnacl-libsodium (1.0.15.1)
       rbnacl (>= 3.0.1)
     redis (4.0.1)
     reform (2.2.4)
