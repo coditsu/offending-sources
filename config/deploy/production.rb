@@ -31,3 +31,4 @@ set :rvm_ruby_version, "2.4.2@#{fetch(:application)}"
 
 set :branch, ENV['REVISION'] || ENV['BRANCH_NAME'] || 'master'
 set :domain, 'offending-sources.coditsu.io'
+set :whenever_roles, %w[web]
