@@ -2,12 +2,6 @@
 
 source 'https://rubygems.org'
 
-gem 'airbrake', '~> 5.0'
-gem 'karafka', '1.1.0.alpha2'
-gem 'macros',
-  git: 'git@bitbucket.org:coditsu/macros.git',
-  require: true,
-  branch: :master
 gem 'pg'
 gem 'puma'
 gem 'rails'
@@ -15,6 +9,16 @@ gem 'reform-rails'
 gem 'settingslogic'
 gem 'trailblazer'
 gem 'whenever'
+
+%w[
+  macros
+  karafka_coditsu
+].each do |gem_name|
+  gem gem_name,
+    git: "git@bitbucket.org:coditsu/#{gem_name.tr('_', '-')}.git",
+    require: true,
+    branch: :master
+end
 
 group :development, :test do
   gem 'byebug', platform: :mri

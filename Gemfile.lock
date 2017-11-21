@@ -16,8 +16,17 @@ GIT
       rbnacl-libsodium
 
 GIT
+  remote: git@bitbucket.org:coditsu/karafka-coditsu.git
+  revision: ba3b81ca9c2d8b5f22b59d5619ae016a165c9355
+  branch: master
+  specs:
+    karafka_coditsu (1.0.0)
+      airbrake (~> 5.0)
+      karafka
+
+GIT
   remote: git@bitbucket.org:coditsu/macros.git
-  revision: 8946f3cafadfad68e7ce8f3a50bf5c754ee56632
+  revision: 9e57601824b0b6bb0febafc3b5dd69b68579d8ce
   branch: master
   specs:
     macros (0.16.0)
@@ -107,7 +116,7 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
-    delivery_boy (0.2.2)
+    delivery_boy (0.2.3)
       king_konf (~> 0.1.8)
       ruby-kafka (~> 0.4)
     diff-lcs (1.3)
@@ -155,7 +164,7 @@ GEM
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     json (2.1.0)
-    karafka (1.1.0.alpha2)
+    karafka (1.1.1)
       activesupport (>= 5.0)
       dry-configurable (~> 0.7)
       dry-validation (~> 0.11)
@@ -165,7 +174,7 @@ GEM
       require_all (>= 1.4)
       ruby-kafka (>= 0.5)
       thor (~> 0.19)
-      waterdrop (>= 1.0.alpha2)
+      waterdrop (>= 1.0.1)
     king_konf (0.1.8)
     loofah (2.1.1)
       crass (~> 1.0.2)
@@ -186,11 +195,11 @@ GEM
     null-logger (0.1.4)
     pg (0.21.0)
     pipetree (0.1.1)
-    puma (3.10.0)
+    puma (3.11.0)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
-    rack-test (0.7.0)
+    rack-test (0.8.0)
       rack (>= 1.0, < 3)
     rails (5.1.4)
       actioncable (= 5.1.4)
@@ -240,7 +249,7 @@ GEM
     rspec-mocks (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
-    rspec-rails (3.7.1)
+    rspec-rails (3.7.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -274,7 +283,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sshkit (1.15.0)
+    sshkit (1.15.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     thor (0.20.0)
@@ -299,17 +308,16 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
-    whenever (0.9.7)
+    whenever (0.10.0)
       chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake (~> 5.0)
   byebug
   capistrano-coditsu!
-  karafka (= 1.1.0.alpha2)
+  karafka_coditsu!
   macros!
   pg
   puma
@@ -323,4 +331,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.15.4
+   1.16.0
