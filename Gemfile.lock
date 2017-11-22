@@ -1,6 +1,6 @@
 GIT
   remote: git@bitbucket.org:coditsu/capistrano-coditsu.git
-  revision: 1da5c75f1408c2337472504fa190dfffbce79965
+  revision: b52ce3232f3845eee657a5d4c2ba7390f7f30c68
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@bitbucket.org:coditsu/macros.git
-  revision: 9e57601824b0b6bb0febafc3b5dd69b68579d8ce
+  revision: 280442b87b8764d01ccbbfcb93d820b09f1d8030
   branch: master
   specs:
     macros (0.16.0)
@@ -95,7 +95,7 @@ GEM
       capistrano (>= 3.9)
       capistrano-bundler
       karafka (>= 0.5)
-    capistrano-rails (1.3.0)
+    capistrano-rails (1.3.1)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
     capistrano-rvm (0.1.2)
