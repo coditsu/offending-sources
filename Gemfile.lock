@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@bitbucket.org:coditsu/macros.git
-  revision: 280442b87b8764d01ccbbfcb93d820b09f1d8030
+  revision: 0e6490c41cb05ec3385066fe27324709a9fdfe5b
   branch: master
   specs:
     macros (0.16.0)
