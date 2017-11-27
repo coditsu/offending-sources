@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 set :application,   'offending-sources'
-set :repo_url,      "git@bitbucket.org:coditsu/#{fetch(:application)}.git"
+set :repo_url,      "git@github.com:coditsu/#{fetch(:application)}.git"
 set :keep_releases, 10
 set :log_level,     :debug
 set :copy_exclude,  %w[.svn .DS_Store cache]

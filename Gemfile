@@ -15,7 +15,7 @@ gem 'whenever'
   karafka_coditsu
 ].each do |gem_name|
   gem gem_name,
-    git: "git@bitbucket.org:coditsu/#{gem_name.tr('_', '-')}.git",
+    git: "git@github.com:coditsu/#{gem_name.tr('_', '-')}.git",
     require: true,
     branch: :master
 end
@@ -26,7 +26,7 @@ end
 
 group :development do
   gem 'capistrano-coditsu',
-    git: 'git@bitbucket.org:coditsu/capistrano-coditsu.git',
+    git: 'git@github.com:coditsu/capistrano-coditsu.git',
     branch: :master
 end
 

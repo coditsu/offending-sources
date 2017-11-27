@@ -1,6 +1,6 @@
 GIT
-  remote: git@bitbucket.org:coditsu/capistrano-coditsu.git
-  revision: b52ce3232f3845eee657a5d4c2ba7390f7f30c68
+  remote: git@github.com:coditsu/capistrano-coditsu.git
+  revision: b8de645d7f33e3ce38614ad9ccd3e04bf164bde1
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -16,8 +16,8 @@ GIT
       rbnacl-libsodium
 
 GIT
-  remote: git@bitbucket.org:coditsu/karafka-coditsu.git
-  revision: ba3b81ca9c2d8b5f22b59d5619ae016a165c9355
+  remote: git@github.com:coditsu/karafka-coditsu.git
+  revision: 89e4a34b7e3fd5569dda28e7a6dc1fd79038fbdb
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -25,8 +25,8 @@ GIT
       karafka
 
 GIT
-  remote: git@bitbucket.org:coditsu/macros.git
-  revision: 0e6490c41cb05ec3385066fe27324709a9fdfe5b
+  remote: git@github.com:coditsu/macros.git
+  revision: 36166ebb964689a8d6a084e0b2e2592297558d8f
   branch: master
   specs:
     macros (0.16.0)
