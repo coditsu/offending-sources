@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
 server 'coditsu-production-frontend',
-  roles: %w[web],
-  user: 'deploy'
+       roles: %w[web],
+       user: 'deploy'
 
 server 'coditsu-production-main',
-  roles: %w[app db karafka],
-  user: 'deploy'
+       roles: %w[app db karafka],
+       user: 'deploy'
 
 set :ssh_options,
-  port: 2222,
-  forward_agent: true
+    port: 2222,
+    forward_agent: true
 
 set :stage, :production
 set :environment, 'production'
