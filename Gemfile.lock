@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 9d73d770a5a3dbf10fc255a1ddec2a5909ef8c8d
+  revision: bc818d639b7f3e8ede421ce69e4dcfac36d3dfd8
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 36166ebb964689a8d6a084e0b2e2592297558d8f
+  revision: 481f00efab6300adb54db26e0086d46b827cd62e
   branch: master
   specs:
     macros (0.16.0)
@@ -83,7 +83,7 @@ GEM
     bcrypt_pbkdf (1.0.0)
     builder (3.2.3)
     byebug (9.1.0)
-    capistrano (3.10.0)
+    capistrano (3.10.1)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
@@ -227,7 +227,7 @@ GEM
     rake (12.3.0)
     rbnacl (4.0.2)
       ffi
-    rbnacl-libsodium (1.0.15.1)
+    rbnacl-libsodium (1.0.16)
       rbnacl (>= 3.0.1)
     redis (4.0.1)
     reform (2.2.4)
