@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: bc818d639b7f3e8ede421ce69e4dcfac36d3dfd8
+  revision: d13d04979b80d1b39b6012068f67b6f1da5e1934
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: a0e76564e4acecfb2068d46f9123adfd3035d0d0
+  revision: 99b08164310fc15d58f106b5f270be5f7bc510ea
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -132,7 +132,7 @@ GEM
     dry-container (0.6.0)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1, >= 0.1.3)
-    dry-core (0.4.1)
+    dry-core (0.4.2)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.2.0)
     dry-logic (0.4.2)
