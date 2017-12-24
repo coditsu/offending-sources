@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: d13d04979b80d1b39b6012068f67b6f1da5e1934
+  revision: ee771457557e9c44877ed3dc2f9e82125d30b77d
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 99b08164310fc15d58f106b5f270be5f7bc510ea
+  revision: da01726ff59befb87210b381decd0000789c27e5
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 481f00efab6300adb54db26e0086d46b827cd62e
+  revision: e82139d40fa92cf9c14e48917fd471f96bd78b26
   branch: master
   specs:
     macros (0.16.0)
@@ -116,9 +116,9 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
-    delivery_boy (0.2.3)
+    delivery_boy (0.2.4)
       king_konf (~> 0.1.8)
-      ruby-kafka (~> 0.4)
+      ruby-kafka (~> 0.5.1)
     diff-lcs (1.3)
     disposable (0.4.3)
       declarative (>= 0.0.9, < 1.0.0)
@@ -324,4 +324,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
