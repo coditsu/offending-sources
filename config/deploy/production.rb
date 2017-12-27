@@ -27,7 +27,7 @@ set :puma_pid,   "#{shared_path}/tmp/pids/puma"
 set :puma_state, "#{shared_path}/tmp/sockets/pumastate"
 
 set :rvm_custom_path, '/usr/local/rvm'
-set :rvm_ruby_version, "2.4.2@#{fetch(:application)}"
+set :rvm_ruby_version, "2.5.0@#{fetch(:application)}"
 
 set :branch, ENV['REVISION'] || ENV['BRANCH_NAME'] || 'master'
 set :domain, 'offending-sources.coditsu.io'
