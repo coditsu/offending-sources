@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: e303ecbb1c3e6279348a5d7929667b92523b654e
+  revision: ca71d5a43a498bec5b9d69155036c74ff0914d4f
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: a1a50ec0c575cc2fb38db97f89b138c29c98e4d3
+  revision: 38347780736c533a8e8dd923e9aaaba111fc9754
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: e77bfb9d7427d4de7cac2e520ec56b9fa3913cec
+  revision: c81e89d0461513a6d1bba60dd686f729f1ce558e
   branch: master
   specs:
     macros (0.16.0)
@@ -175,7 +175,7 @@ GEM
       ruby-kafka (>= 0.5)
       thor (~> 0.19)
       waterdrop (>= 1.0.1)
-    king_konf (0.1.8)
+    king_konf (0.1.9)
     loofah (2.1.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -184,7 +184,7 @@ GEM
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.10.3)
+    minitest (5.11.1)
     multi_json (1.12.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -240,8 +240,8 @@ GEM
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
       uber (< 0.2.0)
-    require_all (1.4.0)
-    rspec-core (3.7.0)
+    require_all (1.5.0)
+    rspec-core (3.7.1)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
