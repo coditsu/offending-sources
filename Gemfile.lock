@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: ca71d5a43a498bec5b9d69155036c74ff0914d4f
+  revision: 6a049fc493177e5c924a9d878f0bd9e00d76ef05
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 38347780736c533a8e8dd923e9aaaba111fc9754
+  revision: 2771ec162826caab6bb11e25847c4fa722b3ee29
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -185,7 +185,7 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.1)
-    multi_json (1.12.2)
+    multi_json (1.13.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.2.0)
