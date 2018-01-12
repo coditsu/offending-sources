@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: c1450c8ebfb5b8d5c8f9f25678ee8fbe30ebdd67
+  revision: a1a6aec07f8278218b0ac6a2091ea678f09ad924
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 0da1ae1f5e9ef42169e29326b73c6920394f595c
+  revision: db25c8c9847cf179d147dd32c64da40d0ef13f64
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -185,7 +185,7 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.1)
-    multi_json (1.13.0)
+    multi_json (1.13.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.2.0)
@@ -313,7 +313,7 @@ DEPENDENCIES
   capistrano-coditsu!
   karafka_coditsu!
   macros!
-  pg
+  pg (= 0.21)
   puma
   rails
   reform-rails
