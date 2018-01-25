@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: a1a6aec07f8278218b0ac6a2091ea678f09ad924
+  revision: 163021ec6f918b4bd696f64d00b1c7d5a0563106
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: db25c8c9847cf179d147dd32c64da40d0ef13f64
+  revision: 83b1b306bed9600965393117ce3e497a0d151323
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: c81e89d0461513a6d1bba60dd686f729f1ce558e
+  revision: 70594d914ca35b43e4219e37161904e1173c8c45
   branch: master
   specs:
     macros (0.16.0)
@@ -101,7 +101,7 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano-sidekiq (0.20.0)
+    capistrano-sidekiq (1.0.0)
       capistrano (>= 3.9.0)
       sidekiq (>= 3.4)
     capistrano3-puma (3.1.1)
@@ -160,7 +160,7 @@ GEM
     ffi (1.9.18)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (0.9.1)
+    i18n (0.9.3)
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     json (2.1.0)
@@ -195,7 +195,7 @@ GEM
     null-logger (0.1.4)
     pg (0.21.0)
     pipetree (0.1.1)
-    puma (3.11.0)
+    puma (3.11.2)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
