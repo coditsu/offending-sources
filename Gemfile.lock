@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 42d35b063a7a87f3fdc81c6228e304fd81c9c7a4
+  revision: e1207a4e326e68c3b51c27c30b3cebf33e049fe6
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 4def6c8569c88c28916e53bffa24a3fdc0f139ca
+  revision: 4ec22bde3c314c6602d95b4148016bd456f01512
   branch: master
   specs:
     macros (0.16.0)
@@ -190,7 +190,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (4.2.0)
     nio4r (2.2.0)
-    nokogiri (1.8.1)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     null-logger (0.1.4)
     pg (0.21.0)
@@ -257,7 +257,7 @@ GEM
       rspec-expectations (~> 3.7.0)
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
-    rspec-support (3.7.0)
+    rspec-support (3.7.1)
     ruby-kafka (0.5.2)
     settingslogic (2.0.9)
     sidekiq (5.0.5)
