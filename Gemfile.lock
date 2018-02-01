@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: b69b69081e82592c483e59aad4c3c79e24b96624
+  revision: 885f6b3788513008c17d7c8d2bdab2015b01c911
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -196,7 +196,7 @@ GEM
     pg (0.21.0)
     pipetree (0.1.1)
     puma (3.11.2)
-    rack (2.0.3)
+    rack (2.0.4)
     rack-protection (2.0.0)
       rack
     rack-test (0.8.2)
