@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 885f6b3788513008c17d7c8d2bdab2015b01c911
+  revision: 6b87d4bd90fce3cb29e59a8ed57762e444d244e9
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: ec253a1411209e0f981349cb37f8a262e722f076
+  revision: 981d99d182324871d4e51a725e3f9124d256a284
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -132,7 +132,7 @@ GEM
     dry-container (0.6.0)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1, >= 0.1.3)
-    dry-core (0.4.2)
+    dry-core (0.4.3)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.2.0)
     dry-logic (0.4.2)
@@ -260,7 +260,7 @@ GEM
     rspec-support (3.7.1)
     ruby-kafka (0.5.2)
     settingslogic (2.0.9)
-    sidekiq (5.0.5)
+    sidekiq (5.1.0)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
       rack-protection (>= 1.5.0)
