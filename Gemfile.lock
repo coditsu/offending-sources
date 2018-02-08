@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: a4d1aae420633a0bb28a9ab775d8a7f8e8deb089
+  revision: d6895f6e9cd1ab87f335c4e3e1404aa51735eea9
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -157,7 +157,7 @@ GEM
     envlogic (1.0.4)
       activesupport
     erubi (1.7.0)
-    ffi (1.9.18)
+    ffi (1.9.21)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.3)
@@ -175,7 +175,7 @@ GEM
       ruby-kafka (>= 0.5)
       thor (~> 0.19)
       waterdrop (>= 1.0.1)
-    king_konf (0.1.9)
+    king_konf (0.1.10)
     loofah (2.1.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
