@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: d6895f6e9cd1ab87f335c4e3e1404aa51735eea9
+  revision: e3aa0aa45bab5db69dd3d8941e83879a4cfff6a0
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: bd9aaebe2e21bbda1f39298af8a0bd272573883e
+  revision: 14a940140f272c5ded95e34c0bf63d70d7afb8d0
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 0bda631962a550155929b4267f5514c8b1c3773f
+  revision: 39488a2b317b3f8c6f79fc9bfdc5ad352b1580af
   branch: master
   specs:
     macros (0.16.0)
@@ -160,7 +160,7 @@ GEM
     ffi (1.9.21)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (0.9.3)
+    i18n (0.9.4)
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     json (2.1.0)
@@ -260,11 +260,11 @@ GEM
     rspec-support (3.7.1)
     ruby-kafka (0.5.3)
     settingslogic (2.0.9)
-    sidekiq (5.1.0)
+    sidekiq (5.1.1)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
       rack-protection (>= 1.5.0)
-      redis (>= 3.3.4, < 5)
+      redis (>= 3.3.5, < 5)
     simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
