@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-RSpec.describe KarafkaController do
+RSpec.describe ApplicationConsumer do
   pending
 end

@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'pg', '0.21'
+gem 'pg'
 gem 'puma'
 gem 'rails'
 gem 'reform-rails'

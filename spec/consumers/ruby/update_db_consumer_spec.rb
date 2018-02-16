@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::UpdateDbController do
+RSpec.describe Ruby::UpdateDbConsumer do
   pending
 end

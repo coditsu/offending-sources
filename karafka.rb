@@ -11,13 +11,16 @@ class App < Karafka::App
     config.client_id = Settings.client_id
     config.kafka.seed_brokers = Settings.kafka.seed_brokers
     config.kafka.offset_commit_threshold = Settings.kafka.offset_commit_threshold
-    config.monitor = KarafkaCoditsu::Monitor.instance
     config.batch_fetching = true
+    config.params_base_class = HashWithIndifferentAccess
   end
+
+  Karafka.monitor.subscribe(Karafka::Instrumentation::Listener)
+  Karafka.monitor.subscribe(KarafkaCoditsu::AirbrakeListener)
 
   consumer_groups.draw do
     topic :webhooks_ruby_gems_received do
-      controller Ruby::UpdateDbController
+      consumer Ruby::UpdateDbConsumer
     end
   end
 end
