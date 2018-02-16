@@ -17,12 +17,12 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 53138e20404ee5d22c6f21e870818fe206c296c4
+  revision: ca0a2887c02c6cdf4b90383adb9c56d78eb62898
   branch: master
   specs:
     karafka_coditsu (1.0.0)
       airbrake (~> 5.0)
-      karafka (>= 1.2.0.beta1)
+      karafka (>= 1.2.0.beta2)
 
 GIT
   remote: git@github.com:coditsu/macros.git
@@ -174,7 +174,7 @@ GEM
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     json (2.1.0)
-    karafka (1.2.0.beta1)
+    karafka (1.2.0.beta2)
       activesupport (>= 4.0)
       dry-configurable (~> 0.7)
       dry-inflector (~> 0.1.1)
@@ -209,7 +209,7 @@ GEM
     pipetree (0.1.1)
     puma (3.11.2)
     rack (2.0.4)
-    rack-protection (2.0.0)
+    rack-protection (2.0.1)
       rack
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
