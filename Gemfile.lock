@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: a2fe65b54b40f125ee5e1b0881b25007a8f82cd1
+  revision: b9f68b063d3a448ec9eea12dded68f2f15a03e3d
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: d211f15afee1b84204524005d3e1a6ba7458a66a
+  revision: 1897111b8584ef3d5de0e42e89593eb95db18403
   branch: master
   specs:
     macros (0.16.0)
