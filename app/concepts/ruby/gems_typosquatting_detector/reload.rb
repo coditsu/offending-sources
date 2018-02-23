@@ -51,40 +51,40 @@ module Ruby
       private
 
       # Prepares locations in which we will store our generated files and other tempfiles
-      # @param options [Trailblazer::Operation::Option]
-      def prepare_paths(options, **)
-        options['location'] = sources_path.join(FILENAME)
-        options['tmp'] = Tempfile.new
+      # @param ctx [Trailblazer::Skill]
+      def prepare_paths(ctx, **)
+        ctx['location'] = sources_path.join(FILENAME)
+        ctx['tmp'] = Tempfile.new
       end
 
       # Creates a location for files (if not existing)
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param location [Pathname] location of a target file
-      def create_location(_options, location:, **)
+      def create_location(_ctx, location:, **)
         FileUtils.mkdir_p File.dirname(location)
       end
 
       # Executes our query and stores results in a tmp csv file
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param tmp [Tempfile] tmp file where we store our generated csv data
-      def fetch_and_store(_options, tmp:, **)
+      def fetch_and_store(_ctx, tmp:, **)
         Base.export_to_csv(tmp.path, QUERY)
       end
 
       # Renames and replaces our current sources file with data from tmp file
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param tmp [Tempfile] tmp file where we store our generated csv data
       # @param location [Pathname] target file location of the result csv data
-      def update(_options, tmp:, location:, **)
+      def update(_ctx, tmp:, location:, **)
         FileUtils.rm_f(location)
         FileUtils.cp(tmp.path, location)
         true
       end
 
       # Removes a tmp file in case there were some leftovers from previous reload
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param tmp [Tempfile] tmp file where we store our generated csv data
-      def cleanup(_options, tmp:, **)
+      def cleanup(_ctx, tmp:, **)
         tmp.close
         tmp.unlink
       end

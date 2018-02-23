@@ -12,9 +12,9 @@ class ApplicationOperation < Trailblazer::Operation
   #
   # @param args Any arguments that original Trailblazer #step method defines
   def self.step(*args, &block)
-    success ->(options, **) { options['current_operation'] ||= self }
+    success ->(ctx, **) { ctx['current_operation'] ||= self }
     super(*args, &block)
-    success ->(options) { options['current_step'] = args.first }
+    success ->(ctx) { ctx['current_step'] = args.first }
   end
 
   # @return [Pathname] pathname to a location where our prepared data files should be stored

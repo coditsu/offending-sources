@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: ca0a2887c02c6cdf4b90383adb9c56d78eb62898
+  revision: 49b45af91702935e2170f25ec4bdb98142ddd76a
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,10 +26,10 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 1897111b8584ef3d5de0e42e89593eb95db18403
+  revision: 3645c461dd92150530b99624fdffa88191c2f9c7
   branch: master
   specs:
-    macros (0.16.0)
+    macros (1.16.0)
       activesupport
       require_all
       trailblazer

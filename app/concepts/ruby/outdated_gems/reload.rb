@@ -27,50 +27,50 @@ module Ruby
       private
 
       # Prepares day date
-      # @param options [Trailblazer::Operation::Option]
+      # @param ctx [Trailblazer::Skill]
       # @param params [Hash] request hash with snapshotted at date
-      def fetch_day(options, params:, **)
-        options['day'] = params[:day] || Time.zone.today
+      def fetch_day(ctx, params:, **)
+        ctx['day'] = params[:day] || Time.zone.today
       end
 
       # Prepares all the paths to files that we will work on
-      # @param options [Trailblazer::Operation::Option]
+      # @param ctx [Trailblazer::Skill]
       # @param day [Date] date for which we will build most recent gems snapshot
-      def prepare_paths(options, day:, **)
+      def prepare_paths(ctx, day:, **)
         base = "#{day}.csv"
-        options['temp_files'] = TempFiles.new(
+        ctx['temp_files'] = TempFiles.new(
           Tempfile.new("count_#{base}"),
           Tempfile.new("pre_#{base}"),
           Tempfile.new("non_pre_#{base}"),
           Tempfile.new("#{base}.tmp")
         )
-        options['model'] = sources_path.join(base.to_s)
+        ctx['model'] = sources_path.join(base.to_s)
       end
 
       # Creates a location for files (if not existing)
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param model [String] path to a daily file
-      def create_location(_options, model:, **)
+      def create_location(_ctx, model:, **)
         FileUtils.mkdir_p File.dirname(model)
       end
 
       # Generates all the tmp csv files with partial data that we will merge in Ruby into one
       #   CSV file
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param day [Date] date for which we will build most recent gems snapshot
       # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
       #   generate all the data
-      def fetch_data(_options, day:, temp_files:, **)
+      def fetch_data(_ctx, day:, temp_files:, **)
         Base.export_to_csv(temp_files.count.path, count_query(day))
         Base.export_to_csv(temp_files.pre.path, pre_query(day))
         Base.export_to_csv(temp_files.non_pre.path, non_pre_query(day))
       end
 
       # Loads csv data into memory, so we can work with it
-      # @param options [Trailblazer::Operation::Option]
+      # @param ctx [Trailblazer::Skill]
       # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
       #   generate all the data
-      def load_data(options, temp_files:, **)
+      def load_data(ctx, temp_files:, **)
         counts = {}
         pre = {}
         non_pre = {}
@@ -82,22 +82,22 @@ module Ruby
         # query so here we just take the first value and ignore others
         CSV.foreach(temp_files.non_pre.path) { |row| non_pre[row[0]] ||= row[1] }
 
-        options['counts'] = counts
-        options['pre'] = pre
-        options['non_pre'] = non_pre
+        ctx['counts'] = counts
+        ctx['pre'] = pre
+        ctx['non_pre'] = non_pre
       end
 
       # Combines partial data into a single array with details that we need
-      # @param options [Trailblazer::Operation::Option]
+      # @param ctx [Trailblazer::Skill]
       # @param counts [Hash] gem download counts
       # @param pre [Hash] most recent prerelease for a given day
       # @param non_pre [Hash] most recent release for a given day
-      def combine_data(options, counts:, pre:, non_pre:, **)
+      def combine_data(ctx, counts:, pre:, non_pre:, **)
         results = counts.map do |gem, count|
           [gem, count, non_pre[gem], pre[gem]]
         end
 
-        options['results'] = results.tap do |result|
+        ctx['results'] = results.tap do |result|
           result.delete_if { |el| el[2].nil? && el[3].nil? }
           result.sort! { |ar1, ar2| ar1[1] <=> ar2[1] }
           result.reverse!
@@ -105,32 +105,32 @@ module Ruby
       end
 
       # Persists all the details into tmp combined csv file
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param results [Array<Array>] array with combined details
       # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
       #   generate all the data
-      def store(_options, results:, temp_files:, **)
+      def store(_ctx, results:, temp_files:, **)
         CSV.open(temp_files.tmp.path, 'w') do |csv|
           results.each { |row| csv << [row[0], row[2], row[3]] }
         end
       end
 
       # Removes the previous target file and replaces it with our newly generated tmp file
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
       #   generate all the data
       # @param model [String] path to a daily file
-      def update(_options, temp_files:, model:, **)
+      def update(_ctx, temp_files:, model:, **)
         FileUtils.rm_f(model)
         FileUtils.cp(temp_files.tmp.path, model)
         true
       end
 
       # Removes all the leftover tempfiles that could exist after failed previous run
-      # @param _options [Trailblazer::Operation::Option]
+      # @param _ctx [Trailblazer::Skill]
       # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
       #   generate all the data
-      def cleanup(_options, temp_files:, **)
+      def cleanup(_ctx, temp_files:, **)
         temp_files.each(&:close)
         temp_files.each(&:unlink)
       end
