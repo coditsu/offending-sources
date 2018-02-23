@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: b9f68b063d3a448ec9eea12dded68f2f15a03e3d
+  revision: 0636ad3aefc3dad5b525aa78ef90f6e318d927ac
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -167,7 +167,7 @@ GEM
     envlogic (1.0.4)
       activesupport
     erubi (1.7.0)
-    ffi (1.9.21)
+    ffi (1.9.22)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.5)
