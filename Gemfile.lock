@@ -17,12 +17,12 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 1366a39ca5dde1797666d80a093389f584e63efd
+  revision: f8cb0ca5b4c050fbbb1218e6bdcab2c290ec540d
   branch: master
   specs:
     karafka_coditsu (1.0.0)
       airbrake (~> 5.0)
-      karafka (>= 1.2.0.beta3)
+      karafka (>= 1.2.0.beta4)
 
 GIT
   remote: git@github.com:coditsu/macros.git
