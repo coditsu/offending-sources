@@ -13,6 +13,7 @@ class App < Karafka::App
     config.kafka.offset_commit_threshold = Settings.kafka.offset_commit_threshold
     config.batch_fetching = true
     config.params_base_class = HashWithIndifferentAccess
+    config.parser = KarafkaCoditsu::Parser
   end
 
   Karafka.monitor.subscribe(Karafka::Instrumentation::Listener)

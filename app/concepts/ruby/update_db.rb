@@ -6,7 +6,6 @@ module Ruby
     # Regexp to decide whether a given gem release is a prerelease or a regular one
     PRERELEASE_REGEXP = /[[:alpha:]]/
 
-    step Macros::Params::Fetch(from: :ruby_gem)
     step :check_if_prerelease
     step :find_or_create_reference
     step :update_version_reference
@@ -16,34 +15,34 @@ module Ruby
     private
 
     # Checks if this is a prerelease (we handle those a bit differently)
-    def check_if_prerelease(ctx, ruby_gem:, **)
+    def check_if_prerelease(ctx, params:, **)
       # @param _ctx [Trailblazer::Skill]
-      # @param ruby_gem [Hash] changed ruby gem details
-      ctx['prerelease'] = !(ruby_gem[:version] =~ PRERELEASE_REGEXP).nil?
+      # @param params [Hash] changed ruby gem details
+      ctx['prerelease'] = !(params[:version] =~ PRERELEASE_REGEXP).nil?
       true
     end
 
     # Find or creates (if new gem added) a db reference of a given gem
     # @param ctx [Trailblazer::Skill]
-    # @param ruby_gem [Hash] changed ruby gem details
-    def find_or_create_reference(ctx, ruby_gem:, **)
-      ctx['model'] = RubyGem.find_or_create_by!(name: ruby_gem[:name])
+    # @param params [Hash] changed ruby gem details
+    def find_or_create_reference(ctx, params:, **)
+      ctx['model'] = RubyGem.find_or_create_by!(name: params[:name])
     end
 
     # Updates db references of a given ruby gem version
     # @param ctx [Trailblazer::Skill]
     # @param model [Ruby::RubyGem] db gem reference
-    # @param ruby_gem [Hash] changed ruby gem details
+    # @param params [Hash] changed ruby gem details
     # @param prerelease [Boolean] true if a given rubygem version is a prerelease
-    def update_version_reference(ctx, model:, ruby_gem:, prerelease:, **)
+    def update_version_reference(ctx, model:, params:, prerelease:, **)
       ctx['version'] = Version.find_or_create_by!(
-        number: ruby_gem[:version],
+        number: params[:version],
         rubygem_id: model.id,
         prerelease: prerelease,
         latest: false # We mark new not as a latest as we will resolve latest later
       ).tap do |gem_version|
         built_at = gem_version.built_at || Time.zone.now
-        licenses = ruby_gem[:licenses] || []
+        licenses = params[:licenses] || []
         gem_version.update!(licenses: licenses, built_at: built_at)
       end
     end
@@ -52,13 +51,13 @@ module Ruby
     # @param ctx [Trailblazer::Skill]
     # @param model [Ruby::RubyGem] db gem reference
     # @param version [Ruby::Version] db gem version info reference
-    # @param ruby_gem [Hash] changed ruby gem details
-    def update_downloads_reference(ctx, model:, version:, ruby_gem:, **)
+    # @param params [Hash] changed ruby gem details
+    def update_downloads_reference(ctx, model:, version:, params:, **)
       ctx['gem_download'] = GemDownload.find_or_create_by!(
         version_id: version.id,
         rubygem_id: model.id
       ).tap do |gem_download|
-        gem_download.update!(count: ruby_gem[:version_downloads])
+        gem_download.update!(count: params[:version_downloads])
       end
     end
 
