@@ -5,7 +5,7 @@ module Ruby
   class UpdateDbConsumer < ApplicationConsumer
     # Updates gem DB details and current file reference
     def consume
-      UpdateDb.call(params[:value])
+      #UpdateDb.call(params[:value])
     end
   end
 end
