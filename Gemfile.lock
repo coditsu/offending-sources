@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 7763fd31df3c86f012a5b8ca6dbbb881b02e1586
+  revision: f0162d013400df6c9880b10a1eb88cdc7bbbd1f5
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: f1c7741d3b2f4ef64e0968cc745d8512cf63ef82
+  revision: c930b7f523045f1ed53230a84528e6efb04b9eac
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -306,12 +306,12 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uber (0.1.0)
-    waterdrop (1.2.0)
+    waterdrop (1.2.2)
       delivery_boy (~> 0.2)
       dry-configurable (~> 0.7)
       dry-monitor (~> 0.1)
       dry-validation (~> 0.11)
-      null-logger
+      null-logger (~> 0.1)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
