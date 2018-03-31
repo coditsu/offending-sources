@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 21f5e1a0ef375a58dca534d207f307b64742e505
+  revision: bbb0218ff793e674c3c0def3cb9fe8294d309e97
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: f22c34a107ce45d0463656bdc1794aa7f950569d
+  revision: 7fbf3b178d72b04942e50348176b025b3197c275
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 78c4f63560fb1e647ec2c8ff8a3e1bd9cf0a73ed
+  revision: 14e5ba728d6614ff129d8deab4bf491ccb0941ec
   branch: master
   specs:
     macros (1.16.0)
@@ -82,7 +82,7 @@ GEM
     arel (8.0.0)
     bcrypt_pbkdf (1.0.0)
     builder (3.2.3)
-    byebug (10.0.1)
+    byebug (10.0.2)
     capistrano (3.10.1)
       airbrussh (>= 1.0.0)
       i18n
