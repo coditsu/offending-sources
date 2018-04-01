@@ -26,10 +26,10 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 14e5ba728d6614ff129d8deab4bf491ccb0941ec
+  revision: 5768d1b66aaeff0132404654d0a4228b81df055f
   branch: master
   specs:
-    macros (1.16.0)
+    macros (1.17.0)
       activesupport
       require_all
       trailblazer
