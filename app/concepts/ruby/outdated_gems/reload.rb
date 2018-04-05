@@ -61,9 +61,9 @@ module Ruby
       # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
       #   generate all the data
       def fetch_data(_ctx, day:, temp_files:, **)
-        Base.export_to_csv(temp_files.count.path, count_query(day))
-        Base.export_to_csv(temp_files.pre.path, pre_query(day))
-        Base.export_to_csv(temp_files.non_pre.path, non_pre_query(day))
+        Base.export_to_csv(temp_files.count.path, count_query(day: day))
+        Base.export_to_csv(temp_files.pre.path, pre_query(day: day))
+        Base.export_to_csv(temp_files.non_pre.path, non_pre_query(day: day))
       end
 
       # Loads csv data into memory, so we can work with it
@@ -138,7 +138,7 @@ module Ruby
       # @param day [Date] day up until we calculate
       # @return [String] query that will return us gem name and number of downloads till
       #   certain point it history
-      def count_query(day = Time.zone.today)
+      def count_query(day: Time.zone.today)
         "
           SELECT rubygems.name, SUM(gem_downloads.count) as count
           FROM rubygems
@@ -156,7 +156,7 @@ module Ruby
       # @param day [Date] day up until we calculate
       # @return [String] query that returns most recent non pre release that has been
       #   available at a given time
-      def non_pre_query(day = Time.zone.today)
+      def non_pre_query(day: Time.zone.today)
         "
           SELECT rubygems.name, versions.number as number
           FROM rubygems
@@ -176,7 +176,7 @@ module Ruby
       # @param day [Date] day up until we calculate
       # @return [String] query that returns most recent pre release that has been
       #   available at a given time
-      def pre_query(day = Time.zone.today)
+      def pre_query(day: Time.zone.today)
         "
           SELECT
             DISTINCT ON (rubygems.id) rubygems.id,
