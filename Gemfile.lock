@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: e742eceab7b17577a273355f854d5d8fe230013f
+  revision: 3c75407e011e157748f0ccf1af981e98c94c5ca2
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -101,7 +101,7 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano-sidekiq (1.0.0)
+    capistrano-sidekiq (1.0.1)
       capistrano (>= 3.9.0)
       sidekiq (>= 3.4)
     capistrano3-puma (3.1.1)
