@@ -111,7 +111,7 @@ GEM
     chronic (0.10.2)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
-    crass (1.0.3)
+    crass (1.0.4)
     declarative (0.0.10)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
