@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: e10b047fa337f0761326279e9e93343983e2787a
+  revision: 10cfe07f35f8853464b994969eb48a29a0bbbb56
   branch: master
   specs:
     karafka_coditsu (1.0.0)
