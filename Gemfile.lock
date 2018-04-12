@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 1d49f46e374dffbf347b10b0ecc3090492f2f5a2
+  revision: e56312e24b79a824fa57cd9e1e0e69f5bb647214
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 10cfe07f35f8853464b994969eb48a29a0bbbb56
+  revision: 9b9a92aa5be806f4c97bb642e4fc7624bf488fdf
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 1ca1764058306405806c59b742ac611b7e228303
+  revision: 44ca1611a4892779817186b181741ab43ebb56a2
   branch: master
   specs:
     macros (1.17.0)
@@ -279,7 +279,7 @@ GEM
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
-    ruby-kafka (0.5.4)
+    ruby-kafka (0.5.5)
     settingslogic (2.0.9)
     sidekiq (5.1.3)
       concurrent-ruby (~> 1.0)
