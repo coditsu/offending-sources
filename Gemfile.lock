@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 3471e87ab287a731134ae74a1b55356c9ff4529b
+  revision: ec803ed0488a0341c3a9fcece9c64498bf079943
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 9b9a92aa5be806f4c97bb642e4fc7624bf488fdf
+  revision: 3ccb44157feb16ec16a886b1ace56d5319ac54e0
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 44ca1611a4892779817186b181741ab43ebb56a2
+  revision: 68508f4972535f4c2743e910509175400522a683
   branch: master
   specs:
     macros (1.17.0)
@@ -120,9 +120,9 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
-    delivery_boy (0.2.4)
-      king_konf (~> 0.1.8)
-      ruby-kafka (~> 0.5.1)
+    delivery_boy (0.2.6)
+      king_konf (~> 0.2)
+      ruby-kafka (~> 0.5)
     diff-lcs (1.3)
     disposable (0.4.3)
       declarative (>= 0.0.9, < 1.0.0)
@@ -174,7 +174,7 @@ GEM
     erubi (1.7.1)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.0.0)
+    i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     json (2.1.0)
@@ -191,7 +191,7 @@ GEM
       ruby-kafka (>= 0.5.3)
       thor (~> 0.19)
       waterdrop (~> 1.2)
-    king_konf (0.1.10)
+    king_konf (0.2.0)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
