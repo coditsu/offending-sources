@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: ec803ed0488a0341c3a9fcece9c64498bf079943
+  revision: 9f9e246b2eee6b637dfb528f303c8065ce15c418
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 3ccb44157feb16ec16a886b1ace56d5319ac54e0
+  revision: f2ae49aa15e419724b1140ff0850a072da2dc483
   branch: master
   specs:
     karafka_coditsu (1.0.0)
