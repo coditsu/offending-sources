@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: d44a017b8083befe72224fae393368c7602f0700
+  revision: e6e5cf983a880c7da6afc5b8704f264cbc36c4f4
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 7f3dfb6d090fc06b01dca0d14f43047b4dc9bfc9
+  revision: 78faee66b608a8c6f413605fbac528c96f732d39
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -191,7 +191,7 @@ GEM
       ruby-kafka (>= 0.5.3)
       thor (~> 0.19)
       waterdrop (~> 1.2)
-    king_konf (0.2.0)
+    king_konf (0.3.2)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
