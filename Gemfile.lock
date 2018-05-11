@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: e6e5cf983a880c7da6afc5b8704f264cbc36c4f4
+  revision: a6146b11546a162ba88bba38001e60af76fccca3
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 78faee66b608a8c6f413605fbac528c96f732d39
+  revision: b4dd3a7050bcfbd75b562b758bb5fe59ed8d6a49
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -178,7 +178,7 @@ GEM
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     json (2.1.0)
-    karafka (1.2.3)
+    karafka (1.2.4)
       activesupport (>= 4.0)
       dry-configurable (~> 0.7)
       dry-inflector (~> 0.1.1)
@@ -275,7 +275,7 @@ GEM
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
-    ruby-kafka (0.6.2)
+    ruby-kafka (0.6.3)
     settingslogic (2.0.9)
     sidekiq (5.1.3)
       concurrent-ruby (~> 1.0)
