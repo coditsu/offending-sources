@@ -9,7 +9,6 @@ gem 'reform-rails'
 gem 'settingslogic'
 gem 'trailblazer'
 gem 'whenever'
-gem 'ruby-kafka', '0.5.5'
 
 %w[
   macros
