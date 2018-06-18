@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 898cd7d8e9d1534e157f100d7c881e9dccedc3c3
+  revision: dd5d0f47c0917d698bc62b15c612569b0439d00f
   branch: master
   specs:
     macros (1.17.0)
@@ -124,7 +124,7 @@ GEM
       king_konf (~> 0.2)
       ruby-kafka (~> 0.5)
     diff-lcs (1.3)
-    disposable (0.4.3)
+    disposable (0.4.4)
       declarative (>= 0.0.9, < 1.0.0)
       declarative-builder (< 0.2.0)
       declarative-option (< 0.2.0)
@@ -207,7 +207,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (5.0.0.beta2)
     nio4r (2.3.1)
-    nokogiri (1.8.2)
+    nokogiri (1.8.3)
       mini_portile2 (~> 2.3.0)
     null-logger (0.1.5)
     pg (1.0.0)
