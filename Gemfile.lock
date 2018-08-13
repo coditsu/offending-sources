@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: f247f2ab8dff06650a453a7275d1e3d0ec310a60
+  revision: 2e1886c72e889540b8ba15e4ac2febe324c33232
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -275,7 +275,7 @@ GEM
     rspec-support (3.8.0)
     ruby-kafka (0.6.8)
     settingslogic (2.0.9)
-    sidekiq (5.2.0)
+    sidekiq (5.2.1)
       connection_pool (~> 2.2, >= 2.2.2)
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
