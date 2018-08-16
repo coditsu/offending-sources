@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: b45d9fcafe6e0efef931a1d637d921b60de655e4
+  revision: 9f70050488dbcf13bf9f3c8dd4919c7dada6b611
   branch: master
   specs:
     capistrano-coditsu (0.1.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 36ff6fd9654a6cf41a798334cc6edb2d90735d4e
+  revision: bc198dcc90a339b4359e1bba4c5857828a832b30
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -124,6 +124,7 @@ GEM
       king_konf (~> 0.2)
       ruby-kafka (~> 0.5)
     diff-lcs (1.3)
+    digest-crc (0.4.1)
     disposable (0.4.4)
       declarative (>= 0.0.9, < 1.0.0)
       declarative-builder (< 0.2.0)
@@ -199,7 +200,7 @@ GEM
       mimemagic (~> 0.3.2)
     method_source (0.9.0)
     mimemagic (0.3.2)
-    mini_mime (1.0.0)
+    mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
@@ -273,7 +274,8 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    ruby-kafka (0.6.8)
+    ruby-kafka (0.7.0)
+      digest-crc
     settingslogic (2.0.9)
     sidekiq (5.2.1)
       connection_pool (~> 2.2, >= 2.2.2)
