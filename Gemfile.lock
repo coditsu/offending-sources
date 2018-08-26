@@ -210,7 +210,7 @@ GEM
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
     null-logger (0.1.5)
-    pg (1.0.0)
+    pg (1.1.0)
     pipetree (0.1.1)
     puma (3.12.0)
     rack (2.0.5)
