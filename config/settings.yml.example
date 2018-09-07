@@ -1,13 +1,13 @@
 defaults: &defaults
-  client_id: offending_sources
+  client_id: <%= ENV['CLIENT_ID'] %>
 
   errbit:
-    project_id: <%= 1 %>
-    project_key: 'project_key'
-    host: 'https://host'
+    project_id: <%= ENV['ERRBIT_PROJECT_ID'] %>
+    project_key: <%= ENV['ERRBIT_PROJECT_KEY'] %>
+    host: <%= ENV['ERRBIT_HOST'] %>
 
   kafka:
-    seed_brokers: <%= %w( kafka://172.17.0.2:9092 ) %>
+    seed_brokers: <%= ENV['KAFKA_SEED_BROKERS'].split(',') %>
     offset_commit_threshold: 1
 
 development:

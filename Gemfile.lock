@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: eaac34f7c48fe1170c2b3381dddcf15cf673a70a
+  revision: 298be02712c016338ffd5b7659e949e07182e55e
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -13,6 +13,7 @@ GIT
       capistrano-sidekiq
       capistrano3-puma
       ed25519
+      envlogic
       net-ssh
 
 GIT
@@ -131,6 +132,10 @@ GEM
       representable (>= 2.4.0, <= 3.1.0)
       uber (< 0.2.0)
     docile (1.3.1)
+    dotenv (2.5.0)
+    dotenv-rails (2.5.0)
+      dotenv (= 2.5.0)
+      railties (>= 3.2, < 6.0)
     dry-configurable (0.7.0)
       concurrent-ruby (~> 1.0)
     dry-container (0.6.0)
@@ -210,7 +215,7 @@ GEM
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
     null-logger (0.1.5)
-    pg (1.1.2)
+    pg (1.1.3)
     pipetree (0.1.1)
     puma (3.12.0)
     rack (2.0.5)
@@ -326,6 +331,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capistrano-coditsu!
+  dotenv-rails
   karafka_coditsu!
   macros!
   pg

@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'pg'
 gem 'puma'
 gem 'rails'

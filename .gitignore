@@ -1,3 +1,6 @@
+.env
+/config/deploy/**/*.yml
+/config/deploy/**/config/**
 /.irb-history
 /.bundle
 /vendor/bundle/
