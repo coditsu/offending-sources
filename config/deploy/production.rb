@@ -23,7 +23,7 @@ set :puma_conf,  "#{shared_path}/config/puma.rb"
 set :puma_pid,   "#{shared_path}/tmp/pids/puma"
 set :puma_state, "#{shared_path}/tmp/sockets/pumastate"
 
-set :branch, ENV['REVISION'] || ENV['BRANCH_NAME'] || 'master'
+set :branch, 'master'
 set :domain, 'orchestration-vm1.prod.coditsu.it'
 
 set :whenever_roles, %i[app db web]
