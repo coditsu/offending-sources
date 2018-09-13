@@ -69,8 +69,10 @@ module Ruby
     def resolve_latest(_ctx, model:, version:, **)
       # If it is a prerelease, we ignore as prereleases are never marked as latest
       return true if version.prerelease
+
       latest = Version.find_by(rubygem_id: model.id, latest: true)
       return true if !latest.nil? && latest.comparator >= version.comparator
+
       Version.where(rubygem_id: model.id).update_all(latest: false)
       version.update!(latest: true)
     end
