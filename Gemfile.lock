@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 67e7ad51292f1b6a4d85b1f4556734fe10f85c07
+  revision: 5f29eeddb5689505d85294e28111105c95e2d185
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 85ddee72188f6f5d7163abdae318b07d2573b80f
+  revision: 1bfdadca2cc30cfeb449487c339acd17f0ea25d2
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: cac7a4d4449c3dcd7efa7a78301b5943064ea794
+  revision: 7ef1796a084633114277269f2587ac09adbb7682
   branch: master
   specs:
     macros (1.17.0)
@@ -345,4 +345,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.16.4
+   1.16.5
