@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 5f29eeddb5689505d85294e28111105c95e2d185
+  revision: b5f96214287810ad7d8910a9ec6bf9319190a3b0
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 1bfdadca2cc30cfeb449487c339acd17f0ea25d2
+  revision: 87331c22e96359a7f43ed51e2b5992492832b255
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -125,6 +125,7 @@ GEM
       king_konf (~> 0.2)
       ruby-kafka (~> 0.5)
     diff-lcs (1.3)
+    digest-crc (0.4.1)
     disposable (0.4.4)
       declarative (>= 0.0.9, < 1.0.0)
       declarative-builder (< 0.2.0)
@@ -181,7 +182,7 @@ GEM
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
-    karafka (1.2.6)
+    karafka (1.2.8)
       activesupport (>= 4.0)
       dry-configurable (~> 0.7)
       dry-inflector (~> 0.1.1)
@@ -191,9 +192,9 @@ GEM
       multi_json (>= 1.12)
       rake (>= 11.3)
       require_all (>= 1.4)
-      ruby-kafka (~> 0.6.8)
+      ruby-kafka (>= 0.6)
       thor (~> 0.19)
-      waterdrop (~> 1.2.3)
+      waterdrop (~> 1.2.4)
     king_konf (0.3.6)
     loofah (2.2.2)
       crass (~> 1.0.2)
@@ -278,7 +279,8 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    ruby-kafka (0.6.8)
+    ruby-kafka (0.7.2)
+      digest-crc
     settingslogic (2.0.9)
     sidekiq (5.2.2)
       connection_pool (~> 2.2, >= 2.2.2)
@@ -312,13 +314,13 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uber (0.1.0)
-    waterdrop (1.2.3)
+    waterdrop (1.2.4)
       delivery_boy (~> 0.2)
       dry-configurable (~> 0.7)
       dry-monitor (~> 0.1)
       dry-validation (~> 0.11)
       null-logger (~> 0.1)
-      ruby-kafka (~> 0.6.8)
+      ruby-kafka (>= 0.6)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
