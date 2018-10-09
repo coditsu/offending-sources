@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: b5f96214287810ad7d8910a9ec6bf9319190a3b0
+  revision: 3539e2fd13af66f43a06802e4feada49d058ad59
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 87331c22e96359a7f43ed51e2b5992492832b255
+  revision: fd79d085542d861fa775d0dd907caee8cc221d35
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 7ef1796a084633114277269f2587ac09adbb7682
+  revision: c1c95ad952ba541f5a5b5d9c35ffd6eb5818f690
   branch: master
   specs:
     macros (1.17.0)
@@ -213,7 +213,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (5.0.2)
     nio4r (2.3.1)
-    nokogiri (1.8.4)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     null-logger (0.1.5)
     pg (1.1.3)
@@ -347,4 +347,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.16.5
+   1.16.6
