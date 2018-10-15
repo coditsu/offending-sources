@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 3539e2fd13af66f43a06802e4feada49d058ad59
+  revision: 17a7de484d2facfe513ad2936d4e34b94ac8b080
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: a3cb1211edefd83c019e33d9a4cbb28a94661074
+  revision: d2caa5c43fe6dde967cb4471edcf3b4afc4dd50f
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 538afbfcaf8dcddffa03f52733547198c857fb82
+  revision: 6cc0cde79d10104e8dfc27715389f88cb0f7d165
   branch: master
   specs:
     macros (1.17.0)
@@ -179,7 +179,7 @@ GEM
     erubi (1.7.1)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.1.0)
+    i18n (1.1.1)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
     karafka (1.2.8)
@@ -199,7 +199,7 @@ GEM
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.7.0)
+    mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
