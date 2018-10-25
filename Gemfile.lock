@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: c3f6b5056ad4129042e2d8fd62129af7041de2f4
+  revision: 05444e869039c8a43733ec31d34b3504b2c03519
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 3072844924e76077411f23cdcf44350c32e34829
+  revision: 8a6e744ed8f7706b89c4d700fc2adc982074366b
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 6cc0cde79d10104e8dfc27715389f88cb0f7d165
+  revision: 46f797d49847aa292445a3f087309a1d0fff966a
   branch: master
   specs:
     macros (1.17.0)
@@ -270,7 +270,7 @@ GEM
     rspec-mocks (3.8.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
-    rspec-rails (3.8.0)
+    rspec-rails (3.8.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -347,4 +347,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.16.6
+   1.17.0
