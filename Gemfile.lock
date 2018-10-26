@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 05444e869039c8a43733ec31d34b3504b2c03519
+  revision: e230fa14f43900bb36bb598de74b7a0cb97746d8
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 8a6e744ed8f7706b89c4d700fc2adc982074366b
+  revision: 5ee51c567ee9f77800f41801e8db106852477374
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 46f797d49847aa292445a3f087309a1d0fff966a
+  revision: d3588108f6a2a086417d541973d74d1736757e28
   branch: master
   specs:
     macros (1.17.0)
@@ -195,7 +195,7 @@ GEM
       ruby-kafka (>= 0.6)
       thor (~> 0.19)
       waterdrop (~> 1.2.4)
-    king_konf (0.3.6)
+    king_konf (0.3.7)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -347,4 +347,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.17.0
+   1.17.1
