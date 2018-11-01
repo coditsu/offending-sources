@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: e230fa14f43900bb36bb598de74b7a0cb97746d8
+  revision: 94aea5374c5f875ac523f752eab3d70c5ee2ea5e
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 5ee51c567ee9f77800f41801e8db106852477374
+  revision: 689a950afc8e7c6b64751fc1b6ac0ee50708abb0
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: d3588108f6a2a086417d541973d74d1736757e28
+  revision: 6d0e4de887d0244ad960682225be31741df0223f
   branch: master
   specs:
     macros (1.17.0)
@@ -114,7 +114,7 @@ GEM
       capistrano-bundler
       puma (~> 3.4)
     chronic (0.10.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.0)
     connection_pool (2.2.2)
     crass (1.0.4)
     declarative (0.0.10)
@@ -196,7 +196,7 @@ GEM
       thor (~> 0.19)
       waterdrop (~> 1.2.4)
     king_konf (0.3.7)
-    loofah (2.2.2)
+    loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -249,7 +249,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
     rake (12.3.1)
-    redis (4.0.2)
+    redis (4.0.3)
     reform (2.2.4)
       disposable (>= 0.4.1)
       representable (>= 2.4.0, < 3.1.0)
