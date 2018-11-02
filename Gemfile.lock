@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 94aea5374c5f875ac523f752eab3d70c5ee2ea5e
+  revision: 6ccda62c95b23ed22182b23cf164226e766cf4dd
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: 689a950afc8e7c6b64751fc1b6ac0ee50708abb0
+  revision: 1248afd54eaf2464d2b36712fa2943cf0434aa61
   branch: master
   specs:
     karafka_coditsu (1.0.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 6d0e4de887d0244ad960682225be31741df0223f
+  revision: b8fdee717d0538b8e39f0052abac7344c947bf75
   branch: master
   specs:
     macros (1.17.0)
@@ -114,7 +114,7 @@ GEM
       capistrano-bundler
       puma (~> 3.4)
     chronic (0.10.2)
-    concurrent-ruby (1.1.0)
+    concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
     crass (1.0.4)
     declarative (0.0.10)
