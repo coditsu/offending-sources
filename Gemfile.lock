@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 6ccda62c95b23ed22182b23cf164226e766cf4dd
+  revision: eb1311ed395fd863a572acc9ffad025dde3dd059
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -82,7 +82,7 @@ GEM
     airbrake (5.8.1)
       airbrake-ruby (~> 1.8)
     airbrake-ruby (1.8.0)
-    airbrussh (1.3.0)
+    airbrussh (1.3.1)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (9.0.0)
     bcrypt_pbkdf (1.0.0)
@@ -203,7 +203,7 @@ GEM
       mini_mime (>= 0.1.1)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
-    method_source (0.9.0)
+    method_source (0.9.1)
     mimemagic (0.3.2)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
