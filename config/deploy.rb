@@ -30,3 +30,4 @@ set :created_dirs, %w[
 ]
 
 after 'deploy:finished', 'puma:start'
+after 'deploy:finished', 'app:reload_sources'
