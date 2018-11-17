@@ -1,0 +1,12 @@
+namespace :app do
+  desc 'Reloads only the sources files, without reloading the whole database'
+  task :reload_sources do
+    on roles(:web) do
+      within release_path do
+        with rails_env: fetch(:stage) do
+          execute :rake, 'app:reload_sources'
+        end
+      end
+    end
+  end
+end
