@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-server 'orchestration-vm1.prod.coditsu.it',
+server 'sources.prod.coditsu.io',
        roles: %w[web app db karafka],
        user: 'deploy'
 
@@ -24,6 +24,6 @@ set :puma_pid,   "#{shared_path}/tmp/pids/puma"
 set :puma_state, "#{shared_path}/tmp/sockets/pumastate"
 
 set :branch, 'master'
-set :domain, 'orchestration-vm1.prod.coditsu.it'
+set :domain, 'sources.prod.coditsu.io'
 
 set :whenever_roles, %i[app db web]
