@@ -5,7 +5,6 @@ module WebHooks
   class RubyGemsController < ApplicationController
     # Sends a given webhook details into a proper topic
     def create
-      byebug
       Ruby::UpdateDb.call(params.permit!)
       head :no_content
     end
