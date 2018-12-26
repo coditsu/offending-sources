@@ -12,5 +12,3 @@ require File.expand_path('../config/environment', __dir__)
   active_record
   action_controller/railtie
 ].each { |lib| require lib }
-
-App.boot!
