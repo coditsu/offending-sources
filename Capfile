@@ -10,7 +10,6 @@
 
 require 'whenever/capistrano'
 
-install_plugin Capistrano::Coditsu
 install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma
 
