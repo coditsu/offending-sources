@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :abandoned_gems, only: :show
   end
 
-  namespace :webhooks do
+  namespace :web_hooks do
     post 'ruby_gems' => 'ruby_gems#create'
   end
 end
