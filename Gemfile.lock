@@ -17,15 +17,6 @@ GIT
       net-ssh
 
 GIT
-  remote: git@github.com:coditsu/karafka-coditsu.git
-  revision: e27e5839d5a032312184ed2df235333ce49bd4b3
-  branch: master
-  specs:
-    karafka_coditsu (1.0.0)
-      airbrake (~> 5.0)
-      karafka (>= 1.2)
-
-GIT
   remote: git@github.com:coditsu/macros.git
   revision: ceb00a40ce20217d3c2c70162137f86e8b3e1984
   branch: master
@@ -79,9 +70,6 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    airbrake (5.8.1)
-      airbrake-ruby (~> 1.8)
-    airbrake-ruby (1.8.0)
     airbrussh (1.3.1)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (9.0.0)
@@ -176,6 +164,8 @@ GEM
     envlogic (1.1.0)
       dry-inflector (~> 0.1)
     erubi (1.8.0)
+    gems (1.1.1)
+      json
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.3.0)
@@ -333,7 +323,7 @@ DEPENDENCIES
   byebug
   capistrano-coditsu!
   dotenv-rails
-  karafka_coditsu!
+  gems
   macros!
   pg
   puma

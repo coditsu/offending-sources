@@ -10,6 +10,9 @@ defaults: &defaults
     seed_brokers: <%= ENV['KAFKA_SEED_BROKERS'].split(',') %>
     offset_commit_threshold: 1
 
+  ruby_gems:
+    api_key: <%= ENV['RUBY_GEMS_API_KEY'] %>
+
 development:
   <<: *defaults
 

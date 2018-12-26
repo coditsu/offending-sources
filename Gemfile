@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'gems'
 gem 'pg'
 gem 'puma'
 gem 'rails'
@@ -13,7 +14,6 @@ gem 'whenever'
 
 %w[
   macros
-  karafka_coditsu
 ].each do |gem_name|
   gem gem_name,
       git: "git@github.com:coditsu/#{gem_name.tr('_', '-')}.git",
