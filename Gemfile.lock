@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: c6a9c5593499bfec2de1a42c25a195351bb36c0d
+  revision: 3d7b55e59ba4b6aea675250f40623f2413251bdd
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: ceb00a40ce20217d3c2c70162137f86e8b3e1984
+  revision: 3064fb0f7a882eab7fefcf8d55e216ea3cfaf84b
   branch: master
   specs:
     macros (1.17.0)
@@ -203,7 +203,7 @@ GEM
     multi_json (1.13.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (5.0.2)
+    net-ssh (5.1.0)
     nio4r (2.3.1)
     nokogiri (1.9.1)
       mini_portile2 (~> 2.4.0)
@@ -340,4 +340,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
