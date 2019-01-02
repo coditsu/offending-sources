@@ -4,7 +4,7 @@ module Ruby
   # Updates given Ruby gem reference both in the DB and in the last generated file for a given day
   class UpdateDb < ApplicationOperation
     # Regexp to decide whether a given gem release is a prerelease or a regular one
-    PRERELEASE_REGEXP = /[[:alpha:]]/
+    PRERELEASE_REGEXP = /[[:alpha:]]/.freeze
 
     step :check_if_prerelease
     step :find_or_create_reference

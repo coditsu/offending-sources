@@ -11,7 +11,7 @@ module Ruby
     # excluding .pre stuff
     # @example
     #   '1.0.0.pre.preview1' => '1.0.0'
-    VERSION_REGEXP = /([\d\.]*)/
+    VERSION_REGEXP = /([\d\.]*)/.freeze
 
     # Maximum number of levels a gem version can have
     # '0.12.3' #=> 3
