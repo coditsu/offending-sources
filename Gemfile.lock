@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 3d7b55e59ba4b6aea675250f40623f2413251bdd
+  revision: 1419b036310eafa7936118aa097bbdab757e438a
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 3064fb0f7a882eab7fefcf8d55e216ea3cfaf84b
+  revision: 171f7d8874824a3084f3e3a3cb333fe5bb1f20c9
   branch: master
   specs:
     macros (1.17.0)
@@ -171,7 +171,7 @@ GEM
       json
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.3.0)
+    i18n (1.4.0)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
     karafka (1.2.9)
