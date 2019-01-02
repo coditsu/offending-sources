@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Namespace for all the things related to incoming webhooks data
 module WebHooks
   # HTTP endpoint for accepting ruby gems webhooks
   class RubyGemsController < ApplicationController
