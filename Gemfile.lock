@@ -324,6 +324,7 @@ PLATFORMS
 
 DEPENDENCIES
   airbrake (~> 5.0)
+  bundler (= 1.17.3)
   byebug
   capistrano-coditsu!
   dotenv-rails
