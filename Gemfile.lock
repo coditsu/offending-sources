@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: fd05d78e9b196c89b12418a8501905e0d4d1b804
+  revision: 34ecc3f5fdaa2d85e45386f8e6fb0f1562b60b04
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: ad1d70d38c8155b402136bb81d98b12cd29bef3f
+  revision: b2287acc3ac3d951e93106cfc4f31d86bcf38ac0
   branch: master
   specs:
     macros (1.17.0)
@@ -169,9 +169,9 @@ GEM
     erubi (1.8.0)
     gems (1.1.1)
       json
-    globalid (0.4.1)
+    globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (1.5.1)
+    i18n (1.5.2)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
     karafka (1.2.9)
@@ -205,7 +205,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (5.1.0)
     nio4r (2.3.1)
-    nokogiri (1.10.0)
+    nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
     null-logger (0.1.5)
     pg (1.1.4)
