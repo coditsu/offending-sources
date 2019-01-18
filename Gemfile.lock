@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 34ecc3f5fdaa2d85e45386f8e6fb0f1562b60b04
+  revision: e9e9ee8b7f00114002d7da6821ec8a4814282c54
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: b2287acc3ac3d951e93106cfc4f31d86bcf38ac0
+  revision: 048be5b42bedc62587af78a3306d6ccbb7bf24d2
   branch: master
   specs:
     macros (1.17.0)
@@ -271,7 +271,7 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    ruby-kafka (0.7.4)
+    ruby-kafka (0.7.5)
       digest-crc
     settingslogic (2.0.9)
     sidekiq (5.2.5)
@@ -325,7 +325,6 @@ PLATFORMS
 
 DEPENDENCIES
   airbrake (~> 5.0)
-  bundler (= 1.17.3)
   byebug
   capistrano-coditsu!
   dotenv-rails
@@ -342,4 +341,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.17.3
+   2.0.1
