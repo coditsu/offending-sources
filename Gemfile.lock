@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: e9e9ee8b7f00114002d7da6821ec8a4814282c54
+  revision: a8c3aa792677ed9589d20a0c16952934c6e53372
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -174,7 +174,7 @@ GEM
     i18n (1.5.2)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
-    karafka (1.2.9)
+    karafka (1.2.10)
       activesupport (>= 4.0)
       dry-configurable (~> 0.7)
       dry-inflector (~> 0.1)
