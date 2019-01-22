@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: a8c3aa792677ed9589d20a0c16952934c6e53372
+  revision: 8cbf40c6bf41ac5f08cd8dc1440a5e7e794d2e73
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 048be5b42bedc62587af78a3306d6ccbb7bf24d2
+  revision: 95bdaa41fb7ee63dcb461bd1d816b85052ac0d11
   branch: master
   specs:
     macros (1.17.0)
@@ -144,11 +144,11 @@ GEM
       dry-container (~> 0.2, >= 0.2.6)
       dry-core (~> 0.2)
       dry-equalizer (~> 0.2)
-    dry-monitor (0.1.2)
+    dry-monitor (0.2.0)
       dry-configurable (~> 0.5)
+      dry-core (~> 0.4)
       dry-equalizer (~> 0.2)
       dry-events (~> 0.1)
-      rouge (~> 2.0, >= 2.2.1)
     dry-types (0.13.4)
       concurrent-ruby (~> 1.0)
       dry-container (~> 0.3)
@@ -171,7 +171,7 @@ GEM
       json
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (1.5.2)
+    i18n (1.5.3)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
     karafka (1.2.10)
@@ -253,7 +253,6 @@ GEM
       declarative-option (< 0.2.0)
       uber (< 0.2.0)
     require_all (2.0.0)
-    rouge (2.2.1)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.2)
