@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 94dc4dad8be28744d1f6c1b3428c4eb095853db7
+  revision: 31c25b0db2f634faeccbaf93130c11e642b3c7c5
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -127,7 +127,7 @@ GEM
     dotenv-rails (2.6.0)
       dotenv (= 2.6.0)
       railties (>= 3.2, < 6.0)
-    dry-configurable (0.8.0)
+    dry-configurable (0.8.1)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.4, >= 0.4.7)
     dry-container (0.7.0)
