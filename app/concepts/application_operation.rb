@@ -11,6 +11,7 @@ class ApplicationOperation < Trailblazer::Operation
   # so it will be much easier to debug it in the future
   #
   # @param args Any arguments that original Trailblazer #step method defines
+  # @param block [Proc] block we want to execute in this step
   def self.step(*args, &block)
     success ->(ctx, **) { ctx['current_operation'] ||= self }
     super(*args, &block)
