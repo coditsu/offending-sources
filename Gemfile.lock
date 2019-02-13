@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 2a5fbc0add3b0b49e4d9da8f313748ba88efdef6
+  revision: 6533bdc9eabd97f6ee249dcdfcb00aa0e8ed241c
   branch: master
   specs:
     macros (1.15.0)
