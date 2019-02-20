@@ -6,7 +6,7 @@ module Ruby
   class OutdatedGemsController < ApplicationController
     # Generates and returns a csv with data for outdated gems validator
     def show
-      send_file OutdatedGems::Reload.call(day: Date.parse(params[:id]))['model']
+      send_file OutdatedGems::Reload.call['model']
     end
   end
 end

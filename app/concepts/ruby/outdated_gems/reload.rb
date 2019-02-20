@@ -4,12 +4,9 @@ module Ruby
   # Namespace for all the operations related to outdated gems validator sources
   module OutdatedGems
     # Reloads sources file for outdated gems validator engine
-    # @note This command regenerates a different snapshot for each day, so date needs
-    # to be provided
     # @example
-    #  Ruby::OutdatedGems::Reload.call(day: Time.zone.today)
+    #  Ruby::OutdatedGems::Reload.call
     class Reload < ApplicationOperation
-      step :fetch_day
       step :prepare_paths
       step :create_location
       step :fetch_data
@@ -22,29 +19,23 @@ module Ruby
       # Simple struct for storing aggregated paths to files on which we work
       TempFiles = Struct.new(:count, :pre, :non_pre, :tmp)
 
-      private_constant :TempFiles
+      # Name of the file in which we will store gems details
+      FILENAME = 'current.csv'
+
+      private_constant :TempFiles, :FILENAME
 
       private
 
-      # Prepares day date
-      # @param ctx [Trailblazer::Skill]
-      # @param params [Hash] request hash with snapshotted at date
-      def fetch_day(ctx, params:, **)
-        ctx['day'] = params[:day] || Time.zone.today
-      end
-
       # Prepares all the paths to files that we will work on
       # @param ctx [Trailblazer::Skill]
-      # @param day [Date] date for which we will build most recent gems snapshot
-      def prepare_paths(ctx, day:, **)
-        base = "#{day}.csv"
+      def prepare_paths(ctx, **)
         ctx['temp_files'] = TempFiles.new(
-          Tempfile.new("count_#{base}"),
-          Tempfile.new("pre_#{base}"),
-          Tempfile.new("non_pre_#{base}"),
-          Tempfile.new("#{base}.tmp")
+          Tempfile.new("count_#{FILENAME}"),
+          Tempfile.new("pre_#{FILENAME}"),
+          Tempfile.new("non_pre_#{FILENAME}"),
+          Tempfile.new("#{FILENAME}.tmp")
         )
-        ctx['model'] = sources_path.join(base.to_s)
+        ctx['model'] = sources_path.join(FILENAME)
       end
 
       # Creates a location for files (if not existing)
@@ -57,13 +48,12 @@ module Ruby
       # Generates all the tmp csv files with partial data that we will merge in Ruby into one
       #   CSV file
       # @param _ctx [Trailblazer::Skill]
-      # @param day [Date] date for which we will build most recent gems snapshot
       # @param temp_files [RubyGems::OutdatedGems::Reload::TempFiles] tempfiles that we use to
       #   generate all the data
-      def fetch_data(_ctx, day:, temp_files:, **)
-        Base.export_to_csv(temp_files.count.path, count_query(day: day))
-        Base.export_to_csv(temp_files.pre.path, pre_query(day: day))
-        Base.export_to_csv(temp_files.non_pre.path, non_pre_query(day: day))
+      def fetch_data(_ctx, temp_files:, **)
+        Base.export_to_csv(temp_files.count.path, count_query)
+        Base.export_to_csv(temp_files.pre.path, pre_query)
+        Base.export_to_csv(temp_files.non_pre.path, non_pre_query)
       end
 
       # Loads csv data into memory, so we can work with it
@@ -90,8 +80,8 @@ module Ruby
       # Combines partial data into a single array with details that we need
       # @param ctx [Trailblazer::Skill]
       # @param counts [Hash] gem download counts
-      # @param pre [Hash] most recent prerelease for a given day
-      # @param non_pre [Hash] most recent release for a given day
+      # @param pre [Hash] most recent prerelease
+      # @param non_pre [Hash] most recent release
       def combine_data(ctx, counts:, pre:, non_pre:, **)
         results = counts.map do |gem, count|
           [gem, count, non_pre[gem], pre[gem]]
@@ -135,10 +125,8 @@ module Ruby
         temp_files.each(&:unlink)
       end
 
-      # @param day [Date] day up until we calculate
-      # @return [String] query that will return us gem name and number of downloads till
-      #   certain point it history
-      def count_query(day: Time.zone.today)
+      # @return [String] query that will return us gem name and number of downloads
+      def count_query
         "
           SELECT rubygems.name, SUM(gem_downloads.count) as count
           FROM rubygems
@@ -147,16 +135,13 @@ module Ruby
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{day}'
           GROUP by rubygems.id
           ORDER by count DESC
         "
       end
 
-      # @param day [Date] day up until we calculate
-      # @return [String] query that returns most recent non pre release that has been
-      #   available at a given time
-      def non_pre_query(day: Time.zone.today)
+      # @return [String] query that returns most recent non pre release
+      def non_pre_query
         "
           SELECT rubygems.name, versions.number as number
           FROM rubygems
@@ -165,7 +150,6 @@ module Ruby
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{day}'
           WHERE latest IS TRUE
             AND yanked_at IS NULL
             AND prerelease is FALSE
@@ -173,10 +157,9 @@ module Ruby
         "
       end
 
-      # @param day [Date] day up until we calculate
       # @return [String] query that returns most recent pre release that has been
       #   available at a given time
-      def pre_query(day: Time.zone.today)
+      def pre_query
         "
           SELECT
             DISTINCT ON (rubygems.id) rubygems.id,
@@ -188,7 +171,6 @@ module Ruby
           INNER JOIN gem_downloads
               ON versions.id = gem_downloads.version_id
                 AND gem_downloads.version_id > 0
-                AND versions.built_at::date <= '#{day}'
           WHERE latest IS FALSE AND yanked_at IS NULL AND prerelease is TRUE
           ORDER by rubygems.id ASC, versions.created_at DESC
         "
