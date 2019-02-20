@@ -4,13 +4,11 @@ module Ruby
   # Namespace for all the operations related to abandoned gems validator sources
   module AbandonedGems
     # Reloads sources file for abandoned gems validator engine
-    # @note This command regenerates a different snapshot for each day, so date needs
-    # to be provided
     # @example
-    #  Ruby::AbandonedGems::Reload.call(day: Time.zone.today)
+    #  Ruby::AbandonedGems::Reload.call
     class Reload < ApplicationOperation
       # Query used to extract the date of the last update of all the gems on a particular date
-      QUERY = lambda { |day|
+      QUERY = lambda {
         <<~QUERY
           SELECT
             name,
@@ -21,14 +19,16 @@ module Ruby
             (
               SELECT rubygem_id, MAX(built_at) built_at
               FROM versions
-              WHERE yanked_at IS NULL AND built_at::date <= '#{day}'
+              WHERE yanked_at IS NULL
               GROUP BY rubygem_id
             ) versions
           ON rubygems.id = versions.rubygem_id
         QUERY
       }
 
-      step :fetch_day
+      # Name of the file in which we will store licenses details
+      FILENAME = 'current.csv'
+
       step :prepare_paths
       step :create_location
       step :fetch_and_store
@@ -37,18 +37,10 @@ module Ruby
 
       private
 
-      # Prepares day date
+      # Prepares the path for a a snapshot of gem version
       # @param ctx [Trailblazer::Skill]
-      # @param params [Hash] request hash with snapshotted at date
-      def fetch_day(ctx, params:, **)
-        ctx['day'] = params[:day] || Time.zone.today
-      end
-
-      # Prepares the path for a a snapshot of gem version up until certain day
-      # @param ctx [Trailblazer::Skill]
-      # @param day [Date] date for which we will build most recent gems snapshot
-      def prepare_paths(ctx, day:, **)
-        ctx['model'] = sources_path.join("#{day}.csv")
+      def prepare_paths(ctx, **)
+        ctx['model'] = sources_path.join(FILENAME)
         ctx['tmp'] = Tempfile.new
       end
 
@@ -62,9 +54,8 @@ module Ruby
       # Executes our query and stores results in a tmp csv file
       # @param _ctx [Trailblazer::Skill]
       # @param tmp [Tempfile] tmp file where we store our generated csv data
-      # @param day [Date] day for which we want to generate outdated snapshot
-      def fetch_and_store(_ctx, tmp:, day:, **)
-        Ruby::Base.export_to_csv(tmp.path, QUERY.call(day))
+      def fetch_and_store(_ctx, tmp:, **)
+        Ruby::Base.export_to_csv(tmp.path, QUERY.call)
       end
 
       # Renames and replaces our current sources file with data from tmp file
