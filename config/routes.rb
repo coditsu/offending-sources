@@ -2,11 +2,11 @@
 
 Rails.application.routes.draw do
   namespace :ruby do
-    resources :outdated_gems, only: %i[index show] do
+    resources :outdated_gems, only: %i[index] do
       post :index, on: :collection
     end
 
-    resources :abandoned_gems, only: %i[index show] do
+    resources :abandoned_gems, only: %i[index] do
       post :index, on: :collection
     end
 
