@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Ruby
+  # Namespace for things related to tracking outdated gems
   module OutdatedGems
     # Selects the most recent available versions (release i prerelease) for each gem
     # in the DB
@@ -59,7 +60,13 @@ module Ruby
       def select_most_recent_prerelease_version(ctx, gems_ids:, **)
         ctx['prereleases'] = \
           Ruby::RubyGem
-          .select('DISTINCT ON (rubygems.id) rubygems.id, rubygems.name, versions.number as number')
+          .select(
+            '
+              DISTINCT ON (rubygems.id) rubygems.id,
+              rubygems.name,
+              versions.number as number
+            '
+          )
           .joins('INNER JOIN versions ON rubygems.id = versions.rubygem_id')
           .joins(
             '
