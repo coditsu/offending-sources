@@ -24,8 +24,8 @@ module Ruby
       # @param params [Array<String>] list of gems for which we want to get version
       def select_rubygems(ctx, params:, **)
         ctx['gems'] = Ruby::RubyGem
-          .where(name: params.first(MAX_GEMS_REQUESTED))
-          .select(:name, :id)
+                      .where(name: params.first(MAX_GEMS_REQUESTED))
+                      .select(:name, :id)
         ctx['gems_ids'] = ctx['gems'].map(&:id)
       end
 
@@ -33,10 +33,17 @@ module Ruby
       # @param ctx [Trailblazer::Skill]
       # @param gems_ids [Array<Integer>] array with ids of gems in which we're interested
       def select_most_recent_release_version(ctx, gems_ids:, **)
-        ctx['releases'] = Ruby::RubyGem
+        ctx['releases'] = \
+          Ruby::RubyGem
           .select('rubygems.name, versions.number as number')
           .joins('INNER JOIN versions ON rubygems.id = versions.rubygem_id')
-          .joins('INNER JOIN gem_downloads ON versions.id = gem_downloads.version_id AND gem_downloads.version_id > 0')
+          .joins(
+            '
+              INNER JOIN gem_downloads
+                ON versions.id = gem_downloads.version_id
+                AND gem_downloads.version_id > 0
+            '
+          )
           .where(id: gems_ids)
           .where('latest IS TRUE')
           .where('yanked_at IS NULL')
@@ -50,10 +57,17 @@ module Ruby
       # @param ctx [Trailblazer::Skill]
       # @param gems_ids [Array<Integer>] array with ids of gems in which we're interested
       def select_most_recent_prerelease_version(ctx, gems_ids:, **)
-        ctx['prereleases'] = Ruby::RubyGem
+        ctx['prereleases'] = \
+          Ruby::RubyGem
           .select('DISTINCT ON (rubygems.id) rubygems.id, rubygems.name, versions.number as number')
           .joins('INNER JOIN versions ON rubygems.id = versions.rubygem_id')
-          .joins('INNER JOIN gem_downloads ON versions.id = gem_downloads.version_id AND gem_downloads.version_id > 0')
+          .joins(
+            '
+              INNER JOIN gem_downloads
+                ON versions.id = gem_downloads.version_id
+                AND gem_downloads.version_id > 0
+            '
+          )
           .where(id: gems_ids)
           .where('latest IS FALSE')
           .where('yanked_at IS NULL')
