@@ -18,7 +18,7 @@ module Ruby
       # Prevents from overusing this and loading really heavy queries
       MAX_GEMS_REQUESTED = 2_000
 
-      private_constant
+      private_constant :MAX_GEMS_REQUESTED
 
       # Selects gems and their ids
       # @param ctx [Trailblazer::Skill]

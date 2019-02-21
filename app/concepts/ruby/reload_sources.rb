@@ -6,7 +6,6 @@ module Ruby
     step lambda { |_ctx, **|
       Ruby::GemsLicenser::Reload.call({})
       Ruby::GemsTyposquattingDetector::Reload.call({})
-      Ruby::AbandonedGems::Reload.call({})
     }
   end
 end
