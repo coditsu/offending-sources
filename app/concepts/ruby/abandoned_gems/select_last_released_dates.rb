@@ -12,6 +12,8 @@ module Ruby
       step :select_most_recent_releases
       step :combine_results
 
+      failure Macros::Error::Raise(Errors::OperationFailure)
+
       # Selects gems and their ids
       # @param ctx [Trailblazer::Skill]
       # @param params [Array<String>] list of gems for which we want to get version
