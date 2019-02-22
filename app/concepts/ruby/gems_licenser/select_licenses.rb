@@ -30,7 +30,6 @@ module Ruby
         ctx['versions'] = params.values
       end
 
-
       # Prepares the basic search scope that pics the licenses for requested gems
       # @param ctx [Trailblazer::Skill]
       # @param gems_ids [Array<Integer>] array with ids of gems in which we're interested
@@ -53,9 +52,8 @@ module Ruby
 
       # Searches for licenses for the exact versions of gems that were requested
       # @param ctx [Trailblazer::Skill]
-      # @param gems_ids [Array<Integer>] array with ids of gems in which we're interested
       # @param versions [Array<String>] requested gem versions
-      def select_licences_for_requested_versions(ctx, gems_ids:, versions:, **)
+      def select_licences_for_requested_versions(ctx, versions:, **)
         ctx['requested'] = \
           ctx['search_scope']
           .where('versions.number IN (?)', versions)
