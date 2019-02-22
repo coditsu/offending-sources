@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 module Ruby
-  # Controller that gets hit, when we want to get data for a day, that is not yet snapshotted.
-  # This should generate a daily snapshot file, cache it and return.
+  # Controller that handles processing requests related to outdated gems analysis
   class OutdatedGemsController < ApplicationController
     # Returns most recent release and prerelease versions of requested gems
     def index

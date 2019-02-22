@@ -1,6 +1,8 @@
 defaults: &defaults
   client_id: <%= ENV['CLIENT_ID'] %>
 
+  max_gems_per_request: <%= ENV['MAX_GEMS_PER_REQUEST'] %>
+
   errbit:
     project_id: <%= ENV['ERRBIT_PROJECT_ID'] %>
     project_key: <%= ENV['ERRBIT_PROJECT_KEY'] %>

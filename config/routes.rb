@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       post :index, on: :collection
     end
 
-    resources :gems_licenser, only: %i[index show] do
+    resources :gems_licenser, only: %i[index] do
       post :index, on: :collection
     end
   end
