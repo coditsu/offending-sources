@@ -68,7 +68,7 @@ module Ruby
       # @param _ctx [Trailblazer::Skill]
       # @param tmp [Tempfile] tmp file where we store our generated csv data
       def fetch_and_store(_ctx, tmp:, **)
-        Base.export_to_csv(tmp.path, QUERY)
+        Ruby::Base.export_to_csv(tmp.path, QUERY)
       end
 
       # Renames and replaces our current sources file with data from tmp file
