@@ -46,7 +46,7 @@ module Ruby
       # Searches for licenses for the exact versions of gems that were requested
       # @param ctx [Trailblazer::Skill]
       # @param gems_with_versions [Array<Array<String, String>>] requested gems with versions
-      def select_licences_for_requested_versions(ctx, gems_with_versions:,**)
+      def select_licences_for_requested_versions(ctx, gems_with_versions:, **)
         query = gems_with_versions
                 .map { '(rubygems.name = ? AND versions.number = ?)' }
                 .join(' OR ')
