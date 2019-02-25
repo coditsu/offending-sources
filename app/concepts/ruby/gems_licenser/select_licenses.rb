@@ -78,7 +78,11 @@ module Ruby
       def combine_results(ctx, gems_with_versions:, requested:, most_recent:, **)
         ctx['model'] = gems_with_versions.each_with_object({}) do |gem_data, accu|
           name = gem_data.first
-          accu[name] = (requested[name] || most_recent[name])&.licenses
+          # Don't include non-existing gems
+          # Those may be gems that are private, etc
+          next unless requested.key?(name) || most_recent.key?(name)
+
+          accu[name] = (requested[name] || most_recent[name]).licenses
         end
       end
     end
