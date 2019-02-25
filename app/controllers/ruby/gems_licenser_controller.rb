@@ -6,7 +6,7 @@ module Ruby
     # Returns the licenses for requested gems versions
     def index
       render json: GemsLicenser::SelectLicenses
-        .call(params[:data])['model']
+        .call(params[:data].to_h)['model']
         .to_json
     end
   end
