@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 40150a7b4250080f47eae29eb62123e7ae378860
+  revision: 735342c0e39e7f142b069c2e8dfba8c2d1bfbeb5
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
