@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 735342c0e39e7f142b069c2e8dfba8c2d1bfbeb5
+  revision: 32a7580a97c1b8166be37fe30aec141cfa5aa162
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -135,7 +135,7 @@ GEM
       dry-configurable (~> 0.1, >= 0.1.3)
     dry-core (0.4.7)
       concurrent-ruby (~> 1.0)
-    dry-equalizer (0.2.1)
+    dry-equalizer (0.2.2)
     dry-events (0.1.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.4)
