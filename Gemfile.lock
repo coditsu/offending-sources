@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 32a7580a97c1b8166be37fe30aec141cfa5aa162
+  revision: 9bb68956aa179d4b5f264d7bdcb7a82255a1f749
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: e0975b7b205ef701453f94a2f2f9b43a0f68b9d3
+  revision: c4d509dfa128756fd5bdab46135f24b161b3608a
   branch: master
   specs:
     macros (1.15.0)
@@ -104,7 +104,7 @@ GEM
       capistrano-bundler
       puma (~> 3.4)
     chronic (0.10.2)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
     crass (1.0.4)
     declarative (0.0.10)
@@ -204,7 +204,7 @@ GEM
     multi_json (1.13.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (5.1.0)
+    net-ssh (5.2.0)
     nio4r (2.3.1)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
