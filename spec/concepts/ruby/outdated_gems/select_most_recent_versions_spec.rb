@@ -97,7 +97,7 @@ RSpec.describe Ruby::OutdatedGems::SelectMostRecentVersions do
     end
 
     it 'return latest version and nil' do
-      expect(result['model']).to eq('karafka' => ['3.4.1', nil])
+      expect(result['model']).to eq('karafka' => [nil, '2.5.0'])
     end
   end
 end

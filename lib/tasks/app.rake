@@ -12,10 +12,10 @@ namespace :app do
   end
 
   namespace :schema do
-    desc 'Migrates the your_engine database'
+    desc 'Creates a schema for a RubyGems database'
     task dump: :environment do
       with_engine_connection do
-        File.open(File.expand_path('../../../db/schema.rb', __dir__), 'w') do |file|
+        File.open(Rails.root.join('db', 'schema.rb'), 'w') do |file|
           ActiveRecord::SchemaDumper.dump ActiveRecord::Base.connection, file
         end
       end

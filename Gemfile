@@ -23,9 +23,7 @@ gem 'whenever'
 end
 
 group :development, :test do
-  # gem 'byebug', platform: :mri
-  gem 'pry'
-  gem 'pry-rails'
+  gem 'byebug', platform: :mri
 end
 
 group :development do
