@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 31d5cc4690b8d46b66c882f37b9bc6c2bf404896
+  revision: 35316413a3c7e9bd56af481b8f98d7032aa1758c
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -271,7 +271,7 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    ruby-kafka (0.7.5)
+    ruby-kafka (0.7.6)
       digest-crc
     settingslogic (2.0.9)
     sidekiq (5.2.5)
