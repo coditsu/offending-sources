@@ -50,7 +50,7 @@ module Ruby
 
       private
 
-      # Prepares locations in which we will store our generated files and other tempfiles
+      # Prepares locations in which we will store our generated files and other temp files
       # @param ctx [Trailblazer::Skill]
       def prepare_paths(ctx, **)
         ctx['location'] = sources_path.join(FILENAME)

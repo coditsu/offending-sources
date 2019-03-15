@@ -11,7 +11,7 @@ end
 
 SimpleCov.minimum_coverage 58
 
-# Don't include unnecessary stuff into rcov
+# Don't include unnecessary stuff into coverage
 SimpleCov.start do
   add_filter '/.bundle/'
   add_filter '/doc/'

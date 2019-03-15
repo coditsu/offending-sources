@@ -33,7 +33,7 @@ module Ruby
     # @param ctx [Trailblazer::Skill]
     # @param model [Ruby::RubyGem] db gem reference
     # @param params [Hash] changed ruby gem details
-    # @param prerelease [Boolean] true if a given rubygem version is a prerelease
+    # @param prerelease [Boolean] true if a given ruby gem version is a prerelease
     def update_version_reference(ctx, model:, params:, prerelease:, **)
       ctx['version'] = Version.find_or_create_by!(
         number: params[:version],

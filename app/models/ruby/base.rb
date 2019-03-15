@@ -7,7 +7,7 @@ module Ruby
 
     self.abstract_class = true
 
-    # Exports a data returned by the query to a given file using postgres copy function
+    # Exports a data returned by the query to a given file using PostgreSQL copy function
     # @param target_file [String] path to a file to which we should save generated results
     # @param query [String] query that will generate the data
     def self.export_to_csv(target_file, query)

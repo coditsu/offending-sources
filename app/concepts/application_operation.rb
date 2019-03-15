@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Base operation class for all application operations
-# It wraps Trailblazer operation with some usefull additional steps when
+# It wraps Trailblazer operation with some useful additional steps when
 # defining each step
 class ApplicationOperation < Trailblazer::Operation
   extend Contract::DSL
