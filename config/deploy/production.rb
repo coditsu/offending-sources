@@ -10,7 +10,7 @@ set :stage, :production
 set :environment, 'production'
 set :rails_env, fetch(:environment)
 set :rbenv_type, :user
-set :rbenv_ruby, '2.6.1'
+set :rbenv_ruby, '2.6.2'
 set :settings_path, "config/deploy/#{fetch(:stage)}"
 
 set :tmp_dir, '/home/deploy/.tmp'
