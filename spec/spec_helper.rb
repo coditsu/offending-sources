@@ -29,6 +29,7 @@ RSpec.configure do |config|
   end
 
   config.before(:suite) do
+    ActiveRecord::Base.establish_connection RUBY_GEMS_DB
     DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.clean_with(:truncation)
   end

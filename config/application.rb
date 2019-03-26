@@ -4,7 +4,7 @@ require_relative 'boot'
 
 %w[
   rails
-  active_record/railtie
+  active_record
   action_controller/railtie
 ].each { |lib| require lib }
 
