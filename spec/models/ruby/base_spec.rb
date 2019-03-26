@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 RSpec.describe Ruby::Base do
+  subject(:exporting) { described_class.export_to_csv(file_path, query) }
+
   let!(:query) { 'some_query' }
   let!(:file_path) { 'file_path' }
-  subject(:exporting) { described_class.export_to_csv(file_path, query) }
 
   after { exporting }
 

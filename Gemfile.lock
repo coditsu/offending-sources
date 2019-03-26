@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 35316413a3c7e9bd56af481b8f98d7032aa1758c
+  revision: cfa0dfe3aafe7eb9c610934638ec8b8bcbd52398
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 381be17cd6f98176d659fd8030b0030e74f0bc3e
+  revision: 8c394e66bcfbf5adf715bb5cd0b9336953d7ec67
   branch: master
   specs:
     macros (1.15.0)
@@ -78,7 +78,7 @@ GEM
     arel (9.0.0)
     bcrypt_pbkdf (1.0.0)
     builder (3.2.3)
-    byebug (11.0.0)
+    byebug (11.0.1)
     capistrano (3.11.0)
       airbrussh (>= 1.0.0)
       i18n
@@ -137,7 +137,7 @@ GEM
     dry-core (0.4.7)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.2.2)
-    dry-events (0.1.0)
+    dry-events (0.1.1)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.4)
       dry-equalizer (~> 0.2)
@@ -151,20 +151,20 @@ GEM
       dry-core (~> 0.4)
       dry-equalizer (~> 0.2)
       dry-events (~> 0.1)
-    dry-types (0.14.0)
+    dry-types (0.14.1)
       concurrent-ruby (~> 1.0)
       dry-container (~> 0.3)
       dry-core (~> 0.4, >= 0.4.4)
       dry-equalizer (~> 0.2)
       dry-inflector (~> 0.1, >= 0.1.2)
       dry-logic (~> 0.5, >= 0.5)
-    dry-validation (0.13.0)
+    dry-validation (0.13.1)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1, >= 0.1.3)
       dry-core (~> 0.2, >= 0.2.1)
       dry-equalizer (~> 0.2)
       dry-logic (~> 0.5, >= 0.5.0)
-      dry-types (~> 0.14, >= 0.14)
+      dry-types (~> 0.14.0)
     ed25519 (1.2.4)
     envlogic (1.1.0)
       dry-inflector (~> 0.1)
@@ -208,16 +208,16 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    net-scp (1.2.1)
-      net-ssh (>= 2.6.5)
+    net-scp (2.0.0)
+      net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (5.2.0)
     nio4r (2.3.1)
-    nokogiri (1.10.1)
+    nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
     null-logger (0.1.5)
     pg (1.1.4)
     pipetree (0.1.1)
-    puma (3.12.0)
+    puma (3.12.1)
     rack (2.0.6)
     rack-protection (2.0.5)
       rack
