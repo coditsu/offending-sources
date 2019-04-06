@@ -1,3 +1,4 @@
+.coditsu/local.yml
 .env
 /config/deploy/**/*.yml
 /config/deploy/**/config/**
