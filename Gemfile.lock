@@ -324,7 +324,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake (~> 5.0)
+  airbrake
   byebug
   capistrano-coditsu!
   dotenv-rails
