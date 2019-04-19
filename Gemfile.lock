@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 0e21fd4c3089649d0d77980130405f00fe8a874b
+  revision: 645cf3ad673181bc5d9bd3eaadb093de868f1369
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: d2390e2bff8601b8a47ac024074e318e619d8be5
+  revision: efdecdafe0f830e733a06b604906b2b556d5c607
   branch: master
   specs:
     macros (1.15.0)
@@ -70,7 +70,7 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    airbrake (9.0.2)
+    airbrake (9.1.0)
       airbrake-ruby (~> 4.2)
     airbrake-ruby (4.2.5)
       rbtree3 (~> 0.5)
@@ -142,7 +142,7 @@ GEM
       dry-core (~> 0.4)
       dry-equalizer (~> 0.2)
     dry-inflector (0.1.2)
-    dry-logic (0.6.0)
+    dry-logic (0.6.1)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.2)
       dry-equalizer (~> 0.2)
