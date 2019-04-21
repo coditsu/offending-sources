@@ -6,7 +6,7 @@ module Ruby
     self.table_name = :versions
 
     belongs_to :rubygem,
-             class_name: 'Ruby::RubyGem'
+               class_name: 'Ruby::RubyGem'
 
     serialize :licenses
 
