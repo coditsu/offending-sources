@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 645cf3ad673181bc5d9bd3eaadb093de868f1369
+  revision: aee561eadc5c1a7271cd0b665b931b2f9e4e2672
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: efdecdafe0f830e733a06b604906b2b556d5c607
+  revision: 0f58080fc9f4c6640fc4fe7c93c5b095c465ad93
   branch: master
   specs:
     macros (1.15.0)
@@ -207,7 +207,7 @@ GEM
       net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (5.2.0)
     nio4r (2.3.1)
-    nokogiri (1.10.2)
+    nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
     null-logger (0.1.5)
     pg (1.1.4)
@@ -258,7 +258,7 @@ GEM
     require_all (2.0.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
-    rspec-expectations (3.8.2)
+    rspec-expectations (3.8.3)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-mocks (3.8.0)
@@ -276,7 +276,7 @@ GEM
     ruby-kafka (0.7.6)
       digest-crc
     settingslogic (2.0.9)
-    sidekiq (5.2.6)
+    sidekiq (5.2.7)
       connection_pool (~> 2.2, >= 2.2.2)
       rack (>= 1.5.0)
       rack-protection (>= 1.5.0)
