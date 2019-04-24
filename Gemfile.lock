@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: aee561eadc5c1a7271cd0b665b931b2f9e4e2672
+  revision: 70fc1549a51aa7db4d6c5134946b923203a723f4
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 0f58080fc9f4c6640fc4fe7c93c5b095c465ad93
+  revision: 011d23336459aa01e8467cb589c2601a0c9304f2
   branch: master
   specs:
     macros (1.15.0)
@@ -319,7 +319,7 @@ GEM
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
-    whenever (0.10.0)
+    whenever (0.11.0)
       chronic (>= 0.6.3)
 
 PLATFORMS
