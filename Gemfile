@@ -3,13 +3,13 @@
 source 'https://rubygems.org'
 
 gem 'airbrake'
+gem 'config'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'gems'
 gem 'pg'
 gem 'puma'
 gem 'rails'
 gem 'reform-rails'
-gem 'settingslogic'
 gem 'trailblazer'
 gem 'whenever'
 

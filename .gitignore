@@ -58,3 +58,7 @@ pickle-email-*.html
 **.swp
 .yardoc
 download
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

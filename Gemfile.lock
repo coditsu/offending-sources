@@ -106,12 +106,17 @@ GEM
       puma (~> 3.4)
     chronic (0.10.2)
     concurrent-ruby (1.1.5)
+    config (1.7.1)
+      activesupport (>= 3.0)
+      deep_merge (~> 1.2.1)
+      dry-validation (>= 0.12.2)
     connection_pool (2.2.2)
     crass (1.0.4)
     declarative (0.0.10)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
+    deep_merge (1.2.1)
     delivery_boy (0.2.7)
       king_konf (~> 0.2)
       ruby-kafka (~> 0.5)
@@ -275,7 +280,6 @@ GEM
     rspec-support (3.8.0)
     ruby-kafka (0.7.6)
       digest-crc
-    settingslogic (2.0.9)
     sidekiq (5.2.7)
       connection_pool (~> 2.2, >= 2.2.2)
       rack (>= 1.5.0)
@@ -329,6 +333,7 @@ DEPENDENCIES
   airbrake
   byebug
   capistrano-coditsu!
+  config
   dotenv-rails
   gems
   macros!
@@ -337,7 +342,6 @@ DEPENDENCIES
   rails
   reform-rails
   rspec-rails
-  settingslogic
   simplecov
   trailblazer
   whenever

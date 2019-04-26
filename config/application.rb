@@ -26,9 +26,12 @@ module OffendingSources
   end
 end
 
+Settings.reload_from_files(
+  Rails.root.join('config', 'settings.yml').to_s
+)
+
 %w[
   lib/errors.rb
-  lib/settings.rb
 ].each do |path|
   Dir[Rails.root.join(path)].each do |base|
     require base
