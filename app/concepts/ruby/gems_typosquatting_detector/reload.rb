@@ -20,7 +20,6 @@ module Ruby
           FROM rubygems
           INNER JOIN versions
             ON rubygems.id = versions.rubygem_id
-              AND versions.yanked_at IS NULL
           INNER JOIN gem_downloads
             ON versions.id = gem_downloads.version_id
               AND gem_downloads.version_id > 0
