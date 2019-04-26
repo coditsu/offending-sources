@@ -1,0 +1,23 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: utf8
+  template: template0
+  reconnect: true
+  pool: 100
+  username: <%= ENV['RUBYGEMS_POSTGRES_USERNAME'] %>
+  password: <%= ENV['RUBYGEMS_POSTGRES_PASSWORD'] %>
+  host: <%= ENV['RUBYGEMS_POSTGRES_HOST'] %>
+  port: <%= ENV['RUBYGEMS_POSTGRES_PORT'] %>
+  timeout: 1
+
+development:
+  <<: *defaults
+  database: <%= ENV['RUBYGEMS_POSTGRES_DB_NAME'] %>
+
+test:
+  <<: *defaults
+  database: <%= ENV['RUBYGEMS_POSTGRES_DB_NAME'] + '_test' %>
+
+production:
+  <<: *defaults
+  database: <%= ENV['RUBYGEMS_POSTGRES_DB_NAME'] %>

@@ -1,0 +1,25 @@
+defaults: &defaults
+  client_id: <%= ENV['CLIENT_ID'] %>
+
+  max_gems_per_request: <%= ENV['MAX_GEMS_PER_REQUEST'] %>
+
+  errbit:
+    project_id: <%= ENV['ERRBIT_PROJECT_ID'] %>
+    project_key: <%= ENV['ERRBIT_PROJECT_KEY'] %>
+    host: <%= ENV['ERRBIT_HOST'] %>
+
+  kafka:
+    seed_brokers: <%= ENV['KAFKA_SEED_BROKERS'].split(',') %>
+    offset_commit_threshold: 1
+
+  ruby_gems:
+    api_key: <%= ENV['RUBY_GEMS_API_KEY'] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
