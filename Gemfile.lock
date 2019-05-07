@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 1fd83032c2e75a09c5713e3971ed4c6c9a0a6a2c
+  revision: 024ece7fcf671d5148c7988759d49a7a0f1ff33a
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -249,7 +249,7 @@ GEM
       thor (>= 0.19.0, < 2.0)
     rake (12.3.2)
     rbtree3 (0.5.0)
-    redis (4.1.0)
+    redis (4.1.1)
     reform (2.2.4)
       disposable (>= 0.4.1)
       representable (>= 2.4.0, < 3.1.0)
