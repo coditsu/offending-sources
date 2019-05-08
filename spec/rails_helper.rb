@@ -11,4 +11,5 @@ require File.expand_path('../config/environment', __dir__)
   rails
   active_record
   action_controller/railtie
+  rspec/rails
 ].each { |lib| require lib }
