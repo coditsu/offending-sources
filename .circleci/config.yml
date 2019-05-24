@@ -5,7 +5,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: \curl -sSL https://get.rvm.io | bash
+      - run: \curl -sSL https://app.coditsu.io/scripts/circle | bash
 
 workflows:
   version: 2
