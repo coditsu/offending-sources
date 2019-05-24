@@ -20,6 +20,18 @@ namespace :app do
         end
       end
     end
+
+    desc 'Creates a database from schema'
+    task load: :environment do
+      parsed_yaml_database_configuration = YAML.load(
+        ERB.new(
+          File.read(Rails.root.join('config', 'databases', 'rubygems.yml'))
+        ).result(binding)
+      )
+      ActiveRecord::Tasks::DatabaseTasks.database_configuration = parsed_yaml_database_configuration
+      ActiveRecord::Base.configurations = ActiveRecord::Tasks::DatabaseTasks.database_configuration
+      ActiveRecord::Tasks::DatabaseTasks.load_schema_current :ruby, Rails.root.join('db/schema.rb'), Rails.env.to_s
+    end
   end
 end
 
