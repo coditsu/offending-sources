@@ -9,7 +9,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
   require lib
 end
 
-SimpleCov.minimum_coverage 58
+SimpleCov.minimum_coverage 99
 
 # Don't include unnecessary stuff into coverage
 SimpleCov.start do
