@@ -21,7 +21,11 @@ module Ruby
       # @param params [Array<String>] list of gems for which we want to get version
       def select_rubygems(ctx, params:, **)
         ctx['gems'] = Ruby::RubyGem
-                      .where(name: params.first(Settings.max_gems_per_request))
+                      .where(
+                        name: params.first(
+                          Rails.configuration.settings['max_gems_per_request']
+                        )
+                      )
                       .select(:name, :id)
         ctx['gems_ids'] = ctx['gems'].map(&:id)
       end

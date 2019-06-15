@@ -23,7 +23,9 @@ module Ruby
       # @param ctx [Trailblazer::Skill]
       # @param params [Hash<String, String>] hash where we get the name of the gem and it's version
       def extract_gems_with_versions(ctx, params:, **)
-        ctx['gems_with_versions'] = params.first(Settings.max_gems_per_request)
+        ctx['gems_with_versions'] = params.first(
+          Rails.configuration.settings['max_gems_per_request']
+        )
       end
 
       # Prepares the basic search scope that pics the licenses for requested gems

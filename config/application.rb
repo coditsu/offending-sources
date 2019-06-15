@@ -23,12 +23,10 @@ module OffendingSources
   class Application < Rails::Application
     config.api_only = true
     config.load_defaults 5.1
+
+    config.settings = config_for(:settings)
   end
 end
-
-Settings.reload_from_files(
-  Rails.root.join('config', 'settings.yml').to_s
-)
 
 %w[
   lib/errors.rb

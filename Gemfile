@@ -3,7 +3,6 @@
 source 'https://rubygems.org'
 
 gem 'airbrake'
-gem 'config'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'gems'
 gem 'pg'
