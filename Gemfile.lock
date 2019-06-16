@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 9a5fe200fe7753958dfbe83d92322f8f1be42740
+  revision: db407a8a071374e947a701ad531ab41603830bc9
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -73,7 +73,7 @@ GEM
       airbrake-ruby (~> 4.4)
     airbrake-ruby (4.4.0)
       rbtree3 (~> 0.5)
-    airbrussh (1.3.1)
+    airbrussh (1.3.2)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (9.0.0)
     bcrypt_pbkdf (1.0.1)
