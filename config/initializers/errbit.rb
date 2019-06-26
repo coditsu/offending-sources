@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Airbrake.configure do |config|
+  config.performance_stats = false
   config.environment = Rails.env
   config.host        = Rails.configuration.settings['errbit']['host']
   config.project_id  = Rails.configuration.settings['errbit']['project_id']
