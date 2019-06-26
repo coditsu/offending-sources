@@ -12,7 +12,7 @@ module Ruby
 
     # @return [Ruby::Comparator] object used to compare this gem version with other
     def comparator
-      Comparator.new(number)
+      Gem::Version.new(number)
     end
   end
 end

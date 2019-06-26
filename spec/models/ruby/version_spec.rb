@@ -6,9 +6,4 @@ RSpec.describe Ruby::Version do
   it 'has correct table name' do
     expect(described_class.table_name).to eq 'versions'
   end
-
-  it '#comparator' do
-    expect(Ruby::Comparator).to receive(:new).with('1.2.0')
-    version.comparator
-  end
 end
