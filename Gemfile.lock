@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: db407a8a071374e947a701ad531ab41603830bc9
+  revision: 4c4175ffae2814ab720add14d9e173c65053de60
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -95,9 +95,10 @@ GEM
     capistrano-sidekiq (1.0.2)
       capistrano (>= 3.9.0)
       sidekiq (>= 3.4)
-    capistrano3-puma (1.2.1)
-      capistrano (~> 3.0)
-      puma (>= 2.6)
+    capistrano3-puma (4.0.0)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (~> 4.0)
     chronic (0.10.2)
     concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
