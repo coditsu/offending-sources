@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 4c4175ffae2814ab720add14d9e173c65053de60
+  revision: 2ec413dd672dded9f7c090a8921806d50c640b44
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -236,7 +236,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sshkit (1.18.2)
+    sshkit (1.19.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     thor (0.20.3)
