@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 2ec413dd672dded9f7c090a8921806d50c640b44
+  revision: f867c4548883961a4b5c94e51abbe9d5c1c809db
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: bc58f9ba31fa433e82483bf07f39a2dc38525354
+  revision: 6bd8b37e84dc357dbc36ac06729b31f05a59911c
   branch: master
   specs:
     macros (1.15.0)
@@ -84,7 +84,7 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
-    capistrano-bundler (1.5.0)
+    capistrano-bundler (1.6.0)
       capistrano (~> 3.1)
     capistrano-rails (1.4.0)
       capistrano (~> 3.1)
@@ -224,7 +224,7 @@ GEM
       rack (>= 1.5.0)
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
-    simplecov (0.16.1)
+    simplecov (0.17.0)
       docile (~> 1.1)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
@@ -236,7 +236,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sshkit (1.19.0)
+    sshkit (1.19.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     thor (0.20.3)
