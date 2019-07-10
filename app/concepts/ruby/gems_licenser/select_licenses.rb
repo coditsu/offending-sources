@@ -24,7 +24,7 @@ module Ruby
       # @param params [Hash<String, String>] hash where we get the name of the gem and it's version
       def extract_gems_with_versions(ctx, params:, **)
         ctx['gems_with_versions'] = params.first(
-          Rails.configuration.settings['max_gems_per_request']
+          Settings['max_gems_per_request']
         )
       end
 

@@ -28,6 +28,8 @@ module OffendingSources
   end
 end
 
+Settings = Rails.configuration.settings
+
 %w[
   lib/errors.rb
 ].each do |path|

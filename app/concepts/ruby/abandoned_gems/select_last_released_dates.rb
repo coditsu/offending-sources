@@ -21,7 +21,7 @@ module Ruby
         ctx['gems'] = Ruby::RubyGem
                       .where(
                         name: params.first(
-                          Rails.configuration.settings['max_gems_per_request']
+                          Settings['max_gems_per_request']
                         )
                       )
                       .select(:name, :id)
