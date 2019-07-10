@@ -28,6 +28,7 @@ module OffendingSources
   end
 end
 
+# App settings alias
 Settings = Rails.configuration.settings
 
 %w[
