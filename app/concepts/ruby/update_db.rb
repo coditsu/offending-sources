@@ -15,6 +15,8 @@ module Ruby
     private
 
     # Checks if this is a prerelease (we handle those a bit differently)
+    # @param ctx [Trailblazer::Skill]
+    # @param params [Hash] changed ruby gem details
     def check_if_prerelease(ctx, params:, **)
       # @param _ctx [Trailblazer::Skill]
       # @param params [Hash] changed ruby gem details
