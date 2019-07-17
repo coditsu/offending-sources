@@ -32,7 +32,7 @@ namespace :app do
       ActiveRecord::Base.configurations = ActiveRecord::Tasks::DatabaseTasks.database_configuration
       ActiveRecord::Tasks::DatabaseTasks.load_schema_current(
         :ruby,
-        Rails.root.join('db/schema.rb'),
+        Rails.root.join('db', 'schema.rb'),
         Rails.env.to_s
       )
     end
