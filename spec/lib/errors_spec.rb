@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Errors do
+RSpec.describe_current do
   it 'has OperationFailure constant' do
     expect(described_class.const_defined?(:OperationFailure)).to be true
   end

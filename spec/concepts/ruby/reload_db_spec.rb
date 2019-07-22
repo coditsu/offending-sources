@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::ReloadDb do
+RSpec.describe_current do
   subject(:reloading) { described_class.call }
 
   let(:instance) { described_class.new }

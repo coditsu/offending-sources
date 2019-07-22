@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe WebHooks::RubyGemsController, type: :controller do
+RSpec.describe_current do
   specify do
     allow(Ruby::UpdateDb).to receive(:call)
     get :create

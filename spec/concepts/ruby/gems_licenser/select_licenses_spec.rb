@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::GemsLicenser::SelectLicenses do
+RSpec.describe_current do
   describe 'when one RubyGem requested' do
     subject(:result) { described_class.call(rubygem.name => '1.0.0')['model'] }
 

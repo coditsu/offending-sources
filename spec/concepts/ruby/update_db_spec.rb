@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::UpdateDb do
+RSpec.describe_current do
   let(:ruby_gem) { Ruby::RubyGem.first }
   let(:ruby_version) { Ruby::Version.first }
   let(:gem_download) { Ruby::GemDownload.first }

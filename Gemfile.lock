@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: bbedab76b1a2a21ac881e4317ddda747a2771dad
+  revision: 1474a29a29e6ee7eeaf7a5c02707f8d3c781976e
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -17,13 +17,21 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 6b90313ee743c4d0cb050017fcb3a67497d02b86
+  revision: 509656c8680e7dd6678a4242741ae195a004723f
   branch: master
   specs:
     macros (1.15.0)
       activesupport
       require_all
       trailblazer
+
+GIT
+  remote: git@github.com:coditsu/support-engine.git
+  revision: ddad599e3f5b68fc26f7e966c3882e426250269c
+  specs:
+    support_engine (0.1.4)
+      activesupport
+      require_all
 
 GEM
   remote: https://rubygems.org/
@@ -188,7 +196,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
-    rake (12.3.2)
+    rake (12.3.3)
     rbtree3 (0.5.0)
     redis (4.1.2)
     reform (2.2.4)
@@ -276,6 +284,7 @@ DEPENDENCIES
   reform-rails
   rspec-rails
   simplecov
+  support_engine!
   trailblazer
   whenever
 

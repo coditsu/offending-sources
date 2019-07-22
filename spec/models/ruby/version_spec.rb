@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::Version do
+RSpec.describe_current do
   subject(:version) { described_class.new(number: '1.2.0') }
 
   it 'has correct table name' do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::AbandonedGemsController, type: :controller do
+RSpec.describe_current do
   let(:result) { Hash[karafka: '2019-02-05T00:00:00.000Z'] }
 
   specify do

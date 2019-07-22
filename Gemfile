@@ -36,4 +36,5 @@ group :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'simplecov'
+  gem 'support_engine', git: 'git@github.com:coditsu/support-engine.git'
 end

@@ -13,3 +13,7 @@ require File.expand_path('../config/environment', __dir__)
   action_controller/railtie
   rspec/rails
 ].each { |lib| require lib }
+
+RSpec.configure do |config|
+  config.infer_spec_type_from_file_location!
+end

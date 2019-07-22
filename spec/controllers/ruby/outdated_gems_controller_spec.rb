@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::OutdatedGemsController, type: :controller do
+RSpec.describe_current do
   let(:result) do
     {
       'karafka': [

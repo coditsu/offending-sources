@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::GemsTyposquattingDetector::Reload do
+RSpec.describe_current do
   let(:tmp_dir) { Rails.root.join('tmp', 'spec') }
   let(:filename) { 'current.csv' }
   let(:full_path) { tmp_dir.join(filename) }

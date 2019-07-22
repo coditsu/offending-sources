@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe ApplicationOperation do
+RSpec.describe_current do
   let(:sample_operation) do
     Class.new(described_class) do
       step :first_step

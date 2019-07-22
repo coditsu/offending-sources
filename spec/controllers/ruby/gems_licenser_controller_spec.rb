@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::GemsLicenserController, type: :controller do
+RSpec.describe_current do
   let(:result) { Hash[karafka: '---|||- MIT|||'] }
 
   specify do

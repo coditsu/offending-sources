@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::OutdatedGems::SelectMostRecentVersions do
+RSpec.describe_current do
   subject(:result) { described_class.call([rubygem.name]) }
 
   let(:rubygem) { FactoryBot.create(:ruby_gem, :karafka) }

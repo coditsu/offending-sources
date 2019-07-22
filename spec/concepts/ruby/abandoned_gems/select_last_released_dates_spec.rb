@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Ruby::AbandonedGems::SelectLastReleasedDates do
+RSpec.describe_current do
   context 'when one RubyGem requested' do
     subject(:result) { described_class.call(['karafka'])['model'] }
 
