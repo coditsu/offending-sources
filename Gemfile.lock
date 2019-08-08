@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 000d8e9eda1e7bc2f1430288ec43ba81274df416
+  revision: 38ac38bec1b9b625334b193820c5ed33134cc841
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -78,7 +78,7 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    airbrake (9.4.1)
+    airbrake (9.4.2)
       airbrake-ruby (~> 4.6)
     airbrake-ruby (4.6.0)
       rbtree3 (~> 0.5)
@@ -297,7 +297,7 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.2)
-    ruby-kafka (0.7.9)
+    ruby-kafka (0.7.10)
       digest-crc
     sidekiq (5.2.7)
       connection_pool (~> 2.2, >= 2.2.2)
