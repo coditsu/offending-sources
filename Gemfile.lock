@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 38ac38bec1b9b625334b193820c5ed33134cc841
+  revision: 6082f139eb99cc13741d7537f3aaf035b4b5496d
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -235,7 +235,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
     pipetree (0.1.1)
-    puma (4.0.1)
+    puma (4.1.0)
       nio4r (~> 2.0)
     rack (2.0.7)
     rack-protection (2.0.5)
@@ -258,7 +258,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.1.0)
+    rails-html-sanitizer (1.2.0)
       loofah (~> 2.2, >= 2.2.2)
     railties (5.2.3)
       actionpack (= 5.2.3)
