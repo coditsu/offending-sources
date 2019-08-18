@@ -23,7 +23,6 @@ module OffendingSources
   class Application < Rails::Application
     config.api_only = true
     config.load_defaults 5.1
-
     config.settings = config_for(:settings)
     config.hosts << Rails.configuration.settings[:host]
   end
