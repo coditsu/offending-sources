@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 server 'sources.prod.coditsu.io',
-       roles: %w[web app db karafka],
+       roles: %w[web app db],
        user: 'deploy'
 
 set :ssh_options, forward_agent: true
@@ -15,9 +15,6 @@ set :settings_path, "config/deploy/#{fetch(:stage)}"
 
 set :tmp_dir, '/home/deploy/.tmp'
 set :deploy_to, "/home/deploy/coditsu/#{fetch(:application)}"
-
-set :karafka_env, fetch(:environment)
-set :karafka_pid, "#{shared_path}/tmp/pids/karafka.pid"
 
 set :puma_conf,  "#{shared_path}/config/puma.rb"
 set :puma_pid,   "#{shared_path}/tmp/pids/puma"
