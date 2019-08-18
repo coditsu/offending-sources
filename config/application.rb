@@ -25,6 +25,7 @@ module OffendingSources
     config.load_defaults 5.1
 
     config.settings = config_for(:settings)
+    config.hosts << Rails.configuration.settings[:host]
   end
 end
 

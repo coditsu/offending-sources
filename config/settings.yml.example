@@ -1,4 +1,6 @@
 defaults: &defaults
+  host: <%= ENV['HOST'] %>
+
   max_gems_per_request: <%= ENV['MAX_GEMS_PER_REQUEST'] %>
 
   errbit:
