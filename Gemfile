@@ -6,7 +6,8 @@ gem 'airbrake'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'gems'
 gem 'pg'
-# 4.1.0 causes capistrano3-puma to hang
+# Upgrade to 4.1.1 once released
+# @see https://github.com/puma/puma/issues/1906
 gem 'puma', '4.0.1'
 gem 'rails'
 gem 'reform-rails'
