@@ -11,7 +11,7 @@ RSpec.describe_current do
   after { reloading }
 
   it 'calls reload.sh' do
-    expect(instance).to receive(:system).with(/#{command.to_s}/)
+    expect(instance).to receive(:system).with(/#{command}/)
   end
 
   describe 'calls reload.sh with necessary ENV variable' do
