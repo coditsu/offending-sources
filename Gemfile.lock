@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 61d5740c04105879b7f58e82d632f25785847a76
+  revision: 4222e43341b9a123928bef3612c1f6ef6e79be29
   branch: master
   specs:
     macros (1.15.0)
@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 57ec75703369e221f78a751361bec4aa0ee796f3
+  revision: 790d3d4b002df4a9de910e3ce3806c8b94129c04
   specs:
     support_engine (0.1.4)
       activesupport
