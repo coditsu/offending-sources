@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 76ffaf375f4f75ee8069ed2f1f8d85196d205b13
+  revision: cc27db7f4fd783acfa1e0921417146639db7946a
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -243,7 +243,7 @@ GEM
     net-scp (2.0.0)
       net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (5.2.0)
-    nio4r (2.4.0)
+    nio4r (2.5.0)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
