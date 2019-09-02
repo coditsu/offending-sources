@@ -6,9 +6,7 @@ gem 'airbrake'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'gems'
 gem 'pg'
-# Upgrade to 4.1.1 once released
-# @see https://github.com/puma/puma/issues/1906
-gem 'puma', '4.0.1'
+gem 'puma'
 gem 'rails'
 gem 'reform-rails'
 gem 'trailblazer'

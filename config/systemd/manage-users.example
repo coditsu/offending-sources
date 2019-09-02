@@ -1,0 +1,7 @@
+# /etc/sudoers.d/offending-sources-manage-users
+
+# Puma
+deploy ALL=(ALL) NOPASSWD: /bin/systemctl start   offending-sources-puma
+deploy ALL=(ALL) NOPASSWD: /bin/systemctl stop    offending-sources-puma
+deploy ALL=(ALL) NOPASSWD: /bin/systemctl restart offending-sources-puma
+deploy ALL=(ALL) NOPASSWD: /bin/systemctl status  offending-sources-puma

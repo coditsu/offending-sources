@@ -1,0 +1,32 @@
+# Move to /lib/systemd/system/offending-sources-puma.service
+# Run: systemctl enable offending-sources-puma
+
+[Unit]
+Description=offending-sources-puma
+After=syslog.target network.target
+
+# Uncomment for socket activation (see below)
+# Requires=puma.socket
+
+[Service]
+# Foreground process (do not use --daemon in ExecStart or config.rb)
+Type=simple
+
+WorkingDirectory=/opt//current
+ExecStart=/bin/bash -lc 'bundle exec puma -C config/puma.rb -e production ./config.ru'
+User=deploy
+Group=deploy
+UMask=0002
+
+RestartSec=1
+Restart=on-failure
+
+# output goes to /var/log/syslog
+StandardOutput=syslog
+StandardError=syslog
+
+# This will default to "bundler" if we don't specify it
+SyslogIdentifier=offending-sources-puma
+
+[Install]
+WantedBy=multi-user.target

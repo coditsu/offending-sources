@@ -5,11 +5,4 @@ environment ENV.fetch("RAILS_ENV") { 'development' }
 threads 4,8
 workers 1
 
-daemonize  true
-
-bind                 "unix://#{app_path}/tmp/sockets/puma"
-activate_control_app "unix://#{app_path}/tmp/sockets/pumactl"
-state_path           "#{app_path}/tmp/sockets/pumastate"
-pidfile              "#{app_path}/tmp/pids/puma"
-
 stdout_redirect "#{app_path}/log/puma_access.log", "#{app_path}/log/puma_error.log"

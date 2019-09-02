@@ -6,6 +6,7 @@ set :keep_releases, 10
 set :log_level,     :debug
 set :copy_exclude,  %w[.svn .DS_Store cache]
 set :puma_role,     :web
+set :puma_default_hooks, true
 
 set :linked_files, %w[
   .env

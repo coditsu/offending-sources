@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 82ba06ff4038d8d5fbadafb574f940105107748e
+  revision: d478cee1430fbe8aa78af6dc2de89dc6ebf6fd47
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -10,8 +10,6 @@ GIT
       capistrano-karafka (>= 1.3.0.rc1)
       capistrano-rails
       capistrano-rbenv
-      capistrano-sidekiq
-      capistrano3-puma
       ed25519
       envlogic
       net-ssh
@@ -118,16 +116,8 @@ GEM
     capistrano-rbenv (2.1.4)
       capistrano (~> 3.1)
       sshkit (~> 1.3)
-    capistrano-sidekiq (1.0.2)
-      capistrano (>= 3.9.0)
-      sidekiq (>= 3.4)
-    capistrano3-puma (4.0.0)
-      capistrano (~> 3.7)
-      capistrano-bundler
-      puma (~> 4.0)
     chronic (0.10.2)
     concurrent-ruby (1.1.5)
-    connection_pool (2.2.2)
     crass (1.0.4)
     database_cleaner (1.7.0)
     declarative (0.0.10)
@@ -248,11 +238,9 @@ GEM
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
     pipetree (0.1.1)
-    puma (4.0.1)
+    puma (4.1.0)
       nio4r (~> 2.0)
     rack (2.0.7)
-    rack-protection (2.0.7)
-      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.0.0)
@@ -283,7 +271,6 @@ GEM
       thor (>= 0.20.3, < 2.0)
     rake (12.3.3)
     rbtree3 (0.5.0)
-    redis (4.1.2)
     reform (2.2.4)
       disposable (>= 0.4.1)
       representable (>= 2.4.0, < 3.1.0)
@@ -314,11 +301,6 @@ GEM
     rspec-support (3.8.2)
     ruby-kafka (0.7.10)
       digest-crc
-    sidekiq (6.0.0)
-      connection_pool (>= 2.2.2)
-      rack (>= 2.0.0)
-      rack-protection (>= 2.0.0)
-      redis (>= 4.1.0)
     simplecov (0.17.0)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -374,7 +356,7 @@ DEPENDENCIES
   gems
   macros!
   pg
-  puma (= 4.0.1)
+  puma
   rails
   reform-rails
   rspec-rails
