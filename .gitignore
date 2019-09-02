@@ -2,6 +2,7 @@
 .env
 /config/deploy/**/*.yml
 /config/deploy/**/config/**
+/config/deploy/**/*.rb
 /.irb-history
 /.bundle
 /vendor/bundle/
