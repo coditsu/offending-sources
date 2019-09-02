@@ -29,5 +29,4 @@ set :created_dirs, %w[
   tmp/sockets
 ]
 
-after 'deploy:finished', 'puma:start'
 after 'deploy:finished', 'app:reload_sources'
