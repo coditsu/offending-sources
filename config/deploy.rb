@@ -26,7 +26,6 @@ set :linked_dirs, %w[
 ]
 
 set :created_dirs, %w[
-  tmp/pids
   tmp/sockets
 ]
 
