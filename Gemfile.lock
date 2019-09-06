@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 4222e43341b9a123928bef3612c1f6ef6e79be29
+  revision: 297bac2d828533672c1d532c8c3bd93f57566bac
   branch: master
   specs:
     macros (1.15.0)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 790d3d4b002df4a9de910e3ce3806c8b94129c04
+  revision: 659c00b8aaf102f82affb5a38a09ff92bc0b4a55
   specs:
     support_engine (0.1.4)
       activesupport
@@ -262,7 +262,7 @@ GEM
     websocket-extensions (0.1.4)
     whenever (1.0.0)
       chronic (>= 0.6.3)
-    zeitwerk (2.1.9)
+    zeitwerk (2.1.10)
 
 PLATFORMS
   ruby
