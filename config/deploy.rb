@@ -3,7 +3,7 @@
 set :application, 'offending-sources'
 set :repo_url, "git@github.com:coditsu/#{fetch(:application)}.git"
 set :keep_releases, 10
-set :log_level,:debug
+set :log_level, :debug
 set :copy_exclude, %w[.svn .DS_Store cache]
 set :puma_default_hooks, true
 
