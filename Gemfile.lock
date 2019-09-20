@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/macros.git
-  revision: 87f8d4cba9375cb7355a7219928330d2af90ed58
+  revision: ad11c2794f94132a4e6e50c97f8c08d5ca7df5bc
   branch: master
   specs:
     macros (1.15.0)
@@ -89,7 +89,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.1, >= 2.1.8)
-    airbrake (9.4.3)
+    airbrake (9.4.4)
       airbrake-ruby (~> 4.6)
     airbrake-ruby (4.6.0)
       rbtree3 (~> 0.5)
