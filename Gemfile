@@ -9,7 +9,7 @@ gem 'pg'
 gem 'puma'
 gem 'rails'
 gem 'reform-rails'
-gem 'trailblazer'
+gem 'trailblazer', '2.0.7'
 gem 'whenever'
 
 %w[
