@@ -16,12 +16,4 @@ RSpec.describe_current do
   it '#sources_path' do
     expect(sample_operation.new.sources_path).to be_a Pathname
   end
-
-  it "expands operation with 'current_operation' context" do
-    expect(completed_operation['current_operation']).to eq sample_operation
-  end
-
-  it "expands operation with 'current_step' context" do
-    expect(completed_operation['current_step']).to eq :first_step
-  end
 end

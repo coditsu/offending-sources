@@ -69,7 +69,7 @@ RSpec.describe_current do
     end
 
     it 'return both of them' do
-      expect(result['model']).to eq('karafka' => ['3.4.1', '2.5.0'])
+      expect(result[:model]).to eq('karafka' => ['3.4.1', '2.5.0'])
     end
   end
 
@@ -83,7 +83,7 @@ RSpec.describe_current do
     end
 
     it 'return latest version and nil' do
-      expect(result['model']).to eq('karafka' => ['3.4.1', nil])
+      expect(result[:model]).to eq('karafka' => ['3.4.1', nil])
     end
   end
 
@@ -97,7 +97,7 @@ RSpec.describe_current do
     end
 
     it 'return latest version and nil' do
-      expect(result['model']).to eq('karafka' => [nil, '2.5.0'])
+      expect(result[:model]).to eq('karafka' => [nil, '2.5.0'])
     end
   end
 end

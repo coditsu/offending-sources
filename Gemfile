@@ -8,18 +8,7 @@ gem 'gems'
 gem 'pg'
 gem 'puma'
 gem 'rails'
-gem 'reform-rails'
-gem 'trailblazer', '2.0.7'
 gem 'whenever'
-
-%w[
-  macros
-].each do |gem_name|
-  gem gem_name,
-      git: "git@github.com:coditsu/#{gem_name.tr('_', '-')}.git",
-      require: true,
-      branch: :master
-end
 
 group :development, :test do
   gem 'byebug', platform: :mri

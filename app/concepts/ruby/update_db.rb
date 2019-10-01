@@ -15,29 +15,29 @@ module Ruby
     private
 
     # Checks if this is a prerelease (we handle those a bit differently)
-    # @param ctx [Trailblazer::Skill]
+    # @param accu [Accumulator]
     # @param params [Hash] changed ruby gem details
-    def check_if_prerelease(ctx, params:, **)
-      # @param _ctx [Trailblazer::Skill]
+    def check_if_prerelease(accu, params:, **)
+      # @param _accu [Trailblazer::Skill]
       # @param params [Hash] changed ruby gem details
-      ctx['prerelease'] = !(params[:version] =~ PRERELEASE_REGEXP).nil?
+      accu[:prerelease] = !(params[:version] =~ PRERELEASE_REGEXP).nil?
       true
     end
 
     # Find or creates (if new gem added) a db reference of a given gem
-    # @param ctx [Trailblazer::Skill]
+    # @param accu [Accumulator]
     # @param params [Hash] changed ruby gem details
-    def find_or_create_reference(ctx, params:, **)
-      ctx['model'] = RubyGem.find_or_create_by!(name: params[:name])
+    def find_or_create_reference(accu, params:, **)
+      accu[:model] = RubyGem.find_or_create_by!(name: params[:name])
     end
 
     # Updates db references of a given ruby gem version
-    # @param ctx [Trailblazer::Skill]
+    # @param accu [Accumulator]
     # @param model [Ruby::RubyGem] db gem reference
     # @param params [Hash] changed ruby gem details
     # @param prerelease [Boolean] true if a given ruby gem version is a prerelease
-    def update_version_reference(ctx, model:, params:, prerelease:, **)
-      ctx['version'] = Version.find_or_create_by!(
+    def update_version_reference(accu, model:, params:, prerelease:, **)
+      accu[:version] = Version.find_or_create_by!(
         number: params[:version],
         rubygem_id: model.id,
         prerelease: prerelease,
@@ -50,12 +50,12 @@ module Ruby
     end
 
     # Updates db references of a given ruby gem downloads count
-    # @param ctx [Trailblazer::Skill]
+    # @param accu [Accumulator]
     # @param model [Ruby::RubyGem] db gem reference
     # @param version [Ruby::Version] db gem version info reference
     # @param params [Hash] changed ruby gem details
-    def update_downloads_reference(ctx, model:, version:, params:, **)
-      ctx['gem_download'] = GemDownload.find_or_create_by!(
+    def update_downloads_reference(accu, model:, version:, params:, **)
+      accu[:gem_download] = GemDownload.find_or_create_by!(
         version_id: version.id,
         rubygem_id: model.id
       ).tap do |gem_download|
@@ -65,10 +65,10 @@ module Ruby
 
     # Figures out the most recent, top, non prerelease version of a given gem version and
     # marks it as latest in the DB
-    # @param _ctx [Trailblazer::Skill]
+    # @param _accu [Trailblazer::Skill]
     # @param model [Ruby::RubyGem] db gem reference
     # @param version [Ruby::Version] db gem version info reference
-    def resolve_latest(_ctx, model:, version:, **)
+    def resolve_latest(_accu, model:, version:, **)
       # If it is a prerelease, we ignore as prereleases are never marked as latest
       return true if version.prerelease
 

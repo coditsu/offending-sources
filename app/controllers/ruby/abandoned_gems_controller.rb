@@ -7,7 +7,7 @@ module Ruby
     # Returns the date of the last update for requested Gems
     def index
       render json: AbandonedGems::SelectLastReleasedDates
-        .call(params[:data])['model']
+        .call(params[:data])[:model]
         .to_json
     end
   end

@@ -4,7 +4,7 @@ jobs:
   specs:
     docker:
       - image: circleci/ruby:2.6.3-node-browsers
-      - image: circleci/postgres:10.6-alpine-ram
+      - image: circleci/postgres:10.10-alpine-ram
         environment:
           POSTGRES_USER: circleci
           POSTGRES_DB: circleci_test
@@ -32,6 +32,7 @@ jobs:
           keys:
             - v{{ .Environment.CIRCLE_CACHE_VERSION }}-{{arch}}-gem-lock-{{ checksum "Gemfile.lock" }}
             - v{{ .Environment.CIRCLE_CACHE_VERSION }}-{{arch}}-gem-lock-
+      - run: sudo apt-get update
       - run: sudo apt install postgresql-client
       - run: gem update --system
       - run: gem install bundler

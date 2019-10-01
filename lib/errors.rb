@@ -6,4 +6,6 @@ module Errors
   Base = Class.new(StandardError)
   # Raised when we have a non-fail operation and it fails
   OperationFailure = Class.new(Base)
+  # Raised when we want to overwrite an accumulator key that is in use
+  KeyAlreadyTaken = Class.new(Base)
 end

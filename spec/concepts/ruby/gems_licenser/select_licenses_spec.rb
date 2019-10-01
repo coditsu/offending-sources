@@ -2,7 +2,7 @@
 
 RSpec.describe_current do
   describe 'when one RubyGem requested' do
-    subject(:result) { described_class.call(rubygem.name => '1.0.0')['model'] }
+    subject(:result) { described_class.call(rubygem.name => '1.0.0')[:model] }
 
     let(:rubygem) { FactoryBot.create(:ruby_gem, :karafka) }
 
@@ -33,7 +33,7 @@ RSpec.describe_current do
   end
 
   describe 'when many RubyGems requested' do
-    subject(:result) { described_class.call(requested_gems)['model'] }
+    subject(:result) { described_class.call(requested_gems)[:model] }
 
     let(:requested_gems) { Hash[rubygem.name => '1.0.0', another_rubygem.name => '2.3.1'] }
 

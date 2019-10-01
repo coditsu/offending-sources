@@ -1,21 +1,35 @@
 # frozen_string_literal: true
 
 # Base operation class for all application operations
-# It wraps Trailblazer operation with some useful additional steps when
-# defining each step
-class ApplicationOperation < Trailblazer::Operation
-  extend Contract::DSL
+# It uses trailblazer steps style for injection of keyword arguments
+class ApplicationOperation
+  class_attribute :steps
 
-  # We overwrite this method to inject after each step a step that will
-  # remember what step was successfully executed as a last one (same of the operation class)
-  # so it will be much easier to debug it in the future
-  #
-  # @param args Any arguments that original Trailblazer #step method defines
-  # @param block [Proc] block we want to execute in this step
-  def self.step(*args, &block)
-    success ->(ctx, **) { ctx['current_operation'] ||= self }
-    super(*args, &block)
-    success ->(ctx) { ctx['current_step'] = args.first }
+  class << self
+    # DSL for adding step like operation flow
+    # @param name [Symbol] name of the method that should be invoked
+    def step(name)
+      self.steps ||= []
+      self.steps << name
+    end
+
+    # Executes the given steps in a flow
+    # @param params [Hash] hash with initial params
+    # @return [Accumulator] result accumulator with aggregated data
+    # @raise [Errors::OperationFailure] operation failure if the result value of the step
+    #   execution is false or nil
+    def call(params = {})
+      accu = Accumulator.new.merge!(params: params)
+      instance = new
+
+      steps.each do |name|
+        result = instance.send(name, accu, **accu)
+
+        raise(Errors::OperationFailure, [name, instance, accu]) unless result
+      end
+
+      accu
+    end
   end
 
   # @return [Pathname] pathname to a location where our prepared data files should be stored

@@ -2,7 +2,7 @@
 
 RSpec.describe_current do
   context 'when one RubyGem requested' do
-    subject(:result) { described_class.call(['karafka'])['model'] }
+    subject(:result) { described_class.call(['karafka'])[:model] }
 
     before do
       FactoryBot.create(:ruby_version, rubygem_id: rubygem.id, built_at: '2018-01-02 12:12:12')
@@ -18,7 +18,7 @@ RSpec.describe_current do
   end
 
   context 'when many RubyGems requested' do
-    subject(:result) { described_class.call(%w[first_awesome_gem second_awesome_gem])['model'] }
+    subject(:result) { described_class.call(%w[first_awesome_gem second_awesome_gem])[:model] }
 
     before do
       FactoryBot.create(
