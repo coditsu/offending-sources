@@ -2,6 +2,7 @@
 
 Airbrake.configure do |config|
   config.performance_stats = false
+  config.query_stats = false
   config.environment = Rails.env
   config.host        = Settings[:errbit][:host]
   config.project_id  = Settings[:errbit][:project_id]

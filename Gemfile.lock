@@ -15,11 +15,11 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: eeb57003e80b7c63de20562bab7aae6c2eeb394c
+  revision: fa3169ff3efa8c596810d0281e62af1ba173b2b6
   specs:
     support_engine (0.1.4)
       activesupport
-      require_all
+      zeitwerk
 
 GEM
   remote: https://rubygems.org/
@@ -79,9 +79,9 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.1, >= 2.1.8)
-    airbrake (9.4.5)
-      airbrake-ruby (~> 4.7)
-    airbrake-ruby (4.7.1)
+    airbrake (9.5.0)
+      airbrake-ruby (~> 4.8)
+    airbrake-ruby (4.8.0)
       rbtree3 (~> 0.5)
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
@@ -127,7 +127,7 @@ GEM
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     json (2.2.0)
-    loofah (2.3.0)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -179,7 +179,6 @@ GEM
       thor (>= 0.20.3, < 2.0)
     rake (13.0.0)
     rbtree3 (0.5.0)
-    require_all (2.0.0)
     rspec-core (3.9.0)
       rspec-support (~> 3.9.0)
     rspec-expectations (3.9.0)
