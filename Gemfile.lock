@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 9a64ae17218e5cc3e6c3a952d59d0a8eace1cff1
+  revision: 12fe8e5b525a87295b3ee919afbe3c8aa0ab7ca9
   specs:
     support_engine (0.1.4)
       activesupport
@@ -220,7 +220,7 @@ GEM
     websocket-extensions (0.1.4)
     whenever (1.0.0)
       chronic (>= 0.6.3)
-    zeitwerk (2.2.0)
+    zeitwerk (2.2.1)
 
 PLATFORMS
   ruby
