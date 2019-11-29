@@ -15,7 +15,7 @@ namespace :app do
     desc 'Creates a schema for a RubyGems database'
     task dump: :environment do
       with_engine_connection do
-        File.open(Rails.root.join('db', 'schema.rb'), 'w') do |file|
+        File.open(Rails.root.join('db/schema.rb'), 'w') do |file|
           ActiveRecord::SchemaDumper.dump ActiveRecord::Base.connection, file
         end
       end
@@ -25,14 +25,14 @@ namespace :app do
     task load: :environment do
       yaml_database_configuration = YAML.load(
         ERB.new(
-          File.read(Rails.root.join('config', 'databases', 'rubygems.yml'))
+          File.read(Rails.root.join('config/databases/rubygems.yml'))
         ).result(binding)
       )
       ActiveRecord::Tasks::DatabaseTasks.database_configuration = yaml_database_configuration
       ActiveRecord::Base.configurations = ActiveRecord::Tasks::DatabaseTasks.database_configuration
       ActiveRecord::Tasks::DatabaseTasks.load_schema_current(
         :ruby,
-        Rails.root.join('db', 'schema.rb'),
+        Rails.root.join('db/schema.rb'),
         Rails.env.to_s
       )
     end

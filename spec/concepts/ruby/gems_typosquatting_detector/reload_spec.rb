@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 RSpec.describe_current do
-  let(:tmp_dir) { Rails.root.join('tmp', 'spec') }
+  let(:tmp_dir) { Rails.root.join('tmp/spec') }
   let(:filename) { 'current.csv' }
   let(:full_path) { tmp_dir.join(filename) }
 
   let(:operation_with_stubbed_sources_path) do
     Class.new(described_class) do
       def sources_path
-        Rails.root.join('tmp', 'spec')
+        Rails.root.join('tmp/spec')
       end
     end
   end

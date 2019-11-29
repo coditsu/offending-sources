@@ -4,7 +4,7 @@ RSpec.describe_current do
   subject(:reloading) { described_class.call }
 
   let(:instance) { described_class.new }
-  let(:command) { Rails.root.join('bin', 'rubygems', 'reload.sh download') }
+  let(:command) { Rails.root.join('bin/rubygems/reload.sh download') }
 
   before { allow(described_class).to receive(:new).and_return(instance) }
 

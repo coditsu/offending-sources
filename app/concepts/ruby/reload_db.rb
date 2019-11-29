@@ -32,7 +32,7 @@ module Ruby
     # @param _accu [Trailblazer::Skill]
     # @param env_variables [Hash] envs that we need to pass to reload script
     def fetch_and_reload_rubygems_db(_accu, env_variables:, **)
-      cmd = Rails.root.join('bin', 'rubygems', 'reload.sh download')
+      cmd = Rails.root.join('bin/rubygems/reload.sh download')
       system(env_variables.join(' ') + ' ' + cmd.to_s)
       true
     end
