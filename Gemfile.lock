@@ -86,7 +86,7 @@ GEM
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
     bcrypt_pbkdf (1.0.1)
-    builder (3.2.3)
+    builder (3.2.4)
     byebug (11.0.1)
     capistrano (3.11.2)
       airbrussh (>= 1.0.0)
