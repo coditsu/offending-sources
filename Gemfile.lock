@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: ad3d4ea1bdaab8cd619e9d1ccfcfae773db5b6be
+  revision: c9295eba6be4b1b3a6cc9017abe2efbf835f7b22
   specs:
     support_engine (0.1.4)
       activesupport
@@ -81,7 +81,7 @@ GEM
       zeitwerk (~> 2.2)
     airbrake (9.5.5)
       airbrake-ruby (~> 4.8)
-    airbrake-ruby (4.9.0)
+    airbrake-ruby (4.10.1)
       rbtree3 (~> 0.5)
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
@@ -126,7 +126,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
-    json (2.2.0)
+    json (2.3.0)
     loofah (2.4.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
