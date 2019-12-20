@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: f02e33c316a4c41d0dde9666c2f1aa903e448063
+  revision: df40a5edf3ff81d14898a51eb8d0d23a7f78fbe0
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 592a5b0745b008d528742ef8efadffb6b5be4bbc
+  revision: 01b3408fee3e89962521cebe76fb9b77d1a939d0
   specs:
     support_engine (0.1.4)
       activesupport
@@ -242,4 +242,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   2.1.1
+   2.1.2
