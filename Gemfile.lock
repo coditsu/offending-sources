@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: b82257880c5718a28b33c2da79c48cd1e731dbbe
+  revision: f02e33c316a4c41d0dde9666c2f1aa903e448063
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 710ce1b34484670f03d0100a73ab2634d51c8d78
+  revision: 592a5b0745b008d528742ef8efadffb6b5be4bbc
   specs:
     support_engine (0.1.4)
       activesupport
@@ -81,7 +81,7 @@ GEM
       zeitwerk (~> 2.2)
     airbrake (9.5.5)
       airbrake-ruby (~> 4.8)
-    airbrake-ruby (4.10.1)
+    airbrake-ruby (4.11.1)
       rbtree3 (~> 0.5)
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
@@ -242,4 +242,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   2.1.0
+   2.1.1
