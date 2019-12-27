@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 01b3408fee3e89962521cebe76fb9b77d1a939d0
+  revision: 49191ab852f64bfb83152673843ef3a0c8c327ec
   specs:
     support_engine (0.1.4)
       activesupport
@@ -145,7 +145,7 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
-    pg (1.1.4)
+    pg (1.2.0)
     puma (4.3.1)
       nio4r (~> 2.0)
     rack (2.0.8)
@@ -213,7 +213,7 @@ GEM
       net-ssh (>= 2.8.0)
     thor (1.0.1)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
