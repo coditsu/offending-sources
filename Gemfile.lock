@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 49191ab852f64bfb83152673843ef3a0c8c327ec
+  revision: 98d62d40785895cea016ba6e532d321f287239a4
   specs:
     support_engine (0.1.4)
       activesupport
@@ -179,8 +179,8 @@ GEM
       thor (>= 0.20.3, < 2.0)
     rake (13.0.1)
     rbtree3 (0.5.0)
-    rspec-core (3.9.0)
-      rspec-support (~> 3.9.0)
+    rspec-core (3.9.1)
+      rspec-support (~> 3.9.1)
     rspec-expectations (3.9.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
@@ -195,7 +195,7 @@ GEM
       rspec-expectations (~> 3.9.0)
       rspec-mocks (~> 3.9.0)
       rspec-support (~> 3.9.0)
-    rspec-support (3.9.0)
+    rspec-support (3.9.2)
     simplecov (0.17.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
