@@ -34,7 +34,7 @@ Settings = Rails.configuration.settings
 %w[
   lib/errors.rb
 ].each do |path|
-  Dir[Rails.root.join(path)].each do |base|
+  Dir[Rails.root.join(path)].sort.each do |base|
     require base
   end
 end
