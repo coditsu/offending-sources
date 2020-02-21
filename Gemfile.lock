@@ -81,7 +81,7 @@ GEM
       zeitwerk (~> 2.2)
     airbrake (10.0.1)
       airbrake-ruby (~> 4.13)
-    airbrake-ruby (4.13.1)
+    airbrake-ruby (4.13.2)
       rbtree3 (~> 0.5)
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
