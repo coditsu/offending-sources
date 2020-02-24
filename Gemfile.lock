@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: ef0a3ab1c76174c77211ec983f3d20168d5d34d9
+  revision: c686d0d1c3480c8ec27865125f831216f07eb3b5
   specs:
     support_engine (0.1.4)
       activesupport
@@ -195,10 +195,10 @@ GEM
       rspec-mocks (~> 3.9.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
-    simplecov (0.18.2)
+    simplecov (0.18.3)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
-    simplecov-html (0.12.0)
+    simplecov-html (0.12.1)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
