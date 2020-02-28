@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 2feb2e7ee4e2a307054f94c591d867339c69aa9e
+  revision: ed52bbe8dfa84a6604cfa9fec0bfa01127d2f568
   specs:
     support_engine (0.1.4)
       activesupport
@@ -145,7 +145,7 @@ GEM
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     pg (1.2.2)
-    puma (4.3.1)
+    puma (4.3.2)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-test (1.1.0)
