@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: a532556988edefd7dbff6694ab53248bde109aba
+  revision: 200c7d029d03cfca607ef1b670d57e5113b7b128
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 583743558418276b8f1df0231023b44fead8bce9
+  revision: a913734d9c0c718ceb7a2ffea59d6654a9113598
   specs:
     support_engine (0.1.4)
       activesupport
