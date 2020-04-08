@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 200c7d029d03cfca607ef1b670d57e5113b7b128
+  revision: 49589bd7a6492fe9858ad15cfe3c498a97351f66
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -88,7 +88,7 @@ GEM
     bcrypt_pbkdf (1.0.1)
     builder (3.2.4)
     byebug (11.1.1)
-    capistrano (3.12.1)
+    capistrano (3.13.0)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
