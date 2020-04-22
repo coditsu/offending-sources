@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 9400d4d4177bf5942c44b6d4b0b1dc851f666f2e
+  revision: 99e2523556f4a49cd4b75297ad1f78e67293319d
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -113,7 +113,7 @@ GEM
       railties (>= 3.2, < 6.1)
     dry-inflector (0.2.0)
     ed25519 (1.2.4)
-    envlogic (1.1.0)
+    envlogic (1.1.1)
       dry-inflector (~> 0.1)
     erubi (1.9.0)
     factory_bot (5.1.2)
