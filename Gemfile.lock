@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:coditsu/capistrano-coditsu.git
-  revision: 99e2523556f4a49cd4b75297ad1f78e67293319d
+  revision: ffe8a904483c09c28210bbd3a64ba8607cf71973
   branch: master
   specs:
     capistrano-coditsu (0.1.1)
@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: 2cdca13d56bbf96eca374cb64c0092206502140f
+  revision: 1518cd10963667e941458927b0319305b93f1906
   specs:
     support_engine (0.1.4)
       activesupport
@@ -113,7 +113,7 @@ GEM
       railties (>= 3.2, < 6.1)
     dry-inflector (0.2.0)
     ed25519 (1.2.4)
-    envlogic (1.1.1)
+    envlogic (1.1.2)
       dry-inflector (~> 0.1)
     erubi (1.9.0)
     factory_bot (5.1.2)
@@ -140,7 +140,7 @@ GEM
     minitest (5.14.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (6.0.0)
+    net-ssh (6.0.2)
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
