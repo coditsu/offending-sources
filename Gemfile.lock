@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git@github.com:coditsu/support-engine.git
-  revision: a93ca286b26ebf744cf5753e6d367b96507d2ad9
+  revision: aece72667a4a8b6d3ce954084fdf5d7acf7e442a
   specs:
     support_engine (0.1.4)
       activesupport
@@ -105,7 +105,7 @@ GEM
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     database_cleaner (1.8.5)
-    diff-lcs (1.4.3)
+    diff-lcs (1.4.4)
     docile (1.3.2)
     dotenv (2.7.5)
     dotenv-rails (2.7.5)
